@@ -1,0 +1,14 @@
+body {
+  background-color: AntiqueWhite;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: Helvetica;
+}
