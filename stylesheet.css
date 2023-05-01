@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 40px;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -72,4 +72,9 @@ a {
 .navigationmenu {
   background-color: #dec9ff;
   border: 2px solid #ebdeff;
+}
+
+.playlistlink {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
 }
