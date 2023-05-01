@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Under Construction</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navigationmenu">
-      <button class="dropbtn"><a href="index.html">Home</a></button>
-      <button class="dropbtn"><a href="floatingflyingweee.html">Weeeee</a></button>
-      <button class="dropbtn"><a href="rando.html">Ramdo</a></button>
-    </div>
-    <h1>Ramdo Ramdo</h1>
-    <iframe src="https://www.youtube.com/watch?v=qDXGgiFmanw" width="500px" height="300px"></iframe>
-    <br>
-    <a href="https://www.youtube.com/playlist?list=PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62">View the full playlist on YouTube</a>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rando</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navigationmenu">
+    <button class="dropbtn"><a href="index.html">Home</a></button>
+    <button class="dropbtn"><a href="floatingflyingweee.html">Weeeee</a></button>
+    <button class="dropbtn"><a href="rando.html">Ramdo</a></button>
+  </div>
+  <h1>Ramdo Ramdo</h1>
+  <div id="ytplayer"></div>
+
+  <script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('ytplayer', {
+        height: '390',
+        width: '640',
+        playerVars: {
+          listType: 'playlist',
+          list: 'PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62'
+        }
+      });
+    }
+  </script>
+  <br>
+  <a href="https://www.youtube.com/playlist?list=PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62" class='playlistlink'>View the full playlist on YouTube</a>
+</body>
+
 </html>
