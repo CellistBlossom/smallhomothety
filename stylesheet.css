@@ -83,3 +83,10 @@ a {
   font-size: 8px;
   color: gray;
 }
+
+li {
+  text-align: center;
+  font-family: Helvetica;
+  list-style-position: inside;
+  padding-right: 3%;
+}
