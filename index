@@ -15,9 +15,9 @@
 
 <body>
   <div class="navigationmenu">
-    <button class="dropbtn"><a href="index.html">Home</a></button>
-    <button class="dropbtn"><a href="floatingflyingweee.html">Weeeee</a></button>
-    <button class="dropbtn"><a href="rando.html">Ramdo</a></button>
+    <button class="dropbtn"><a href="index">Home</a></button>
+    <button class="dropbtn"><a href="floatingflyingweee">Weeeee</a></button>
+    <button class="dropbtn"><a href="rando">Ramdo</a></button>
   </div>
   <h1>This website is currently under construction!</h1>
   <img src="images/sip.png" alt="sip" />
