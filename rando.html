@@ -16,26 +16,38 @@
     <button class="dropbtn"><a href="rando">Ramdo</a></button>
   </div>
   <h1>Ramdo Ramdo</h1>
-  <div id="ytplayer"></div>
-
+  <div id="player"></div>
   <script>
-    // Load the IFrame Player API code asynchronously.
+    // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/player_api";
+
+    tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // Replace the 'ytplayer' element with an <iframe> and
-    // YouTube player after the API code downloads.
-    var player;
-
-    function onYouTubePlayerAPIReady() {
-      player = new YT.Player('ytplayer', {
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    function onYouTubeIframeAPIReady() {
+      var numPl = Math.floor((Math.random() * 50) + 1);
+      var player = new YT.Player("player", {
         height: '390',
         width: '640',
         playerVars: {
           listType: 'playlist',
-          list: 'PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62'
+          list: 'PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62',
+          index: numPl,
+          autoplay: 1,
+        },
+        events: {
+          'onReady': function(event) {
+            //event.target.cuePlaylist({list: "PLFgquLnL59anYA8FwzqNFMp3KMcbKwMaT"});
+            //event.target.playVideo();
+            setTimeout(function() {
+              event.target.setShuffle({
+                'shufflePlaylist': true
+              });
+            }, 1000);
+          }
         }
       });
     }
