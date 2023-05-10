@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Star</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style media="screen">
+    body {
+      background-color: #45f3f3;
+    }
+
+
+    .dropbtn {
+      background-color: #459CF3;
+      color: white;
+    }
+
+    .dropbtn a {
+      color: #b4fafa;
+    }
+
+    .dropbtn a:hover {
+      color: #c3f78f;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: #7cb9f6;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropbtn:hover {
+      background-color: #377cc2;
+    }
+
+    .navigationmenu {
+      background-color: #B4D7FA;
+      border: 2px solid #ECF5FD;
+    }
+  </style>
+  <script type="text/javascript">
+    var password;
+    var pass1 = "eggu";
+    password = prompt('claw is in weavers den, go check', 'enter the password!');
+    if (password == pass1)
+      alert('Many people use this password, making it easy to guess. You should change your password immediately.');
+    else {
+      alert('try again!');
+      window.location = "index";
+    }
+    </script>
+</head>
+
+<body>
+  <div class="navigationmenu">
+    <button class="dropbtn" onclick="location.href='/index'"><a href="/index">Home</a></button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href='/floatingflyingweee'"><a href="/floatingflyingweee">Weeeee</a></button>
+      <div class="dropdown-content">
+        <a href="/floatingflyingweee/resources">Resources</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href='/rando'"><a href="/rando">Ramdo</a></button>
+      <div class="dropdown-content">
+        <a href="/rando/mods">Mods</a>
+        <a href="/rando/homothety">Homothety</a>
+        <a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a>
+      </div>
+    </div>
+  </div>
+  <h1>A Memorial to Schy</h1>
+  <p>You were the best thing to ever happen to me.</p>
+  <p>I'll never forget you.</p>
+  <p>Rest well, my friend.</p>
+  <img src="images/schy.png" alt="An image of a blue panda emote." height="100px" width="100px">
+  <br>
+  <div id="player"></div>
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '300px',
+        width: '500px',
+        videoId: 'iI5cxc0qlIw',
+        playerVars: {
+          'playsinline': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        setTimeout(stopVideo, 6000);
+        done = true;
+      }
+    }
+
+    function stopVideo() {
+      player.stopVideo();
+    }
+  </script>
+  <br>
+  <audio autoplay loop controls>
+    <source src="music/hkmaintheme.wav" type="audio/wav">
+    <source src="music/hkmaintheme.ogg" type="audio/ogg">
+    <source src="music/hkmaintheme.mp3" type="audio/mp3">
+  </audio>
+</body>
+
+</html>
