@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Mods</title>
-    <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -28,7 +28,12 @@
 <body>
   <div class="navigationmenu">
     <button class="dropbtn" onclick="location.href='/index'"><a href="/index">Home</a></button>
-    <button class="dropbtn" onclick="location.href='/floatingflyingweee'"><a href="/floatingflyingweee">Weeeee</a></button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href='/floatingflyingweee'"><a href="/floatingflyingweee">Weeeee</a></button>
+      <div class="dropdown-content">
+        <a href="/floatingflyingweee/resources">Resources</a>
+      </div>
+    </div>
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='/rando'"><a href="/rando">Ramdo</a></button>
       <div class="dropdown-content">
