@@ -9,6 +9,11 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+h2 {
+  font-size: 28px;
+  font-family: Helvetica;
+}
+
 p {
   font-family: Helvetica;
 }
@@ -58,7 +63,7 @@ a {
 
 .dropdown-content a:hover {
   background-color: #ddd;
-    color: #ff92bf;
+  color: #ff92bf;
 }
 
 .dropdown:hover .dropdown-content {
@@ -75,8 +80,8 @@ a {
 }
 
 .playlistlink {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
 }
 
 .disclaimer {
