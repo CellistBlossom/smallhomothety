@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -29,7 +29,12 @@
   <!-- If you're reading this, you should be playing rando instead. -->
   <div class="navigationmenu">
     <button class="dropbtn" onclick="location.href='/index'"><a href="/index">Home</a></button>
-    <button class="dropbtn" onclick="location.href='/floatingflyingweee'"><a href="/floatingflyingweee">Weeeee</a></button>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href='/floatingflyingweee'"><a href="/floatingflyingweee">Weeeee</a></button>
+      <div class="dropdown-content">
+        <a href="/floatingflyingweee/resources">Resources</a>
+      </div>
+    </div>
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='/rando'"><a href="/rando">Ramdo</a></button>
       <div class="dropdown-content">
