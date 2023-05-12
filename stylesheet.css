@@ -14,12 +14,19 @@ h2 {
   font-family: Helvetica;
 }
 
+h3 {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
 p {
   font-family: Helvetica;
+  padding: 0% 10% 0% 10%;
 }
 
 a {
   font-family: Helvetica;
+  text-decoration: none;
 }
 
 .dropbtn {
