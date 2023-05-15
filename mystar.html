@@ -63,6 +63,75 @@
       background-color: #B4D7FA;
       border: 2px solid #ECF5FD;
     }
+
+
+        .interactable-player-container {
+          display: grid;
+          grid-template-columns: 50px 50px 50px;
+          justify-content: center;
+        }
+
+        #play-icon {
+          background: transparent;
+          cursor: pointer;
+          width: 100px;
+          height: 100px;
+          border-radius: 90px;
+          outline: solid;
+          grid-column: 2 / span 1;
+          grid-row: 2 / span 1;
+        }
+
+        #mute-icon {
+          background: #2c9d9d;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+          border-radius: 70px;
+          outline: solid;
+          grid-row: 3 / span 1;
+          grid-column: 5 / span 1;
+        }
+
+        #volume-output {
+          font-size: 20px;
+          text-align: center;
+          font-family: "Josefin Sans", sans-serif;
+          grid-column: 4 / span 1;
+          grid-row: 3 / span 1;
+        }
+
+        #volume-slider {
+          background-color: transparent;
+          width: 100px;
+          grid-column: 4 / span 1;
+          grid-row: 1 / span 2;
+        }
+
+        #volume-slider::-webkit-slider-runnable-track {
+          background: #2c9d9d;
+        }
+
+        #volume-slider::-moz-range-track {
+          background: #2c9d9d;
+        }
+
+        #volume-slider::-ms-fill-upper {
+          background: #2c9d9d;
+        }
+
+        #volume-slider::before {
+          width: var(--volume-before-width);
+        }
+
+        #mute-icon {
+          margin: 0 2.5%;
+        }
+
+
+        input[type=range] {
+          -webkit-transform: rotate(270deg);
+        }
   </style>
   <script type="text/javascript">
     var password;
@@ -154,11 +223,85 @@
     }
   </script>
   <br>
-  <audio autoplay loop controls>
-    <source src="music/hkmaintheme.wav" type="audio/wav">
-    <source src="music/hkmaintheme.ogg" type="audio/ogg">
-    <source src="music/hkmaintheme.mp3" type="audio/mp3">
-  </audio>
+  <div id=”audio-player-container”>
+    <audio id="audio" preload=”metadata” loop autoplay>
+      <source src="music/hkmaintheme.wav" type="audio/wav">
+      <source src="music/hkmaintheme.ogg" type="audio/ogg">
+      <source src="music/hkmaintheme.mp3" type="audio/mp3">
+    </audio>
+    <div class="interactable-player-container">
+      <button id="play-icon"></button>
+      <input type="range" id="volume-slider" max="100" value="100">
+      <output id="volume-output">100</output>
+      <button id="mute-icon"></button>
+    </div>
+  </div>
+  <script type="module">
+    import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
+    const playIconContainer = document.getElementById('play-icon');
+    const audioPlayerContainer = document.getElementById('audio-player-container');
+    const volumeSlider = document.getElementById('volume-slider');
+    const muteIconContainer = document.getElementById('mute-icon');
+    let playState = 'play';
+    let muteState = 'unmute';
+
+    const playAnimation = lottieWeb.loadAnimation({
+      container: playIconContainer,
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      name: "Play Animation",
+    });
+
+
+    const muteAnimation = lottieWeb.loadAnimation({
+      container: muteIconContainer,
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/mute/mute.json',
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      name: "Mute Animation",
+    });
+
+    muteIconContainer.addEventListener('click', () => {
+      if (muteState === 'unmute') {
+        muteAnimation.playSegments([0, 15], true);
+        audio.muted = true;
+        muteState = 'mute';
+      } else {
+        muteAnimation.playSegments([15, 25], true);
+        audio.muted = false;
+        muteState = 'unmute';
+      }
+    });
+
+    playAnimation.goToAndStop(14, true);
+
+    // adds an event listener to the button so that when it is clicked, the the player toggles between play and pause
+    playIconContainer.addEventListener('click', () => {
+      if (playState === 'play') {
+        audio.play();
+        playAnimation.playSegments([14, 27], true);
+        playState = 'pause';
+      } else {
+        audio.pause();
+        playAnimation.playSegments([0, 14], true);
+        playState = 'play';
+      }
+    });
+    const audio = document.querySelector('audio');
+    const outputContainer = document.getElementById('volume-output');
+    let raf = null;
+
+
+    volumeSlider.addEventListener('input', (e) => {
+      const value = e.target.value;
+
+      outputContainer.textContent = value;
+      audio.volume = value / 100;
+    });
+  </script>
 </body>
 
 </html>
