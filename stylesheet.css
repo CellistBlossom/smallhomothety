@@ -36,6 +36,7 @@ a {
   font-size: 20px;
   border: none;
   font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
 }
 
 .dropbtn a {
