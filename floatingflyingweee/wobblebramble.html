@@ -11,37 +11,48 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/wobblebramble/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <style media="screen">
+
+    .interactable-player-container {
+      display: grid;
+      grid-template-columns: 50px 50px 50px;
+      justify-content: center;
+    }
+
     #play-icon {
       background: transparent;
       cursor: pointer;
       width: 150px;
       height: 150px;
-        border-radius: 90px;
-        outline: solid;
+      border-radius: 90px;
+      outline: solid;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
     }
 
     #mute-icon {
       background: skyblue;
       cursor: pointer;
-      width: 100px;
-      height: 100px;
-        border-radius: 70px;
-        outline: solid;
+      width: 50px;
+      height: 50px;
+      border-radius: 70px;
+      outline: solid;
+      grid-row: 3 / span 1;
+      grid-column: 5 / span 1;
     }
 
-    .volume {
-      display: inline-block;
-      font-size: 40px;
+    #volume-output {
+      font-size: 20px;
       text-align: center;
       font-family: "Josefin Sans", sans-serif;
-      margin: 10px 2.5% 0 5%;
-      float: right;
-      clear: right;
+      grid-column: 4 / span 1;
+      grid-row: 3 / span 1;
     }
 
     #volume-slider {
-      margin: 10px 2.5%;
-      width: 25%;
+      background-color: transparent;
+      width: 100px;
+      grid-column: 4 / span 1;
+      grid-row: 1 / span 2;
     }
 
     #volume-slider::-webkit-slider-runnable-track {
@@ -62,6 +73,11 @@
 
     #mute-icon {
       margin: 0 2.5%;
+    }
+
+
+    input[type=range] {
+      -webkit-transform: rotate(270deg);
     }
   </style>
 </head>
@@ -88,7 +104,7 @@
     </div>
   </div>
   <h1>Wobblebramble</h1>
-  <img src="../images/wobblebramble.gif" alt="A mosscreep">
+  <img src="/images/wobblebramble.gif" alt="A mosscreep">
   <br>
   <br>
   <div id=”audio-player-container”>
@@ -96,11 +112,10 @@
       <source src="/music/accumula_town_perfect_loop.wav" type="audio/wav">
       <source src="/music/accumula_town_perfect_loop.mp3" type="audio/mp3">
     </audio>
-    <button id="play-icon"></button>
-    <br>
-    <div class="voulume">
-      <output id="volume-output">100</output>
+    <div class="interactable-player-container">
+      <button id="play-icon"></button>
       <input type="range" id="volume-slider" max="100" value="100">
+      <output id="volume-output">100</output>
       <button id="mute-icon"></button>
     </div>
   </div>
