@@ -28,30 +28,16 @@
       color: #E583AB;
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="navigationmenu">
-    <button class="dropbtn" onclick="location.href='/index'"><a href="/index">Home</a></button>
-    <div class="dropdown">
-      <button class="dropbtn" onclick="location.href='/floatingflyingweee'"><a href="/floatingflyingweee">Weeeee</a></button>
-      <div class="dropdown-content">
-        <a href="/floatingflyingweee/recruitment">Where do I start?</a>
-        <a href="/floatingflyingweee/routes">Routes</a>
-        <a href="/floatingflyingweee/resources">Resources</a>
-        <a href="/floatingflyingweee/wobblebramble">Wobblebramble</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn" onclick="location.href='/rando'"><a href="/rando">Ramdo</a></button>
-      <div class="dropdown-content">
-        <a href="/rando/mods">Mods</a>
-        <a href="/rando/formats">Formats</a>
-        <a href="/rando/settings">Settings</a>
-        <a href="/rando/homothety">Homothety</a>
-        <a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a>
-      </div>
-    </div>
+  <script>
+      $(document).ready(function(){
+          $("#navbar").load("nav.html");
+      });
+  </script>
+  <div id="navbar">
   </div>
   <div class="subnavmenu">
     <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Skips</a> </button>
