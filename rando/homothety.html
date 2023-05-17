@@ -54,6 +54,7 @@
     </div>
   </div>
   <div class="subnavmenu">
+    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Skips</a> </button>
     <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
     <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
     <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
@@ -70,21 +71,19 @@ Or you might learn something you DON'T like...
 Hee hee hee.
 
 -->
-    <p id="homothety"></p>
+  <p id="homothety"></p>
   <script type="text/javascript">
     function Pasta() {
       var randomnumber = Math.floor(Math.random() * 100);
       console.log('randomnumber:', randomnumber)
-    if (randomnumber == 99) {
-      return '<p>Dear Homoti (aka \"everywhere\") (aka \"Randaman\"), I\'m writing to inform you that I was suddenly banned from the wiki. Redirect all future traffic to /dev/null. Don\'t worry</p> <p>Wayang branch changes do not solve this problem. In fact, it\'s even worse. Worse</p>'
+      if (randomnumber == 99) {
+        return '<p>Dear Homoti (aka \"everywhere\") (aka \"Randaman\"), I\'m writing to inform you that I was suddenly banned from the wiki. Redirect all future traffic to /dev/null. Don\'t worry</p> <p>Wayang branch changes do not solve this problem. In fact, it\'s even worse. Worse</p>'
+      } else if (randomnumber > 93) {
+        return '<p>Dearest Homothety (AKA \"Moth\") (AKA \"Randoman\"): I am writing to inform you that you have been summarily banned from contributing to the Wiki. Please direct all future comments to /dev/null. You are welcome.</p> <p>The change you made to the article on \"douchebags\" did not improve it. In fact, it made it worse. A lot worse.</p>'
+      } else {
+        return 'Dearest Homothety (AKA \"Moth\") (AKA \"Randoman\"): I am writing to inform you of a glaring error in your randomization algorithm for the game Hollow Knight. Though I was assured that the item locations were random, and indeed was swayed by your very name, there was not one but TWO so-called \"vanilla\" locations. Please, I implore you, fix your game.'
+      }
     }
-    else if (randomnumber > 93) {
-      return '<p>Dearest Homothety (AKA \"Moth\") (AKA \"Randoman\"): I am writing to inform you that you have been summarily banned from contributing to the Wiki. Please direct all future comments to /dev/null. You are welcome.</p> <p>The change you made to the article on \"douchebags\" did not improve it. In fact, it made it worse. A lot worse.</p>'
-    }
-    else {
-      return 'Dearest Homothety (AKA \"Moth\") (AKA \"Randoman\"): I am writing to inform you of a glaring error in your randomization algorithm for the game Hollow Knight. Though I was assured that the item locations were random, and indeed was swayed by your very name, there was not one but TWO so-called \"vanilla\" locations. Please, I implore you, fix your game.'
-    }
-  }
     document.getElementById("homothety").innerHTML = Pasta();
   </script>
 </body>
