@@ -103,3 +103,24 @@ li {
   list-style-position: inside;
   padding-right: 3%;
 }
+
+.submenubtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+
+.submenubtn:hover {
+  background-color: #E1D3C1;
+}
+
+.submenubtn a {
+  color: black;
+}
+
+.submenubtn a:hover {
+  color: #ff92bf;
+}
