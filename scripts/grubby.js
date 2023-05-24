@@ -475,7 +475,7 @@ button.addEventListener("click", function() {
   document.getElementById("pronounlabel").innerHTML = pronoun + ' pronouns are...';
   document.getElementById("foodlabel").innerHTML = pronoun + ' favorite food is...';
   document.getElementById("personalitylabel").innerHTML = pronoun + ' personality type is...';
-  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of '  + pronoun2 + " .";
+  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of '  + pronoun2 + ".";
   document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
 
   button.innerHTML = "Make another friend!";
