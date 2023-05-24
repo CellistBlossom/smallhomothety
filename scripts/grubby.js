@@ -443,9 +443,23 @@ button.addEventListener("click", function() {
   document.getElementById("personality").innerHTML = grubPersonality[Math.floor((Math.random() * 22.99))];
 
   document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
-  document.getElementById("pronounlabel").innerHTML = 'Their pronouns are...';
-  document.getElementById("foodlabel").innerHTML = 'Their favorite food is...';
-  document.getElementById("personalitylabel").innerHTML = 'Their personality type is...';
+  var pronoun = "";
+  if (document.getElementById("pronouns").innerHTML == "he/him") {
+    pronoun = "His";
+  } else if (document.getElementById("pronouns").innerHTML == "she/her") {
+    pronoun = "Her";
+  } else if (document.getElementById("pronouns").innerHTML == "they/them") {
+    pronoun = "Them";
+  } else if (document.getElementById("pronouns").innerHTML == "fae/faer") {
+    pronoun = "Faer";
+  } else if (document.getElementById("pronouns").innerHTML == "xe/xem") {
+    pronoun = "Xem";
+  } else if (document.getElementById("pronouns").innerHTML == "it/its") {
+    pronoun = "its";
+  }
+  document.getElementById("pronounlabel").innerHTML = pronoun + ' pronouns are...';
+  document.getElementById("foodlabel").innerHTML = pronoun + ' favorite food is...';
+  document.getElementById("personalitylabel").innerHTML = pronoun + ' personality type is...';
   document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of them.';
   document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
 
