@@ -375,7 +375,7 @@ button.addEventListener("click", function() {
     'Smallflower Pawpaw',
     'Dwarf Pawpaw',
     'Netted Pawpaw',
-    'Sea Torchwood'
+    'Sea Torchwood',
     'Wild Lime',
     'Common Hoptree',
     'Tangerine Leaves',
