@@ -291,7 +291,7 @@ button.addEventListener("click", function() {
     'Shade Beast',
     'Phantom Spawn',
     'Mantis Lord',
-    'Venomer'
+    'Venomer',
     'Gravity Grub',
     'Scavenger Grub',
     'Luminary Grub',
