@@ -383,7 +383,7 @@ button.addEventListener("click", function() {
     'Milkweed',
     'Grapefruit Leaves',
     'Queen Anne’s Lace',
-    'Golden Alexander'
+    'Golden Alexander',
     'Anise',
     'Prickly ash',
     'Spicebush',
