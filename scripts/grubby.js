@@ -455,12 +455,27 @@ button.addEventListener("click", function() {
   } else if (document.getElementById("pronouns").innerHTML == "xe/xem") {
     pronoun = "Xir";
   } else if (document.getElementById("pronouns").innerHTML == "it/its") {
-    pronoun = "its";
+    pronoun = "Its";
+  }
+
+  var pronoun2 = "";
+  if (document.getElementById("pronouns").innerHTML == "he/him") {
+    pronoun2 = "him";
+  } else if (document.getElementById("pronouns").innerHTML == "she/her") {
+    pronoun2 = "her";
+  } else if (document.getElementById("pronouns").innerHTML == "they/them") {
+    pronoun2 = "them";
+  } else if (document.getElementById("pronouns").innerHTML == "fae/faer") {
+    pronoun2 = "faer";
+  } else if (document.getElementById("pronouns").innerHTML == "xe/xem") {
+    pronoun2 = "xem";
+  } else if (document.getElementById("pronouns").innerHTML == "it/its") {
+    pronoun2 = "it";
   }
   document.getElementById("pronounlabel").innerHTML = pronoun + ' pronouns are...';
   document.getElementById("foodlabel").innerHTML = pronoun + ' favorite food is...';
   document.getElementById("personalitylabel").innerHTML = pronoun + ' personality type is...';
-  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of them.';
+  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of '  + pronoun2 + " .";
   document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
 
   button.innerHTML = "Make another friend!";
