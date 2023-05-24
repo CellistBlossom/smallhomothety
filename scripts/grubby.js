@@ -1,8 +1,9 @@
 var button = document.createElement("button");
 button.innerHTML = "Meet your new friend!";
 
-var body = document.getElementsByTagName("body")[0];
-body.appendChild(button);
+var certificate = document.getElementById("certificate");
+certificate.appendChild(button);
+button.id = "idk_your_id_here";
 
 button.addEventListener("click", function() {
   var grubName = [
@@ -195,7 +196,7 @@ button.addEventListener("click", function() {
     'Seeker Grub',
     'Fire Dreamer',
     'Fury Sprout',
-    'Mosskin'
+    'Mosskin',
     'Storm Crawler',
     'Charged Fat Grub',
     'Truffle Mite',
@@ -222,7 +223,6 @@ button.addEventListener("click", function() {
     'Buzzbuzz',
     'Skedaddle',
     'Clitch'
-
   ];
 
   document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 214.99))];
@@ -259,12 +259,12 @@ button.addEventListener("click", function() {
 
   document.getElementById("personality").innerHTML = grubPersonality[Math.floor((Math.random() * 9.99))];
 
-  document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...'
-  document.getElementById("pronounlabel").innerHTML = 'Their pronouns are...'
-  document.getElementById("foodlabel").innerHTML = 'Their favorite food is...'
-  document.getElementById("personalitylabel").innerHTML = 'Their personality type is...'
-  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of them.'
-  document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">'
+  document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
+  document.getElementById("pronounlabel").innerHTML = 'Their pronouns are...';
+  document.getElementById("foodlabel").innerHTML = 'Their favorite food is...';
+  document.getElementById("personalitylabel").innerHTML = 'Their personality type is...';
+  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of them.';
+  document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
 
   button.innerHTML = "Make another friend!";
 });
