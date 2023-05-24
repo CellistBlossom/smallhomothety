@@ -449,11 +449,11 @@ button.addEventListener("click", function() {
   } else if (document.getElementById("pronouns").innerHTML == "she/her") {
     pronoun = "Her";
   } else if (document.getElementById("pronouns").innerHTML == "they/them") {
-    pronoun = "Them";
+    pronoun = "Their";
   } else if (document.getElementById("pronouns").innerHTML == "fae/faer") {
     pronoun = "Faer";
   } else if (document.getElementById("pronouns").innerHTML == "xe/xem") {
-    pronoun = "Xem";
+    pronoun = "Xir";
   } else if (document.getElementById("pronouns").innerHTML == "it/its") {
     pronoun = "its";
   }
