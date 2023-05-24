@@ -322,7 +322,6 @@ button.addEventListener("click", function() {
     'Goobling',
     'Glooper',
     'Grubsey',
-
   ];
 
   document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 314.99))];
