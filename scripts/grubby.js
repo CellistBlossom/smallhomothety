@@ -6,6 +6,8 @@ certificate.appendChild(button);
 button.id = "idk_your_id_here";
 
 button.addEventListener("click", function() {
+  var grubbynumber = Math.floor(Math.random() * 100);
+  if (grubbynumber > 7) {
   var grubName = [
     'Gumbo',
     'Cholli',
@@ -521,10 +523,209 @@ button.addEventListener("click", function() {
     'Cybuggler',
     'Scarabug',
     'Grubwatcher',
-    'Grubulisk'
-  ];
+    'Grubulisk',
+    'Wiggly',
+    'Fluffy',
+    'Poppy',
+    'Jiggly',
+    'Fuzzy',
+    'Twinkles',
+    'Pinstripe',
+    'Sunny',
+    'Schnookie',
+    'Hoppy',
+    'Puddles',
+    'Butters',
+    'Tater',
+    'Crumpet',
+    'Cricket',
+    'Daisy',
+    'Buttercup',
+    'Ripple',
+    'Grubby',
+    'Yapper',
+    'Fidget',
+    'Itchy',
+    'Moth',
+    'Whiskers',
+    'Scamper',
+    'Hops',
+    'Jingle',
+    'Buzzzz',
+    'Jitter',
+    'Wiggle',
+    'Wriggle',
+    'Sprout',
+    'Twiggy',
+    'Skipley',
+    'Skippety',
+    'Whimsy',
+    'Peekaboo',
+    'Tater Tot',
+    'Squirty',
+    'Slurpy',
+    'Dozy',
+    'Nibbler',
+    'Poofy',
+    'Dottie',
+    'Floppy',
+    'Loopy',
+    'Mittens',
+    'Miffy',
+    'Chubbles',
+    'Squiggly',
+    'Herky',
+    'Scamp',
+    'Slipper',
+    'Plump',
+    'Buzz',
+    'Perky',
+    'Snuggle',
+    'Patter',
+    'Chipper',
+    'Snuggles',
+    'Stumpy',
+    'Nibbles',
+    'Chomper',
+    'Squishy',
+    'Grouchy',
+    'Pupa',
+    'Chewie',
+    'Buzzitty',
+    'Woogle',
+    'Bumblebee',
+    'Pebbles',
+    'Twitchy',
+    'Trot',
+    'Pippin',
+    'Poppet',
+    'Doodle',
+    'Bumbles',
+    'Snibble',
+    'Glossy',
+    'Zap',
+    'Fuzzkins',
+    'Squiggle',
+    'Buzzer',
+    'Trotter',
+    'Muncher',
+    'Glimmer',
+    'Glider',
+    'Hopper',
+    'Tiny',
+    'Plodder',
+    'Happy',
+    'Skipper',
+    'Sparky',
+    'Snuggly',
+    'Tubby',
+    'Slither',
+    'Flutter',
+    'Squirt',
+    'Squish-Munch',
+    'Fuzzy-Puppy',
+    'Snuggles-Wiggles',
+    'Tippy-Toots',
+    'Mr. Chomps',
+    'Gizmo-Gobble',
+    'Bumble-Beezy',
+    'Tiny-Crawler',
+    'Fluffy-Feathers',
+    'Cutesy-Paws',
+    'Quirkle',
+    'Grubbles',
+    'Rickle',
+    'Speckle',
+    'Nibble',
+    'Scampers',
+    'Gussel',
+    'Scuttles',
+    'Tickle',
+    'Squeakums',
+    'Wobbles',
+    'Waltz',
+    'GiggleBug',
+    'Wormly',
+    'Poko',
+    'Fuzzball',
+    'Jellie',
+    'Curley',
+    'Wigglez',
+    'Bulby',
+    'Pippa',
+    'Bun Bun Grub',
+    'Stubby Grub',
+    'Grub Sluggard',
+    'Cutie Pie Grub',
+    'Gooey Grub',
+    'Gummy Grub',
+    'Wiggly Grub',
+    'Grumpy Grubkin',
+    'Prickly Grubbee',
+    'Sploshy Grub',
+    'Groovin\' Grubby',
+    'Cosy Grubbinator',
+    'Grubby Dizzy-Goo',
+    'Slick Grubster',
+    'Pancake Grub',
+    'Chunky Grubbles',
+    'Chunky Grubby',
+    'Grubble Mc Grubberson',
+    'Flufftastic Grub',
+    'Smiley Grub',
+    'Snuggy Grub',
+    'Grubbily-Goo',
+    'Groovy Grub',
+    'Bubbalou Grub',
+    'Grubbleworm',
+    'Grubby Friend',
+    'Wiggle n\' Jiggle',
+    'Pupperoni',
+    'Hug-A-Bug',
+    'Grubbin Huggins',
+    'Grub Blubb',
+    'Bobble Grub',
+    'Squirm Blurm',
+    'Tumbly Bubbly',
+    'Chub-Chub',
+    'Fuzzy Nubble',
+    'Grumblebee',
+    'Grubkin',
+    'Gribby',
+    'Grubbydoodle',
+    'Grubby-Wubby-Do',
+    'Chubby Cheeks Grub',
+    'Perplexed Grub',
+    'Refurbished Grub',
+    'Honeycomb Grub',
+    'Convenient Grub',
+    'The Greasy Grub',
+    'Buzzy Bee',
+    'Fuzzy Wuzzy Grub',
+    'Scrubby',
+    'Giggles',
+    'Doodle Bug',
+    'Jitterbug',
+    'Squish',
+    'Grubberoo',
+    'Buzzby',
+    'Curly Q',
+    'Wigglesworth',
+    'Hipper',
+    'Tart',
+    'Fifi the Friendly Grub',
+    'Wiggles the Wiggly Grub',
+    'Joltin\' Grub',
+    'Buzzy the Bzzing Grub',
+    'Curly the Curlicue Grub',
+    'Snoozy Grub',
+    'Millie the Milling Grub',
+    'Grubbers the Grubbing Grub',
+    'Wingy the Winged Grub',
+    'Chompy the Chomping Grub'
+    ];
 
-  document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 514.99))];
+  document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 713.99))];
 
   var grubPronoun = [
     'she/her',
@@ -679,4 +880,152 @@ button.addEventListener("click", function() {
   document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
 
   button.innerHTML = "Make another friend!";
+}
+
+else {
+  var mimicName = [
+    'Jubilant Grobbler',
+    'Mandible Mish-mash',
+    'Nibble Scuttle',
+    'Oily Grubble',
+    'Buzzing Bimble',
+    'Funky Chompster',
+    'Gummy Nibbler',
+    'Gabble Glutton',
+    'Smack Snack',
+    'Ledger Lunger',
+    'Gristly Grawl',
+    'Munch Monster',
+    'Junk Muddle',
+    'Mining Masticator',
+    'Smiggy Gnawer',
+    'Clomping Chomper',
+    'Gurgle Gulper',
+    'Scrap Sniggerer',
+    'Pick Pincher',
+    'Chikkin Cringer'
+];
+    document.getElementById("grubname").innerHTML = mimicName[Math.floor((Math.random() * 19.99))];
+
+    var mimicPronoun = [
+      'she/her',
+      'she/her',
+      'she/her',
+      'she/her',
+      'she/her',
+      'he/him',
+      'he/him',
+      'he/him',
+      'he/him',
+      'he/him',
+      'they/them',
+      'they/them',
+      'they/them',
+      'they/them',
+      'they/them',
+      'fae/faer',
+      'xe/xem',
+      'it/its'
+    ];
+    document.getElementById("pronouns").innerHTML = mimicPronoun[Math.floor((Math.random() * 17.99))];
+
+    var mimicFood = [
+      'Grub Fries',
+      'Grub Rice',
+      'Grub Crepes',
+      'Grub Noodle Bowl',
+      'Grub Pizza',
+      'Grub Grilled Cheese',
+      'Grub Fish and Chips',
+      'Grub Fried Chicken',
+      'Dusty Bun',
+      'Flukefin Soup',
+      'Violet Confit',
+      'Grubhoney',
+      'Grub Cake',
+      'Mosskin Egg',
+      'Glowing Egg',
+      'Great Slashshroom',
+      'Nail Bat Spore',
+      'Spectral Core',
+      'Fey Moth Egg',
+      'Glowing Wort',
+      'Heavenly Bulb',
+      'Blistermoss',
+      'Yowlsect Eggs',
+      'Ruptureroot',
+      'Matozaure Egg',
+      'Shadow Orb',
+      'Hive Cluster',
+      'Void Spore',
+      'Pale Cyst',
+      'Flukemarm Egg'
+    ];
+
+    document.getElementById("food").innerHTML = mimicFood[Math.floor((Math.random() * 29.99))];
+
+    var mimicPersonality = [
+      'Cunning',
+      'Resourceful',
+      'Socially Savvy',
+      'Charismatic',
+      'Articulate',
+      'Adaptable',
+      'Observant',
+      'Opportunistic',
+      'Clever',
+      'Tireless',
+      'Patient',
+      'Ambitious',
+      'Intelligent',
+      'Mystical',
+      'Humorous',
+      'Stealthy',
+      'Self-Reliant',
+      'Altruistic',
+      'Diligent',
+      'Imaginative',
+      'Inquisitive'
+    ];
+
+    document.getElementById("personality").innerHTML = mimicPersonality[Math.floor((Math.random() * 20.99))];
+
+  document.getElementById("namelabel").innerHTML = 'Your "grub\'s" name is...';
+  var pronoun = "";
+  if (document.getElementById("pronouns").innerHTML == "he/him") {
+    pronoun = "His";
+  } else if (document.getElementById("pronouns").innerHTML == "she/her") {
+    pronoun = "Her";
+  } else if (document.getElementById("pronouns").innerHTML == "they/them") {
+    pronoun = "Their";
+  } else if (document.getElementById("pronouns").innerHTML == "fae/faer") {
+    pronoun = "Faer";
+  } else if (document.getElementById("pronouns").innerHTML == "xe/xem") {
+    pronoun = "Xir";
+  } else if (document.getElementById("pronouns").innerHTML == "it/its") {
+    pronoun = "Its";
+  }
+
+  var pronoun2 = "";
+  if (document.getElementById("pronouns").innerHTML == "he/him") {
+    pronoun2 = "him";
+  } else if (document.getElementById("pronouns").innerHTML == "she/her") {
+    pronoun2 = "her";
+  } else if (document.getElementById("pronouns").innerHTML == "they/them") {
+    pronoun2 = "them";
+  } else if (document.getElementById("pronouns").innerHTML == "fae/faer") {
+    pronoun2 = "faer";
+  } else if (document.getElementById("pronouns").innerHTML == "xe/xem") {
+    pronoun2 = "xem";
+  } else if (document.getElementById("pronouns").innerHTML == "it/its") {
+    pronoun2 = "it";
+  }
+  document.getElementById("pronounlabel").innerHTML = pronoun + ' pronouns are...';
+  document.getElementById("foodlabel").innerHTML = pronoun + ' favorite food is...';
+  document.getElementById("personalitylabel").innerHTML = pronoun + ' personality type is...';
+  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of '  + pronoun2 + ".";
+  document.getElementById("grubbyimage").innerHTML = '<img src="images/mimic.png" alt="A mimic!" height="100px" width="100px">';
+
+  button.innerHTML = "Make another friend!";
+}
 });
