@@ -722,10 +722,116 @@ button.addEventListener("click", function() {
     'Millie the Milling Grub',
     'Grubbers the Grubbing Grub',
     'Wingy the Winged Grub',
-    'Chompy the Chomping Grub'
+    'Chompy the Chomping Grub',
+    'Grub-a-Bye',
+    'Grubby Guts',
+    'Grub Pie',
+    'Grub-a-Lot',
+    'Grubber Bug',
+    'Grub-a-Saurus',
+    'Grub-a-Mania',
+    'Grub-o-Matic',
+    'Grub-a-Tron',
+    'Grubble Gum',
+    'Grubblin\' Gourmand',
+    'Squirm Grub',
+    'Wriggle Grub',
+    'Itsy Grub',
+    'Grubbly Bear',
+    'Grub-a-Dub-Dub',
+    'Grubbing it Out',
+    'The Grub-inator',
+    'Grub-tastic',
+    'Grub-tacular',
+    'Grub-topia',
+    'Grub-Adore',
+    'Grubby Gatherings',
+    'Grubling Groove',
+    'Grubby Glimmer',
+    'Grub-a-Dab-Do',
+    'Grubstache',
+    'Grub-a-Boo',
+    'Grubbling Along',
+    'Grubby Grubber',
+    'Grub-a-Fied',
+    'Grubbly Grubster',
+    'Fuzzy Grub',
+    'Tumble Grub',
+    'Grub Glimmer',
+    'Grubbing for Glory',
+    'Grub-a-Tude',
+    'Grubbly Goodness',
+    'Grubulous Maximus',
+    'Grubby\'s Groove',
+    'Grubble Bug',
+    'Grub Nibble',
+    'Grubble Bop',
+    'Grubblet',
+    'Grubblefritz',
+    'Grubble Dazzle',
+    'Grubberiffic',
+    'Grubsy',
+    'Grubby Little Buddies',
+    'Grubbly Wubbly',
+    'Grubby Grubberoo',
+    'Grubble Blob',
+    'Grub Groove',
+    'Grub Tubble',
+    'Grubba-Do',
+    'Grubble the Grub',
+    'Grub the Conqueror',
+    'Grubby Glider',
+    'Grub-a-Bye-Baby',
+    'Grub-a-Roo',
+    'Grubbing Out',
+    'Grubbing in the Dark',
+    'Grubby the Grub',
+    'Grub Snugglers',
+    'Grub-a-Lumpkin',
+    'Grub-a-Munchkin',
+    'Grub-a-Knot',
+    'Grub-a-Tangle',
+    'Grub-a-Wiggler',
+    'Grubblewing',
+    'Grubbering',
+    'Grubby McFly',
+    'Grubbing Along',
+    'Grubbing for Gold',
+    'Grub-B-Rumble',
+    'Grubby Grub-Grub',
+    'Grub-N-Go',
+    'Grub\'s Knees',
+    'Grub-a-Rama',
+    'Grub-a-Thon',
+    'Grub-a-Glow',
+    'Grub-a-Lub-Dub',
+    'Grubbing the Night Away',
+    'Dandy Grub',
+    'Cuddly Grubs',
+    'Tiny Troopers',
+    'Grubble Grubs',
+    'Grubby Galore',
+    'Grubberella',
+    'Grubberfest',
+    'Grub the Builder',
+    'Grubsworth',
+    'Grub-a-Nator',
+    'Grubblette',
+    'Jittery Grub',
+    'Grubby-Munchkin',
+    'Grubblegum',
+    'Grubby the Grubber',
+    'Grubblebug',
+    'Grubberific',
+    'Grubby McBuggy',
+    'Grubbles the Grub',
+    'Grubbly-Go-Round',
+    'Grubloaf',
+    'Grub-of-the-Deep',
+    'Grub-on-the-Go'
     ];
 
-  document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 713.99))];
+  document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 819.99))];
 
   var grubPronoun = [
     'she/her',
@@ -878,6 +984,14 @@ button.addEventListener("click", function() {
   document.getElementById("personalitylabel").innerHTML = pronoun + ' personality type is...';
   document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of '  + pronoun2 + ".";
   document.getElementById("grubbyimage").innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
+  if (document.getElementById("grubname").innerHTML == "Upside-Down Grub") {
+    document.getElementById("grubbyimage").classList.add('upside-down');
+    document.getElementById("grubbyimage").classList.remove('rightside-up');
+  }
+  else {
+    document.getElementById("grubbyimage").classList.add('rightside-up');
+    document.getElementById("grubbyimage").classList.remove('upside-down');
+  }
 
   button.innerHTML = "Make another friend!";
 }
@@ -903,9 +1017,49 @@ else {
     'Gurgle Gulper',
     'Scrap Sniggerer',
     'Pick Pincher',
-    'Chikkin Cringer'
+    'Chikkin Cringer',
+    'Scalebrush',
+    'Plumphog',
+    'Splutch',
+    'Sludgrin',
+    'Troghopp',
+    'Grublurk',
+    'Skulleach',
+    'Joltbug',
+    'Hortling',
+    'Shellshade',
+    'Grubpup',
+    'Skelechomp',
+    'Fossflow',
+    'Gutgorger',
+    'Gluttock',
+    'Faltail',
+    'Scrapfang',
+    'Mazegoose',
+    'Plodworm',
+    'Gritskitter',
+    'Croakershrike',
+    'Suddenhide',
+    'Pulpdigger',
+    'Glurcher',
+    'Glopgrub',
+    'Rumblegut',
+    'Tarbag',
+    'Footwriggler',
+    'Revelburrow',
+    'Crawlfang',
+    'Glowcap',
+    'Slugslip',
+    'Muckdragger',
+    'Cutterfly',
+    'Fleabite',
+    'Chirpy',
+    'Grubspinner',
+    'Gutterfly',
+    'Nectarhopper',
+    'Crawlclaw'
 ];
-    document.getElementById("grubname").innerHTML = mimicName[Math.floor((Math.random() * 19.99))];
+    document.getElementById("grubname").innerHTML = mimicName[Math.floor((Math.random() * 59.99))];
 
     var mimicPronoun = [
       'she/her',
@@ -1025,6 +1179,8 @@ else {
   document.getElementById("personalitylabel").innerHTML = pronoun + ' personality type is...';
   document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of '  + pronoun2 + ".";
   document.getElementById("grubbyimage").innerHTML = '<img src="images/mimic.png" alt="A mimic!" height="100px" width="100px">';
+  document.getElementById("grubbyimage").classList.add('rightside-up');
+  document.getElementById("grubbyimage").classList.remove('upside-down');
 
   button.innerHTML = "Make another friend!";
 }
