@@ -24,33 +24,41 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <style media="screen">
-      h2 {
-        font-size: 22px;
-        font-family: 'Indie Flower', cursive;
-      }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    h2 {
+      font-size: 22px;
+      font-family: 'Indie Flower', cursive;
+    }
 
-      h3 {
-        font-size: 18px;
-        font-family: 'Indie Flower', cursive;
-      }
+    h3 {
+      font-size: 18px;
+      font-family: 'Indie Flower', cursive;
+    }
 
-      #idk_your_id_here {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 30px;
-        color: #ff92bf;
-        background-color: #ddd;
-        padding: 10px;
-        border-radius: 30px;
-      }
-    </style>
+    #idk_your_id_here {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 30px;
+      color: #ff92bf;
+      background-color: #ddd;
+      padding: 10px;
+      border-radius: 30px;
+    }
+
+    .upside-down {
+        transform: scaleY(-1);
+    }
+
+    .rightside-up {
+      transform: scaleY(1);
+    }
+  </style>
 </head>
 
 <body>
   <script>
-    $(document).ready(function(){
-        $("#navbar").load("nav.html");
+    $(document).ready(function() {
+      $("#navbar").load("nav.html");
     });
   </script>
   <div id="navbar">
