@@ -8,6 +8,9 @@ h1 {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
 }
+ p a {
+   color: #E583AB;
+ }
 
 h2 {
   font-size: 28px;
