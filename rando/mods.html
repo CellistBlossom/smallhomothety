@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Mods</title>
-  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="stylesheet" href="../stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -25,31 +25,9 @@
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style media="screen">
-    .main a {
-      color: #E583AB;
-    }
-
-    table {
-      margin-left: auto;
-      margin-right: auto;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 18px;
+    li {
       text-align: left;
-    }
-
-    .column {
-      float: left;
-      width: 50%;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .list {
-      text-align: left;
+      padding-left: 15%
     }
   </style>
 </head>
@@ -67,83 +45,31 @@
     <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
     <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
     <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
+    <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
     <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
     <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
   </div>
   <h1>Mods for Racing Rando!</h1>
-  <p>Required/Highly Recommended mods for rando racing!</p>
-  <p>(note: some required mods are not on this list but will be downloaded as dependencies for other mods that are on the list):</p>
-  <h2>How do I mod Hollow Knight?</h2>
-  <p>Modding Hollow Knight is really easy! Firstly, if you'd like to install debug mod, or downpatch for a speedrun, 
-    please refer to the <a href="https://speedrun.com/hollowknight/guides/">Hollow Knight Speedrun.com Page.</a></p>
-  <p>First, install the <a href="https://github.com/hk-modding/api">Hollow Knight Modding API</a>. Download the zip file in the releases page, and 
-    drag the contents into your Hollow Knight's /hollow_knight_Data/Managed/ folder. This information can also be found in the zip file's Readme.md.</p>
-  <p>Finally, you can either manually install mods by downloading the individual mods and placing them in the /Managed/Mods folder, or by installing Scarab!
-    <br>Scarab or Scarab+ are Hollow Knight's dedicated Mod Installer. They include a large database of Hollow Knight mods that you can download, 
-    and it will directly place it into your mods folder. They can be found at the links below.</p>
-  <div class="row">
-    <div class="column">
-      <h2><a href="https://github.com/fifty-six/Scarab">Scarab</a></h2>
-    </div>
-    <div class="column">
-      <h2><a href="https://themulhima.github.io/Scarab/index.html">Scarab+</a></h2>
-    </div>
-  </div>
-  <h1>List of Recommended Mods</h1>
-  <h2>Required Mods for Rando 4</h2>
-  <p><i>Note: If you install Randomizer 4 via Scarab, all dependencies will be automatically installed.<br>If you are not using Scarab, it is very important to read what each mods' dependencies are. Remember to download them along with the mod if installing them manually.</i></p>
-  <div class="list">
-    <p><strong><a href="https://github.com/homothetyhk/RandomizerMod">Randomizer 4</a></strong> The number one mod! This is a requirement to play rando (obviously). Randomizer 4 requires the latest patch of Hollow Knight to run (1.5.7.8).</p>
-    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.BenchwarpMod">Benchwarp</a></strong> A mod that allows you to warp to and from any bench that you've previously rested at. A required dependency of Rando 4.</p>
-    <p><strong><a href="https://github.com/fifty-six/HollowKnight.QoL/">QoL</a></strong> A Quality of Life mod that includes many different modifications to the game that make it more fun for speedrunning. This includes bringing back inventory drops, lever skips and various other glitches, as well as instant text and menuing to make rando faster.</p>
-    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.ItemChanger">ItemChanger</a></strong> A dependency mod to allow other mods to change aspects of the world easily.</p>
-    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.MenuChanger">MenuChanger</a></strong> Another dependency mod similar to ItemChanger.</p>
-    <p><strong><a href="https://github.com/homothetyhk/RandomizerCore">RandomizerCore</a></strong> Yet another dependency mod, this time for randomization of items.</p>
-    <p><strong><a href="https://github.com/fifty-six/HollowKnight.Vasi">Vasi</a></strong> Another dependency for various mods in Hollow Knight.</p>
-  </div>
-
-  <h2>"Essential" Mods</h2>
-  <p>These are mods that the community highly recommends, but aren't <i>technically</i> required.</p>
-  <div class="list">
-    <p><strong><a href="https://github.com/BadMagic100/RandoSettingsManager">RandoSettingsManager</a></strong> This mod allows you to much more easily share settings codes, along with integrating connections and extensions into randomizer settings much more easily.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RecentItemsDisplay/">RecentItemsDisplay</a></strong> Shows you the last few items you've recieved in the top right of the screen. Can be customized to show a varied amount of recent items.</p>
-    <p><strong><a href="https://github.com/syyePhenomenol/RandoMapMod">RandoMapMod</a></strong> Gives you the ability to look at maps without buying/obtaining the item, as well as showing you what is randomized and unobtained, in the correct location.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.Scatternest/">Scatternest</a></strong> An add-on for ItemSync that allows you to have multiple different spawn locations, causing co-op players to not spawn in the same location. If you play co-op Itemsync a lot, this mod is for you.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.BingoUI/">BingoUI</a></strong> Shows you various important trackers for items that you have picked up, such as geo spent, pale ore obtained, grubs obtained, etc. Very useful if you are playing randomizer bingo.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.CondensedSpoilerLogger/">CondensedSpoilerLogger</a></strong> Creates a more readable spoiler log for when you are finished with rando, or for spoiler formats.</p>
-    <p><strong><a href="https://github.com/TheMulhima/HollowKnight.DebugMod/">DebugMod</a></strong> Allows for debug tools, such as no clip, invincibility, etc. Not allowed for rando races, but very useful for practicing skips and also speedrun practice.</p>
-    <p><strong><a href="https://github.com/kingkiller39/HollowKnightRandomizerTracker2.8/">HKTracker</a></strong> A tracker display of major items, very helpful for viewers if you plan on streaming rando.</p>
-    <p><strong><a href="https://github.com/BadMagic100/HollowKnight.Rando4Stats/">RandoStats</a></strong> Shows you some stats about your run after the credits, or if you click the "view stats" button in the pause menu. These stats also show a timeline of when you picked up various major items.</p>
-    <p><strong><a href="https://github.com/Emo-hk/AdditionalTimelines">AdditionalTimelines</a></strong> An add-on to RandoStats/FStats that shows additional timelines similar to the skill timeline.</p>
-  </div>
-
-  <h2>Randomizer Connections</h2>
-  <p>These are mods that add extra content, or enhance the Randomizer 4 experience. They range from just randomizing a few extra checks, or adding an entirely new layer to Hollow Knight randomizer.</p>
-  <div class="list">
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RandoPlus/">RandoPlus</a></strong> Arguably the most popular randomizer connection. It adds multiple different things to randomize, most notably Nail Upgrades, Mr Mushroom, and allowing two items to appear at the same location.</p>
-    <p><strong><a href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong> A mod that allows for co-op randomizer. It syncs the items that you and a partner (or more) pick up and shares the items to both of you.</p>
-    <p><strong><a href="https://github.com/Shadudev/HollowKnight.MultiWorld/">MultiWorld</a></strong> A mod similar to ItemSync, but instead of both players using the same seed, it randomizes everyone's items into a pool, which can include other people's worlds.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RandomizableLevers/">RandomizableLevers</a></strong> Allows you to randomize levers into the item pool. Hitting a lever will give you an item rather than opening a door, and you can find lever "items" that trigger the respective door opening.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.ReopenCityDoor/">ReopenCityDoor</a></strong> Mod that reopens the door between the City of Tears elevator room and Fungal Wastes (above Elder Hu).</p>
-    <p><strong><a href="https://github.com/BadMagic100/MajorItemByAreaTracker/">MajorItemsByAreaTracker</a></strong> A tracker for your rando that allows you to play the semi-spoiler format All Majors, in which you collect every major item in every area, while knowing how many are in each area. Configurable to change what is a "major item".</p>
-    <p><strong><a href="https://github.com/homothetyhk/BenchRando/">BenchRando</a></strong> Randomzises benches in various ways, such as randomizing them as pickups similar to the way that stags  </p>
-    <p><strong><a href="https://github.com/dplochcoder/HollowKnight.MoreDoors">MoreDoors</a></strong> Adds more unique doors and keys to the game, instead of the few that exist in vanilla. Configurable to just have the locations of the keys, and more.</p>
-  </div>
-
-  <h2>Fun Mods!</h2>
-  <p>Finally, some fun mods that are recommended that don't really affect rando much.</p>
-  <div class="list">
-    <p><strong><a href="https://github.com/Zickles/HollowKnight.CustomKnight/">CustomKnight</a></strong> Allows you to have custom textures for the knight, as well as options for other sprites.</p>
-    <p><strong><a href="https://github.com/dpinela/RainbowEggs/">RainbowEggs</a></strong> Randomizes the colours of rancid egg pickups! Purely cosmetic, but it does sync for ItemSync [citation needed].</p>
-    <p><strong><a href="https://github.com/SFGrenade/AdditionalMaps/">AdditionalMaps</a></strong> Adds White Palace and Godhome maps if you are learning how to navigate those areas.</p>
-    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.CompassAlwaysOn/">CompassAlwaysOn</a></strong> Makes the game act as if you always have the Wayward Compass charm equipped. Not legal for rando, but useful for casual races when you are learning.</p>
-    <p><strong><a href="https://github.com/PrashantMohta/GrubTrain/">GrubTrain</a></strong> Grubs will follow you around once you have collected them! Be sure to turn off "grub tricks" in settings, as that is not rando legal.</p>
-    <p><strong><a href="https://github.com/ygsbzr/DeathCounter/">DeathCounter</a></strong> A death and hit counter to see how many times you failed. (We're still proud of you though.)</p>
-    <p><strong><a href="https://github.com/Link459/PressGToDab/">press g to dab</a></strong> press g to dab</p>
-  </div>
-
-  <img class="spin" src="../images/spin.gif" alt="knightspin">
-
+  <p>Required/Highly Recommended mods for rando racing (note: some required mods are not on this list but will be downloaded as dependencies for other mods that are on the list):</p>
+  <ul>
+    <li>AdditionalTimelines (displays some timelines for post-race screenshot sharing)</li>
+    <li>BingoUI (helps keep track of certain things for bingo races)</li>
+    <li>CompassAlwaysOn (allows player to track their location on in-game map even if Compass is not equipped)</li>
+    <li>ItemSync (allows items/checks obtained to be shared between teammates, used in team races)</li>
+    <li>MajorItemByAreaTracker (shows a list of all areas with how many "major items" each contain, used in All Majors races)</li>
+    <li>RandoMapMod (displays randomized item locations on the in-game map and allows player to view all maps in full, even if not obtained)</li>
+    <li>Randomizer 4</li>
+    <li>RandoPlus (adds other items to randomize, most notably nail upgrades)</li>
+    <li>RandoSettingsManager (allows rando to match ALL settings given a settings code)</li>
+    <li>RandoStats (displays skill timelines for post-race screenshot sharing)</li>
+    <li>RecentItemsDisplay (displays a list of recently obtained items)</li>
+    <li>Scatternest (allows multiple players in the same itemsync room to start at different locations)</li>
+  </ul>
+  <p>(You should also get rainbow eggs and grub train. Just my personal opinion.)</p>
+  <p>These can all be downloaded from the mod installer for 1.5, Scarab.</p>
+  <a href="https://github.com/fifty-six/Scarab">
+    <h2>Scarab Link</h2>
+  </a>
 </body>
 
 </html>
