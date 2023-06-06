@@ -8,15 +8,24 @@ h1 {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
 }
- p a {
-   color: #E583AB;
- }
 
- p a:hover {
-   color: #83abe5;
- }
+p a {
+  color: #E583AB;
+}
 
-h2 {
+p a:hover {
+  color: #83abe5;
+}
+
+a h2 {
+  color: #E583AB;
+}
+
+a h2:hover {
+  color: #83abe5;
+}
+
+a h2 {
   font-size: 28px;
   font-family: Helvetica;
 }
@@ -48,6 +57,7 @@ a {
 
 .dropbtn a {
   text-decoration: none;
+  color: #5E497F;
 }
 
 .dropbtn a:hover {
