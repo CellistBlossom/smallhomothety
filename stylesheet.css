@@ -12,6 +12,10 @@ h1 {
    color: #E583AB;
  }
 
+ p a:hover {
+   color: #83abe5;
+ }
+
 h2 {
   font-size: 28px;
   font-family: Helvetica;
