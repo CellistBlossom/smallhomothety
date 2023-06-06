@@ -115,6 +115,11 @@ a {
 .playlistlink {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
+  color: #E583AB;
+}
+
+.playlistlink:hover {
+  color: #83abe5;
 }
 
 .disclaimer {
