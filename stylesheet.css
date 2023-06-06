@@ -25,16 +25,15 @@ a h2:hover {
   color: #83abe5;
 }
 
-a h2 {
-  font-size: 28px;
-  font-family: Helvetica;
+h2 a {
+  color: #E583AB;
 }
 
 h2 a:hover {
   color: #83abe5;
 }
 
-h2 a {
+h2 {
   font-size: 28px;
   font-family: Helvetica;
 }
