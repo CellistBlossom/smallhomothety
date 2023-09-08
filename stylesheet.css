@@ -33,6 +33,22 @@ h2 a:hover {
   color: #83abe5;
 }
 
+a h3 {
+  color: #E583AB;
+}
+
+a h3:hover {
+  color: #83abe5;
+}
+
+h3 a {
+  color: #E583AB;
+}
+
+h3 a:hover {
+  color: #83abe5;
+}
+
 h2 {
   font-size: 28px;
   font-family: Helvetica;
