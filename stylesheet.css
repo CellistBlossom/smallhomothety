@@ -170,3 +170,31 @@ li {
 .submenubtn a:hover {
   color: #ff92bf;
 }
+
+.coolheading {
+  width: 120px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Josefin Sans", sans-serif;
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 100px;
+  border: 5px dotted AntiqueWhite;
+  background:
+    linear-gradient(AntiqueWhite 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+.list {
+  text-align: left;
+  padding: 0% 20% 0% 20%;
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 100px;
+  border: 5px dotted AntiqueWhite;
+  background:
+    linear-gradient(AntiqueWhite 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
