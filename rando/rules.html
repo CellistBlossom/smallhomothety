@@ -41,6 +41,12 @@
       text-align: left;
       padding: 0% 12% 0% 12%;
     }
+
+    .menu {
+      display: none;
+      margin-left: 20px;
+      font-family: Helvetica;
+    }
   </style>
 </head>
 
@@ -63,11 +69,22 @@
     <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
     <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
   </div>
-  <h1>Rules for HKSC Races</h1>
+  <h3> <a href="page1.html" onclick="return toggleMenu('menu1')">Click to Navigate this Guide! ▶</a> </h3>
+  <span class="menu" id="menu1">
+    <div class="list">
+      <p><a href="#header">Introduction</a></p>
+      <p><a href="#glitches">Banned Glitches</a></p>
+      <p><a href="#gen-rules">General Rules</a></p>
+      <p><a href="#goal-sharing">Goal Sharing Rules (Team Formats)</a></p>
+      <p><a href="#indv-goals">Individual Goals Rules</a> </p>
+      <p><a href="#cheating">Cheating</a> </p>
+    </div>
+  </span>
+  <h1 id="header">Rules for HKSC Races</h1>
   <p>HKSC casual and tournament races, unless otherwise determined before the race, are played with the speedrunning <strong>NMG Ruleset</strong> with some modifications. A full list of banned/allowed glitches for the NMG ruleset can be found <a
       href="https://docs.google.com/document/d/e/2PACX-1vSXTgY4Gl8f7bigiC6xHMptH26JQaDtXHu6BuWUM2ayDDrmB9zZHQsi8Elkr1WHwVqlszhpg1T-VI6m/pub">here</a>. Note that most of the guidelines for submissions and timing runs do not apply due to the nature of
     randomizer races. Usually, the winner of a randomizer race is based on RTA rather than in-game or load-removed time, due to the in-game timer being very inaccurate, and the difficulty in factoring a "knowledge advantage" into a non-RTA race.</p>
-  <h2>Banned Glitches</h2>
+  <h2 id="glitches">Banned Glitches</h2>
   <p>Some of the common banned glitches are summarized below:</p>
   <div class="list">
     <p>Any Invulnerability glitch</p>
@@ -83,7 +100,7 @@
   </div>
   <h3><a href="https://docs.google.com/document/d/e/2PACX-1vSXTgY4Gl8f7bigiC6xHMptH26JQaDtXHu6BuWUM2ayDDrmB9zZHQsi8Elkr1WHwVqlszhpg1T-VI6m/pub">NMG Rules Doc</a></h3>
   <p>Accidental use of glitches may be ignored if the player realizes and attempts to fix the problem quickly. For tournament races, this is usually left up to the TOs and may result in a disqualification or automatic loss.</p>
-  <h2>General Rules</h2>
+  <h2 id="gen-rules">General Rules</h2>
   <div class="list">
     <p>There are no forced checks in the game, but players should make sure they are using the same seed and randomizer version by confirming their hash with the other player(s)/team(s).</p>
   <p>A player can only cross off an objective after that objective is actually completed. In a lockout setting, players are not forced to cross off or claim completed objectives. The first player/team to claim an objective is the one to earn the point for it, even if the opposing player/team technically completed it first, and the opponent/opposing team can no longer claim that objective. </p>
@@ -96,7 +113,7 @@
   <p>The final hit to the Radiance can only be dealt when all other goals for the format have been completed by a team (25 goals for blackout, all major items for all majors, etc.). One teammate is allowed to start the fight before the goals are completed as long as they delay the final hit until the other player has finished the remaining goals.</p>
   <p>RandoMapMod, Helper log and Tracker log are allowed for all races. Spoiler log is only allowed in spoiler formats.</p>
   </div>
-  <h2>Goal Sharing Rules (Team Formats)</h2>
+  <h2 id="goal-sharing">Goal Sharing Rules (Team Formats)</h2>
 <div class="list">
   <p>Goals  for bingo formats should be marked by the person who completed them. Only one person needs to complete a goal, but both need to kill Radiance to finish. Goals that have multiple components in them can be shared in certain cases:</p>
   <ul>
@@ -109,7 +126,7 @@
     <li>The Kill 4 mimics goal requires visiting the mimics’ vanilla locations and breaking the jar / killing the mimic there, even if mimics are randomized.</li>
   </ul>
 </div>
-  <h2>Individual Goal Rules</h2>
+  <h2 id="indv-goals">Individual Goal Rules</h2>
   <p>This is specifically written for the generator on bingosync. Other bingo sites may use older naming / phrasing of some goals.</p>
 <div class="list">
   <p>Defeat [boss] goals can be marked when the boss reaches 0 HP.</p>
@@ -149,7 +166,7 @@
   <p>If mimics are randomized, the mimic needs to be killed in order for its location to count for a Check/Free all grubs in […] goal. </p>
   <p>The Kill 4 mimics goal requires visiting the mimics’ vanilla locations and breaking the jar / killing the mimic there, even if mimics are randomized.</p>
 </div>
-  <h2>Cheating</h2>
+  <h2 id="cheating">Cheating</h2>
   <p>There is a zero-tolerance policy for intentionally cheating, and users will be punished accordingly, be it in a tournament match or a casual race. Due to the severity of cheating and the punishment it carries, don't make joke accusations and
     intentional malicious false accusations will be met with just as severe consequences. </p>
   <p>Cheating includes, but is not limited to (Unless otherwise agreed):</p>
@@ -161,7 +178,34 @@
     <p>Using banned mods such as Debug.</p>
   </div>
   <p>Randomiser racing is inherently volatile, and upsets are common. Assume good faith, and if someone accidentally marks a goal early or takes a route you deem unusual it isn't proof that the person is cheating. </p>
+  <h3> <a href="page2.html" onclick="return toggleMenu('menu2')">Click to Navigate this Guide! ▶</a> </h3>
+  <span class="menu" id="menu2">
+    <div class="list">
+      <p><a href="#header">Introduction</a></p>
+      <p><a href="#glitches">Banned Glitches</a></p>
+      <p><a href="#gen-rules">General Rules</a></p>
+      <p><a href="#goal-sharing">Goal Sharing Rules (Team Formats)</a></p>
+      <p><a href="#indv-goals">Individual Goals Rules</a> </p>
+      <p><a href="#cheating">Cheating</a> </p>
+    </div>
+  </span>
+  <h2 class="coolheading"><a href="#header">Top</a> </h2>
   <img src="../images/grubnote.png" alt="grubnote" height="6%" width="6%">
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
 </body>
 
 </html>
