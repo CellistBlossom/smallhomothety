@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tourney</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+    li {
+      text-align: left;
+      padding: 0% 12% 0% 12%;
+    }
+
+    h3 {
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+          $("#navbar").load("/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div class="subnavmenu">
+      <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Skips</a> </button>
+      <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
+      <button class="submenubtn" onclick="location.href='itemsyncguide'"><a href="itemsyncguide">Itemsync Guide</a> </button>
+      <button class="submenubtn" onclick="location.href='rules'"><a href="rules">Rules</a> </button>
+      <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
+      <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
+      <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
+      <button class="submenubtn" onclick="location.href='tourney'"><a href="tourney">Tourneys</a> </button>
+      <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
+      <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
+    </div>
+    <h1>HKSC Tourneys</h1>
+    <p>Because many people invest time in randomizer racing, the Hollow Knight Speedrunning Community occasionally hosts tournaments for racers to prove their prowess! These tournaments are usually organized in the discord server and restreamed on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch channel</a> (though this hasn't always been the case).</p>
+    <p>Tournament races are generally held to be more competitive than non-tournament races. They generally consist of only one format and may have tournament-specific rules. Tournaments, if restreamed, are streamed live.</p>
+    <h2>2023 All Majors Tournament</h2>
+    <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed JavaScript file -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 854,
+    height: 480,
+    channel: "hollowknightcommunity",
+    parent: ["smallhomothetyorganization.org"]
+  });
+</script>
+<p>The tournament is a 2v2 All Major Items TE double-elimination tournament. All matches will be best of 1s until the end of the tournament, when we will switch to best of 3s for winners, losers, and grand finals. </p>
+<p>Week 1 of the tournament will go from Friday, September 22nd to Thursday, September 28th!</p>
+<h3><a href="https://challonge.com/allmajorsrandorandoautumn2023">Bracket</a> </h3>
+<h3><a href="https://hk-tournaments.web.app/">Schedule</a></h3>
+<h3><a href="https://docs.google.com/spreadsheets/d/1QUmZkDiMG2Iw6TmyvUPJ1VDaCoD07u3o4qcSdr5OvY4/edit">Rules</a> </h3>
+<div class="list">
+  <h3>Introducing gimmicks!</h3>
+  <p>What are gimmicks? Gimmicks are items that will be added to the randomized pool beyond the default settings to help spice up each match. The first match will be played without gimmicks, however, starting with winner's round 2 and loser's round 2, players must add at least one gimmick to the settings. We will be using a ban/pick system for this. A list of gimmicks can be found below:</p>
+  <ul>
+    <li>Randomizing checks not in basic settings- grimmkin flames, whispering roots, lore tablets, randomizing focus</li>
+    <li>Settings that alter logic with skips- precise movement setting, background and enemy pogo, infection skips, no swim/no tear</li>
+    <li>Settings that alter how rando functions- ghost essence, lemm/junk shops, colo3 (the glory of being a fool mod)</li>
+    <li>+gimmicks voted upon by rando community- map area transition rando, 3 masks + 2 Charm notches, Split Claw, Fragile charms being major items</li>
+  </ul>
+</div>
+<br>
+<img src="../images/grublove.png" alt="grublove" height="6%" width="6%">
+  </body>
+</html>
