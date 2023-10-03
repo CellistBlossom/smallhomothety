@@ -1036,10 +1036,12 @@ button.addEventListener("click", function() {
     'Hopple',
     'Ponder',
     'Cheepy',
-    'Flitzy'
+    'Flitzy',
+    "Xeamless",
+    "Peekagrub"
     ];
 
-  document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 1027.99))];
+  document.getElementById("grubname").innerHTML = grubName[Math.floor((Math.random() * 1029.99))];
 
   var grubPronoun = [
     'she/her',
