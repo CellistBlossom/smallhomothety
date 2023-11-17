@@ -42,10 +42,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
+  <!-- Xero Script -->
   <script type="text/javascript">
     document.body.addEventListener("keydown", function(event) {
       if (event.keyCode == 48) {
         window.location.href = "0";
+      }
+    })
+  </script>
+  <!-- Password Script. (Thanks AP) -->
+  <script>
+     $(document).ready(function(){
+         $("#navbar").load("nav.html");
+     });
+  </script>
+  <script type="text/javascript">
+    document.body.addEventListener("keydown", function(event) {
+      if (event.keyCode == 80) {
+        window.location.href = "tmp";
       }
     })
   </script>
