@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Rando</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -24,19 +24,99 @@
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    .important-container {
+      text-align: center;
+      padding: 0% 20% 0% 20%;
+    }
+
+    .important {
+      padding: 20px 0px 20px 0px;
+      font-size: 20px;
+      border-style: dotted;
+      border-radius: 10px;
+      border-width: 5px;
+      border: 5px dotted #ffe4e1;
+      background:
+        linear-gradient(#ffe4e1 0 0) padding-box,
+        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    }
+
+    .important p {
+      font-family: "Rubik", sans-serif;
+    }
+
+    .randonewscontainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .randowhatsnew {
+      width: 400px;
+    }
+
+    .randonews {
+      width: 400px;
+    }
+
+    .randowhatsnewinside {
+      background-color: #e1ffe4;
+      border-style: dotted;
+      border-radius: 10px;
+      border-width: 5px;
+      border: 5px dotted #e1ffe4;
+      background:
+        linear-gradient(#e1ffe4 0 0) padding-box,
+        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    }
+
+    .randowhatsnewinside h3 {
+      font-family: "Rubik", sans-serif;
+    }
+
+    .randonewsinside {
+      background-color: #e4e1ff;
+      border-style: dotted;
+      border-radius: 10px;
+      border-width: 5px;
+      border: 5px dotted #e4e1ff;
+      background:
+        linear-gradient(#e4e1ff 0 0) padding-box,
+        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    }
+
+    .randonewsinside h3 {
+      font-family: "Rubik", sans-serif;
+    }
+
+    .newstext {
+      text-align: left;
+    }
+
+    .newsdate {
+      font-family: "Rubik", sans-serif;
+    }
+
+    img {
+      padding-top: 25px;
+    }
+  </style>
 </head>
 
 <body>
   <!-- If you're reading this, you should be playing rando instead. -->
   <script>
-    $(document).ready(function(){
-        $("#navbar").load("nav.html");
+    $(document).ready(function() {
+      $("#navbar").load("nav.html");
     });
- </script>
- <div id="navbar">
- </div>
+  </script>
+  <div id="navbar">
+  </div>
   <div class="subnavmenu">
-    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Skips</a> </button>
+    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
+    <button class="submenubtn" onclick="location.href='/rando/skips'"><a href="/rando/skips">Skips</a> </button>
     <button class="submenubtn" onclick="location.href='/rando/mods'"><a href="/rando/mods">Mods</a> </button>
     <button class="submenubtn" onclick="location.href='/rando/itemsyncguide'"><a href="/rando/itemsyncguide">Itemsync Guide</a> </button>
     <button class="submenubtn" onclick="location.href='/rando/rules'"><a href="/rando/rules">Rules</a> </button>
@@ -47,45 +127,39 @@
     <button class="submenubtn" onclick="location.href='/rando/homothety'"><a href="/rando/homothety">Homothety</a> </button>
     <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
   </div>
-  <h1>Ramdo Ramdo</h1>
-  <div id="player"></div>
-  <script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
+  <h1>Rando Rando!</h1>
+  <div class="important-container">
+    <div class="important">
+      <p><em>Looking for the Skips page? It lives <a href="/rando/skips">here</a> now.</em></p>
 
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    function onYouTubeIframeAPIReady() {
-      var numPl = Math.floor((Math.random() * 50) + 1);
-      var player = new YT.Player("player", {
-        height: '390',
-        width: '640',
-        playerVars: {
-          listType: 'playlist',
-          list: 'PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62',
-          index: numPl,
-          autoplay: 1,
-        },
-        events: {
-          'onReady': function(event) {
-            //event.target.cuePlaylist({list: "PLFgquLnL59anYA8FwzqNFMp3KMcbKwMaT"});
-            //event.target.playVideo();
-            setTimeout(function() {
-              event.target.setShuffle({
-                'shufflePlaylist': true
-              });
-            }, 1000);
-          }
-        }
-      });
-    }
-  </script>
-  <br>
-  <a href="https://www.youtube.com/playlist?list=PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62" class='playlistlink'>View the full playlist on YouTube</a>
+    </div>
+    <p><strong><em>What is Randomizer?</em></strong> Randomizer 4 is a mod for Hollow Knight that swaps around item placements in the game. The randomization is not purely random; instead, the randomizer has complex <em>logic</em> that works behind the scenes
+      to ensure that all items can be reached and obtained.</p>
+    <p>There are many ways to enjoy rando. Randomizer may be played to THK ending or TE to start. Some people add on extra randomization settings through randomizer <a href="/rando/mods">connections</a> to spice up their gameplay. Others start <a
+        href="/rando/formats">racing</a> randomizer once they are comfortable with the items and locations, and think that they can finish seeds reliably. All in all, there is no "correct" way to enjoy playing rando and you are encouraged to experiment with settings, connections, end goals, and racing formats to find what you like most!</p>
+    <div class="randonewscontainer">
+      <div class="randowhatsnew">
+        <div class="randowhatsnewinside">
+          <h3>What's new?</h3>
+          <div class="newstext">
+            <p class="newsdate"><strong>November 2023</strong></p>
+            <p>Added seperate <a href="/rando/skips">skips</a> page, yippee!</p>
+          </div>
+        </div>
+      </div>
+      <div class="randonews">
+        <div class="randonewsinside">
+          <h3>Rando News</h3>
+          <div class="newstext">
+            <p class="newsdate"><strong>November 2023</strong></p>
+            <p>HK7Y, the community-led anniversary event for Hollow Knight, is coming up, and there will be a day all about rando! Stay tuned for updates and keep an eye on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch
+                channel</a> when the time comes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="images/GrubLove.png" alt="grublove" height="100px" width="100px">
 </body>
 
 </html>
