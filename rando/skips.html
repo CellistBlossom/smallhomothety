@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Skips</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <style media="screen">
+        .important-container {
+          text-align: left;
+          padding: 0% 20% 0% 20%;
+        }
+
+        .important {
+          padding: 20px 0px 20px 0px;
+          font-size: 20px;
+          border-style: dotted;
+          border-radius: 10px;
+          border-width: 5px;
+          border: 5px dotted #ffe4e1;
+          background:
+            linear-gradient(#ffe4e1 0 0) padding-box,
+            linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+        }
+
+        .important p {
+                font-family: "Rubik", sans-serif;
+        }
+
+        img {
+          padding-top: 25px;
+        }
+      </style>
+  </head>
+  <body>
+    <script>
+        $(document).ready(function(){
+            $("#navbar").load("/nav.html");
+        });
+    </script>
+    <div id="navbar">
+    </div>
+    <div class="subnavmenu">
+      <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
+      <button class="submenubtn" onclick="location.href='/rando/skips'"><a href="/rando/skips">Skips</a> </button>
+      <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
+      <button class="submenubtn" onclick="location.href='itemsyncguide'"><a href="itemsyncguide">Itemsync Guide</a> </button>
+      <button class="submenubtn" onclick="location.href='rules'"><a href="rules">Rules</a> </button>
+      <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
+      <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
+      <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
+      <button class="submenubtn" onclick="location.href='tourney'"><a href="tourney">Tourneys</a> </button>
+      <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
+      <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
+      <h1>Randomizer Skips!</h1>
+      <p>Skips, though not always required for logic, allow the player to reach items and areas with a wider range of abilities than they would be able to without performing skips. There are many different types of skips, and new ones are being labbed all of the time! Skips can be required for logic by toggling them on in the settings menu.</p>
+      <p>A few resources for learning skips are listed below. If you want to learn more than is listed here, the #rando-resources channel in the Discord has many, many more!</p>
+      <h2>Blossom's Skip Playlist</h2>
+            <div id="player"></div>
+      <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        function onYouTubeIframeAPIReady() {
+          var numPl = Math.floor((Math.random() * 50) + 1);
+          var player = new YT.Player("player", {
+            height: '390',
+            width: '640',
+            playerVars: {
+              listType: 'playlist',
+              list: 'PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62',
+              index: numPl,
+              autoplay: 1,
+            },
+            events: {
+              'onReady': function(event) {
+                //event.target.cuePlaylist({list: "PLFgquLnL59anYA8FwzqNFMp3KMcbKwMaT"});
+                //event.target.playVideo();
+                setTimeout(function() {
+                  event.target.setShuffle({
+                    'shufflePlaylist': true
+                  });
+                }, 1000);
+              }
+            }
+          });
+        };
+      </script>
+      <br>
+      <a href="https://www.youtube.com/playlist?list=PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62" class='playlistlink'>View the full playlist on YouTube</a>
+      <h2>May's Skip Playlist</h2>
+<a href="https://www.youtube.com/playlist?list=PL5iqVJiMaBBX1A277nbn_7OECyLgQlCls" class='playlistlink'>View the full playlist on YouTube</a>
+    </div>
+    <h2>Hollow Knight Randomizer Wiki</h2>
+    <div class="important-container">
+      <div class="important">
+        <p><strong>The Randomizer Wiki is moving!</strong> Shoutouts to Limchi for taking the time to set it up. Once it's ready to go, this link and all links on this site will be updated to direct to the new Wiki. In the meantime, you can view the deprecated Fandom wiki <a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">here</a>. </p>
+      </div>
+
+    </div>
+      <img src="../images/yippee.gif" alt="yippee" height="100px" width="100px">
+  </body>
+</html>
