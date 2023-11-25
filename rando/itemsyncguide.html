@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <title>Mods</title>
   <link rel="stylesheet" href="../stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -24,49 +25,39 @@
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style media="screen">
-    .list {
-      text-align: left;
-      padding: 0% 20% 0% 20%;
-      border-style: dotted;
-      border-width: 5px;
-      border-radius: 100px;
-      border: 5px dotted AntiqueWhite;
-      background:
-        linear-gradient(AntiqueWhite 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    .main a {
+      color: #E583AB;
     }
 
-    li {
-      text-align: left;
-      padding: 0% 12% 0% 12%;
-    }
-
-    img {
-      width: 600px;
-      height: 350px;
-      display: block;
+    table {
       margin-left: auto;
       margin-right: auto;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      text-align: left;
     }
 
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
+    .column {
+      float: left;
+      width: 50%;
     }
 
-    .yippee  {
-      height: 100px;
-      width: 100px;
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .list {
+      text-align: left;
     }
   </style>
-  <title>Guide for Itemsync</title>
 </head>
 
 <body>
   <script>
-    $(document).ready(function() {
-      $("#navbar").load("/nav.html");
+    $(document).ready(function(){
+        $("#navbar").load("/nav.html");
     });
   </script>
   <div id="navbar">
@@ -84,191 +75,81 @@
     <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
     <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
   </div>
-  <h1 id="header">Rando 4 Itemsync & RandoSettingsManager Guide</h1>
-  <h3> <a href="page100.html" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
-  <span class="menu" id="menu100">
-    <div class="list">
-      <p><a href="#Intro">Introduction</a></p>
-      <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
-      <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
-      <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
+  <h1 id="header">Mods for Racing Rando!</h1>
+  <p>Required/Highly Recommended mods for rando racing!</p>
+  <p>(note: some required mods are not on this list but will be downloaded as dependencies for other mods that are on the list):</p>
+  <h2>How do I mod Hollow Knight?</h2>
+  <p>Modding Hollow Knight is really easy! Firstly, if you'd like to install debug mod, or downpatch for a speedrun,
+    please refer to the <a href="https://speedrun.com/hollowknight/guides/">Hollow Knight Speedrun.com Page.</a></p>
+  <p>First, install the <a href="https://github.com/hk-modding/api">Hollow Knight Modding API</a>. Download the zip file in the releases page, and
+    drag the contents into your Hollow Knight's /hollow_knight_Data/Managed/ folder. This information can also be found in the zip file's Readme.md.</p>
+  <p>Finally, you can either manually install mods by downloading the individual mods and placing them in the /Managed/Mods folder, or by installing Scarab!
+    <br>Scarab or Lumafly are Hollow Knight's dedicated Mod Installers. They include a large database of Hollow Knight mods that you can download,
+    and it will directly place it into your mods folder. They can be found at the links below.</p>
+  <div class="row">
+    <div class="column">
+      <h2><a href="https://github.com/fifty-six/Scarab">Scarab</a></h2>
     </div>
-  </span>
-  <h2 id="Intro">Introduction</h2>
-  <p>Once you've installed mods you may want to play randomizer with your friends! Luckily, we have mods to let you do this. (Shoutouts to Kamakiller for letting me steal some of his writeup!) </p>
-  <p>Firstly, you will want to have the correct mods installed. See <a href="mods">here</a> for a tutorial on installing mods for randomizer. Some of the important ones for itemsync are summarized below:</p>
-  <div class="list">
-    <p>Randomizer 4 (& dependencies)</p>
-    <p>Itemsync (& multiworldlib)</p>
-    <p>(Optional) RandoSettingsManager (for syncing settings between multiple people)</p>
+    <div class="column">
+      <h2><a href="https://themulhima.github.io/Scarab/index.html">Lumafly</a></h2>
+    </div>
   </div>
-  <h2 id="classic-settings-management">Getting Started (Without RandoSettingsManager)</h2>
-  <p>This section of the guide explains how to set up itemsync without RandoSettingsManager to sync connections. If you're using connections such as RandoPlus and want to use RSM to make setting up easier see <a
-      href="#rsm-settings-management">here</a>.</p>
+  <h1>List of Recommended Mods</h1>
+  <h2>Required Mods for Rando 4</h2>
+  <p><i>Note: If you install Randomizer 4 via Scarab, all dependencies will be automatically installed.<br>If you are not using Scarab, it is very important to read what each mods' dependencies are. Remember to download them along with the mod if installing them manually.</i></p>
   <div class="list">
-    <p>Create new save file, select Randomizer.</p>
-    <p>Select ‘More Randomizer Settings’. <a href="page1.html" onclick="return toggleMenu('menu1')">▶</a></p>
-    <span class="menu" id="menu1">
-      <img src="../images/itemsyncguide/img1.png" alt="A screenshot of the Randomizer 4 mod menu with more randomizer settings highlighted on the bottom left of the screen">
-    </span>
-    <p>If you are making the settings, here is where you can change all of your settings. Once you’re happy with them, hit ‘Manage Settings Profiles’. <a href="page2.html" onclick="return toggleMenu('menu2')">▶</a></p>
-    <span class="menu" id="menu2">
-      <img src="../images/itemsyncguide/img8.png" alt="A screenshot of the Randomizer 4 more randomizer settings menu with manage settings profiles highlighted on the bottom right of the screen">
-    </span>
-    <p>If you are the person creating the settings, hit ‘Refresh Code’. <a href="page3.html" onclick="return toggleMenu('menu3')">▶</a></p>
-    <span class="menu" id="menu3">
-      <img src="../images/itemsyncguide/img9.png" alt="A screenshot of the Randomizer 4 manage settings profiles menu with refresh highlighted on the left side of the screen">
-    </span>
-    <p>Copy and paste the code to send to your friends. <a href="page4.html" onclick="return toggleMenu('menu4')">▶</a></p>
-    <span class="menu" id="menu4">
-      <img src="../images/itemsyncguide/img11.png" alt="A screenshot of the Randomizer 4 manage settings profiles menu with after clicking refresh code. There is now a long settings code below the apply code to menu button.">
-    </span>
-    <p>If you are receiving the code, reach this screen, paste the code under ‘Shareable Settings Code’ and then hit ‘Apply Code to Menu.’ This will sync your settings together.</p>
-    <p>If you have additional mods/connections installed, return to the main randomizer screen and hit connections. <a href="page5.html" onclick="return toggleMenu('menu5')">▶</a></p>
-    <span class="menu" id="menu5">
-      <img src="../images/itemsyncguide/img3.png" alt="A screenshot of the Randomizer 4 mod menu with connections highlighted on the bottom left of the screen">
-    </span>
-    <p>These options, otherwise known as ‘connections,’ are not in the base randomizer. They must be installed separately on Scarab to appear. These options also will not be synced by the classic settings code; if you wish to play with these, you
-      either install RandoSettingsManager (described below) or manually make sure you all enable the settings. <a href="page6.html" onclick="return toggleMenu('menu6')">▶</a></p>
-    <span class="menu" id="menu6">
-      <img src="../images/itemsyncguide/img7.png" alt="A screenshot of the Randomizer 4 connections menu. The connections shown are bench rando, all major items, rainbow eggs, levers, rando plus, and transcendence.">
-    </span>
-    <p>Once you are happy with the settings/have input the settings, hit Begin Randomization. <a href="page7.html" onclick="return toggleMenu('menu7')">▶</a></p>
-    <span class="menu" id="menu7">
-      <img src="../images/itemsyncguide/img2.png" alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
-    </span>
-    <p>If everyone has the same settings, the Hash on the right should be identical for all players. Make sure you all have the same 4 entities on the has before proceeding. If the Hash is different, this means someone’s settings are incorrect. Redo
-      the above steps and make sure connections settings are enabled/disabled properly. Itemsync will not let players join if they have different hashes. <a href="page8.html" onclick="return toggleMenu('menu8')">▶</a></p>
-    <span class="menu" id="menu8">
-      <img src="../images/itemsyncguide/img6.png"
-        alt="A screenshot of the Randomizer 4 randomization menu. There is a hash on the right side of the screen that reads watcher knight, void idol, gorgeous husk, great hopper. There is a large button in the lower third of the screen that says proceed, and it is highlighted.">
-    </span>
-    <p>Select ‘Itemsync’. <a href="page9.html" onclick="return toggleMenu('menu9')">▶</a></p>
-    <span class="menu" id="menu9">
-      <img src="../images/itemsyncguide/img5.png"
-        alt="A screenshot of the Randomizer 4 randomization menu after clicking proceed. There are two options aligned to the top left of the screen: start rando normally and itemsync. Itemsync is highlighted.">
-    </span>
-    <p>Input the url ‘18.189.16.129’ (should be default) and hit connect. <a href="page10.html" onclick="return toggleMenu('menu10')">▶</a></p>
-    <span class="menu" id="menu10">
-      <img src="../images/itemsyncguide/img4.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu. In the center of the screen the URL 18.189.16.129 is in the input field, and there is a menu option directly below it that says connect, which is highlighted.">
-    </span>
-    <p>Pick a nickname for yourself. <a href="page11.html" onclick="return toggleMenu('menu11')">▶</a></p>
-    <span class="menu" id="menu11">
-      <img src="../images/itemsyncguide/img10.png" alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in Kama as their nickname.">
-    </span>
-    <p>The ‘Room’ is essentially a password. All players should use the same room name. Once you have done so, hit ready. <a href="page12.html" onclick="return toggleMenu('menu12')">▶</a></p>
-    <span class="menu" id="menu12">
-      <img src="../images/itemsyncguide/img13.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in eggu as their room name. There is a grayed out button below the room name that says ready.">
-    </span>
-    <p>Players in the room who are readied will appear on the right. Once everyone is there, hit ‘Start Itemsync’ and then ‘Join Game.’ <a href="page13.html" onclick="return toggleMenu('menu13')">▶</a></p>
-    <span class="menu" id="menu13">
-      <img src="../images/itemsyncguide/img12.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. The button saying ready has been replaced with the option unready. There is a button below it that says start itemsync and it is highlighted.">
-    </span>
-    <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
+    <p><strong><a href="https://github.com/homothetyhk/RandomizerMod">Randomizer 4</a></strong> The number one mod! This is a requirement to play rando (obviously). Randomizer 4 requires the latest patch of Hollow Knight to run (1.5.7.8).</p>
+    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.BenchwarpMod">Benchwarp</a></strong> A mod that allows you to warp to and from any bench that you've previously rested at. A required dependency of Rando 4.</p>
+    <p><strong><a href="https://github.com/fifty-six/HollowKnight.QoL/">QoL</a></strong> A Quality of Life mod that includes many different modifications to the game that make it more fun for speedrunning. This includes bringing back inventory drops, lever skips and various other glitches, as well as instant text and menuing to make rando faster.</p>
+    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.ItemChanger">ItemChanger</a></strong> A dependency mod to allow other mods to change aspects of the world easily.</p>
+    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.MenuChanger">MenuChanger</a></strong> Another dependency mod similar to ItemChanger.</p>
+    <p><strong><a href="https://github.com/homothetyhk/RandomizerCore">RandomizerCore</a></strong> Yet another dependency mod, this time for randomization of items.</p>
+    <p><strong><a href="https://github.com/fifty-six/HollowKnight.Vasi">Vasi</a></strong> Another dependency for various mods in Hollow Knight.</p>
   </div>
-  <h2 id="rsm-settings-management">Getting Started (With Rando Settings Manager)</h2>
-  <p>By default, Randomizer 4 does not have a way to sync connections between players. Doing so requires installing a seperate mod, RandoSettingsManager, to do so. If you are not playing with connections you can safely skip this part.</p>
-  <div class="list">
-    <p>Create new save file, select Randomizer.</p>
-    <p>Select ‘More Randomizer Settings’. <a href="page14.html" onclick="return toggleMenu('menu14')">▶</a></p>
-    <span class="menu" id="menu14">
-      <img src="../images/itemsyncguide/img1.png" alt="A screenshot of the Randomizer 4 mod menu with more randomizer settings highlighted on the bottom left of the screen">
-    </span>
-    <p>If you are making the settings, here is where you can change all of your settings. Once you’re happy with them, hit ‘Manage Settings Profiles’. <a href="page15.html" onclick="return toggleMenu('menu15')">▶</a></p>
-    <span class="menu" id="menu15">
-      <img src="../images/itemsyncguide/img2_1.png" alt="A screenshot of the Randomizer 4 more randomizer settings menu with manage settings profiles highlighted on the bottom right of the screen">
-    </span>
-    <p>Here's where things start to differ from the steps above. On this screen you'll see different options: "Create Key" and "Paste Key". Using these options will overwrite whatever you have in your clipboard, so be sure to save whatever you have
-      in there if you want to keep it. <a href="page16.html" onclick="return toggleMenu('menu16')">▶</a></p>
-    <span class="menu" id="menu16">
-      <img src="../images/itemsyncguide/img2_2.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu with the options create key and paste key visible on the top left of the screen.">
-    </span>
-    <p>If you are creating the settings, simply click "Create Key". This will copy the settings key to your clipboard, and from there you can simply paste the key into whatever you're using to talk to your friends! <a href="page17.html"
-        onclick="return toggleMenu('menu17')">▶</a></p>
-    <span class="menu" id="menu17">
-      <img src="../images/itemsyncguide/img2_4.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been sucessfully created.">
-    </span>
-    <p>If you are recieving the settings, make sure you copy the key that has been shared with you to your clipboard, and then click "Paste Key". If you have the correct mods installed and the right versions of them, you're good to go. The mod will
-      let you know if there is an error and anything needs to be updated. <a href="page18.html" onclick="return toggleMenu('menu18')">▶</a></p>
-    <span class="menu" id="menu18">
-      <img src="../images/itemsyncguide/img2_3.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been pasted in and successfully loaded.">
-    </span>
-    <p>If you ever want to disable RSM temporarily, click the "classic settings management" button at the bottom of the screen to return to the default method of sharing settings codes. <a href="page19.html"
-        onclick="return toggleMenu('menu19')">▶</a></p>
-    <span class="menu" id="menu19">
-      <img src="../images/itemsyncguide/img2_5.png" alt="A screenshot of the Randomizer 4 classic settings management with RandoSettingsManager installed.">
-    </span>
-    <p>Once you are happy with the settings/have input the settings, hit Begin Randomization. <a href="page20.html" onclick="return toggleMenu('menu20')">▶</a></p>
-    <span class="menu" id="menu20">
-      <img src="../images/itemsyncguide/img2.png" alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
-    </span>
-    <p>If everyone has the same settings, the Hash on the right should be identical for all players. Make sure you all have the same 4 entities on the has before proceeding. If the Hash is different, this means someone’s settings are incorrect. Redo
-      the above steps and make sure connections settings are enabled/disabled properly. Itemsync will not let players join if they have different hashes. <a href="page21.html" onclick="return toggleMenu('menu21')">▶</a></p>
-    <span class="menu" id="menu21">
-      <img src="../images/itemsyncguide/img6.png"
-        alt="A screenshot of the Randomizer 4 randomization menu. There is a hash on the right side of the screen that reads watcher knight, void idol, gorgeous husk, great hopper. There is a large button in the lower third of the screen that says proceed, and it is highlighted.">
-    </span>
-    <p>Select ‘Itemsync’. <a href="page22.html" onclick="return toggleMenu('menu22')">▶</a></p>
-    <span class="menu" id="menu22">
-      <img src="../images/itemsyncguide/img5.png"
-        alt="A screenshot of the Randomizer 4 randomization menu after clicking proceed. There are two options aligned to the top left of the screen: start rando normally and itemsync. Itemsync is highlighted.">
-    </span>
-    <p>Input the url ‘18.189.16.129’ (should be default) and hit connect. <a href="page23.html" onclick="return toggleMenu('menu23')">▶</a></p>
-    <span class="menu" id="menu23">
-      <img src="../images/itemsyncguide/img4.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu. In the center of the screen the URL 18.189.16.129 is in the input field, and there is a menu option directly below it that says connect, which is highlighted.">
-    </span>
-    <p>Pick a nickname for yourself. <a href="page24.html" onclick="return toggleMenu('menu24')">▶</a></p>
-    <span class="menu" id="menu24">
-      <img src="../images/itemsyncguide/img10.png" alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in Kama as their nickname.">
-    </span>
-    <p>The ‘Room’ is essentially a password. All players should use the same room name. Once you have done so, hit ready. <a href="page25.html" onclick="return toggleMenu('menu25')">▶</a></p>
-    <span class="menu" id="menu25">
-      <img src="../images/itemsyncguide/img13.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in eggu as their room name. There is a grayed out button below the room name that says ready.">
-    </span>
-    <p>Players in the room who are readied will appear on the right. Once everyone is there, hit ‘Start Itemsync’ and then ‘Join Game.’ <a href="page26.html" onclick="return toggleMenu('menu26')">▶</a></p>
-    <span class="menu" id="menu26">
-      <img src="../images/itemsyncguide/img12.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. The button saying ready has been replaced with the option unready. There is a button below it that says start itemsync and it is highlighted.">
-    </span>
-    <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
-  </div>
-  <h2 id="HKMP">Multiplayer</h2>
-  <p>Itemsync does not include many "multiplayer" features, only the ability to sync items between players. Some people like to also play with HKMP (the Hollow Knight multiplayer mod) so that they can see their friends on-screen. This is almost never
-    used in races, so I won't cover it in this guide. Many members of the community have already created helpful guides for installing and setting up the HKMP mod.</p>
-  <p><a href="https://github.com/Extremelyd1/HKMP/">HKMP Github</a> | <a href="https://geroyuni.notion.site/HKMP-Hollow-Knight-Multiplayer-21723018c74c41d3bc555ee9cfaeb743">Community-Made Guide</a> | <a
-      href="https://www.youtube.com/watch?v=zKEjNSk8AgM">Fire's Guide (Youtube)</a> </p>
 
-  <script type="text/javascript" language="Javascript">
-    function toggleMenu(currMenu) {
-      if (document.getElementById) {
-        thisMenu = document.getElementById(currMenu).style
-        if (thisMenu.display == "block") {
-          thisMenu.display = "none"
-        } else {
-          thisMenu.display = "block"
-        }
-        return false
-      } else {
-        return true
-      }
-    }
-  </script>
-  <h3> <a href="page101.html" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
-  <span class="menu" id="menu101">
-    <div class="list">
-      <p><a href="#Intro">Introduction</a></p>
-      <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
-      <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
-      <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
-    </div>
-  </span>
+  <h2>"Essential" Mods</h2>
+  <p>These are mods that the community highly recommends, but aren't <i>technically</i> required.</p>
+  <div class="list">
+    <p><strong><a href="https://github.com/BadMagic100/RandoSettingsManager">RandoSettingsManager</a></strong> This mod allows you to much more easily share settings codes, along with integrating connections and extensions into randomizer settings much more easily.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RecentItemsDisplay/">RecentItemsDisplay</a></strong> Shows you the last few items you've recieved in the top right of the screen. Can be customized to show a varied amount of recent items.</p>
+    <p><strong><a href="https://github.com/syyePhenomenol/RandoMapMod">RandoMapMod</a></strong> Gives you the ability to look at maps without buying/obtaining the item, as well as showing you what is randomized and unobtained, in the correct location.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.Scatternest/">Scatternest</a></strong> An add-on for ItemSync that allows you to have multiple different spawn locations, causing co-op players to not spawn in the same location. If you play co-op Itemsync a lot, this mod is for you.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.BingoUI/">BingoUI</a></strong> Shows you various important trackers for items that you have picked up, such as geo spent, pale ore obtained, grubs obtained, etc. Very useful if you are playing randomizer bingo.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.CondensedSpoilerLogger/">CondensedSpoilerLogger</a></strong> Creates a more readable spoiler log for when you are finished with rando, or for spoiler formats.</p>
+    <p><strong><a href="https://github.com/TheMulhima/HollowKnight.DebugMod/">DebugMod</a></strong> Allows for debug tools, such as no clip, invincibility, etc. Not allowed for rando races, but very useful for practicing skips and also speedrun practice.</p>
+    <p><strong><a href="https://github.com/kingkiller39/HollowKnightRandomizerTracker2.8/">HKTracker</a></strong> A tracker display of major items, very helpful for viewers if you plan on streaming rando.</p>
+    <p><strong><a href="https://github.com/BadMagic100/HollowKnight.Rando4Stats/">RandoStats</a></strong> Shows you some stats about your run after the credits, or if you click the "view stats" button in the pause menu. These stats also show a timeline of when you picked up various major items.</p>
+    <p><strong><a href="https://github.com/Emo-hk/AdditionalTimelines">AdditionalTimelines</a></strong> An add-on to RandoStats/FStats that shows additional timelines similar to the skill timeline.</p>
+  </div>
+
+  <h2>Randomizer Connections</h2>
+  <p>These are mods that add extra content, or enhance the Randomizer 4 experience. They range from just randomizing a few extra checks, or adding an entirely new layer to Hollow Knight randomizer.</p>
+  <div class="list">
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RandoPlus/">RandoPlus</a></strong> Arguably the most popular randomizer connection. It adds multiple different things to randomize, most notably Nail Upgrades, Mr Mushroom, and allowing two items to appear at the same location.</p>
+    <p><strong><a href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong> A mod that allows for co-op randomizer. It syncs the items that you and a partner (or more) pick up and shares the items to both of you.</p>
+    <p><strong><a href="https://github.com/Shadudev/HollowKnight.MultiWorld/">MultiWorld</a></strong> A mod similar to ItemSync, but instead of both players using the same seed, it randomizes everyone's items into a pool, which can include other people's worlds.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RandomizableLevers/">RandomizableLevers</a></strong> Allows you to randomize levers into the item pool. Hitting a lever will give you an item rather than opening a door, and you can find lever "items" that trigger the respective door opening.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.ReopenCityDoor/">ReopenCityDoor</a></strong> Mod that reopens the door between the City of Tears elevator room and Fungal Wastes (above Elder Hu).</p>
+    <p><strong><a href="https://github.com/BadMagic100/MajorItemByAreaTracker/">MajorItemsByAreaTracker</a></strong> A tracker for your rando that allows you to play the semi-spoiler format All Majors, in which you collect every major item in every area, while knowing how many are in each area. Configurable to change what is a "major item".</p>
+    <p><strong><a href="https://github.com/homothetyhk/BenchRando/">BenchRando</a></strong> Randomizes benches in various ways, such as placing them as pickups similar to how stag stations work in regular rando. (Interacts with benchwarp in that benches cannot be warped to unless they have been sat on or picked up.) Also can add extra benches.   </p>
+    <p><strong><a href="https://github.com/dplochcoder/HollowKnight.MoreDoors">MoreDoors</a></strong> Adds more unique doors and keys to the game, instead of the few that exist in vanilla. Configurable to just have the locations of the keys, and more.</p>
+  </div>
+
+  <h2>Fun Mods!</h2>
+  <p>Finally, some fun mods that are recommended that don't really affect rando much.</p>
+  <div class="list">
+    <p><strong><a href="https://github.com/Zickles/HollowKnight.CustomKnight/">CustomKnight</a></strong> Allows you to have custom textures for the knight, as well as options for other sprites.</p>
+    <p><strong><a href="https://github.com/dpinela/RainbowEggs/">RainbowEggs</a></strong> Randomizes the colours of rancid egg pickups! Purely cosmetic, but it does sync for ItemSync [citation needed].</p>
+    <p><strong><a href="https://github.com/SFGrenade/AdditionalMaps/">AdditionalMaps</a></strong> Adds White Palace and Godhome maps if you are learning how to navigate those areas.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.CompassAlwaysOn/">CompassAlwaysOn</a></strong> Makes the game act as if you always have the Wayward Compass charm equipped. Not legal for rando, but useful for casual races when you are learning.</p>
+    <p><strong><a href="https://github.com/PrashantMohta/GrubTrain/">GrubTrain</a></strong> Grubs will follow you around once you have collected them! Be sure to turn off "grub tricks" in settings, as that is not rando legal.</p>
+    <p><strong><a href="https://github.com/ygsbzr/DeathCounter/">DeathCounter</a></strong> A death and hit counter to see how many times you failed. (We're still proud of you though.)</p>
+    <p><strong><a href="https://github.com/Link459/PressGToDab/">press g to dab</a></strong> press g to dab</p>
+  </div>
   <h2 class="coolheading"><a href="#header">Top</a> </h2>
-  <img class="yippee" src="../images/yippee.gif" alt="yippee">
+
+  <img class="spin" src="../images/spin.gif" alt="knightspin">
+
 </body>
 
 </html>
