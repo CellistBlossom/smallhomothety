@@ -63,6 +63,12 @@
       text-align: left;
     }
 
+    .menu {
+      display: none;
+      margin-left: 20px;
+      font-family: Helvetica;
+    }
+
   </style>
 </head>
 
@@ -88,6 +94,34 @@
     <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
   </div>
   <h1 id="header">Mods for Racing Rando!</h1>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+  <h3> <a href="page100.html" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
+  <span class="menu" id="menu100">
+    <div class="list-container">
+    <div class="list">
+      <p><a href="#header">Introduction</a></p>
+      <p><a href="#required">Required Mods</a></p>
+      <p><a href="#essential">"Essential" Mods</a></p>
+      <p><a href="#connections">Randomizer Connections</a> </p>
+      <p><a href="#fun">Fun Mods!</a> </p>
+      <p><a href="#1028">1028 Mods</a> </p>
+    </div>
+  </div>
+  </span>
   <p>Required/Highly Recommended mods for rando racing!</p>
   <p>(note: some required mods are not on this list but will be downloaded as dependencies for other mods that are on the list):</p>
   <h2>How do I mod Hollow Knight?</h2>
@@ -108,7 +142,7 @@
     </div>
   </div>
   <h1>List of Recommended Mods</h1>
-  <h2>Required Mods for Rando 4</h2>
+  <h2 id="required">Required Mods for Rando 4</h2>
   <p><i>Note: If you install Randomizer 4 via Lumafly, all dependencies will be automatically installed.<br>If you are not using Lumafly or Scarab, it is very important to read what each mods' dependencies are. Remember to download them along with the mod if installing them manually.</i></p>
   <div class="list-container">
   <div class="list">
@@ -122,7 +156,7 @@
   </div>
 </div>
 
-  <h2>"Essential" Mods</h2>
+  <h2 id="essential">"Essential" Mods</h2>
   <p>These are mods that the community highly recommends, but aren't <i>technically</i> required.</p>
   <div class="list-container">
   <div class="list">
@@ -139,7 +173,7 @@
   </div>
   </div>
 
-  <h2>Randomizer Connections</h2>
+  <h2 id="connections">Randomizer Connections</h2>
   <p>These are mods that add extra content, or enhance the Randomizer 4 experience. They range from just randomizing a few extra checks, or adding an entirely new layer to Hollow Knight randomizer.</p>
   <div class="list-container">
   <div class="list">
@@ -151,10 +185,12 @@
     <p><strong><a href="https://github.com/BadMagic100/MajorItemByAreaTracker/">MajorItemsByAreaTracker</a></strong> A tracker for your rando that allows you to play the semi-spoiler format All Majors, in which you collect every major item in every area, while knowing how many are in each area. Configurable to change what is a "major item".</p>
     <p><strong><a href="https://github.com/homothetyhk/BenchRando/">BenchRando</a></strong> Randomizes benches in various ways, such as placing them as pickups similar to how stag stations work in regular rando. (Interacts with benchwarp in that benches cannot be warped to unless they have been sat on or picked up.) Also can add extra benches.   </p>
     <p><strong><a href="https://github.com/dplochcoder/HollowKnight.MoreDoors">MoreDoors</a></strong> Adds more unique doors and keys to the game, instead of the few that exist in vanilla. Configurable to just have the locations of the keys, and more.</p>
+    <p><strong><a href="https://github.com/BadMagic100/MoreLocations">More Locations</a></strong> Adds check locations to the game that don't have an associated item in vanilla, such as the egg in stag nest.</p>
+    <p><strong><a href="https://github.com/Korzer420/ExtraRando">Extra Rando</a></strong> Adds some fun miscellaneous settings and check locations, including Bardoon's butt, randomized hot springs, and a no-logic randomizer setting!</p>
   </div>
   </div>
 
-  <h2>Fun Mods!</h2>
+  <h2 id="fun">Fun Mods!</h2>
   <p>Finally, some fun mods that are recommended that don't really affect rando much.</p>
   <div class="list-container">
   <div class="list">
@@ -168,7 +204,7 @@
   </div>
   </div>
 
-  <h2>1028 Mods</h2>
+  <h2 id="1028">1028 Mods</h2>
   <p>The mods in this section are seperate versions of existing mods that have been ported to be compatible with patch 1.0.2.8. This requires downpatching, but enables skips and glitches that are not possible on the current patch of the game. Do not install these mods on latest patch! They will not work. If you want to play with the mods in this section, see the <a href="https://www.speedrun.com/hollowknight/guides/jlten">downpatching</a> guide for instructions on how to install 1.0.2.8, and use the modding API below.</p>
   <div class="list-container">
   <div class="list">
@@ -181,6 +217,19 @@
     <p><strong><a href="https://github.com/pikachupower3/HollowKnight.DebugMod/releases/download/v1.4.10.3/DebugMod_1028.zip">Debug Mod</a></strong> Various debug options and cheats. Can be useful in case of softlocks, which are much more common on this patch of the game. Be sure to uninstall it for races unless otherwise agreed on, as it is not rando legal.</p>
   </div>
   </div>
+  <h3> <a href="page101.html" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
+  <span class="menu" id="menu101">
+    <div class="list-container">
+    <div class="list">
+      <p><a href="#header">Introduction</a></p>
+      <p><a href="#required">Required Mods</a></p>
+      <p><a href="#essential">"Essential" Mods</a></p>
+      <p><a href="#connections">Randomizer Connections</a> </p>
+      <p><a href="#fun">Fun Mods!</a> </p>
+      <p><a href="#1028">1028 Mods</a> </p>
+    </div>
+  </div>
+  </span>
   <h2 class="coolheading"><a href="#header">Top</a> </h2>
 
   <img class="spin" src="../images/spin.gif" alt="knightspin">
