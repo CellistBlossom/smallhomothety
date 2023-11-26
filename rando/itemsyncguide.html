@@ -24,15 +24,15 @@
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <!-- for discord embeds-->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Itemsync Guide" />
-<meta property="og:description" content="A guide for playing HK Randomizer with your friends!." />
-<meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/itemsyncguide" />
-<meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Itemsync Guide" />
+  <meta property="og:description" content="A guide for playing HK Randomizer with your friends!." />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/itemsyncguide" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <style media="screen">
     .list {
+      padding: 0% 10% 0% 10%;
       text-align: left;
-      padding: 0% 20% 0% 20%;
       border-style: dotted;
       border-width: 5px;
       border-radius: 100px;
@@ -59,7 +59,7 @@
       font-family: Helvetica;
     }
 
-    .yippee  {
+    .yippee {
       height: 100px;
       width: 100px;
     }
@@ -80,27 +80,24 @@
         linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
     }
 
-    .list {
-      padding: 0% 10% 0% 10%;
+    @media only screen and (max-width: 1400px) {
+      .list-container {
+        padding: 0% 15% 0% 15%;
+      }
+
+      .list {
+        padding: 0% 15% 0% 15%;
+      }
+
+      img {
+        width: 600px;
+        height: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
-@media only screen and (max-width: 1400px) {
-  .list-container {
-    padding: 0% 15% 0% 15%;
-  }
-
-  .list {
-    padding: 0% 15% 0% 15%;
-  }
-
-  img  {
-    width: 600px;
-    height: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
     @media only screen and (max-width: 1200px) {
       .list-container {
         padding: 0% 0% 0% 0%;
@@ -110,51 +107,50 @@
         padding: 0% 10% 0% 10%;
       }
 
-      img  {
+      img {
         width: 600px;
         height: 350px;
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
-}
+    }
 
-@media only screen and (max-width: 900px) {
-  .list-container {
-    padding: 0% 0% 0% 0%;
-  }
+    @media only screen and (max-width: 900px) {
+      .list-container {
+        padding: 0% 0% 0% 0%;
+      }
 
-  .list {
-    padding: 0% 10% 0% 10%;
-  }
+      .list {
+        padding: 0% 10% 0% 10%;
+      }
 
-  img  {
-    width: 450px;
-    height: 262px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+      img {
+        width: 450px;
+        height: 262px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
-@media only screen and (max-width: 500px) {
-  .list-container {
-    padding: 0% 0% 0% 0%;
-  }
+    @media only screen and (max-width: 500px) {
+      .list-container {
+        padding: 0% 0% 0% 0%;
+      }
 
-  .list {
-    padding: 0% 10% 0% 10%;
-  }
+      .list {
+        padding: 0% 10% 0% 10%;
+      }
 
-  img  {
-    width: 300px;
-    height: 175px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
+      img {
+        width: 300px;
+        height: 175px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   </style>
   <title>Guide for Itemsync</title>
 </head>
@@ -184,162 +180,164 @@
   <h3> <a href="page100.html" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
   <span class="menu" id="menu100">
     <div class="list-container">
-    <div class="list-small">
-      <p><a href="#Intro">Introduction</a></p>
-      <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
-      <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
-      <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
+      <div class="list-small">
+        <p><a href="#Intro">Introduction</a></p>
+        <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
+        <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
+        <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
+      </div>
     </div>
-        </div>
   </span>
   <h2 id="Intro">Introduction</h2>
   <p>Once you've installed mods you may want to play randomizer with your friends! Luckily, we have mods to let you do this. (Shoutouts to Kamakiller for letting me steal some of his writeup!) </p>
   <p>Firstly, you will want to have the correct mods installed. See <a href="mods">here</a> for a tutorial on installing mods for randomizer. Some of the important ones for itemsync are summarized below:</p>
-<div class="list-container">
-  <div class="list">
-    <p>Randomizer 4 (& dependencies)</p>
-    <p>Itemsync (& multiworldlib)</p>
-    <p>(Optional) RandoSettingsManager (for syncing settings between multiple people)</p>
-  </div>
-  <h2 id="classic-settings-management">Getting Started (Without RandoSettingsManager)</h2>
-  <p>This section of the guide explains how to set up itemsync without RandoSettingsManager to sync connections. If you're using connections such as RandoPlus and want to use RSM to make setting up easier see <a
-      href="#rsm-settings-management">here</a>.</p>
-  <div class="list">
-    <p>Create new save file, select Randomizer.</p>
-    <p>Select ‘More Randomizer Settings’. <a href="page1.html" onclick="return toggleMenu('menu1')">▶</a></p>
-    <span class="menu" id="menu1">
-      <img src="../images/itemsyncguide/img1.png" alt="A screenshot of the Randomizer 4 mod menu with more randomizer settings highlighted on the bottom left of the screen">
-    </span>
-    <p>If you are making the settings, here is where you can change all of your settings. Once you’re happy with them, hit ‘Manage Settings Profiles’. <a href="page2.html" onclick="return toggleMenu('menu2')">▶</a></p>
-    <span class="menu" id="menu2">
-      <img src="../images/itemsyncguide/img8.png" alt="A screenshot of the Randomizer 4 more randomizer settings menu with manage settings profiles highlighted on the bottom right of the screen">
-    </span>
-    <p>If you are the person creating the settings, hit ‘Refresh Code’. <a href="page3.html" onclick="return toggleMenu('menu3')">▶</a></p>
-    <span class="menu" id="menu3">
-      <img src="../images/itemsyncguide/img9.png" alt="A screenshot of the Randomizer 4 manage settings profiles menu with refresh highlighted on the left side of the screen">
-    </span>
-    <p>Copy and paste the code to send to your friends. <a href="page4.html" onclick="return toggleMenu('menu4')">▶</a></p>
-    <span class="menu" id="menu4">
-      <img src="../images/itemsyncguide/img11.png" alt="A screenshot of the Randomizer 4 manage settings profiles menu with after clicking refresh code. There is now a long settings code below the apply code to menu button.">
-    </span>
-    <p>If you are receiving the code, reach this screen, paste the code under ‘Shareable Settings Code’ and then hit ‘Apply Code to Menu.’ This will sync your settings together.</p>
-    <p>If you have additional mods/connections installed, return to the main randomizer screen and hit connections. <a href="page5.html" onclick="return toggleMenu('menu5')">▶</a></p>
-    <span class="menu" id="menu5">
-      <img src="../images/itemsyncguide/img3.png" alt="A screenshot of the Randomizer 4 mod menu with connections highlighted on the bottom left of the screen">
-    </span>
-    <p>These options, otherwise known as ‘connections,’ are not in the base randomizer. They must be installed separately on Scarab to appear. These options also will not be synced by the classic settings code; if you wish to play with these, you
-      either install RandoSettingsManager (described below) or manually make sure you all enable the settings. <a href="page6.html" onclick="return toggleMenu('menu6')">▶</a></p>
-    <span class="menu" id="menu6">
-      <img src="../images/itemsyncguide/img7.png" alt="A screenshot of the Randomizer 4 connections menu. The connections shown are bench rando, all major items, rainbow eggs, levers, rando plus, and transcendence.">
-    </span>
-    <p>Once you are happy with the settings/have input the settings, hit Begin Randomization. <a href="page7.html" onclick="return toggleMenu('menu7')">▶</a></p>
-    <span class="menu" id="menu7">
-      <img src="../images/itemsyncguide/img2.png" alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
-    </span>
-    <p>If everyone has the same settings, the Hash on the right should be identical for all players. Make sure you all have the same 4 entities on the has before proceeding. If the Hash is different, this means someone’s settings are incorrect. Redo
-      the above steps and make sure connections settings are enabled/disabled properly. Itemsync will not let players join if they have different hashes. <a href="page8.html" onclick="return toggleMenu('menu8')">▶</a></p>
-    <span class="menu" id="menu8">
-      <img src="../images/itemsyncguide/img6.png"
-        alt="A screenshot of the Randomizer 4 randomization menu. There is a hash on the right side of the screen that reads watcher knight, void idol, gorgeous husk, great hopper. There is a large button in the lower third of the screen that says proceed, and it is highlighted.">
-    </span>
-    <p>Select ‘Itemsync’. <a href="page9.html" onclick="return toggleMenu('menu9')">▶</a></p>
-    <span class="menu" id="menu9">
-      <img src="../images/itemsyncguide/img5.png"
-        alt="A screenshot of the Randomizer 4 randomization menu after clicking proceed. There are two options aligned to the top left of the screen: start rando normally and itemsync. Itemsync is highlighted.">
-    </span>
-    <p>Input the url ‘18.189.16.129’ (should be default) and hit connect. <a href="page10.html" onclick="return toggleMenu('menu10')">▶</a></p>
-    <span class="menu" id="menu10">
-      <img src="../images/itemsyncguide/img4.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu. In the center of the screen the URL 18.189.16.129 is in the input field, and there is a menu option directly below it that says connect, which is highlighted.">
-    </span>
-    <p>Pick a nickname for yourself. <a href="page11.html" onclick="return toggleMenu('menu11')">▶</a></p>
-    <span class="menu" id="menu11">
-      <img src="../images/itemsyncguide/img10.png" alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in Kama as their nickname.">
-    </span>
-    <p>The ‘Room’ is essentially a password. All players should use the same room name. Once you have done so, hit ready. <a href="page12.html" onclick="return toggleMenu('menu12')">▶</a></p>
-    <span class="menu" id="menu12">
-      <img src="../images/itemsyncguide/img13.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in eggu as their room name. There is a grayed out button below the room name that says ready.">
-    </span>
-    <p>Players in the room who are readied will appear on the right. Once everyone is there, hit ‘Start Itemsync’ and then ‘Join Game.’ <a href="page13.html" onclick="return toggleMenu('menu13')">▶</a></p>
-    <span class="menu" id="menu13">
-      <img src="../images/itemsyncguide/img12.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. The button saying ready has been replaced with the option unready. There is a button below it that says start itemsync and it is highlighted.">
-    </span>
-    <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
-  </div>
+  <div class="list-container">
+    <div class="list">
+      <p>Randomizer 4 (& dependencies)</p>
+      <p>Itemsync (& multiworldlib)</p>
+      <p>(Optional) RandoSettingsManager (for syncing settings between multiple people)</p>
+    </div>
+    <h2 id="classic-settings-management">Getting Started (Without RandoSettingsManager)</h2>
+    <p>This section of the guide explains how to set up itemsync without RandoSettingsManager to sync connections. If you're using connections such as RandoPlus and want to use RSM to make setting up easier see <a
+        href="#rsm-settings-management">here</a>.</p>
+    <div class="list">
+      <p>Create new save file, select Randomizer.</p>
+      <p>Select ‘More Randomizer Settings’. <a href="page1.html" onclick="return toggleMenu('menu1')">▶</a></p>
+      <span class="menu" id="menu1">
+        <img src="../images/itemsyncguide/img1.png" alt="A screenshot of the Randomizer 4 mod menu with more randomizer settings highlighted on the bottom left of the screen">
+      </span>
+      <p>If you are making the settings, here is where you can change all of your settings. Once you’re happy with them, hit ‘Manage Settings Profiles’. <a href="page2.html" onclick="return toggleMenu('menu2')">▶</a></p>
+      <span class="menu" id="menu2">
+        <img src="../images/itemsyncguide/img8.png" alt="A screenshot of the Randomizer 4 more randomizer settings menu with manage settings profiles highlighted on the bottom right of the screen">
+      </span>
+      <p>If you are the person creating the settings, hit ‘Refresh Code’. <a href="page3.html" onclick="return toggleMenu('menu3')">▶</a></p>
+      <span class="menu" id="menu3">
+        <img src="../images/itemsyncguide/img9.png" alt="A screenshot of the Randomizer 4 manage settings profiles menu with refresh highlighted on the left side of the screen">
+      </span>
+      <p>Copy and paste the code to send to your friends. <a href="page4.html" onclick="return toggleMenu('menu4')">▶</a></p>
+      <span class="menu" id="menu4">
+        <img src="../images/itemsyncguide/img11.png" alt="A screenshot of the Randomizer 4 manage settings profiles menu with after clicking refresh code. There is now a long settings code below the apply code to menu button.">
+      </span>
+      <p>If you are receiving the code, reach this screen, paste the code under ‘Shareable Settings Code’ and then hit ‘Apply Code to Menu.’ This will sync your settings together.</p>
+      <p>If you have additional mods/connections installed, return to the main randomizer screen and hit connections. <a href="page5.html" onclick="return toggleMenu('menu5')">▶</a></p>
+      <span class="menu" id="menu5">
+        <img src="../images/itemsyncguide/img3.png" alt="A screenshot of the Randomizer 4 mod menu with connections highlighted on the bottom left of the screen">
+      </span>
+      <p>These options, otherwise known as ‘connections,’ are not in the base randomizer. They must be installed separately on Scarab to appear. These options also will not be synced by the classic settings code; if you wish to play with these, you
+        either install RandoSettingsManager (described below) or manually make sure you all enable the settings. <a href="page6.html" onclick="return toggleMenu('menu6')">▶</a></p>
+      <span class="menu" id="menu6">
+        <img src="../images/itemsyncguide/img7.png" alt="A screenshot of the Randomizer 4 connections menu. The connections shown are bench rando, all major items, rainbow eggs, levers, rando plus, and transcendence.">
+      </span>
+      <p>Once you are happy with the settings/have input the settings, hit Begin Randomization. <a href="page7.html" onclick="return toggleMenu('menu7')">▶</a></p>
+      <span class="menu" id="menu7">
+        <img src="../images/itemsyncguide/img2.png" alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
+      </span>
+      <p>If everyone has the same settings, the Hash on the right should be identical for all players. Make sure you all have the same 4 entities on the has before proceeding. If the Hash is different, this means someone’s settings are incorrect.
+        Redo
+        the above steps and make sure connections settings are enabled/disabled properly. Itemsync will not let players join if they have different hashes. <a href="page8.html" onclick="return toggleMenu('menu8')">▶</a></p>
+      <span class="menu" id="menu8">
+        <img src="../images/itemsyncguide/img6.png"
+          alt="A screenshot of the Randomizer 4 randomization menu. There is a hash on the right side of the screen that reads watcher knight, void idol, gorgeous husk, great hopper. There is a large button in the lower third of the screen that says proceed, and it is highlighted.">
+      </span>
+      <p>Select ‘Itemsync’. <a href="page9.html" onclick="return toggleMenu('menu9')">▶</a></p>
+      <span class="menu" id="menu9">
+        <img src="../images/itemsyncguide/img5.png"
+          alt="A screenshot of the Randomizer 4 randomization menu after clicking proceed. There are two options aligned to the top left of the screen: start rando normally and itemsync. Itemsync is highlighted.">
+      </span>
+      <p>Input the url ‘18.189.16.129’ (should be default) and hit connect. <a href="page10.html" onclick="return toggleMenu('menu10')">▶</a></p>
+      <span class="menu" id="menu10">
+        <img src="../images/itemsyncguide/img4.png"
+          alt="A screenshot of the Randomizer 4 itemsync menu. In the center of the screen the URL 18.189.16.129 is in the input field, and there is a menu option directly below it that says connect, which is highlighted.">
+      </span>
+      <p>Pick a nickname for yourself. <a href="page11.html" onclick="return toggleMenu('menu11')">▶</a></p>
+      <span class="menu" id="menu11">
+        <img src="../images/itemsyncguide/img10.png" alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in Kama as their nickname.">
+      </span>
+      <p>The ‘Room’ is essentially a password. All players should use the same room name. Once you have done so, hit ready. <a href="page12.html" onclick="return toggleMenu('menu12')">▶</a></p>
+      <span class="menu" id="menu12">
+        <img src="../images/itemsyncguide/img13.png"
+          alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in eggu as their room name. There is a grayed out button below the room name that says ready.">
+      </span>
+      <p>Players in the room who are readied will appear on the right. Once everyone is there, hit ‘Start Itemsync’ and then ‘Join Game.’ <a href="page13.html" onclick="return toggleMenu('menu13')">▶</a></p>
+      <span class="menu" id="menu13">
+        <img src="../images/itemsyncguide/img12.png"
+          alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. The button saying ready has been replaced with the option unready. There is a button below it that says start itemsync and it is highlighted.">
+      </span>
+      <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
+    </div>
 
-</div>
+  </div>
   <h2 id="rsm-settings-management">Getting Started (With Rando Settings Manager)</h2>
   <p>By default, Randomizer 4 does not have a way to sync connections between players. Doing so requires installing a seperate mod, RandoSettingsManager, to do so. If you are not playing with connections you can safely skip this part.</p>
   <div class="list-container">
-  <div class="list">
-    <p>Create new save file, select Randomizer.</p>
-    <p>Select ‘More Randomizer Settings’. <a href="page14.html" onclick="return toggleMenu('menu14')">▶</a></p>
-    <span class="menu" id="menu14">
-      <img src="../images/itemsyncguide/img1.png" alt="A screenshot of the Randomizer 4 mod menu with more randomizer settings highlighted on the bottom left of the screen">
-    </span>
-    <p>If you are making the settings, here is where you can change all of your settings. Once you’re happy with them, hit ‘Manage Settings Profiles’. <a href="page15.html" onclick="return toggleMenu('menu15')">▶</a></p>
-    <span class="menu" id="menu15">
-      <img src="../images/itemsyncguide/img2_1.png" alt="A screenshot of the Randomizer 4 more randomizer settings menu with manage settings profiles highlighted on the bottom right of the screen">
-    </span>
-    <p>Here's where things start to differ from the steps above. On this screen you'll see different options: "Create Key" and "Paste Key". Using these options will overwrite whatever you have in your clipboard, so be sure to save whatever you have
-      in there if you want to keep it. <a href="page16.html" onclick="return toggleMenu('menu16')">▶</a></p>
-    <span class="menu" id="menu16">
-      <img src="../images/itemsyncguide/img2_2.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu with the options create key and paste key visible on the top left of the screen.">
-    </span>
-    <p>If you are creating the settings, simply click "Create Key". This will copy the settings key to your clipboard, and from there you can simply paste the key into whatever you're using to talk to your friends! <a href="page17.html"
-        onclick="return toggleMenu('menu17')">▶</a></p>
-    <span class="menu" id="menu17">
-      <img src="../images/itemsyncguide/img2_4.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been sucessfully created.">
-    </span>
-    <p>If you are recieving the settings, make sure you copy the key that has been shared with you to your clipboard, and then click "Paste Key". If you have the correct mods installed and the right versions of them, you're good to go. The mod will
-      let you know if there is an error and anything needs to be updated. <a href="page18.html" onclick="return toggleMenu('menu18')">▶</a></p>
-    <span class="menu" id="menu18">
-      <img src="../images/itemsyncguide/img2_3.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been pasted in and successfully loaded.">
-    </span>
-    <p>If you ever want to disable RSM temporarily, click the "classic settings management" button at the bottom of the screen to return to the default method of sharing settings codes. <a href="page19.html"
-        onclick="return toggleMenu('menu19')">▶</a></p>
-    <span class="menu" id="menu19">
-      <img src="../images/itemsyncguide/img2_5.png" alt="A screenshot of the Randomizer 4 classic settings management with RandoSettingsManager installed.">
-    </span>
-    <p>Once you are happy with the settings/have input the settings, hit Begin Randomization. <a href="page20.html" onclick="return toggleMenu('menu20')">▶</a></p>
-    <span class="menu" id="menu20">
-      <img src="../images/itemsyncguide/img2.png" alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
-    </span>
-    <p>If everyone has the same settings, the Hash on the right should be identical for all players. Make sure you all have the same 4 entities on the has before proceeding. If the Hash is different, this means someone’s settings are incorrect. Redo
-      the above steps and make sure connections settings are enabled/disabled properly. Itemsync will not let players join if they have different hashes. <a href="page21.html" onclick="return toggleMenu('menu21')">▶</a></p>
-    <span class="menu" id="menu21">
-      <img src="../images/itemsyncguide/img6.png"
-        alt="A screenshot of the Randomizer 4 randomization menu. There is a hash on the right side of the screen that reads watcher knight, void idol, gorgeous husk, great hopper. There is a large button in the lower third of the screen that says proceed, and it is highlighted.">
-    </span>
-    <p>Select ‘Itemsync’. <a href="page22.html" onclick="return toggleMenu('menu22')">▶</a></p>
-    <span class="menu" id="menu22">
-      <img src="../images/itemsyncguide/img5.png"
-        alt="A screenshot of the Randomizer 4 randomization menu after clicking proceed. There are two options aligned to the top left of the screen: start rando normally and itemsync. Itemsync is highlighted.">
-    </span>
-    <p>Input the url ‘18.189.16.129’ (should be default) and hit connect. <a href="page23.html" onclick="return toggleMenu('menu23')">▶</a></p>
-    <span class="menu" id="menu23">
-      <img src="../images/itemsyncguide/img4.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu. In the center of the screen the URL 18.189.16.129 is in the input field, and there is a menu option directly below it that says connect, which is highlighted.">
-    </span>
-    <p>Pick a nickname for yourself. <a href="page24.html" onclick="return toggleMenu('menu24')">▶</a></p>
-    <span class="menu" id="menu24">
-      <img src="../images/itemsyncguide/img10.png" alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in Kama as their nickname.">
-    </span>
-    <p>The ‘Room’ is essentially a password. All players should use the same room name. Once you have done so, hit ready. <a href="page25.html" onclick="return toggleMenu('menu25')">▶</a></p>
-    <span class="menu" id="menu25">
-      <img src="../images/itemsyncguide/img13.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in eggu as their room name. There is a grayed out button below the room name that says ready.">
-    </span>
-    <p>Players in the room who are readied will appear on the right. Once everyone is there, hit ‘Start Itemsync’ and then ‘Join Game.’ <a href="page26.html" onclick="return toggleMenu('menu26')">▶</a></p>
-    <span class="menu" id="menu26">
-      <img src="../images/itemsyncguide/img12.png"
-        alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. The button saying ready has been replaced with the option unready. There is a button below it that says start itemsync and it is highlighted.">
-    </span>
-    <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
+    <div class="list">
+      <p>Create new save file, select Randomizer.</p>
+      <p>Select ‘More Randomizer Settings’. <a href="page14.html" onclick="return toggleMenu('menu14')">▶</a></p>
+      <span class="menu" id="menu14">
+        <img src="../images/itemsyncguide/img1.png" alt="A screenshot of the Randomizer 4 mod menu with more randomizer settings highlighted on the bottom left of the screen">
+      </span>
+      <p>If you are making the settings, here is where you can change all of your settings. Once you’re happy with them, hit ‘Manage Settings Profiles’. <a href="page15.html" onclick="return toggleMenu('menu15')">▶</a></p>
+      <span class="menu" id="menu15">
+        <img src="../images/itemsyncguide/img2_1.png" alt="A screenshot of the Randomizer 4 more randomizer settings menu with manage settings profiles highlighted on the bottom right of the screen">
+      </span>
+      <p>Here's where things start to differ from the steps above. On this screen you'll see different options: "Create Key" and "Paste Key". Using these options will overwrite whatever you have in your clipboard, so be sure to save whatever you have
+        in there if you want to keep it. <a href="page16.html" onclick="return toggleMenu('menu16')">▶</a></p>
+      <span class="menu" id="menu16">
+        <img src="../images/itemsyncguide/img2_2.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu with the options create key and paste key visible on the top left of the screen.">
+      </span>
+      <p>If you are creating the settings, simply click "Create Key". This will copy the settings key to your clipboard, and from there you can simply paste the key into whatever you're using to talk to your friends! <a href="page17.html"
+          onclick="return toggleMenu('menu17')">▶</a></p>
+      <span class="menu" id="menu17">
+        <img src="../images/itemsyncguide/img2_4.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been sucessfully created.">
+      </span>
+      <p>If you are recieving the settings, make sure you copy the key that has been shared with you to your clipboard, and then click "Paste Key". If you have the correct mods installed and the right versions of them, you're good to go. The mod will
+        let you know if there is an error and anything needs to be updated. <a href="page18.html" onclick="return toggleMenu('menu18')">▶</a></p>
+      <span class="menu" id="menu18">
+        <img src="../images/itemsyncguide/img2_3.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been pasted in and successfully loaded.">
+      </span>
+      <p>If you ever want to disable RSM temporarily, click the "classic settings management" button at the bottom of the screen to return to the default method of sharing settings codes. <a href="page19.html"
+          onclick="return toggleMenu('menu19')">▶</a></p>
+      <span class="menu" id="menu19">
+        <img src="../images/itemsyncguide/img2_5.png" alt="A screenshot of the Randomizer 4 classic settings management with RandoSettingsManager installed.">
+      </span>
+      <p>Once you are happy with the settings/have input the settings, hit Begin Randomization. <a href="page20.html" onclick="return toggleMenu('menu20')">▶</a></p>
+      <span class="menu" id="menu20">
+        <img src="../images/itemsyncguide/img2.png" alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
+      </span>
+      <p>If everyone has the same settings, the Hash on the right should be identical for all players. Make sure you all have the same 4 entities on the has before proceeding. If the Hash is different, this means someone’s settings are incorrect.
+        Redo
+        the above steps and make sure connections settings are enabled/disabled properly. Itemsync will not let players join if they have different hashes. <a href="page21.html" onclick="return toggleMenu('menu21')">▶</a></p>
+      <span class="menu" id="menu21">
+        <img src="../images/itemsyncguide/img6.png"
+          alt="A screenshot of the Randomizer 4 randomization menu. There is a hash on the right side of the screen that reads watcher knight, void idol, gorgeous husk, great hopper. There is a large button in the lower third of the screen that says proceed, and it is highlighted.">
+      </span>
+      <p>Select ‘Itemsync’. <a href="page22.html" onclick="return toggleMenu('menu22')">▶</a></p>
+      <span class="menu" id="menu22">
+        <img src="../images/itemsyncguide/img5.png"
+          alt="A screenshot of the Randomizer 4 randomization menu after clicking proceed. There are two options aligned to the top left of the screen: start rando normally and itemsync. Itemsync is highlighted.">
+      </span>
+      <p>Input the url ‘18.189.16.129’ (should be default) and hit connect. <a href="page23.html" onclick="return toggleMenu('menu23')">▶</a></p>
+      <span class="menu" id="menu23">
+        <img src="../images/itemsyncguide/img4.png"
+          alt="A screenshot of the Randomizer 4 itemsync menu. In the center of the screen the URL 18.189.16.129 is in the input field, and there is a menu option directly below it that says connect, which is highlighted.">
+      </span>
+      <p>Pick a nickname for yourself. <a href="page24.html" onclick="return toggleMenu('menu24')">▶</a></p>
+      <span class="menu" id="menu24">
+        <img src="../images/itemsyncguide/img10.png" alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in Kama as their nickname.">
+      </span>
+      <p>The ‘Room’ is essentially a password. All players should use the same room name. Once you have done so, hit ready. <a href="page25.html" onclick="return toggleMenu('menu25')">▶</a></p>
+      <span class="menu" id="menu25">
+        <img src="../images/itemsyncguide/img13.png"
+          alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. There are two fields: nickname and room. The user has filled in eggu as their room name. There is a grayed out button below the room name that says ready.">
+      </span>
+      <p>Players in the room who are readied will appear on the right. Once everyone is there, hit ‘Start Itemsync’ and then ‘Join Game.’ <a href="page26.html" onclick="return toggleMenu('menu26')">▶</a></p>
+      <span class="menu" id="menu26">
+        <img src="../images/itemsyncguide/img12.png"
+          alt="A screenshot of the Randomizer 4 itemsync menu after hitting connect. The button saying ready has been replaced with the option unready. There is a button below it that says start itemsync and it is highlighted.">
+      </span>
+      <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
+    </div>
   </div>
-</div>
   <h2 id="HKMP">Multiplayer</h2>
   <p>Itemsync does not include many "multiplayer" features, only the ability to sync items between players. Some people like to also play with HKMP (the Hollow Knight multiplayer mod) so that they can see their friends on-screen. This is almost never
     used in races, so I won't cover it in this guide. Many members of the community have already created helpful guides for installing and setting up the HKMP mod.</p>
@@ -364,13 +362,13 @@
   <h3> <a href="page101.html" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
   <span class="menu" id="menu101">
     <div class="list-container">
-    <div class="list-small">
-      <p><a href="#Intro">Introduction</a></p>
-      <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
-      <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
-      <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
+      <div class="list-small">
+        <p><a href="#Intro">Introduction</a></p>
+        <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
+        <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
+        <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
+      </div>
     </div>
-        </div>
   </span>
   <h2 class="coolheading"><a href="#header">Top</a> </h2>
   <img class="yippee" src="../images/yippee.gif" alt="yippee">
