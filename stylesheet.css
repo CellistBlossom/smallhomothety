@@ -190,7 +190,7 @@ li {
 
 .list {
   text-align: left;
-  padding: 0% 20% 0% 20%;
+  padding: 0% 10% 0% 10%;
   border-style: dotted;
   border-width: 5px;
   border-radius: 100px;
@@ -198,4 +198,8 @@ li {
   background:
     linear-gradient(AntiqueWhite 0 0) padding-box,
     linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+.list-container {
+  padding: 0% 25% 0% 25%;
 }
