@@ -203,3 +203,30 @@ li {
 .list-container {
   padding: 0% 25% 0% 25%;
 }
+
+/* Grubby page IDs */
+
+#namelabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#pronounlabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#foodlabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#personalitylabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#congrats {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
