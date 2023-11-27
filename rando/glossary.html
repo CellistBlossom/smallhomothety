@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glossary</title>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Glossary" />
+  <meta property="og:description" content="A glossary of common terms used in the Randomizer community for Hollow Knight." />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/glossary" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    .menu {
+      display: none;
+      margin-left: 20px;
+      font-family: Helvetica;
+    }
+
+    .list {
+      padding: 0% 0% 0% 0%;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .list-container {
+        padding: 0% 15% 0% 15%;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .list-container {
+        padding: 0% 5% 0% 5%;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .list-container {
+        padding: 0% 0% 0% 0%;
+      }
+
+      .list {
+        padding: 0% 0% 0% 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <div class="subnavmenu">
+    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
+    <button class="submenubtn" onclick="location.href='skips'"><a href="skips">Skips</a> </button>
+    <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
+    <button class="submenubtn" onclick="location.href='itemsyncguide'"><a href="itemsyncguide">Itemsync Guide</a> </button>
+    <button class="submenubtn" onclick="location.href='rules'"><a href="rules">Rules</a> </button>
+    <button class="submenubtn" onclick="location.href='glossary'"><a href="glossary">Glossary</a> </button>
+    <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
+    <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
+    <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
+    <button class="submenubtn" onclick="location.href='tourney'"><a href="tourney">Tourneys</a> </button>
+    <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
+    <button class="submenubtn" onclick="location.href='https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki'"><a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Wiki</a> </button>
+  </div>
+  <h1 id="header">Glossary of Rando Terms</h1>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+  <h3> <a href="page100.html" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
+  <span class="menu" id="menu100">
+    <div class="list-container">
+      <div class="list">
+        <p><a href="#header">Introduction</a></p>
+        <p><a href="#generalrandoterms">General Randomizer Terms</a></p>
+        <p><a href="#mods">Mods</a></p>
+        <p><a href="#checklocations">Check Locations</a> </p>
+        <p><a href="#abbreviations">Miscellaneous Abbreviations</a> </p>
+      </div>
+    </div>
+  </span>
+  <p>The Randomizer community has words and abbreviations that are used to refer to different aspects of the game. While knowing these terms is not necessary to play the game, they exist to quickly communicate with other players on the fly,
+    especially in racing situations. You may also hear comms use these terms in tournaments and events, since most comms are experienced rando racers.</p>
+  <p>The list here is not comprehensive, and may change as the community changes and new things are added to the randomizer. If you notice I forgot something, please submit it to the <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSe_2Q48iSjXe3zLVCr2SroyP0pnLlX-qIKs3tHNklYBy1ldDw/viewform">suggestion box</a>! </p>
+  <p>For terms that are more specific to the speedrunning side of the community, see this <a href="https://pastebin.com/015s8nuk">pastebin</a>. </p>
+  <h2 id="generalrandoterms">General Randomizer Terms</h2>
+  <div class="list-container">
+    <div class="list">
+      <p><strong>Baby Seed</strong>: A term used to describe a seed with a lot of easy early movement and progression</p>
+      <p><strong>Burger King (BK)</strong>: In itemsync, multiworld, and archipelago randomizers, being unable to obtain any checks without receiving progression from another player.</p>
+      <p><strong>Check</strong>: Location containing a randomized item.</p>
+      <p><strong>Go-mode</strong>: Being able to finish the goal of the seed/format without obtaining any additional items. Usually, this means that you are hard-rushing your finish and not doing checks on the way. Also known as being “in go”.</p>
+      <p><strong>Hash</strong>: The sequence of four enemies listed after randomization used to ensure that racers have the same settings and seed.</p>
+      <p><strong>Helper Log</strong>: Located in your save files folder after generating a rando seed. Shows what item locations are in logic and any items that have been previewed. </p>
+      <p><strong>Intended Progression</strong>: The order that the randomizer expects you to obtain items; see progression. </p>
+      <p><strong>Logic</strong>: Whether or not the randomizer believes you can reach a location (a location is “in logic” or “out of logic”); alternatively, a synonym of intended progression. </p>
+      <p><strong>Modlog (noun)</strong>: A log located in your save files folder, used for diagnosing and troubleshooting errors; also see <em>modlogging</em>. </p>
+      <p><strong>"Modlogging" (verb)</strong>: A form of cheating by reading the spoiler log in non-spoiler formats. Almost always used hyperbolically. Originally, spoiler log did not exist and the locations of items were written to the modlog. The
+        term originated from previous randomizer versions, and is still in use, even though the modlog no longer contains spoilers. <em>“How did you finish so fast?”</em> <em>“Well, dash was super cursed, but I literally modlogged it, so…”</em></p>
+      <p><strong>Orphan (a check)</strong>: Clearing all the checks in the area around a check, leaving the check isolated, usually due to not having movement to do the check; generally avoided because going back for the orphaned check loses a lot of
+        time. Also known as "stranding" the check.</p>
+      <p><strong>Progression</strong>: Any item that allows one to reach a previously unreachable location. </p>
+      <p><strong>Random Obtain</strong>: A random item, usually as required for a bingo board, such as a specific key or charm, or a number of minor items such as rancid eggs. Movement and duped major items are usually not referred to as “random
+        obtains”. </p>
+      <p><strong>Seed</strong>: The number used to generate random placements; or, the settings of the current randomizer; or, the current randomizer as a whole. </p>
+      <p><strong>Sequence Break</strong>: Reaching a location that the randomizer does not expect you to be able to reach, usually via a skip; also known as “breaking logic”. </p>
+      <p><strong>Spoiler Log</strong>: Located in your save files folder after generating a rando seed. Contains the locations of every item in the randomizer seed. Banned for use in most randomizer races, except for formats that specifically allow
+        it; these formats are referred to as “spoiler formats”. </p>
+      <p><strong>Tracker Log</strong>: Located in your save files folder after generating a rando seed. Shows what items have been picked up in the order that they were obtained. </p>
+    </div>
+  </div>
+  <h2 id="mods">Mods</h2>
+  <div class="list-container">
+    <div class="list">
+      <p><strong>Itemsync</strong>: A mod that sends items obtained by one player to all other players in their “room”, as well as removing them from those players’ games. </p>
+      <p><strong>Lumafly</strong>: A mod installer that provides easy access to most published mods, including all required mods for rando and add-ons; formerly known as "Scarab+". </p>
+      <p><strong>Scarab</strong>: Another popular mod installer with slightly fewer features, but the same list of mods.</p>
+    </div>
+  </div>
+  <h2 id="checklocations">Check Locations</h2>
+  <div class="list-container">
+    <div class="list">
+      <p><strong>Acid Bath</strong>: East fog canyon start, near the fog canyon Cornifer location. (Compare "autopilot")</p>
+      <p><strong>Acid Bridge (relic)</strong>: The Hallownest Seal in Greenpath in the room below Thorns of Agony.</p>
+      <p><strong>Acrid Egg</strong>: The egg located in upper Kingdom’s Edge, in the room that also contains the whispering root. It is in the top right section of the room and is hidden in a wall with a belfly.</p>
+      <p><strong>Any% Journal</strong>: the Wanderer’s Journal in City of Tears, above King’s Station. </p>
+      <p><strong>Autopilot Lifeblood/Seal</strong>: The Hallownest Seal and Lifeblood Cocoon in West Fog Canyon by Overgrown Mound. There is also a start in this room.</p>
+      <p><strong>Basin Simple Claw</strong>: A boomer joke name for “basin simple key”.</p>
+      <p><strong>Broken Bridge (relic)</strong>: Relic in the room bridging Basin and Waterways. </p>
+      <p><strong>“Come Back Here” relic</strong>: The relic located on the left-side of the Marmu’s room in Queen’s Gardens. It requires vertical movement without skips in logic, but it can be achieved in harder logic with just Mothwing/Shade Cloak.
+      </p>
+      <p><strong>Damage Boost relic</strong>: The relic in Fog Canyon nearby Crossroads entry. So named because it requires a damage boost when itemless. Also called “Spooky Relic” in some sections of the community. </p>
+      <p><strong>Jennifer Totem</strong>: The totem in between Crossroads Stag and Gruz Mother, next to a jumping husk. Referred to as “shops totem” in the logs. </p>
+      <p><strong>JMV</strong>: Journal (above) Mantis Village.</p>
+      <p><strong>King's Arena</strong>: The City vessel fragment arena. </p>
+      <p><strong>Lemm Egg</strong>: Rancid Egg in the room above Lemm.</p>
+      <p><strong>Markoth Dive Relic</strong>: The relic in the same room as the shade gate to Markoth (requires Dive).</p>
+      <p><strong>Oat Check</strong>: AKA Crossroads Vessel Fragment, always requires Elevator Pass (if it is randomized).</p>
+      <p><strong>Paum Relic</strong>: The check in the room beneath the left side of Shrumal Ogres arena that, in no skips logic, requires Mantis Claw and any one of Monarch Wings, Mothwing/Shade Cloak, or Crystal Heart. In vanilla it is a Wanderer’s
+        Journal. </p>
+      <p><strong>Progression Egg</strong>: The egg in Blue Lake.</p>
+      <p><strong>Sheo Totem</strong>: The totem underneath Greenpath toll bench.</p>
+      <p><strong>Snowy Relic</strong>: Edge entrance journal.</p>
+      <p><strong>Spooky Relic</strong>: See "Damage Boost relic".</p>
+      <p><strong>Super Secret Seal</strong> The Hallownest Seal located in east Deepnest locked behind either Mantis Lords or Fungal Core.</p>
+      <p><strong>Wellic</strong>: The Hallownest Seal in the well from Crossroads to Dirtmouth. Sometimes referred to as just "well". </p>
+    </div>
+  </div>
+  <h2 id="abbreviations">Miscellaneous Abbreviations</h2>
+  <div class="list-container">
+    <div class="list">
+      <p><strong>3L</strong>: 3-lines, a randomizer racing format. (See the <a href="formats">formats</a> page for more details.) </p>
+      <p><strong>AM</strong>: All majors, a randomizer racing format.</p>
+      <p><strong>BOTE</strong>: Blackout True Ending, another randomizer racing format.</p>
+      <p><strong>CG1</strong>: Crystal Guardian.</p>
+      <p><strong>CG2</strong>: Enraged Guardian, usually just referred to as "Crystal Guardian 2" by the community. </p>
+      <p><strong>DAB</strong>: Double Anti Bingo, a randomizer racing format. </p>
+      <p><strong>GTTOS</strong>: Get to the Other Side, a randomizer racing format. </p>
+      <p><strong>MMC</strong>: Massive Moss Charger. </p>
+      <p><strong>RSM</strong>: Rando Settings Manager. </p>
+      <p><strong>SHO</strong>: Small Homothety Organization. (you are here!!! wow!!!!!!) </p>
+      <p><strong>TGOBAF</strong>: The Glory of Being a Fool Rando (Connection that adds colo 3 as a check). </p>
+      <p><strong>TRJR</strong>: The Real Journal Rando. </p>
+      <p><strong>VK</strong>: Vengefly King. </p>
+    </div>
+  </div>
+
+  <h3> <a href="page101.html" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
+  <span class="menu" id="menu101">
+    <div class="list-container">
+      <div class="list">
+        <p><a href="#header">Introduction</a></p>
+        <p><a href="#generalrandoterms">General Randomizer Terms</a></p>
+        <p><a href="#mods">Mods</a></p>
+        <p><a href="#checklocations">Check Locations</a> </p>
+        <p><a href="#abbreviations">Miscellaneous Abbreviations</a> </p>
+      </div>
+    </div>
+  </span>
+
+  <h2 class="coolheading"><a href="#header">Top</a> </h2>
+  <img class="spin" src="../images/spin.gif" alt="knightspin">
+</body>
+
+</html>
