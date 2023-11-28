@@ -10,43 +10,43 @@ h1 {
 }
 
 p a {
-  color: #E583AB;
+  color: #e16e9d;
 }
 
 p a:hover {
-  color: #83abe5;
+  color: #6e9de1;
 }
 
 a h2 {
-  color: #E583AB;
+  color: #e16e9d;
 }
 
 a h2:hover {
-  color: #83abe5;
+  color: #6e9de1;
 }
 
 h2 a {
-  color: #E583AB;
+  color: #e16e9d;
 }
 
 h2 a:hover {
-  color: #83abe5;
+  color: #6e9de1;
 }
 
 a h3 {
-  color: #E583AB;
+  color: #e16e9d;
 }
 
 a h3:hover {
-  color: #83abe5;
+  color: #6e9de1;
 }
 
 h3 a {
-  color: #E583AB;
+  color: #e16e9d;
 }
 
 h3 a:hover {
-  color: #83abe5;
+  color: #6e9de1;
 }
 
 h2 {
@@ -71,7 +71,7 @@ a {
 }
 
 .dropbtn {
-  background-color: #bc92ff;
+  background-color: #9d5fff;
   color: white;
   padding: 16px;
   font-size: 20px;
@@ -82,11 +82,11 @@ a {
 
 .dropbtn a {
   text-decoration: none;
-  color: #5E497F;
+  color: #F9F6EE;
 }
 
 .dropbtn a:hover {
-  color: #ff92bf;
+  color: #71ff5f;
 }
 
 .dropdown {
@@ -112,8 +112,8 @@ a {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: #ff92bf;
+  background-color: #E4E4E4;
+  color: #E583AB;
 }
 
 .dropdown:hover .dropdown-content {
@@ -121,7 +121,7 @@ a {
 }
 
 .dropbtn:hover {
-  background-color: #94ff92;
+  background-color: #5f71ff;
 }
 
 .navigationmenu {
@@ -132,11 +132,11 @@ a {
 .playlistlink {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
-  color: #E583AB;
+  color: #e16e9d;
 }
 
 .playlistlink:hover {
-  color: #83abe5;
+  color: #6e9de1;
 }
 
 .disclaimer {
