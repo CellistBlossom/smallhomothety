@@ -230,3 +230,64 @@ li {
   font-size: 18px;
   font-family: "Playpen Sans", sans-serif;
 }
+
+/* For /events pages */
+
+#events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.eventstablecontainer table, .eventstablecontainer th, .eventstablecontainer td {
+  border-style: dotted;
+  border-width: 5px;
+  border: 5px dotted #e4e1ff;
+  border-collapse: collapse;
+  background:
+    linear-gradient(#e4e1ff 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+.eventstablecontainer table {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  background: #e4e1ff;
+  width: 200px;
+}
+
+.eventstablecontainer table a {
+  color: #fc00e5;
+}
+
+.eventstablecontainer table a:hover {
+  color: #1700fc;
+}
+
+.events {
+  width: 80%;
+}
+
+#hksceventstableheader {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  #events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #events-list {
+    order: 2;
+  }
+
+  .eventstablecontainer table {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    background: #e4e1ff;
+    width: 400px;
+  }
+  }
