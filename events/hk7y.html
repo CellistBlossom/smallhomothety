@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK7Y</title>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 7th Anniversary" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 7th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk7y" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    .list table {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+    }
+
+    #schedule-table-container {
+      padding-bottom: 30px;
+    }
+
+    .list table,
+    .list th,
+    .list td {
+      border-style: solid;
+      border-color: #edb265;
+      border-width: 2px;
+      border-collapse: collapse;
+    }
+
+    .list th,
+    .list td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    td p {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 500px) {
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+      .list {
+        padding: 0% 0% 0% 0%;
+        border-style: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-container").load("/eventsnav.html");
+    });
+  </script>
+  <div id="events-container">
+    <div id="events-list">
+    </div>
+    <div class="events">
+      <h1>Hollow Knight 7th Anniversary Celebration</h1>
+      <div class="subnavmenu">
+        <button class="submenubtn" onclick="location.href='/events/hk7y'"><a href="/events/hk7y">Main Event</a> </button>
+        <button class="submenubtn" onclick="location.href='/events/hk7y/memeday'"><a href="/events/hk7y/memeday">Meme Day</a> </button>
+        <button class="submenubtn" onclick="location.href='/events/hk7y/randoday'"><a href="/events/hk7y/randoday">Rando Day</a> </button>
+      </div>
+      <p>The Hollow Knight 7th anniversary is fast approaching! This year, the event will be broken into three parts: the main event, meme day, and rando day. The main event will begin on Saturday Feb 24th at 2:00pm UTC.</p>
+      <p>The schedule for the main event is below. Please keep in mind that this schedule is subject to change.</p>
+      <!-- Add a placeholder for the Twitch embed -->
+      <div id="twitch-embed"></div>
+      <br>
+
+      <!-- Load the Twitch embed JavaScript file -->
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+      <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: 600,
+          height: 337,
+          channel: "hollowknightcommunity",
+          parent: ["smallhomothetyorganization.org"]
+        });
+      </script>
+      <div class="list">
+        <h2>Main Event Schedule</h2>
+        <div id="schedule-table-container" style="overflow-x:auto;">
+          <table>
+            <tr>
+              <td>2:00pm - 2:10pm UTC</td>
+              <td>Setup/Intro</td>
+            </tr>
+            <tr>
+              <td>2:10pm - 3:40pm UTC</td>
+              <td>True Ending NMG Race</td>
+              <td>Runners: Stratus, Vysuals, Psyklone, Polydactyly</td>
+              <td>Comms: Priidik, Noodles</td>
+            </tr>
+            <tr>
+              <td>3:45pm - 4:20pm UTC</td>
+              <td>Any% NMMS Race</td>
+              <td>Runners: python_wizard, nialan, gusten</td>
+              <td>Comms: theMasochistGamer, randomscorp</td>
+            </tr>
+            <tr>
+              <td>4:25pm - 5:10pm UTC</td>
+              <td>Any% NMG TAS Showcase</td>
+              <td>Runner: 74V13R</td>
+              <td>Comms: 74V13R</td>
+            </tr>
+            <tr>
+              <td>5:15pm - 7:00pm UTC</td>
+              <td>112% APB All Glitches Showcase</td>
+              <td>Runner: MindfulLine3</td>
+              <td>Comms: python_wizard, nialan</td>
+            </tr>
+            <tr>
+              <td>7:05pm - 7:45pm UTC</td>
+              <td>4 Mask Shard LP Races</td>
+              <td>Runners: t_k_3, slaurent, JackmanMarcus, zuivell</td>
+              <td>Comms: dragon_nyx, sylvienukie</td>
+            </tr>
+            <tr>
+              <td>7:50pm - 9:05pm UTC</td>
+              <td>LP All Skills Race</td>
+              <td>Runners: BrotherWildness, Priidik, cerpin, OhkoXar</td>
+              <td>Comms: oatmille1, krysanthemoof</td>
+            </tr>
+            <tr>
+              <td>9:10pm - End UTC</td>
+              <td>106% NMG Team Controller vs Team Keyboard vs Team Box Relay Race</td>
+              <td>
+                <p>Team Controller: Quatopine, Gidge, Phiasco, Spirity, Noodles, slo, larraythearry, hazelness, elle, Kal, oatmille1, Mason_SR</p>
+                <p>Team Keyboard: Stratus, sly, cerpin, nolan, gwonkee, May, Aksel, Priidik, Element, shelby, OhkoXar, CC</p>
+                <p>Team Box: NerfIrelia73, Vysuals, jxtxun, psyklone</p>
+              </td>
+              <td>Comms: A lot of people</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
