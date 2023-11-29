@@ -256,12 +256,14 @@ li {
   width: 200px;
 }
 
-.eventstablecontainer table a {
+.eventstablecontainer a {
   color: #fc00e5;
+  font-family: "Rubik", sans-serif;
 }
 
-.eventstablecontainer table a:hover {
+.eventstablecontainer a:hover {
   color: #1700fc;
+  font-family: "Rubik", sans-serif;
 }
 
 .events {
