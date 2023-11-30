@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HK7Y Rando Day</title>
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- for discord embeds-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hollow Knight 7th Anniversary Meme Day" />
+    <meta property="og:description" content="Learn all about the Hollow Knight 7th anniversary event led by the speedrunning and randomizer community!" />
+    <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk7y" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+      .list table {
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+      }
+
+      #schedule-table-container {
+        padding-bottom: 30px;
+      }
+
+      .list table,
+      .list th,
+      .list td {
+        border-style: solid;
+        border-color: #edb265;
+        border-width: 2px;
+        border-collapse: collapse;
+      }
+
+      .list th,
+      .list td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      td p {
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        padding: 0px;
+      }
+
+      .list-centered {
+        text-align: center;
+        padding: 0% 10% 0% 10%;
+        border-style: dotted;
+        border-width: 5px;
+        border-radius: 100px;
+        border: 5px dotted AntiqueWhite;
+        background:
+          linear-gradient(AntiqueWhite 0 0) padding-box,
+          linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+      }
+
+      @media only screen and (max-width: 700px) {
+
+        .list th,
+        .list td {
+          padding: 0px;
+          text-align: left;
+        }
+
+
+      }
+
+      @media only screen and (max-width: 500px) {
+
+        .list th,
+        .list td {
+          padding: 0px;
+          text-align: left;
+        }
+
+        .list {
+          padding: 0% 0% 0% 0%;
+          border-style: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <script>
+      $(document).ready(function() {
+        $("#events-list").load("/eventsnav.html");
+      });
+    </script>
+    <div id="events-container">
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Hollow Knight 7th Anniversary Celebration: Rando Day</h1>
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/events/hk7y'"><a href="/events/hk7y">Main Event</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk7y/memeday'"><a href="/events/hk7y/memeday">Meme Day</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk7y/randoday'"><a href="/events/hk7y/randoday">Rando Day</a> </button>
+        </div>
+        <p>The Hollow Knight 7th anniversary is fast approaching! This year, the event will be broken into three parts: the main event, meme day, and rando day. Meme day will begin on Friday Feb 23rd at 8:00pm UTC, and the main event will begin on Saturday Feb 24th at 2:00pm UTC. Rando day TBA.</p>
+        <p>The schedule for the main event is below. Please keep in mind that this schedule is subject to change.</p>
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+        <br>
+
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 600,
+            height: 600,
+            channel: "hollowknightcommunity",
+            parent: ["smallhomothetyorganization.org"]
+          });
+        </script>
+        <div class="list-centered">
+          <h2>Rando Day Schedule</h2>>
+          <img src="../../images/sip.png" alt="sip" height="100px" width="100px"/>
+          <h3>Schedule coming soon...</h3>
+        </div>
+        <h2 class="coolheading"><a href="#header">Top</a> </h2>
+      </div>
+    </div>
+  </body>
+</html>
