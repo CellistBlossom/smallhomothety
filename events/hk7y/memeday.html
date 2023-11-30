@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK7Y Meme Day</title>
+  <link rel="stylesheet" href="../../stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 7th Anniversary Meme Day" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 7th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk7y" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    .list table {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+    }
+
+    #schedule-table-container {
+      padding-bottom: 30px;
+    }
+
+    .list table,
+    .list th,
+    .list td {
+      border-style: solid;
+      border-color: #edb265;
+      border-width: 2px;
+      border-collapse: collapse;
+    }
+
+    .list th,
+    .list td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    td p {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+      padding: 0px;
+    }
+
+    @media only screen and (max-width: 700px) {
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+      .list {
+        padding: 0% 0% 0% 0%;
+        border-style: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-list").load("/eventsnav.html");
+    });
+  </script>
+  <div id="events-container">
+    <div id="events-list">
+    </div>
+    <div class="events">
+      <h1 id="header">Hollow Knight 7th Anniversary Celebration: Meme Day</h1>
+      <div class="subnavmenu">
+        <button class="submenubtn" onclick="location.href='/events/hk7y'"><a href="/events/hk7y">Main Event</a> </button>
+        <button class="submenubtn" onclick="location.href='/events/hk7y/memeday'"><a href="/events/hk7y/memeday">Meme Day</a> </button>
+        <button class="submenubtn" onclick="location.href='/events/hk7y/randoday'"><a href="/events/hk7y/randoday">Rando Day</a> </button>
+      </div>
+      <p>The Hollow Knight 7th anniversary is fast approaching! This year, the event will be broken into three parts: the main event, meme day, and rando day. Meme day will begin on Friday Feb 23rd at 8:00pm UTC, and the main event will begin on
+        Saturday Feb 24th at 2:00pm UTC.</p>
+      <p>"Meme Day" means that this day is all about speedrunning category extensions! These are categories that are more "just for fun" and are usually taken less seriously than one on the main board such as any%. They usually have more arbitrary
+        end-goals as well. See the schedule below for some fun examples of what will be in the event! Please keep in mind that this schedule is subject to change.</p>
+      <!-- Add a placeholder for the Twitch embed -->
+      <div id="twitch-embed"></div>
+      <br>
+
+      <!-- Load the Twitch embed JavaScript file -->
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+      <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: 600,
+          height: 600,
+          channel: "hollowknightcommunity",
+          parent: ["smallhomothetyorganization.org"]
+        });
+      </script>
+      <div class="list">
+        <h2>Meme Day Event Schedule</h2>
+        <div id="schedule-table-container" style="overflow-x:auto;">
+          <table>
+            <tr>
+              <td>8:00pm - 8:30pm UTC</td>
+              <td>Stinky%</td>
+              <td>Runner: Fruno</td>
+              <td>Comms: Oat, a_Press</td>
+            </tr>
+            <tr>
+              <td>9:45pm UTC</td>
+              <td>0Geo</td>
+              <td>Runner: Ms Moo But Cool</td>
+              <td>Comms: TBA</td>
+            </tr>
+            <tr>
+              <td>10:50pm UTC</td>
+              <td>Mystery Run</td>
+              <td>Runner: Surprise Runner</td>
+              <td>Comms: Sylvie</td>
+            </tr>
+            <tr>
+              <td>11:25pm UTC</td>
+              <td>Elegy% All Glitches</td>
+              <td>Runner: Python</td>
+              <td>Comms: Python</td>
+            </tr>
+            <tr>
+              <td>12:00am UTC</td>
+              <td>All Charm Notches Patch race</td>
+              <td>
+                <p>Runners:</p>
+                <p>Latest Patch: May and Vex</p>
+                <p>1221: Nerf and Cerp</p>
+              <td>Comms: Quato, Sylvie</td>
+            </tr>
+            <tr>
+              <td>1:20am UTC</td>
+              <td>Ghostbusters</td>
+              <td>Runners: Zonk</td>
+              <td>Coms: Nyx, Quato</td>
+            </tr>
+            <tr>
+              <td>2:30am UTC</td>
+              <td>Vanilla Lockout</td>
+              <td>Runners: May, Tremen, MrSir71, and Python</td>
+              <td>Comms: a_Press</td>
+            </tr>
+            <tr>
+              <td>3:40am UTC</td>
+              <td>AGAG Race</td>
+              <td>Runners: blossom, python</td>
+              <td>Comms: Maso Lim</td>
+            </tr>
+            <tr>
+              <td>4:20am UTC</td>
+              <td>Elegy%</td>
+              <td>Runner: Quatopine</td>
+              <td>Comms: Nyx, Krys</td>
+            </tr>
+            <tr>
+              <td>5:40am UTC</td>
+              <td>All Whispering Roots race</td>
+              <td>Runners: PsyKlone Gwonkee </td>
+              <td>Comms: Skyfire</td>
+            </tr>
+            <tr>
+              <td>7:00am</td>
+              <td>Kronk%</td>
+              <td>Runner: ff300</td>
+              <td>Comms: chikituti Slyfire</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h2 class="coolheading"><a href="#header">Top</a> </h2>
+    </div>
+  </div>
+</body>
+
+</html>
