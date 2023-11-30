@@ -271,6 +271,7 @@ li {
 }
 
 #hksceventstableheader {
+  font-family: "Rubik", sans-serif;
   font-size: 25px;
   font-weight: bold;
 }
@@ -291,5 +292,9 @@ li {
     font-size: 18px;
     background: #e4e1ff;
     width: 400px;
+  }
+
+  .headingbottom {
+    order: 3;
   }
   }
