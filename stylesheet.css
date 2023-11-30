@@ -205,7 +205,6 @@ li {
 }
 
 /* Grubby page IDs */
-
 #namelabel {
   font-size: 18px;
   font-family: "Playpen Sans", sans-serif;
@@ -232,7 +231,6 @@ li {
 }
 
 /* For /events pages */
-
 #events-container {
   display: flex;
   flex-direction: row;
@@ -276,11 +274,16 @@ li {
   font-weight: bold;
 }
 
+#events-container-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 800px) {
   .events {
     width: 100%;
   }
-
 
   #events-container {
     display: flex;
@@ -297,5 +300,7 @@ li {
     font-size: 18px;
     background: #e4e1ff;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  }
+}
