@@ -277,6 +277,11 @@ li {
 }
 
 @media only screen and (max-width: 800px) {
+  .events {
+    width: 100%;
+  }
+
+
   #events-container {
     display: flex;
     flex-direction: column;
@@ -292,9 +297,5 @@ li {
     font-size: 18px;
     background: #e4e1ff;
     width: 400px;
-  }
-
-  .headingbottom {
-    order: 3;
   }
   }
