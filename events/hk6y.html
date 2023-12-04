@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK6Y</title>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 6th Anniversary" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 6th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk6y" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    .list table {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+    }
+
+    #schedule-table-container {
+      padding-bottom: 30px;
+    }
+
+    .list table,
+    .list th,
+    .list td {
+      border-style: solid;
+      border-color: #edb265;
+      border-width: 2px;
+      border-collapse: collapse;
+    }
+
+    .list th,
+    .list td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    #schedule-image {
+      height: 950px;
+      width: 625px;
+    }
+
+    td p {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+      padding: 0px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+            #schedule-image {
+              height: 791px;
+              width: 520px;
+            }
+    }
+
+    @media only screen and (max-width: 700px) {
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+      #schedule-image {
+        height: 593px;
+        width: 390px;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+      .list {
+        padding: 0% 0% 0% 0%;
+        border-style: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-list").load("/eventsnav.html");
+    });
+  </script>
+  <div id="events-container-container">
+    <div id="events-container">
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Hollow Knight 6th Anniversary Celebration</h1>
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/events/hk7y'"><a href="/events/hk6y">Main Event</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk7y/memeday'"><a href="/events/hk6y/memeday">Meme Day</a> </button>
+        </div>
+        <p>HK6Y was the Hollow Knight 6th anniversary event, which took place in February 2023. The event was broken into two parts: the main event, which took place on February 25th, 2023; and meme day, which took place on February 24th, 2023.</p>
+        <h2><a href="https://www.twitch.tv/collections/yF5bcyp9RxdXbw?filter=collections">Watch</a> </h2>
+        <p>The schedule for the main event is below. Credit to dragon_nyx for the cool png version!</p>
+        <img id="schedule-image" src="../images/events/HK6Y_Schedule-01.png" alt="An image with the HK6Y schedule. Schedule transcript is in the table below." height="950px" width="625px">
+        <div class="list">
+          <h2>Main Event Schedule</h2>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>2:00pm - 2:10pm UTC</td>
+                <td>9:00am EST</td>
+                <td>Intro</td>
+              </tr>
+              <tr>
+                <td>2:10pm - 3:40pm UTC</td>
+                <td>9:10am EST</td>
+                <td>All Skills NMG Race</td>
+                <td>Runners: JackmanMarcus, Green_SR</td>
+                <td>Comms: mys3cretskill, olallaz2</td>
+              </tr>
+              <tr>
+                <td>3:55pm - 5:45pm UTC</td>
+                <td>10:55am EST</td>
+                <td>True Ending LP NMG Race</td>
+                <td>Runners: Kuroshi, Calligraphiti, Mildfulline3, Sawayoshi</td>
+                <td>Comms: Gidge, a_Pess</td>
+              </tr>
+              <tr>
+                <td>5:50pm - 6:20pm UTC</td>
+                <td>12:50pm EST</td>
+                <td>Low% AG Showcase</td>
+                <td>Runner: python_wizard</td>
+                <td>Comms: python_wizard</td>
+              </tr>
+              <tr>
+                <td>6:25pm - 7:10pm UTC</td>
+                <td>1:25pm EST</td>
+                <td>Dupeless True Ending AG Showcase</td>
+                <td>Runner: BlossomtheCellist</td>
+                <td>Comms: ekkoet</td>
+              </tr>
+              <tr>
+                <td>7:15pm - 7:55pm UTC</td>
+                <td>2:15pm EST</td>
+                <td>P5 Showcase</td>
+                <td>Runner: spoonsei</td>
+                <td>Comms: SylvieNukie</td>
+              </tr>
+              <tr>
+                <td>8:00pm - 9:00pm UTC</td>
+                <td>3:00pm EST</td>
+                <td>Hand/Brain Spoiler Rando Race</td>
+                <td>Runners: Tim and Tremen vs ashdasmurf and jettfire44</td>
+                <td>Comms: TheMasochistGamer, BadMagic</td>
+              </tr>
+              <tr>
+                <td>9:05pm - End UTC</td>
+                <td>4:05pm EST</td>
+                <td>P5BO Team Controller vs Team Keyboard Relay Race</td>
+                <td>
+                  <p>Team Controller: Quatopine, Connoramon, t_k_3, Noodles, Kuroshi, Krysanthemoof</p>
+                  <p>Team Keyboard: PsyKlone, Slaurent, Zonk, CC, Icefire, Arconifer, Sawayoshi, colliemonster, a_Press</p>
+                </td>
+                <td>Comms: a_Press, Vexsance, Gidge, tjmcbug, Birdie, TheMasochistGamer, Kuroshi, SylvieNukie, April, Krysanthemoof, Connoramon</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="coolheading"><a href="#header">Top</a> </h2>
+  </div>
+</body>
+
+</html>
