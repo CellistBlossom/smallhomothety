@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK4Y</title>
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 4th Anniversary" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 4th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk4y" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+
+    .menu {
+      display: none;
+    }
+
+    .list table {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+    }
+
+    #schedule-table-container {
+      padding-bottom: 30px;
+    }
+
+    .list table,
+    .list th,
+    .list td {
+      border-style: solid;
+      border-color: #edb265;
+      border-width: 2px;
+      border-collapse: collapse;
+    }
+
+    .list th,
+    .list td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    #schedule-image {
+      height: 950px;
+      width: 625px;
+    }
+
+    td p {
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+      padding: 0px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+            #schedule-image {
+              height: 791px;
+              width: 520px;
+            }
+    }
+
+    @media only screen and (max-width: 700px) {
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+      #schedule-image {
+        height: 593px;
+        width: 390px;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+      .list {
+        padding: 0% 0% 0% 0%;
+        border-style: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "inline") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "inline"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-list").load("/eventsnav.html");
+    });
+  </script>
+  <div id="events-container-container">
+    <div id="events-container">
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Hollow Knight 4th Anniversary Celebration</h1>
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/events/hk6y'"><a href="/events/hk4y">Main Event</a> </button>
+        </div>
+        <p>HK4Y was the Hollow Knight 4th anniversary event, which took place in February 2021.</p>
+        <h2><a href="https://www.twitch.tv/collections/GyKuKPDy9xYH6w?filter=collections">Watch</a> </h2>
+        <p>The schedule for the event is below.</p>
+        <div class="list">
+          <h2>HK4Y Schedule</h2>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>1.2.2.1 Any% NMG</td>
+                <td>Runners: Ax2u, RhinoFeeder, Fireb0rn, homothety</td>
+                <td>Comms: Xero, Muri</td>
+              </tr>
+              <tr>
+                <td>LP 4 Mask Shards</td>
+                <td>Runners: JBhyperion, slaurent, Etimo, Glitchy</td>
+                <td>Comms: Ins0mnia, LocusSK</td>
+              </tr>
+              <tr>
+                <td>Randomizer Double Anti Bingo</td>
+                <td>Runners: Mathulu, Jeffisepic</td>
+                <td>Comms: JasonILTG, Quacksilver</td>
+              </tr>
+              <tr>
+                <td>1.2.2.1 True Ending NMH</td>
+                <td>Runner: vysuals, Paum, ChocciAdam</td>
+                <td>Comms: Skurry, Blue</td>
+              </tr>
+              <tr>
+                <td>P5 Showcase</td>
+                <td>Runner: spoonsei</td>
+                <td>Comms: SylvieNukie</td>
+              </tr>
+              <tr>
+                <td>Pantheon of Hallownest</td>
+                <td>Runners:  <span><a href="page1.html" onclick="return toggleMenu('menu1')">Banned Member</a> <span class="menu" id="menu1">emray</span></span></td>
+                <td>Comms: Zenonira, Doveless</td>
+              </tr>
+              <tr>
+                <td>106% NMG Team Controller vs Team Keyboard Relay Race</td>
+                <td>
+                  <p>Team Controller: Tsira, T_K_3, Jeffisepic, Spicie, Aprillomat, <span><a href="page3.html" onclick="return toggleMenu('menu3')">Banned Member</a> <span class="menu" id="menu3">Sourcreamsupreme</span></span>, Paum, Mathulu, CorporalAcorn, Etimo, <span><a href="page2.html" onclick="return toggleMenu('menu2')">Banned Member</a> <span class="menu" id="menu2">emray</span></span>, Vysuals</p>
+                  <p>Team Keyboard: Slaurent, Cerpintext, Pisces_FL, ins0mnia, Wasabit_Knight, Aertosaber, Gwonkee, Murihoro, OhkoXar, MyPetCactus, Ax2u, Doveless</p>
+                </td>
+                <td>Comms: LocusSK, Xero</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="coolheading"><a href="#header">Top</a> </h2>
+  </div>
+</body>
+
+</html>
