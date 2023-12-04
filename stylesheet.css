@@ -17,6 +17,14 @@ p a:hover {
   color: #6e9de1;
 }
 
+a {
+  color: #e16e9d;
+}
+
+a:hover {
+  color: #6e9de1;
+}
+
 a h2 {
   color: #e16e9d;
 }
