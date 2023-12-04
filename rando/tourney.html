@@ -39,6 +39,10 @@
       text-align: center;
     }
 
+    .menu2 {
+      display: none;
+    }
+
     .menu {
       display: none;
       margin-left: 20px;
@@ -131,6 +135,21 @@
           thisMenu.display = "none"
         } else {
           thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu2(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "inline") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "inline"
         }
         return false
       } else {
@@ -278,7 +297,7 @@
   <p><em><a href="page5.html" onclick="return toggleMenu('menu5')">Click to show/hide spoiler about winners ▶</a></em></p>
   <span class="menu" id="menu5">
     <div>
-      <p>The winners of this tournament were Kanra in the upper bracket, and Adyn99 in the lower bracket.</p>
+      <p>The winners of this tournament were <span><a href="page6.html" onclick="return toggleMenu2('menu6')">Banned Member</a><span class="menu2" id="menu6"> Kanra</span></span> in the upper bracket, and Adyn99 in the lower bracket.</p>
     </div>
   </span>
   <h3><a href="https://www.youtube.com/playlist?list=PLdoWICJMgPKUoBuRW7CmxsvRGg5VBzugH">Watch</a></h3>
