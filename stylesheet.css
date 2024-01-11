@@ -78,6 +78,10 @@ a {
   text-decoration: none;
 }
 
+.menulink {
+  cursor: pointer;
+}
+
 .dropbtn {
   background-color: #9d5fff;
   color: white;
