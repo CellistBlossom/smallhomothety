@@ -10,51 +10,51 @@ h1 {
 }
 
 p a {
-  color: #e16e9d;
+  color: #E44988;
 }
 
 p a:hover {
-  color: #6e9de1;
+  color: #4988e4;
 }
 
 a {
-  color: #e16e9d;
+  color: #E44988;
 }
 
 a:hover {
-  color: #6e9de1;
+  color: #E44988;
 }
 
 a h2 {
-  color: #e16e9d;
+  color: #E44988;
 }
 
 a h2:hover {
-  color: #6e9de1;
+  color: #4988e4;
 }
 
 h2 a {
-  color: #e16e9d;
+  color: #E44988;
 }
 
 h2 a:hover {
-  color: #6e9de1;
+  color: #4988e4;
 }
 
 a h3 {
-  color: #e16e9d;
+  color: #E44988;
 }
 
 a h3:hover {
-  color: #6e9de1;
+  color: #4988e4;
 }
 
 h3 a {
-  color: #e16e9d;
+  color: #E44988;
 }
 
 h3 a:hover {
-  color: #6e9de1;
+  color: #4988e4;
 }
 
 h2 {
@@ -144,11 +144,11 @@ a {
 .playlistlink {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
-  color: #e16e9d;
+  color: #E44988;
 }
 
 .playlistlink:hover {
-  color: #6e9de1;
+  color: #4988e4;
 }
 
 .disclaimer {
