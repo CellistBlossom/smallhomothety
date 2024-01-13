@@ -38,6 +38,57 @@
       font-size: 20px;
     }
 
+        .menu {
+          display: none;
+          margin-left: 20px;
+          font-family: Helvetica;
+        }
+
+        .list h2 {
+          text-align: center;
+        }
+
+
+        .list table {
+          font-family: "Rubik", sans-serif;
+          font-size: 15px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        #schedule-table-container {
+          padding-bottom: 30px;
+        }
+
+        #schydaydate {
+          text-align: center;
+        }
+
+        #customknight {
+          text-align: center;
+        }
+
+        .list table,
+        .list th,
+        .list td {
+          border-style: solid;
+          border-color: #edb265;
+          border-width: 2px;
+          border-collapse: collapse;
+        }
+
+        .list th,
+        .list td {
+          padding: 15px;
+          text-align: left;
+        }
+
+        td p {
+          font-family: "Rubik", sans-serif;
+          font-size: 15px;
+          padding: 0px;
+        }
+
     @media only screen and (max-width: 1100px) {
       .important-container {
         padding: 0% 15% 0% 15%;
@@ -48,39 +99,36 @@
       .important-container {
         padding: 0% 10% 0% 10%;
       }
+
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
+
+
     }
 
     @media only screen and (max-width: 500px) {
       .important-container {
         padding: 0% 5% 0% 5%;
       }
-    }
 
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
-    }
+      .list th,
+      .list td {
+        padding: 0px;
+        text-align: left;
+      }
 
+      .list {
+        padding: 0% 0% 0% 0%;
+        border-style: none;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <script type="text/javascript" language="Javascript">
-    function toggleMenu(currMenu) {
-      if (document.getElementById) {
-        thisMenu = document.getElementById(currMenu).style
-        if (thisMenu.display == "block") {
-          thisMenu.display = "none"
-        } else {
-          thisMenu.display = "block"
-        }
-        return false
-      } else {
-        return true
-      }
-    }
-  </script>
   <script>
     $(document).ready(function() {
       $("#navbar").load("/nav.html");
@@ -99,9 +147,86 @@
       </div>
       <div class="events">
         <h1 id="header">Remembering Schy's Achievements</h1>
+        <img src="/images/shyschy.png" alt="A shyguy playing on a Nintendo Switch." height="150px" width="150px">
         <p>Schy was a treasured member of the community and friend to many. They tragically passed away in June of 2022. The speedrunning community held this event to honor the joy they brought to our lives, and to remember all that they contributed.</p>
-        <p>The schedule for the event consisted of every category Schy had run. Many of the runners in this event were members of the community who were close to Schy. The final part of the event consisted of a path of pain IL relay race, followed by a showing of Schy's personal best, which was world record for a while and second place at the time of their passing.</p>
-        <h3><a href="https://www.twitch.tv/collections/rOdfYAU6ABfzKQ">Watch</a> </h3>
+        <p>The schedule for the event consisted of every non-IL category Schy had run. Many of the runners in this event were members of the community who were close to Schy. The final part of the event was a path of pain IL relay race, followed by a showing of Schy's personal best, which was world record for a while and second place at the time of their passing.</p>
+        <p>Thank you to Herm for organizing and running this event. Thank you also to dragon_nyx for the art used. We appreciate you more than words can describe.</p>
+        <p>We'll miss you forever, our star.</p>
+        <h2><a href="https://www.twitch.tv/collections/rOdfYAU6ABfzKQ">Watch</a> </h2>
+        <div class="list">
+          <h2>Schedule</h2>
+          <p id="schydaydate"><em>July 9th, 2022</em></p>
+          <p id="customknight"><a href="https://drive.google.com/drive/folders/1RD6A8O5ZiDDJ60V091Ij-KJ6vxtkqg6w">Custom Knight Skin</a> made for the event by Griftz and Nyx.</p>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>💙 Path of Pain%</td>
+                <td>Runners: CaffeinatedComposer, Quatopine</td>
+                <td>Comms: Herm, Kuroshi</td>
+              </tr>
+              <tr>
+                <td>💙 Save Myla</td>
+                <td>Runner: Exorax</td>
+                <td>Comms: Herm, CaffeinatedComposer</td>
+              </tr>
+              <tr>
+                <td>💙 Myla% AG</td>
+                <td>Runner: ins0mnia</td>
+                <td>Comms: Herm, ins0mnia</td>
+              </tr>
+              <tr>
+                <td>💙 Grubsong%</td>
+                <td>Runner: JBHyperion</td>
+                <td>Comms: Herm, Gidge</td>
+              </tr>
+              <tr>
+                <td>💙 Any% NMG</td>
+                <td>Runner: Gwonkee</td>
+                <td>Comms: Herm, Beatami</td>
+              </tr>
+              <tr>
+                <td>💙 Elderbug% All Glitches</td>
+                <td>Runner: BlossomtheCellist</td>
+                <td>Comms: Herm, ins0mnia</td>
+              </tr>
+              <tr>
+                <td>💙 True Ending All Glitches (Lessclip Route)</td>
+                <td>Runner: BlossomtheCellist</td>
+                <td>Comms: Herm, ins0mnia</td>
+              </tr>
+              <tr>
+                <td>💙 All Skills NMG</td>
+                <td>Runner: Collie</td>
+                <td>Comms: Herm, Violet</td>
+              </tr>
+              <tr>
+                <td>💙 Great Hopper% All Glitches</td>
+                <td>Runner: a_Press</td>
+                <td>Comms: Herm, Jenkar</td>
+              </tr>
+              <tr>
+                <td>💙 NKG% All Glitches</td>
+                <td>Runner: a_Press</td>
+                <td>Comms: Herm, Jenkar</td>
+              </tr>
+              <tr>
+                <td>💙 True Ending NMG</td>
+                <td>Runner: Hy9er</td>
+                <td>Comms: Gwonkee, RhinoFeeder</td>
+              </tr>
+              <tr>
+                <td>💙 Path of Pain IL Relay</td>
+                <td>Runners: Northirn, aksel_sk, vls, alejsXY</td>
+                <td>Comms: Flatfalco, SylvieNukie</td>
+              </tr>
+              <tr>
+                <td>💙 Schy's Path of Pain PB</td>
+                <td>Runner: Schy</td>
+                <td>Comms: Flatfalco, SylvieNukie</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
     <h2 class="coolheading"><a href="#header">Top</a> </h2>
