@@ -31,9 +31,6 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/tourney" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <style media="screen">
-    li {
-      text-align: left;
-    }
 
     h3 {
       text-align: center;
@@ -203,61 +200,61 @@
     <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch channel</a> (though this hasn't always been the case).</p>
   <p>Tournament races are generally held to be more competitive than non-tournament races. They generally consist of only one format and may have tournament-specific rules. Tournaments, if restreamed, are almost always streamed live.</p>
   <p>For an explanation of individual formats that may be used in tournaments, see the <a href="formats">formats</a> page.</p>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "hollowknightcommunity",
+        parent: ["smallhomothetyorganization.org"]
+      });
+    </script>
   <h2 id="allmajors2023">2023 All Majors Tournament</h2>
   <div class="tourney-important-container">
     <div class="tourney-important">
-      <p><strong>After a break for the holidays, Grand Finals is upon us!</strong> Kuroshi/aPress and Tim/Quatopine will battle it out on Saturday, January 13th 2024 at 8PM EST (1AM UTC). Grand finals will be a best of
-        5 with a one game advantage for the team in the upper bracket, so there will be multiple races that day between the two teams. Check out the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity</a> Twitch channel to watch the commentated restream!</p>
+      <p><strong>The 2023 All Majors rando tournament is over!</strong> If you missed Grand Finals, you can watch it on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch Channel</a>. Alternatively, you can watch the full tournament at the playlist link below.</p>
     </div>
   </div>
   <br>
-  <!-- Add a placeholder for the Twitch embed -->
-  <div id="twitch-embed"></div>
-
-  <!-- Load the Twitch embed JavaScript file -->
-  <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-  <script type="text/javascript">
-    new Twitch.Embed("twitch-embed", {
-      width: 854,
-      height: 480,
-      channel: "hollowknightcommunity",
-      parent: ["smallhomothetyorganization.org"]
-    });
-  </script>
-  <div class="list-container">
-    <div class="list">
-      <p>The tournament is a 2v2 All Major Items TE double-elimination tournament. All matches will be best of 1s until the end of the tournament, when we will switch to best of 3s for winners finals and losers finals. Grand finals will be a best of
-        5 with a one game advantage for the team in the upper bracket. </p>
-      <p>All Majors is a semi-spoiler format played with the MajorItemsByArea mod. Runners will have a tracker onscreen listing the number of major items in each area, but they don't know the exact locations of the items, or which major items were
-        placed in what area. Each team is required to get every item on the tracker, and once the counter reaches zero, defeat the Radiance. The first team to have both players finish Radiance wins!</p>
+      <p>The tournament was a 2v2 All Major Items TE double-elimination tournament. All matches were best of 1s until the end of the tournament. Winner's and Loser's finals were best of 3s, and Grand Finals was a best of 5 with a one-game advantage to the team in the upper bracket.</p>
+      <p>All Majors is a semi-spoiler format. For more information, see the <a href="/rando/formats">formats</a> page. For this tournament, the items that were required to be obtained are:</p>
+      <div class="list-container">
+        <div class="list">
+            <p>Mothwing Cloak (x2), Shade Cloak, Mantis Claw, Crystal Heart, Monarch Wings (x2), Isma's Tear, Swim</p>
+            <p>Dream Nail (x2), Dreamgate, Awoken Dream Nail, Lurien, Monomon, Herrah, White Fragment, Kingsoul, Void Heart</p>
+            <p>Vengeful Spirit (x2), Shade Soul, Desolate Dive (x2), Descending Dark, Howling Wraiths (x2), Abyss Shriek</p>
+            <p>Nail Upgrade (x4), Dash Slash, Cyclone Slash, Great Slash</p>
+            <p>King's Brand, Lumafly Lantern, Tram Pass, Elevator Pass, City Crest</p>
+            <p>Shopkeeper's Key, Elegant Key, Love Key, Grimmchild, Defender's Crest, Spore Shroom</p>
+        </div>
+      </div>
+      <h3>Gimmicks</h3>
+      <p>"Gimmicks" in this tournament were items that were added to the randomized pool beyond the default settings to help spice up each match. The first match was played without gimmicks; however, starting with winner's round 2 and loser's
+        round 2, players were required to add at least one gimmick to the settings.</p>
+        <p>To select gimmicks, the team with the higher seed would propose a list of three gimmicks and the team with the lower seed would be required to pick one. They would repeat the process with the lower seed proposing gimmicks and the higher seed picking, and the match would be played with those two gimmicks. Teams were also allowed to propose a third (or more) gimmick, but both teams would need to agree and may need permission from the TOs for gimmicks not on the list of preapproved ones. A list of gimmicks can be found below:</p>
+        <div class="list-container">
+          <div class="list">
+              <p>Gimmicks that randomize additional checks: Grimmkin Flames, Whispering Roots, Lore Tablets, Randomized Focus</p>
+              <p>Settings that alter logic with skips: Precise Movement, Background and Enemy Pogos, Infection Skips, No Swim/No Tear</p>
+              <p>Settings that alter how rando functions: Ghost Essence, Lemm/Junk Shops, Colo3 (the Glory of Being a Fool mod)</p>
+              <p>Gimmicks voted upon by rando community: Map Area transition rando, 3 Masks + 2 Charm notches, Split Claw, Fragile Charms being major items</p>
+          </div>
+        </div>
+      <p><em><a class="menulink" onclick="return toggleMenu('menu7')">Click to show/hide spoiler about winners ▶</a></em></p>
+      <span class="menu" id="menu7">
+        <div>
+          <p>The winners of this tournament were Tim and Quatopine.</p>
+        </div>
+      </span>
       <h3><a href="https://challonge.com/allmajorsrandorandoautumn2023">Bracket</a> </h3>
-      <h3><a href="https://hk-tournaments.web.app/">Schedule</a></h3>
       <h3><a href="https://docs.google.com/spreadsheets/d/1QUmZkDiMG2Iw6TmyvUPJ1VDaCoD07u3o4qcSdr5OvY4/edit">Rules</a> </h3>
-      <h3><a href="https://docs.google.com/spreadsheets/d/117v1n8RL7P-ifTyzAFTbupLafDBN_5QAQ6tBISjI0p8/edit?usp=sharing">Alternative Rules</a> </h3>
-      <h3>What counts as a Major Item?</h3>
-      <p>For this tournament, the items that are required to be obtained are:</p>
-      <ul>
-        <li>Mothwing Cloak (x2), Shade Cloak, Mantis Claw, Crystal Heart, Monarch Wings (x2), Isma's Tear, Swim</li>
-        <li>Dream Nail (x2), Dreamgate, Awoken Dream Nail, Lurien, Monomon, Herrah, White Fragment, Kingsoul, Void Heart</li>
-        <li>Vengeful Spirit (x2), Shade Soul, Desolate Dive (x2), Descending Dark, Howling Wraiths (x2), Abyss Shriek</li>
-        <li>Nail Upgrade (x4), Dash Slash, Cyclone Slash, Great Slash</li>
-        <li>King's Brand, Lumafly Lantern, Tram Pass, Elevator Pass, City Crest</li>
-        <li>Shopkeeper's Key, Elegant Key, Love Key, Grimmchild, Defender's Crest, Spore Shroom</li>
-      </ul>
-      <h3>Introducing gimmicks!</h3>
-      <p>What are gimmicks? Gimmicks are items that will be added to the randomized pool beyond the default settings to help spice up each match. The first match will be played without gimmicks, however, starting with winner's round 2 and loser's
-        round 2, players must add at least one gimmick to the settings. We will be using a ban/pick system for this. A list of gimmicks can be found below:</p>
-      <ul>
-        <li>Randomizing checks not in basic settings- grimmkin flames, whispering roots, lore tablets, randomizing focus</li>
-        <li>Settings that alter logic with skips- precise movement setting, background and enemy pogo, infection skips, no swim/no tear</li>
-        <li>Settings that alter how rando functions- ghost essence, lemm/junk shops, colo3 (the glory of being a fool mod)</li>
-        <li>+gimmicks voted upon by rando community- map area transition rando, 3 masks + 2 Charm notches, Split Claw, Fragile charms being major items</li>
-      </ul>
-      <p>Note that some gimmicks not listed may be included if both teams and the Tournament Organizer agree to them, on a race-by-race basis. When in doubt, check the tracker on the restream!</p>
-    </div>
-  </div>
+  <hr>
   <h2 id="blackout2023">2023 Blackout TE Tournament</h2>
   <p>This tournament was a 2v2 double-elimination Blackout TE tournament that ran from March 3rd, 2023 to March 29th. It was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity Twitch channel</a> and is now
     highlighted there.</p>
