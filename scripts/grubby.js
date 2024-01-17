@@ -1036,6 +1036,108 @@ const GRUB_NAMES = [
   "Flitzy",
   "Xeamless",
   "Peekagrub",
+  "Gruzzly",
+  "Gruzzlet",
+  "Gruzzle",
+  "Grubbit",
+  "Grubox",
+  "Grubbert",
+  "Gruber",
+  "Grubulus",
+  "Grubella",
+  "Grubina",
+  "Grubadoo",
+  "Gruberella",
+  "Grubaldo",
+  "Grubbers",
+  "Grubward",
+  "Grubsby",
+  "Grubbar",
+  "Grubberto",
+  "Grubetta",
+  "Grubbo",
+  "Grubbleton",
+  "Grubadro",
+  "Grubolio",
+  "Grubito",
+  "Grubaroo",
+  "Grubalina",
+  "Grublyn",
+  "Grubador",
+  "Grubius",
+  "Grubrick",
+  "Gruberino",
+  "Grubsley",
+  "Grubius Maximus",
+  "Grubzilla",
+  "Grubblebottom",
+  "Grubsterino",
+  "Grubakin",
+  "Grubanoff",
+  "Grubikov",
+  "Grubbleberry",
+  "Grubbernaut",
+  "Grubulous",
+  "Grubington",
+  "Grubules",
+  "Grubelicious",
+  "Grubster the Great",
+  "Grubrick the Brave",
+  "Grubberto the Wise",
+  "Grubelina the Magnificent",
+  "Grubbarina the Fearless",
+  "Grubson the Mischievous",
+  "Grubbletina the Curious",
+  "Grubard the Adventurous",
+  "Grubbus the Playful",
+  "Grubalicious the Hungry",
+  "Grublin the Swift",
+  "Grubadon the Mighty",
+  "Grublina the Elegant",
+  "Grubbletop the Agile",
+  "Grubelord the Ruler",
+  "Grubzilla the Legendary",
+  "Grubslinger the Quick",
+  "Grubula the Enigmatic",
+  "Grubulon the Stealthy",
+  "Grubbertus the Cautious",
+  "Gully",
+  "Slimy",
+  "Twiggle",
+  "Larvy",
+  "Twitch",
+  "Snug",
+  "Wormy",
+  "Slurp",
+  "Slimebite",
+  "Gooey",
+  "Tendril",
+  "Sludge",
+  "Snicker",
+  "Squeaker",
+  "Puddle",
+  "Slimeton",
+  "Wriggler",
+  "Scuttle",
+  "Slimefoot",
+  "Sludgeon",
+  "Squirmkin",
+  "Vermilion",
+  "Noodle",
+  "Writhy",
+  "Gruble",
+  "Swoop",
+  "Jiggles",
+  "Gobble",
+  "Slimeface",
+  "Scurry",
+  "Wobble",
+  "Wormtail",
+  "Slop",
+  "Slivers",
+  "Creepster",
+  "Squabble",
+  "Slushie"
 ];
 const PRONOUNS = [
   'she/her',
@@ -1055,7 +1157,10 @@ const PRONOUNS = [
   'they/them',
   'fae/faer',
   'xe/xem',
-  'it/its'
+  'it/its',
+  'ze/zir',
+  'ey/em',
+  've/ver'
 ];
 const GRUB_FOODSTUFFS = [
   'Parsley',
@@ -1101,9 +1206,9 @@ const GRUB_FOODSTUFFS = [
   'Willow',
   'Birch',
   'Tuliptree',
-  'Cherry trees',
-  'Plum trees',
-  'Apple trees',
+  'Cherry tree leaves',
+  'Plum tree leaves',
+  'Apple tree leaves',
   'Violets',
   'Pansies',
   'Passionflowers',
@@ -1246,17 +1351,32 @@ const MIMIC_NAMES = [
   'Glutterfly',
   'Gnawer Beetle',
   'Muncher Shrimp',
-  'Blocky Scarab'
+  'Blocky Scarab',
+  'Crawlipede',
+  'Bonebite',
+  'Mossling',
+  'Shellshroom',
+  'Mantis Muncher',
+  'Stagnant Snacker',
+  'Needle Nibbler',
+  'Spore Sipper',
+  'Web Wriggler',
+  'Goo Glutton',
+  'Acid Licker',
+  'Sludge Slurper',
+  'Slimy Slurker',
+  'Venomous Vor',
+  'Carrion Chomper'
 ];
 const MIMIC_FOODSTUFFS = [
-  'Grub Fries',
-  'Grub Rice',
-  'Grub Crepes',
-  'Grub Noodle Bowl',
-  'Grub Pizza',
-  'Grub Grilled Cheese',
-  'Grub Fish and Chips',
-  'Grub Fried Chicken',
+  'Grub-style Fries',
+  'Grub-style Rice',
+  'Grub-style Crepes',
+  'Grub-style Noodle Bowl',
+  'Grub-style Pizza',
+  'Grub-style Grilled Cheese',
+  'Grub-style Fish and Chips',
+  'Grub-style Fried Chicken',
   'Dusty Bun',
   'Flukefin Soup',
   'Violet Confit',
@@ -1344,7 +1464,12 @@ const MIMIC_PERSONALITIES = [
 
 button.addEventListener("click", function() {
   var grubbynumber = Math.floor(Math.random() * 100);
-  document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
+  if (grubbynumber > 7) {
+    document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
+  }
+  else {
+    document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
+    }
 
   var pronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
   document.getElementById("pronouns").innerHTML = pronouns;
@@ -1364,7 +1489,7 @@ button.addEventListener("click", function() {
       possessive_pronoun = "Their";
       referential_pronoun = "them";
       break;
-    case "fae/fer":
+    case "fae/faer":
       possessive_pronoun = "Faer";
       referential_pronoun = "faer";
       break;
@@ -1375,6 +1500,18 @@ button.addEventListener("click", function() {
     case "it/its":
       possessive_pronoun = "Its";
       referential_pronoun = "it";
+      break;
+    case "ze/zir":
+      possessive_pronoun = "Zir";
+      referential_pronoun = "zir";
+      break;
+    case "ey/em":
+      possessive_pronoun = "Eir";
+      referential_pronoun = "em";
+      break;
+    case "ve/ver":
+      possessive_pronoun = "Vis";
+      referential_pronoun = "ver";
       break;
     default:
       possessive_pronoun = "Grub";
