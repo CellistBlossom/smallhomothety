@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <title>Wobblebramble</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/wobblebramble/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/wobblebramble/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/wobblebramble/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="manifest" href="/favicon/wobblebramble/site.webmanifest">
   <meta name="description" content="Wobblebramble">
   <style media="screen">
 
@@ -116,10 +116,10 @@
       <source src="../music/Accumula_Town_Furret_Walk_loop.mp3" type="audio/mp3">
     </audio>
     <div class="interactable-player-container">
-      <button id="play-icon"></button>
-      <input type="range" id="volume-slider" max="100" value="100">
+      <button id="play-icon" name="play"></button>
+      <input type="range" id="volume-slider" max="100" value="100" name="volume">
       <output id="volume-output">100</output>
-      <button id="mute-icon"></button>
+      <button id="mute-icon" name="mute"></button>
     </div>
   </div>
   <script type="module">
