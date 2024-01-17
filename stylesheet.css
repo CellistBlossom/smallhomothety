@@ -316,3 +316,18 @@ li {
     margin-right: auto;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .mobilewidelist {
+    padding: 0% 0% 0% 0%;
+  }
+
+
+  .widelist {
+    padding: 0% 0% 0% 0%;
+  }
+
+  .important-container {
+    padding: 0% 5% 0% 5%;
+  }
+}
