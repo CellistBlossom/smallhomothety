@@ -155,19 +155,13 @@
   </script>
   <div id="navbar">
   </div>
-  <div class="subnavmenu">
-    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
-    <button class="submenubtn" onclick="location.href='gettingstarted'"><a href="gettingstarted">Getting Started</a></button>
-    <button class="submenubtn" onclick="location.href='skips'"><a href="skips">Skips</a> </button>
-    <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
-    <button class="submenubtn" onclick="location.href='itemsyncguide'"><a href="itemsyncguide">Itemsync Guide</a> </button>
-    <button class="submenubtn" onclick="location.href='rules'"><a href="rules">Rules</a> </button>
-    <button class="submenubtn" onclick="location.href='glossary'"><a href="glossary">Glossary</a> </button>
-    <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
-    <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
-    <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
-    <button class="submenubtn" onclick="location.href='tourney'"><a href="tourney">Tourneys</a> </button>
-    <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
+  <script>
+    $(document).ready(function() {
+      $("#randonavbar").load("/rando/randonav.html");
+    });
+  </script>
+  <div id="randonavbar">
+
   </div>
   <h1 id="header">Rando 4 Itemsync & RandoSettingsManager Guide</h1>
   <h3> <a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
@@ -261,7 +255,7 @@
 
   </div>
   <h2 id="rsm-settings-management">Getting Started (With Rando Settings Manager)</h2>
-  <p>By default, Randomizer 4 does not have a way to sync connections between players. Doing so requires installing a seperate mod, RandoSettingsManager, to do so. If you are not playing with connections you can safely skip this part.</p>
+  <p>By default, Randomizer 4 does not have a way to sync connections between players. Doing so requires installing a separate mod, RandoSettingsManager, to do so. If you are not playing with connections you can safely skip this part.</p>
   <div class="list-container">
     <div class="list">
       <p>Create new save file, select Randomizer.</p>
@@ -281,9 +275,9 @@
       <p>If you are creating the settings, simply click "Create Key". This will copy the settings key to your clipboard, and from there you can simply paste the key into whatever you're using to talk to your friends! <a class="menulink"
           onclick="return toggleMenu('menu17')">▶</a></p>
       <span class="menu" id="menu17">
-        <img src="../images/itemsyncguide/img2_4.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been sucessfully created.">
+        <img src="../images/itemsyncguide/img2_4.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been successfully created.">
       </span>
-      <p>If you are recieving the settings, make sure you copy the key that has been shared with you to your clipboard, and then click "Paste Key". If you have the correct mods installed and the right versions of them, you're good to go. The mod will
+      <p>If you are receiving the settings, make sure you copy the key that has been shared with you to your clipboard, and then click "Paste Key". If you have the correct mods installed and the right versions of them, you're good to go. The mod will
         let you know if there is an error and anything needs to be updated. <a class="menulink" onclick="return toggleMenu('menu18')">▶</a></p>
       <span class="menu" id="menu18">
         <img src="../images/itemsyncguide/img2_3.png" alt="A screenshot of the Randomizer 4 RandoSettingsManager menu after a key has been pasted in and successfully loaded.">

@@ -138,19 +138,13 @@
   </script>
   <div id="navbar">
   </div>
-  <div class="subnavmenu">
-    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/gettingstarted'"><a href="/rando/gettingstarted">Getting Started</a></button>
-    <button class="submenubtn" onclick="location.href='/rando/skips'"><a href="/rando/skips">Skips</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/mods'"><a href="/rando/mods">Mods</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/itemsyncguide'"><a href="/rando/itemsyncguide">Itemsync Guide</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/rules'"><a href="/rando/rules">Rules</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/glossary'"><a href="/rando/glossary">Glossary</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/formats'"><a href="/rando/formats">Formats</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/settings'"><a href="/rando/settings">Settings</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/bingo'"><a href="/rando/bingo">Bingo</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/tourney'"><a href="/rando/tourney">Tourneys</a> </button>
-    <button class="submenubtn" onclick="location.href='/rando/homothety'"><a href="/rando/homothety">Homothety</a> </button>
+  <script>
+    $(document).ready(function() {
+      $("#randonavbar").load("/rando/randonav.html");
+    });
+  </script>
+  <div id="randonavbar">
+
   </div>
   <h1 id="header">Rando Rando!</h1>
   <div class="important-container">
@@ -173,7 +167,7 @@
             <p class="newsdate"><strong>January 2024</strong></p>
             <p>Added a "<a href="/rando/gettingstarted">getting started</a>" page as a jumping off point for new rando enjoyers.</p>
             <p class="newsdate"><strong>November 2023</strong></p>
-            <p>Added seperate <a href="/rando/skips">skips</a> page, yippee!</p>
+            <p>Added separate <a href="/rando/skips">skips</a> page, yippee!</p>
             <p>Added a <a href="/rando/glossary">glossary</a> of rando terms.</p>
           </div>
         </div>
@@ -186,7 +180,7 @@
             <p>Unfortunately, all good things must come to an end, and Grand Finals of the 2023 All Majors tournament is over. On the plus side, though, the <a href="https://github.com/BadMagic100/MajorItemByAreaTracker/">MajorItemByAreaTracker mod</a> got an update! Grub lovers rejoice, for we can now require saving all 46 of our squirmy little buddies in our races. Or, if you just want to play your solo seeds to Elegy%, now you can do that.</p>
             <p class="newsdate"><strong>December 2023</strong></p>
             <p>The schedule for HK7Y is live! This year, the event is broken into three parts: <a href="/events/hk7y/randoday">Rando Day</a> on Thursday Feb 22nd at 8:00pm UTC, <a href="/events/hk7y/memeday">Meme Day</a> on Friday Feb 23rd at 8:00pm UTC, and the <a href="/events/hk7y">Main Event</a> on
-              Saturday Feb 24th at 2:00pm UTC. Go give the <a href="/events/hk7y">HK7Y</a> event page a read, and/or keep watch on the #event-announcments channel in the Discord. </p>
+              Saturday Feb 24th at 2:00pm UTC. Go give the <a href="/events/hk7y">HK7Y</a> event page a read, and/or keep watch on the #event-announcements channel in the Discord. </p>
             <p class="newsdate"><strong>November 2023</strong></p>
             <p>HK7Y, the community-led anniversary event for Hollow Knight, is coming up, and there will be a day all about rando! Stay tuned for updates and keep an eye on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch
                 channel</a> when the time comes.</p>

@@ -105,19 +105,13 @@
   </script>
   <div id="navbar">
   </div>
-  <div class="subnavmenu">
-    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
-    <button class="submenubtn" onclick="location.href='gettingstarted'"><a href="gettingstarted">Getting Started</a></button>
-    <button class="submenubtn" onclick="location.href='skips'"><a href="skips">Skips</a> </button>
-    <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
-    <button class="submenubtn" onclick="location.href='itemsyncguide'"><a href="itemsyncguide">Itemsync Guide</a> </button>
-    <button class="submenubtn" onclick="location.href='rules'"><a href="rules">Rules</a> </button>
-    <button class="submenubtn" onclick="location.href='glossary'"><a href="glossary">Glossary</a> </button>
-    <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
-    <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
-    <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
-    <button class="submenubtn" onclick="location.href='tourney'"><a href="tourney">Tourneys</a> </button>
-    <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
+  <script>
+    $(document).ready(function() {
+      $("#randonavbar").load("/rando/randonav.html");
+    });
+  </script>
+  <div id="randonavbar">
+
   </div>
   <div class="formats" id="generalformats">
     <h1 id="header">Common Formats for Racing Rando</h1>
@@ -187,7 +181,7 @@
         battleships.
         Winner has to sink their opponent's battleships. </p>
       <h3>Exploration</h3>
-      <p>The board begins mostly hidden, with only a few goals visible to the players. When a player marks a goal, the adjacant goals become visible. Commonly played to 2, 3, or 4 corners, starting from the center. Can be played either solo or
+      <p>The board begins mostly hidden, with only a few goals visible to the players. When a player marks a goal, the adjacent goals become visible. Commonly played to 2, 3, or 4 corners, starting from the center. Can be played either solo or
         2v...v2.
       </p>
       <h3>"Get to the other side"</h3>
@@ -199,7 +193,7 @@
     </div>
     <h2 id="spoilerformats">Spoiler Formats</h2>
     <div class="list-square">
-      <p>Races for these formats have a certain Preparation time after generating the world, to look at the spoiler log and plan a route. These may be renegotiatied if you're new and other racers agree.</p>
+      <p>Races for these formats have a certain Preparation time after generating the world, to look at the spoiler log and plan a route. These may be renegotiated if you're new and other racers agree.</p>
       <h3>Double Anti Bingo (DAB)</h3>
       <p>1v..v1 format. At the end of preparation time, you choose a line to force your opponent to do. First to complete their forced line + any other line wins.</p>
       <p><em>Prep time: 10 minutes</em></p>
@@ -226,7 +220,7 @@
       <p>Could be 3v3s, 4v4s etc. Each team uses their own multi room. All players use same seed and settings. Goal can either be blackout or TE.</p>
       <p><em>Time estimate: 2-3 hours</em></p>
       <h3>Archipelago</h3>
-      <p>Multiworld, but across multiple games. Ususally played as a co-op to TE (or whatever goal each person chooses). See <a href="https://archipelago.gg/games">the Archipelago website</a> for a list of currently supported games.</p>
+      <p>Multiworld, but across multiple games. Usually played as a co-op to TE (or whatever goal each person chooses). See <a href="https://archipelago.gg/games">the Archipelago website</a> for a list of currently supported games.</p>
     </div>
     <h3> <a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
     <span class="menu" id="menu101">

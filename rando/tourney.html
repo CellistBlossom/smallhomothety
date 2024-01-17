@@ -165,19 +165,13 @@
   </script>
   <div id="navbar">
   </div>
-  <div class="subnavmenu">
-    <button class="submenubtn" onclick="location.href='/rando'"><a href="/rando">Rando</a> </button>
-    <button class="submenubtn" onclick="location.href='gettingstarted'"><a href="gettingstarted">Getting Started</a></button>
-    <button class="submenubtn" onclick="location.href='skips'"><a href="skips">Skips</a> </button>
-    <button class="submenubtn" onclick="location.href='mods'"><a href="mods">Mods</a> </button>
-    <button class="submenubtn" onclick="location.href='itemsyncguide'"><a href="itemsyncguide">Itemsync Guide</a> </button>
-    <button class="submenubtn" onclick="location.href='rules'"><a href="rules">Rules</a> </button>
-    <button class="submenubtn" onclick="location.href='glossary'"><a href="glossary">Glossary</a> </button>
-    <button class="submenubtn" onclick="location.href='formats'"><a href="formats">Formats</a> </button>
-    <button class="submenubtn" onclick="location.href='settings'"><a href="settings">Settings</a> </button>
-    <button class="submenubtn" onclick="location.href='bingo'"><a href="bingo">Bingo</a> </button>
-    <button class="submenubtn" onclick="location.href='tourney'"><a href="tourney">Tourneys</a> </button>
-    <button class="submenubtn" onclick="location.href='homothety'"><a href="homothety">Homothety</a> </button>
+  <script>
+    $(document).ready(function() {
+      $("#randonavbar").load("/rando/randonav.html");
+    });
+  </script>
+  <div id="randonavbar">
+
   </div>
   <div id="header">
     <h1 id="Intro">HKSC Tourneys</h1>
