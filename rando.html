@@ -33,45 +33,34 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <style media="screen">
-    .important-container {
-      text-align: center;
-      padding: 0% 20% 0% 20%;
+    img {
+      padding-top: 25px;
     }
-
+    
     .important {
-      padding: 20px 0px 20px 0px;
-      border-style: dotted;
-      border-radius: 10px;
-      border-width: 5px;
-      border: 5px dotted #ffe4e1;
-      background:
-        linear-gradient(#ffe4e1 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+      text-align: center;
     }
 
-    .important p {
-      font-family: "Rubik", sans-serif;
-      font-size: 20px;
+    .rando-container {
+      width: 75%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .randonewscontainer {
+    .rando-flex {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       flex-wrap: wrap;
+      gap: 10px;
     }
 
     .randowhatsnew {
       padding-top: 10px;
       width: 400px;
-    }
-
-    .randonews {
-      padding-top: 10px;
-      width: 400px;
-    }
-
-    .randowhatsnewinside {
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
       background-color: #e1ffe4;
       border-style: dotted;
       border-radius: 10px;
@@ -82,16 +71,13 @@
         linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
     }
 
-    .randowhatsnewinside h3 {
-      font-family: "Rubik", sans-serif;
-      font-size: 18px;
-    }
-
-    .randowhatsnewinside p {
+    .randowhatsnew p {
       font-size: 16px;
     }
 
-    .randonewsinside {
+    .randonews {
+      padding-top: 10px;
+      width: 400px;
       background-color: #e4e1ff;
       border-style: dotted;
       border-radius: 10px;
@@ -102,13 +88,8 @@
         linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
     }
 
-    .randonewsinside h3 {
+    .h2-smaller {
       font-family: "Rubik", sans-serif;
-      font-size: 18px;
-    }
-
-    .randonewsinside p {
-      font-size: 16px;
     }
 
     .newstext {
@@ -119,14 +100,24 @@
       font-family: "Rubik", sans-serif;
     }
 
-    img {
-      padding-top: 25px;
+    @media only screen and (max-width: 1200px) {
+      .rando-container {
+        width: 90%;
+      }
+
     }
 
-    @media only screen and (max-width: 1200px) {
-      .important-container {
-        padding: 0% 10% 0% 10%
+    @media only screen and (max-width: 700px) {
+      .rando-container {
+        width:  100%;
       }
+    }
+
+    #wobblebramble {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 25px;
     }
   </style>
 </head>
@@ -149,34 +140,31 @@
 
   </div>
   <h1 id="header">Rando Rando!</h1>
-  <div class="important-container">
     <div class="important">
       <p><em>Looking for the Skips page? It lives <a href="/rando/skips">here</a> now.</em></p>
     </div>
-    <div class="wordsandstuff">
+    <div class="rando-container">
       <p><strong><em>What is Randomizer?</em></strong> Randomizer 4 is a mod for Hollow Knight that swaps around item placements in the game. The randomization is not purely random; instead, the randomizer has complex <em>logic</em> that works behind
         the scenes
         to ensure that all items can be reached and obtained.</p>
       <p>There are many ways to enjoy rando. Randomizer may be played to THK ending or TE to start. Some people add on extra randomization settings through randomizer <a href="/rando/mods">connections</a> to spice up their gameplay. Others start <a
           href="/rando/formats">racing</a> randomizer once they are comfortable with the items and locations, and think that they can finish seeds reliably. All in all, there is no "correct" way to enjoy playing rando and you are encouraged to
         experiment with settings, connections, end goals, and racing formats to find what you like most!</p>
-    </div>
-    <div class="randonewscontainer">
+    <div class="rando-flex">
       <div class="randowhatsnew">
-        <div class="randowhatsnewinside">
-          <h3>What's new?</h3>
+          <h2 class="h2-smaller">What's new?</h3>
           <div class="newstext">
             <p class="newsdate"><strong>January 2024</strong></p>
             <p>Added a "<a href="/rando/gettingstarted">getting started</a>" page as a jumping off point for new rando enjoyers.</p>
             <p class="newsdate"><strong>November 2023</strong></p>
             <p>Added separate <a href="/rando/skips">skips</a> page, yippee!</p>
             <p>Added a <a href="/rando/glossary">glossary</a> of rando terms.</p>
-          </div>
+            <img src="images/wobblebramble.gif" alt="a mosscreep" id="wobblebramble" height="100px" width="100px">
         </div>
       </div>
       <div class="randonews">
         <div class="randonewsinside">
-          <h3>Rando News</h3>
+          <h2 class="h2-smaller">Rando News</h2>
           <div class="newstext">
             <p class="newsdate"><strong>January 2024</strong></p>
             <p>Unfortunately, all good things must come to an end, and Grand Finals of the 2023 All Majors tournament is over. On the plus side, though, the <a href="https://github.com/BadMagic100/MajorItemByAreaTracker/">MajorItemByAreaTracker mod</a> got an update! Grub lovers rejoice, for we can now require saving all 46 of our squirmy little buddies in our races. Or, if you just want to play your solo seeds to Elegy%, now you can do that.</p>
@@ -190,8 +178,10 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
-  <h2 class="coolheading"><a href="#header">Top</a> </h2>
+  </div>
+  <h2 class="top"><a href="#header">Top</a> </h2>
   <img src="images/GrubLove.png" alt="grublove" height="100px" width="100px">
 </body>
 

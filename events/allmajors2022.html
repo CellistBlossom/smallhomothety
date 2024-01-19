@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>All Majors 2022</title>
-  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -33,51 +33,6 @@
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style media="screen">
-    .important-container {
-      text-align: left;
-      padding: 0% 20% 0% 20%;
-    }
-
-    .important {
-      padding: 20px 0px 20px 0px;
-      border-style: dotted;
-      border-radius: 10px;
-      border-width: 5px;
-      border: 5px dotted #ffe4e1;
-      background:
-        linear-gradient(#ffe4e1 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
-    .important p {
-      font-family: "Rubik", sans-serif;
-      font-size: 20px;
-    }
-
-    @media only screen and (max-width: 1100px) {
-      .important-container {
-        padding: 0% 15% 0% 15%;
-      }
-    }
-
-    @media only screen and (max-width: 700px) {
-      .important-container {
-        padding: 0% 10% 0% 10%;
-      }
-    }
-
-    @media only screen and (max-width: 500px) {
-      .important-container {
-        padding: 0% 5% 0% 5%;
-      }
-    }
-
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
-    }
-
   </style>
 </head>
 
@@ -115,27 +70,24 @@
       </div>
       <div class="events">
         <h1 id="header">All Majors Randomizer Tournament 2022</h1>
-        <div class="important-container">
-          <div class="important">
+          <div class="important important-smaller">
             <p>For more information on randomizer tournaments like this one, see the <a href="/rando/tourney">randomizer tournaments</a> page.</p>
           </div>
-
-        </div>
         <br>
         <p>This tournament was a 2v2 double-elimination All Majors tournament that ran from June 1st, 2022 to July 24th, 2022. It was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity Twitch channel</a> and is now
           highlighted there.</p>
           <p>All Majors is a semi-spoiler randomizer racing <a href="/rando/formats">format</a> played with the MajorItemsByArea mod. Runners have a tracker onscreen listing the number of major items in each area, but they don't know the exact locations of the items, or which major items were placed in what area. Each team is required to get every item on the tracker, and once the counter reaches zero, defeat the Radiance. The first team to have both players finish Radiance wins!</p>
-        <p><em><a class="menulink" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
+        <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
         <span class="menu" id="menu1">
           <div>
             <p>The winners of this tournament were BlossomtheCellist and Quatopine.</p>
           </div>
         </span>
-        <h3><a href="https://www.twitch.tv/collections/KhNx3ID09xYq2A">Watch</a> </h3>
-        <h3><a href="https://challonge.com/5zmj5fy9">Bracket</a> </h3>
+        <p class="p-bigger"><a href="https://www.twitch.tv/collections/KhNx3ID09xYq2A">Watch</a></p>
+        <p class="p-bigger"><a href="https://challonge.com/5zmj5fy9">Bracket</a></p>
       </div>
     </div>
-    <h2 class="coolheading"><a href="#header">Top</a> </h2>
+    <h2 class="top"><a href="#header">Top</a> </h2>
   </div>
 </body>
 

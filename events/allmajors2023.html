@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>All Majors 2023</title>
-  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -33,50 +33,6 @@
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style media="screen">
-        .menu {
-        display: none;
-        margin-left: 20px;
-        font-family: Helvetica;
-      }
-      
-    .important-container {
-      text-align: left;
-      padding: 0% 20% 0% 20%;
-    }
-
-    .important {
-      padding: 20px 0px 20px 0px;
-      border-style: dotted;
-      border-radius: 10px;
-      border-width: 5px;
-      border: 5px dotted #ffe4e1;
-      background:
-        linear-gradient(#ffe4e1 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
-    .important p {
-      font-family: "Rubik", sans-serif;
-      font-size: 20px;
-    }
-
-    @media only screen and (max-width: 1100px) {
-      .important-container {
-        padding: 0% 15% 0% 15%;
-      }
-    }
-
-    @media only screen and (max-width: 700px) {
-      .important-container {
-        padding: 0% 10% 0% 10%;
-      }
-    }
-
-    @media only screen and (max-width: 500px) {
-      .important-container {
-        padding: 0% 5% 0% 5%;
-      }
-    }
   </style>
 </head>
 
@@ -114,12 +70,9 @@
       </div>
       <div class="events">
         <h1 id="header">All Majors Randomizer Tournament 2023</h1>
-        <div class="important-container">
-          <div class="important">
-            <p>For more information on randomizer tournaments like this one, see the <a href="/rando/tourney">randomizer tournaments</a> page.</p>
+          <div class="important important-smaller">
+            <p><em>For more information on randomizer tournaments like this one, see the <a href="/rando/tourney">randomizer tournaments</a> page.</em></p>
           </div>
-
-        </div>
         <br>
         <!-- Add a placeholder for the Twitch embed -->
         <div id="twitch-embed"></div>
@@ -139,7 +92,6 @@
         </script>
       <p>The tournament was a 2v2 All Major Items TE double-elimination tournament and ran from September 22nd, 2023 to January 14, 2024. All matches were best of 1s until the end of the tournament. Winner's and Loser's finals were best of 3s, and Grand Finals was a best of 5 with a one-game advantage to the team in the upper bracket.</p>
       <p>All Majors is a semi-spoiler format. For more information, see the <a href="/rando/formats">formats</a> page. For this tournament, the items that were required to be obtained are:</p>
-      <div class="list-container mobilewidelist">
         <div class="list">
             <p>Mothwing Cloak (x2), Shade Cloak, Mantis Claw, Crystal Heart, Monarch Wings (x2), Isma's Tear, Swim</p>
             <p>Dream Nail (x2), Dreamgate, Awoken Dream Nail, Lurien, Monomon, Herrah, White Fragment, Kingsoul, Void Heart</p>
@@ -148,32 +100,29 @@
             <p>King's Brand, Lumafly Lantern, Tram Pass, Elevator Pass, City Crest</p>
             <p>Shopkeeper's Key, Elegant Key, Love Key, Grimmchild, Defender's Crest, Spore Shroom</p>
         </div>
-      </div>
       <h3>Gimmicks</h3>
       <p>"Gimmicks" in this tournament were items that were added to the randomized pool beyond the default settings to help spice up each match. The first match was played without gimmicks; however, starting with winner's round 2 and loser's
         round 2, players were required to add at least one gimmick to the settings.</p>
         <p>To select gimmicks, the team with the higher seed would propose a list of three gimmicks and the team with the lower seed would be required to pick one. They would repeat the process with the lower seed proposing gimmicks and the higher seed picking, and the match would be played with those two gimmicks. Teams were also allowed to propose a third (or more) gimmick, but both teams would need to agree and may need permission from the TOs for gimmicks not on the list of preapproved ones. A list of gimmicks can be found below:</p>
-        <div class="list-container mobilewidelist">
           <div class="list">
               <p>Gimmicks that randomize additional checks: Grimmkin Flames, Whispering Roots, Lore Tablets, Randomized Focus</p>
               <p>Settings that alter logic with skips: Precise Movement, Background and Enemy Pogos, Infection Skips, No Swim/No Tear</p>
               <p>Settings that alter how rando functions: Ghost Essence, Lemm/Junk Shops, Colo3 (the Glory of Being a Fool mod)</p>
               <p>Gimmicks voted upon by rando community: Map Area transition rando, 3 Masks + 2 Charm notches, Split Claw, Fragile Charms being major items</p>
           </div>
-        </div>
-      <p><em><a class="menulink" onclick="return toggleMenu('menu7')">Click to show/hide spoiler about winners ▶</a></em></p>
+      <p><em><a menulink winner-spoiler onclick="return toggleMenu('menu7')">Click to show/hide spoiler about winners ▶</a></em></p>
       <span class="menu" id="menu7">
         <div>
           <p>The winners of this tournament were Tim and Quatopine.</p>
         </div>
       </span>
-      <h3><a href="https://www.twitch.tv/collections/GIVwH-3DhReWhQ">Watch</a></h3>
-      <h3><a href="https://challonge.com/allmajorsrandorandoautumn2023">Bracket</a> </h3>
-      <h3><a href="https://docs.google.com/spreadsheets/d/1QUmZkDiMG2Iw6TmyvUPJ1VDaCoD07u3o4qcSdr5OvY4/edit">Rules</a> </h3>
-      <h3><a href="https://docs.google.com/spreadsheets/d/117v1n8RL7P-ifTyzAFTbupLafDBN_5QAQ6tBISjI0p8/edit?usp=sharing">Alternative Rules</a> </h3>
+      <p class="p-bigger"><a href="https://www.twitch.tv/collections/GIVwH-3DhReWhQ">Watch</a></p>
+      <p class="p-bigger"><a href="https://challonge.com/allmajorsrandorandoautumn2023">Bracket</a></p>
+      <p class="p-bigger"><a href="https://docs.google.com/spreadsheets/d/1QUmZkDiMG2Iw6TmyvUPJ1VDaCoD07u3o4qcSdr5OvY4/edit">Rules</a></p>
+      <p class="p-bigger"><a href="https://docs.google.com/spreadsheets/d/117v1n8RL7P-ifTyzAFTbupLafDBN_5QAQ6tBISjI0p8/edit?usp=sharing">Alternative Rules</a></p>
       </div>
     </div>
-    <h2 class="coolheading"><a href="#header">Top</a> </h2>
+    <h2 class="top"><a href="#header">Top</a> </h2>
   </div>
 </body>
 

@@ -33,11 +33,6 @@
 <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style media="screen">
-    .main a {
-      color: #E583AB;
-    }
-
-
     .column {
       float: left;
       width: 50%;
@@ -48,73 +43,6 @@
       display: table;
       clear: both;
     }
-
-    .list-container {
-      padding: 0% 25% 0% 25%;
-    }
-
-    .list {
-      padding: 0% 0% 0% 0%;
-      text-align: left;
-    }
-
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
-    }
-
-    .h2-bigger {
-      font-size: 40px;
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-    }
-
-    .important-container {
-      text-align: left;
-      padding: 0% 20% 0% 20%;
-    }
-
-    .h3-bigger {
-      font-size: 28px;
-  font-family: Helvetica;
-    }
-
-    .important {
-      padding: 20px 0px 20px 0px;
-      border-style: dotted;
-      border-radius: 10px;
-      border-width: 5px;
-      border: 5px dotted #ffe4e1;
-      background:
-        linear-gradient(#ffe4e1 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
-    .important p {
-      font-family: "Rubik", sans-serif;
-      font-size: 20px;
-    }
-
-@media only screen and (max-width: 1100px) {
-  .list-container {
-    padding: 0% 15% 0% 15%;
-  }
-
-  .important-container {
-    padding: 0% 15% 0% 15%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .list-container {
-    padding: 0% 5% 0% 5%;
-  }
-
-  .important-container {
-    padding: 0% 10% 0% 10%;
-  }
-}
   </style>
 </head>
 
@@ -150,10 +78,9 @@
       }
     }
   </script>
-  <h3> <a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
+  <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu100">
-    <div class="list-container mobilewidelist">
-    <div class="list">
+    <div class="list list-square list-centered">
       <p><a href="#header">Introduction</a></p>
       <p><a href="#required">Required Mods</a></p>
       <p><a href="#essential">"Essential" Mods</a></p>
@@ -161,7 +88,6 @@
       <p><a href="#fun">Fun Mods!</a> </p>
       <p><a href="#1028">1028 Mods</a> </p>
     </div>
-  </div>
   </span>
   <p>Required/Highly Recommended mods for rando racing!</p>
   <p>(note: some required mods are not on this list but will be downloaded as dependencies for other mods that are on the list):</p>
@@ -182,14 +108,11 @@
     </div>
   </div>
   <h2 class="h2-bigger">List of Recommended Mods</h2>
-  <div class="important-container">
     <div class="important">
         <p><em>For a comprehensive list of mods, including 200+ that aren't needed or recommended for randomizer, see this page on the <a href="https://hk-modding.org/mods">HK Modding Website</a>.</em> </p>
     </div>
-  </div>
   <h2 id="required">Required Mods for Rando 4</h2>
   <p><i>Note: If you install Randomizer 4 via Scarab or Lumafly, all dependencies will be automatically installed. <br>If you are not using Lumafly or Scarab, it is very important to read what each mods' dependencies are. Remember to download them along with the mod if installing them manually.</i></p>
-  <div class="list-container mobilewidelist">
   <div class="list">
     <p><strong><a href="https://github.com/homothetyhk/RandomizerMod">Randomizer 4</a></strong> The number one mod! This is a requirement to play rando (obviously). Randomizer 4 requires the latest patch of Hollow Knight to run (1.5.7.8).</p>
     <p><strong><a href="https://github.com/homothetyhk/HollowKnight.BenchwarpMod">Benchwarp</a></strong> A mod that allows you to warp to and from any bench that you've previously rested at. A required dependency of Rando 4.</p>
@@ -199,11 +122,9 @@
     <p><strong><a href="https://github.com/homothetyhk/RandomizerCore">RandomizerCore</a></strong> Yet another dependency mod, this time for randomization of items.</p>
     <p><strong><a href="https://github.com/fifty-six/HollowKnight.Vasi">Vasi</a></strong> Another dependency for various mods in Hollow Knight.</p>
   </div>
-</div>
 
   <h3 class="h3-bigger" id="essential">"Essential" Mods</h3>
   <p>These are mods that the community highly recommends, but aren't <i>technically</i> required.</p>
-  <div class="list-container mobilewidelist">
   <div class="list">
     <p><strong><a href="https://github.com/BadMagic100/RandoSettingsManager">RandoSettingsManager</a></strong> This mod allows you to much more easily share settings codes, along with integrating connections and extensions into randomizer settings much more easily.</p>
     <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RecentItemsDisplay/">RecentItemsDisplay</a></strong> Shows you the last few items you've received in the top right of the screen. Can be customized to show a varied amount of recent items.</p>
@@ -216,11 +137,9 @@
     <p><strong><a href="https://github.com/BadMagic100/HollowKnight.Rando4Stats/">RandoStats</a></strong> Shows you some stats about your run after the credits, or if you click the "view stats" button in the pause menu. These stats also show a timeline of when you picked up various major items.</p>
     <p><strong><a href="https://github.com/Emo-hk/AdditionalTimelines">AdditionalTimelines</a></strong> An add-on to RandoStats/FStats that shows additional timelines similar to the skill timeline.</p>
   </div>
-  </div>
 
   <h3 class="h3-bigger" id="connections">Randomizer Connections</h3>
   <p>These are mods that add extra content, or enhance the Randomizer 4 experience. They range from just randomizing a few extra checks, or adding an entirely new layer to Hollow Knight randomizer.</p>
-  <div class="list-container mobilewidelist">
   <div class="list">
     <p><strong><a href="https://github.com/flibber-hk/HollowKnight.RandoPlus/">RandoPlus</a></strong> Arguably the most popular randomizer connection. It adds multiple different things to randomize, most notably Nail Upgrades, Mr Mushroom, and allowing two items to appear at the same location.</p>
     <p><strong><a href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong> A mod that allows for co-op randomizer. It syncs the items that you and a partner (or more) pick up and shares the items to both of you.</p>
@@ -233,11 +152,9 @@
     <p><strong><a href="https://github.com/BadMagic100/MoreLocations">More Locations</a></strong> Adds check locations to the game that don't have an associated item in vanilla, such as the egg in stag nest.</p>
     <p><strong><a href="https://github.com/Korzer420/ExtraRando">Extra Rando</a></strong> Adds some fun miscellaneous settings and check locations, including Bardoon's butt, randomized hot springs, and a no-logic randomizer setting!</p>
   </div>
-  </div>
 
   <h3 class="h3-bigger" id="fun">Fun Mods!</h3>
   <p>Finally, some fun mods that are recommended that don't really affect rando much.</p>
-  <div class="list-container mobilewidelist">
   <div class="list">
     <p><strong><a href="https://github.com/Zickles/HollowKnight.CustomKnight/">CustomKnight</a></strong> Allows you to have custom textures for the knight, as well as options for other sprites.</p>
     <p><strong><a href="https://github.com/dpinela/RainbowEggs/">RainbowEggs</a></strong> Randomizes the colors of rancid egg pickups! Purely cosmetic, but it does sync for ItemSync [citation needed].</p>
@@ -247,11 +164,9 @@
     <p><strong><a href="https://github.com/ygsbzr/DeathCounter/">DeathCounter</a></strong> A death and hit counter to see how many times you failed. (We're still proud of you though.)</p>
     <p><strong><a href="https://github.com/Link459/PressGToDab/">press g to dab</a></strong> press g to dab</p>
   </div>
-  </div>
 
   <h3 class="h3-bigger" id="1028">1.0.2.8 Mods</h3>
   <p>The mods in this section are separate versions of existing mods that have been ported to be compatible with patch 1.0.2.8. This requires downpatching, but enables skips and glitches that are not possible on the current patch of the game. Do not install these mods on latest patch! They will not work. If you want to play with the mods in this section, see the <a href="https://www.speedrun.com/hollowknight/guides/jlten">downpatching</a> guide for instructions on how to install 1.0.2.8, and use the modding API below. Note that you will have to install these mods manually through the Github links here.</p>
-  <div class="list-container mobilewidelist">
   <div class="list">
     <p><strong><a href="https://github.com/pseudorandomhk/hk-modding-api/releases/">1028 Modding API</a></strong> A version of the Modding API for patch 1.0.2.8. Required for any of the mods in this section to run.</p>
     <p><strong><a href="https://github.com/pseudorandomhk/RandomizerMod/releases/">Randomizer 4</a></strong> Rando 4 for 1028!</p>
@@ -262,10 +177,9 @@
     <p><strong><a href="https://github.com/pikachupower3/HollowKnight.DebugMod/releases/">Debug Mod</a></strong> Various debug options and cheats. Can be useful in case of softlocks, which are much more common on this patch of the game. Be sure to uninstall it for races unless otherwise agreed on, as it is not rando legal.</p>
   </div>
   </div>
-  <h3> <a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
+  <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu101">
-    <div class="list-container mobilewidelist">
-    <div class="list">
+    <div class="list list-square list-centered">
       <p><a href="#header">Introduction</a></p>
       <p><a href="#required">Required Mods</a></p>
       <p><a href="#essential">"Essential" Mods</a></p>
@@ -273,11 +187,9 @@
       <p><a href="#fun">Fun Mods!</a> </p>
       <p><a href="#1028">1028 Mods</a> </p>
     </div>
-  </div>
   </span>
-  <h2 class="coolheading"><a href="#header">Top</a> </h2>
-
-  <img class="spin" src="../images/spin.gif" alt="knightspin">
+  <h2 class="top"><a href="#header">Top</a></h2>
+  <img class="spin" src="/images/spin.gif" alt="The Knight spinning">
 
 </body>
 

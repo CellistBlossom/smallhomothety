@@ -37,95 +37,6 @@
     h3 {
       text-align: center;
     }
-
-    .menu2 {
-      display: none;
-    }
-
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
-    }
-
-    .menulink {
-      cursor: pointer;
-    }
-
-    hr {
-      padding: 0% 20% 0% 20%;
-      border-style: dotted;
-      border-width: 3px;
-      border: 3px dotted AntiqueWhite;
-      background:
-        linear-gradient(AntiqueWhite 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
-    .tourney-important-container {
-      text-align: left;
-      padding: 0% 20% 0% 20%;
-    }
-
-    .tourney-important {
-      padding: 20px 0px 20px 0px;
-      border-style: dotted;
-      border-radius: 10px;
-      border-width: 5px;
-      border: 5px dotted #ffe4e1;
-      background:
-        linear-gradient(#ffe4e1 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
-    .tourney-important p {
-      font-family: "Rubik", sans-serif;
-      font-size: 20px;
-    }
-
-    .list-container {
-      padding: 0% 25% 0% 25%;
-    }
-
-    .list {
-      padding: 0% 0% 0% 0%;
-      text-align: left;
-    }
-
-    @media only screen and (max-width: 1100px) {
-      .list-container {
-        padding: 0% 15% 0% 15%;
-
-      }
-
-      .tourney-important-container {
-        padding: 0% 15% 0% 15%;
-      }
-    }
-
-    @media only screen and (max-width: 700px) {
-      .list-container {
-        padding: 0% 5% 0% 5%;
-      }
-
-      .tourney-important-container {
-        padding: 0% 10% 0% 10%;
-      }
-    }
-
-    @media only screen and (max-width: 500px) {
-      .list-container {
-        padding: 0% 0% 0% 0%;
-
-        .list {
-          padding: 0% 0% 0% 5%;
-        }
-      }
-
-      .tourney-important-container {
-        padding: 0% 5% 0% 5%;
-      }
-    }
   </style>
 </head>
 
@@ -178,10 +89,9 @@
   <div id="header">
     <h1 id="Intro">HKSC Tourneys</h1>
   </div>
-  <h3> <a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Page! ▶</a> </h3>
+  <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Page! ▶</a></p>
   <span class="menu" id="menu100">
-    <div class="list-container mobilewidelist">
-      <div class="list">
+      <div class="list list-square list-centered">
         <p><a href="#Intro">Introduction</a></p>
         <p><a href="#allmajors2023">All Major Items 2023 (Current Tournament!)</a></p>
         <p><a href="#blackout2023">Blackout TE 2023</a></p>
@@ -190,7 +100,6 @@
         <p><a href="#lockout2020">Lockout 2020</a></p>
         <p><a href="#invasion2019">Invasion 2019</a> </p>
       </div>
-    </div>
   </span>
   <p>Because many people invest time in randomizer racing, the Hollow Knight Speedrunning Community occasionally hosts tournaments for racers to prove their prowess! These tournaments are usually organized in the discord server and restreamed on our
     <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch channel</a> (though this hasn't always been the case).</p>
@@ -212,15 +121,12 @@
       });
     </script>
   <h2 id="allmajors2023">2023 All Majors Tournament</h2>
-  <div class="tourney-important-container">
-    <div class="tourney-important">
+    <div class="important">
       <p><strong>The 2023 All Majors rando tournament is over!</strong> If you missed Grand Finals, you can watch it on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch Channel</a>. Alternatively, you can watch the full tournament at the playlist link below.</p>
     </div>
-  </div>
   <br>
       <p>The tournament was a 2v2 All Major Items TE double-elimination tournament. All matches were best of 1s until the end of the tournament. Winner's and Loser's finals were best of 3s, and Grand Finals was a best of 5 with a one-game advantage to the team in the upper bracket.</p>
       <p>All Majors is a semi-spoiler format. For more information, see the <a href="/rando/formats">formats</a> page. For this tournament, the items that were required to be obtained are:</p>
-      <div class="list-container mobilewidelist">
         <div class="list">
             <p>Mothwing Cloak (x2), Shade Cloak, Mantis Claw, Crystal Heart, Monarch Wings (x2), Isma's Tear, Swim</p>
             <p>Dream Nail (x2), Dreamgate, Awoken Dream Nail, Lurien, Monomon, Herrah, White Fragment, Kingsoul, Void Heart</p>
@@ -229,97 +135,93 @@
             <p>King's Brand, Lumafly Lantern, Tram Pass, Elevator Pass, City Crest</p>
             <p>Shopkeeper's Key, Elegant Key, Love Key, Grimmchild, Defender's Crest, Spore Shroom</p>
         </div>
-      </div>
       <h3>Gimmicks</h3>
       <p>"Gimmicks" in this tournament were items that were added to the randomized pool beyond the default settings to help spice up each match. The first match was played without gimmicks; however, starting with winner's round 2 and loser's
         round 2, players were required to add at least one gimmick to the settings.</p>
         <p>To select gimmicks, the team with the higher seed would propose a list of three gimmicks and the team with the lower seed would be required to pick one. They would repeat the process with the lower seed proposing gimmicks and the higher seed picking, and the match would be played with those two gimmicks. Teams were also allowed to propose a third (or more) gimmick, but both teams would need to agree and may need permission from the TOs for gimmicks not on the list of preapproved ones. A list of gimmicks can be found below:</p>
-        <div class="list-container mobilewidelist">
           <div class="list">
               <p>Gimmicks that randomize additional checks: Grimmkin Flames, Whispering Roots, Lore Tablets, Randomized Focus</p>
               <p>Settings that alter logic with skips: Precise Movement, Background and Enemy Pogos, Infection Skips, No Swim/No Tear</p>
               <p>Settings that alter how rando functions: Ghost Essence, Lemm/Junk Shops, Colo3 (the Glory of Being a Fool mod)</p>
               <p>Gimmicks voted upon by rando community: Map Area transition rando, 3 Masks + 2 Charm notches, Split Claw, Fragile Charms being major items</p>
           </div>
-        </div>
-      <p><em><a class="menulink" onclick="return toggleMenu('menu7')">Click to show/hide spoiler about winners ▶</a></em></p>
+      <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu7')">Click to show/hide spoiler about winners ▶</a></em></p>
       <span class="menu" id="menu7">
         <div>
           <p>The winners of this tournament were Tim and Quatopine.</p>
         </div>
       </span>
-      <h3><a href="https://www.twitch.tv/collections/GIVwH-3DhReWhQ">Watch</a> </h3>
-      <h3><a href="https://challonge.com/allmajorsrandorandoautumn2023">Bracket</a> </h3>
-      <h3><a href="https://docs.google.com/spreadsheets/d/1QUmZkDiMG2Iw6TmyvUPJ1VDaCoD07u3o4qcSdr5OvY4/edit">Rules</a> </h3>
+      <p class="p-bigger"><a href="https://www.twitch.tv/collections/GIVwH-3DhReWhQ">Watch</a></p>
+      <p class="p-bigger"><a href="https://challonge.com/allmajorsrandorandoautumn2023">Bracket</a></p>
+      <p class="p-bigger"><a href="https://docs.google.com/spreadsheets/d/1QUmZkDiMG2Iw6TmyvUPJ1VDaCoD07u3o4qcSdr5OvY4/edit">Rules</a></p>
   <hr>
   <h2 id="blackout2023">2023 Blackout TE Tournament</h2>
   <p>This tournament was a 2v2 double-elimination Blackout TE tournament that ran from March 3rd, 2023 to March 29th. It was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity Twitch channel</a> and is now
     highlighted there.</p>
-  <p><em><a class="menulink" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
+  <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
   <span class="menu" id="menu1">
     <div>
       <p>The winners of this tournament were aPress and Kuroshi.</p>
     </div>
   </span>
-  <h3><a href="https://www.twitch.tv/collections/jbrYe2jTSxegbQ">Watch</a> </h3>
-  <h3><a href="https://challonge.com/randorando">Bracket</a> </h3>
-  <h3><a href="https://docs.google.com/spreadsheets/d/1BHqe48fBmC29WiNCGs3JEeValWzyC6hkhlqCsmolcYw/edit#gid=1811892567">Rules</a> </h3>
+  <p class="p-bigger"><a href="https://www.twitch.tv/collections/jbrYe2jTSxegbQ">Watch</a></p>
+  <p class="p-bigger"><a href="https://challonge.com/randorando">Bracket</a></p>
+  <p class="p-bigger"><a href="https://docs.google.com/spreadsheets/d/1BHqe48fBmC29WiNCGs3JEeValWzyC6hkhlqCsmolcYw/edit#gid=1811892567">Rules</a></p>
   <hr>
   <h2 id="allmajors2022">2022 All Major Items Tournament</h2>
   <p>This tournament was a 2v2 double-elimination All Major Items tournament that ran from June 4th, 2022 to July 24th. It was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity Twitch channel</a> and is now
     highlighted there.</p>
-  <p><em><a class="menulink" onclick="return toggleMenu('menu2')">Click to show/hide spoiler about winners ▶</a></em></p>
+  <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu2')">Click to show/hide spoiler about winners ▶</a></em></p>
   <span class="menu" id="menu2">
     <div>
       <p>The winners of this tournament were BlossomtheCellist and Quatopine.</p>
     </div>
   </span>
-  <h3><a href="https://www.twitch.tv/collections/KhNx3ID09xYq2A">Watch</a> </h3>
-  <h3><a href="https://challonge.com/5zmj5fy9">Bracket</a> </h3>
+  <p class="p-bigger"><a href="https://www.twitch.tv/collections/KhNx3ID09xYq2A">Watch</a></p>
+  <p class="p-bigger"><a href="https://challonge.com/5zmj5fy9">Bracket</a></p>
   <hr>
   <h2 id="blackout2022">2022 Blackout Tournament</h2>
   <p>This was a single-elimination 2v2 blackout TE tournament tournament that took place on May 8, 2022, over the course of a single day. The tournament was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity
       Twitch channel</a>. Unfortunately this tournament was not highlighted or hosted anywhere else. </p>
-  <p><em><a class="menulink" onclick="return toggleMenu('menu3')">Click to show/hide spoiler about winners ▶</a></em></p>
+  <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu3')">Click to show/hide spoiler about winners ▶</a></em></p>
   <span class="menu" id="menu3">
     <div>
       <p>The winners of this tournament were BlossomtheCellist and Connoramon.</p>
     </div>
   </span>
-  <h3><a href="https://challonge.com/randowo">Bracket</a> </h3>
+  <p class="p-bigger"><a href="https://challonge.com/randowo">Bracket</a></p>
   <hr>
   <h2 id="lockout2020">2020 Lockout Tournament</h2>
   <p>This was a 1v1 lockout randomizer bingo tournament for the Randomizer 3 mod for Hollow Knight, running from June 2020 to February 2021. The first round of the tournament consisted of 4 rounds of Swiss, and in the following round racers advanced
     to an upper or lower double-elimination bracket based on their performance.</p>
   <p>The tournament was hosted on <a href="https://www.twitch.tv/speedgaming">Speedgaming</a>.</p>
-  <p><em><a class="menulink" onclick="return toggleMenu('menu5')">Click to show/hide spoiler about winners ▶</a></em></p>
+  <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu5')">Click to show/hide spoiler about winners ▶</a></em></p>
   <span class="menu" id="menu5">
     <div>
-      <p>The winners of this tournament were <span><a class="menulink" onclick="return toggleMenu2('menu6')">Banned Member (click to show)</a><span class="menu2" id="menu6"> Kanra</span></span> in the upper bracket, and Adyn99 in the lower bracket.</p>
+      <p>The winners of this tournament were <span><a class="menulink menu-inline" onclick="return toggleMenu2('menu6')">Banned Member (click to show)</a><span class="menu" id="menu6"> Kanra</span></span> in the upper bracket, and Adyn99 in the lower bracket.</p>
     </div>
   </span>
-  <h3><a href="https://www.youtube.com/playlist?list=PLdoWICJMgPKUoBuRW7CmxsvRGg5VBzugH">Watch</a></h3>
-  <h3><a href="https://challonge.com/HKRandomizer2020">Swiss Bracket</a> </h3>
-  <h3><a href="https://challonge.com/HKRandomizer2020Upper">Upper Bracket</a> </h3>
-  <h3><a href="https://challonge.com/HKRandomizer2020Lower">Lower Bracket</a></h3>
+  <p class="p-bigger"><a href="https://www.youtube.com/playlist?list=PLdoWICJMgPKUoBuRW7CmxsvRGg5VBzugH">Watch</a></p>
+  <p class="p-bigger"><a href="https://challonge.com/HKRandomizer2020">Swiss Bracket</a></p>
+  <p class="p-bigger"><a href="https://challonge.com/HKRandomizer2020Upper">Upper Bracket</a></p>
+  <p class="p-bigger"><a href="https://challonge.com/HKRandomizer2020Lower">Lower Bracket</a></p>
   <hr>
   <h2 id="invasion2019">2019 Invasion Tournament</h2>
   <p>This was a 1v1 invasion lockout tournament for the Randomizer2 mod hosted on the old community Twitch channel <a href="https://www.twitch.tv/hollowknightspeedruns">(HollowKnightSpeedruns)</a>. This tournament began with a group stage followed by
     a double elimination stage.</p>
-  <p><em><a class="menulink" onclick="return toggleMenu('menu4')">Click to show/hide spoiler about winners ▶</a></em></p>
+  <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu4')">Click to show/hide spoiler about winners ▶</a></em></p>
   <span class="menu" id="menu4">
     <div>
       <p>The winners of this tournament were Homothety in first place, MageGi in second place, and Mickely in third place.</p>
     </div>
   </span>
-  <h3><a href="https://www.twitch.tv/collections/zUIIkA4RfxVveA">Watch (Group Stage)</a> </h3>
-  <h3><a href="https://www.twitch.tv/collections/_95C9CUXjRUGyg">Watch (Bracket Stage)</a> </h3>
-  <h3><a href="https://challonge.com/HKTournament">Bracket</a> </h3>
+  <p class="p-bigger"><a href="https://www.twitch.tv/collections/zUIIkA4RfxVveA">Watch (Group Stage)</a></p>
+  <p class="p-bigger"><a href="https://www.twitch.tv/collections/_95C9CUXjRUGyg">Watch (Bracket Stage)</a></p>
+  <p class="p-bigger"><a href="https://challonge.com/HKTournament">Bracket</a></p>
   <hr>
-  <h3> <a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Page! ▶</a> </h3>
+  <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Page! ▶</a></p>
   <span class="menu" id="menu101">
-    <div class="list-container mobilewidelist">
-      <div class="list">
+      <div class="list list-square list-centered">
         <p><a href="#Intro">Introduction</a></p>
         <p><a href="#allmajors2023">All Major Items 2023 (Current Tournament!)</a></p>
         <p><a href="#blackout2023">Blackout TE 2023</a></p>
@@ -328,11 +230,10 @@
         <p><a href="#lockout2020">Lockout 2020</a></p>
         <p><a href="#invasion2019">Invasion 2019</a> </p>
       </div>
-    </div>
   </span>
   <br>
-  <h2 class="coolheading"><a href="#header">Top</a> </h2>
-  <img src="../images/GrubLove.png" alt="grublove" height="100px" width="100px">
+  <h2 class="top"><a href="#header">Top</a> </h2>
+  <img src="../images/GrubLove.png" alt="A grub holding a heart" height="100px" width="100px">
 </body>
 
 </html>

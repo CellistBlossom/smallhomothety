@@ -32,57 +32,18 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/itemsyncguide" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <style media="screen">
-    .list {
-      padding: 0% 10% 0% 10%;
-    }
-
-    li {
-      text-align: left;
-      padding: 0% 12% 0% 12%;
-    }
-
     img {
       width: 600px;
       height: 350px;
       display: inline;
     }
 
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
-    }
-
-    .yippee {
+    #yippee {
       height: 100px;
       width: 100px;
     }
 
-    .list-container {
-      padding: 0% 25% 0% 25%;
-    }
-
-    .list-small {
-      text-align: left;
-      padding: 0% 0% 0% 0%;
-      border-style: dotted;
-      border-width: 5px;
-      border-radius: 100px;
-      border: 5px dotted AntiqueWhite;
-      background:
-        linear-gradient(AntiqueWhite 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
     @media only screen and (max-width: 1400px) {
-      .list-container {
-        padding: 0% 15% 0% 15%;
-      }
-
-      .list {
-        padding: 0% 15% 0% 15%;
-      }
-
       img {
         width: 600px;
         height: 350px;
@@ -93,32 +54,6 @@
     }
 
     @media only screen and (max-width: 1200px) {
-      .list-container {
-        padding: 0% 0% 0% 0%;
-      }
-
-      .list {
-        padding: 0% 10% 0% 10%;
-      }
-
-      img {
-        width: 600px;
-        height: 350px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    @media only screen and (max-width: 900px) {
-      .list-container {
-        padding: 0% 0% 0% 0%;
-      }
-
-      .list {
-        padding: 0% 10% 0% 10%;
-      }
-
       img {
         width: 450px;
         height: 262px;
@@ -129,17 +64,18 @@
     }
 
     @media only screen and (max-width: 500px) {
-      .list-container {
-        padding: 0% 0% 0% 0%;
-      }
-
-      .list {
-        padding: 0% 10% 0% 10%;
-      }
-
       img {
         width: 300px;
         height: 175px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media only screen and (max-width: 350px) {
+      img {
+        width: 240px;
+        height: 157px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -166,10 +102,9 @@
 
   </div>
   <h1 id="header">Rando 4 Itemsync & RandoSettingsManager Guide</h1>
-  <h3> <a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
+  <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu100">
-    <div class="list-container mobilewidelist">
-      <div class="list-small">
+      <div class="list list-square list-centered">
         <p><a href="#Intro">Introduction</a></p>
         <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
         <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
@@ -180,7 +115,6 @@
   <h2 id="Intro">Introduction</h2>
   <p>Once you've installed mods you may want to play randomizer with your friends! Luckily, we have mods to let you do this. (Shoutouts to Kamakiller for letting me steal some of his writeup!) </p>
   <p>Firstly, you will want to have the correct mods installed. See the <a href="mods">mods page</a> for a tutorial on installing mods for randomizer. Some of the important ones for itemsync are summarized below:</p>
-  <div class="list-container mobilewidelist">
     <div class="list">
       <p>Randomizer 4 (& dependencies)</p>
       <p>Itemsync (& multiworldlib)</p>
@@ -258,7 +192,6 @@
   </div>
   <h2 id="rsm-settings-management">Getting Started (With Rando Settings Manager)</h2>
   <p>By default, Randomizer 4 does not have a way to sync connections between players. Doing so requires installing a separate mod, RandoSettingsManager, to do so. If you are not playing with connections you can safely skip this part.</p>
-  <div class="list-container mobilewidelist">
     <div class="list">
       <p>Create new save file, select Randomizer.</p>
       <p>Select ‘More Randomizer Settings’. <a class="menulink" onclick="return toggleMenu('menu14')">▶</a></p>
@@ -326,7 +259,6 @@
       </span>
       <p>You are now in an Itemsync with other players. When you pick items up, the items will be sent to everyone else and vice versa.</p>
     </div>
-  </div>
   <h2 id="HKMP">Multiplayer</h2>
   <p>Itemsync does not include many "multiplayer" features, only the ability to sync items between players. Some people like to also play with HKMP (the Hollow Knight multiplayer mod) so that they can see their friends on-screen. This is almost never
     used in races, so I won't cover it in this guide. Many members of the community have already created helpful guides for installing and setting up the HKMP mod.</p>
@@ -348,19 +280,17 @@
       }
     }
   </script>
-  <h3> <a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
+  <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu101">
-    <div class="list-container mobilewidelist">
-      <div class="list-small">
+      <div class="list list-square list-centered">
         <p><a href="#Intro">Introduction</a></p>
         <p><a href="#classic-settings-management">Getting Started (Start here if you're not using RandoSettingsManager!)</a></p>
         <p><a href="#rsm-settings-management">Getting Started with RSM (Start here if you ARE using RandoSettingsManager!)</a></p>
         <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
       </div>
-    </div>
   </span>
-  <h2 class="coolheading"><a href="#header">Top</a> </h2>
-  <img class="yippee" src="../images/yippee.gif" alt="yippee">
+  <h2 class="top"><a href="#header">Top</a> </h2>
+  <img id="yippee" src="../images/yippee.gif" alt="yippee">
 </body>
 
 </html>

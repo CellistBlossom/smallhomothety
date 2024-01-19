@@ -26,69 +26,6 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Common formats for racing Hollow Knight randomizer.">
   <style media="screen">
-    .formats a {
-      color: #E44988;
-    }
-
-    .formats a:hover {
-      color: #4988e4;
-    }
-
-    .menu {
-      display: none;
-      margin-left: 20px;
-      font-family: Helvetica;
-    }
-
-    .list-container {
-      padding: 0% 25% 0% 25%;
-    }
-
-    .list {
-      padding: 0% 0% 0% 0%;
-      text-align: left;
-    }
-
-    .list-square {
-      padding: 0% 20% 0% 20%;
-      border-style: dotted;
-      border-width: 5px;
-      border: 5px dotted AntiqueWhite;
-      background:
-        linear-gradient(AntiqueWhite 0 0) padding-box,
-        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
-
-    @media only screen and (max-width: 1100px) {
-      .list-container {
-        padding: 0% 15% 0% 15%;
-      }
-    }
-
-    @media only screen and (max-width: 700px) {
-      .list-container {
-        padding: 0% 5% 0% 5%;
-      }
-
-    }
-
-    @media only screen and (max-width: 500px) {
-      .list-square p {
-        padding: 0% 0% 0% 0%;
-      }
-
-      .list-container {
-        padding: 0% 0% 0% 0%;
-
-        .list {
-          padding: 0% 0% 0% 5%;
-        }
-
-        .list-square {
-          padding: 0% 0% 0% 0%;
-        }
-      }
-    }
   </style>
   <!-- for discord embeds-->
   <meta property="og:type" content="website">
@@ -132,17 +69,15 @@
         }
       }
     </script>
-    <h3> <a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a> </h3>
+    <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
     <span class="menu" id="menu100">
-      <div class="list-container mobilewidelist">
-        <div class="list">
+        <div class="list list-square list-centered">
           <p><a href="#generalformats">General Formats</a></p>
           <p><a href="#spoilerformats">Spoiler Formats</a></p>
           <p><a href="#multiworldformats">Multiworld Formats</a></p>
         </div>
-      </div>
     </span>
-    <div class="setup">
+    <div>
       <p>Note that the time estimates for the formats below do not include setup time. Be sure to put aside an extra 10-30 minutes in addition to the times below.</p>
       <p>For more information about the generators linked here, see the <a href="/rando/bingo">bingo</a> page.</p>
       <a href="https://bingosync.com/">
@@ -155,7 +90,7 @@
         <h3>Exploration/Roguelike Bingo Board Generator</h3>
       </a>
     </div>
-    <div class="list-square">
+    <div class="list-wide-square">
       <h3>Lockout</h3>
       <p>A 1v1 format where the first to 13 goals (A majority of the board) wins. Marking a goal prevents your opponent from marking it. You may strategically hold off marking goals, but this risks you losing the goal.</p>
       <p><em>Time estimate: 1-2 hours</em></p>
@@ -194,7 +129,7 @@
         which means you're stuck with whatever you revealed, so choose wisely. Usually played as a 1v...v1 format.</p>
     </div>
     <h2 id="spoilerformats">Spoiler Formats</h2>
-    <div class="list-square">
+    <div class="list-wide-square">
       <p>Races for these formats have a certain Preparation time after generating the world, to look at the spoiler log and plan a route. These may be renegotiated if you're new and other racers agree.</p>
       <h3>Double Anti Bingo (DAB)</h3>
       <p>1v..v1 format. At the end of preparation time, you choose a line to force your opponent to do. First to complete their forced line + any other line wins.</p>
@@ -214,7 +149,7 @@
       <p><em>Time estimate: Depends on goal, 30min-1:30hr</em></p>
     </div>
     <h2 id="multiworldformats">Multiworld Formats</h2>
-    <div class="list-square">
+    <div class="list-wide-square">
       <h3>Multiworld TE</h3>
       <p>Coop format. Goal is for everyone to beat Radiance.</p>
       <p><em>Time estimate: 2-3 hours</em></p>
@@ -224,18 +159,16 @@
       <h3>Archipelago</h3>
       <p>Multiworld, but across multiple games. Usually played as a co-op to TE (or whatever goal each person chooses). See <a href="https://archipelago.gg/games">the Archipelago website</a> for a list of currently supported games.</p>
     </div>
-    <h3> <a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a> </h3>
+    <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
     <span class="menu" id="menu101">
-      <div class="list-container mobilewidelist">
-        <div class="list">
+        <div class="list list-square list-centered">
           <p><a href="#generalformats">General Formats</a></p>
           <p><a href="#spoilerformats">Spoiler Formats</a></p>
           <p><a href="#multiworldformats">Multiworld Formats</a></p>
         </div>
-      </div>
     </span>
-    <h2 class="coolheading"><a href="#header">Top</a> </h2>
-    <img src="/images/hollowD.gif" alt="hollowD">
+    <h2 class="top"><a href="#header">Top</a> </h2>
+    <img src="/images/hollowD.gif" alt="A pixel art gif of the Knight dancing.">
   </div>
 </body>
 

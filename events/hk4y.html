@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HK4Y</title>
-  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -33,83 +33,6 @@
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style media="screen">
-
-    .menu {
-      font-family: "Rubik", sans-serif;
-      display: none;
-    }
-
-    .list table {
-      font-family: "Rubik", sans-serif;
-      font-size: 15px;
-    }
-
-    #schedule-table-container {
-      padding-bottom: 30px;
-    }
-
-    .list table,
-    .list th,
-    .list td {
-      border-style: solid;
-      border-color: #edb265;
-      border-width: 2px;
-      border-collapse: collapse;
-    }
-
-    .list th,
-    .list td {
-      padding: 15px;
-      text-align: left;
-    }
-
-    #schedule-image {
-      height: 950px;
-      width: 625px;
-    }
-
-    td p {
-      font-family: "Rubik", sans-serif;
-      font-size: 15px;
-      padding: 0px;
-    }
-
-    @media only screen and (max-width: 1000px) {
-            #schedule-image {
-              height: 791px;
-              width: 520px;
-            }
-    }
-
-    @media only screen and (max-width: 700px) {
-
-      .list th,
-      .list td {
-        padding: 0px;
-        text-align: left;
-      }
-
-      #schedule-image {
-        height: 593px;
-        width: 390px;
-      }
-
-
-    }
-
-    @media only screen and (max-width: 500px) {
-
-      .list th,
-      .list td {
-        padding: 0px;
-        text-align: left;
-      }
-
-      .list {
-        padding: 0% 0% 0% 0%;
-        border-style: none;
-      }
-    }
   </style>
 </head>
 
@@ -148,9 +71,9 @@
       <div class="events">
         <h1 id="header">Hollow Knight 4th Anniversary Celebration</h1>
         <p>HK4Y was the Hollow Knight 4th anniversary event, which took place in February 2021.</p>
-        <h2><a href="https://www.twitch.tv/collections/GyKuKPDy9xYH6w?filter=collections">Watch</a> </h2>
+        <p class="p-biggerer"><a href="https://www.twitch.tv/collections/GyKuKPDy9xYH6w?filter=collections">Watch</a></p>
         <p>The schedule for the event is below.</p>
-        <div class="list">
+        <div class="schedule-list">
           <h2>HK4Y Schedule</h2>
           <div id="schedule-table-container" style="overflow-x:auto;">
             <table>
@@ -176,13 +99,13 @@
               </tr>
               <tr>
                 <td>Pantheon of Hallownest</td>
-                <td>Runner:  <span><a class="menulink" onclick="return toggleMenu('menu1')">Banned Member (click to show)</a><span class="menu" id="menu1"> emray</span></span></td>
+                <td>Runner:  <span><a class="menulink menu-inline" onclick="return toggleMenu('menu1')">Banned Member (click to show)</a><span class="menu" id="menu1"> emray</span></span></td>
                 <td>Comms: Zenonira, Doveless</td>
               </tr>
               <tr>
                 <td>106% NMG Team Controller vs Team Keyboard Relay Race</td>
                 <td>
-                  <p>Team Controller: Tsira, T_K_3, Jeffisepic, Spicie, Aprillomat, <span><a class="menulink" onclick="return toggleMenu('menu3')">Banned Member (click to show)</a><span class="menu" id="menu3"> Sourcreamsupreme</span></span>, Paum, Mathulu, CorporalAcorn, Etimo, <span><a class="menulink" onclick="return toggleMenu('menu2')">Banned Member (click to show)</a><span class="menu" id="menu2"> emray</span></span>, Vysuals</p>
+                  <p>Team Controller: Tsira, T_K_3, Jeffisepic, Spicie, Aprillomat, <span><a class="menulink menu-inline" onclick="return toggleMenu('menu3')">Banned Member (click to show)</a><span class="menu" id="menu3"> Sourcreamsupreme</span></span>, Paum, Mathulu, CorporalAcorn, Etimo, <span><a class="menulink menu-inline" onclick="return toggleMenu('menu2')">Banned Member (click to show)</a><span class="menu" id="menu2"> emray</span></span>, Vysuals</p>
                   <p>Team Keyboard: Slaurent, Cerpintext, Pisces_FL, ins0mnia, Wasabi_Knight, Aertosaber, Gwonkee, Murihoro, OhkoXar, MyPetCactus, Ax2u, Doveless</p>
                 </td>
                 <td>Comms: LocusSK, Xero</td>

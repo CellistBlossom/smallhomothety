@@ -3,58 +3,26 @@ body {
   text-align: center;
 }
 
+p {
+  font-size: 16px;
+  font-family: Helvetica;
+  padding: 0% 10% 0% 10%;
+}
+
+  a {
+  color: #E44988;
+  font-family: Helvetica;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4988e4;
+}
+
 h1 {
   font-size: 40px;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
-}
-
-p a {
-  color: #E44988;
-}
-
-p a:hover {
-  color: #4988e4;
-}
-
-a {
-  color: #E44988;
-}
-
-a:hover {
-  color: #E44988;
-}
-
-a h2 {
-  color: #E44988;
-}
-
-a h2:hover {
-  color: #4988e4;
-}
-
-h2 a {
-  color: #E44988;
-}
-
-h2 a:hover {
-  color: #4988e4;
-}
-
-a h3 {
-  color: #E44988;
-}
-
-a h3:hover {
-  color: #4988e4;
-}
-
-h3 a {
-  color: #E44988;
-}
-
-h3 a:hover {
-  color: #4988e4;
 }
 
 h2 {
@@ -67,20 +35,82 @@ h3 {
   font-family: Helvetica;
 }
 
-p {
-  font-size: 16px;
+li {
   font-family: Helvetica;
-  padding: 0% 10% 0% 10%;
 }
 
-a {
-  font-family: Helvetica;
-  text-decoration: none;
+hr {
+  padding: 0% 20% 0% 20%;
+  border-style: dotted;
+  border-width: 3px;
+  border: 3px dotted AntiqueWhite;
+  background:
+    linear-gradient(AntiqueWhite 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+/* Misc Classes */
+
+.left-align {
+  text-align: left;
+}
+
+.ul-in-list {
+  width: 75%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bigger-link {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+
+/* For page navigation menu */
+
+.menu {
+  display: none;
 }
 
 .menulink {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
 }
+
+/* For keeping headings in order while maintaining style */
+
+.h2-bigger {
+  font-size: 40px;
+text-align: center;
+font-family: "Josefin Sans", sans-serif;
+}
+
+
+.h3-bigger {
+  font-size: 28px;
+font-family: Helvetica;
+}
+
+.p-bigger {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.p-biggerer {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.h2-smaller {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+
+/* For top navigation menu */
 
 .dropbtn {
   background-color: #9d5fff;
@@ -141,27 +171,7 @@ a {
   border: 2px solid #ebdeff;
 }
 
-.playlistlink {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  color: #E44988;
-}
-
-.playlistlink:hover {
-  color: #4988e4;
-}
-
-.disclaimer {
-  font-size: 8px;
-  color: gray;
-}
-
-li {
-  text-align: center;
-  font-family: Helvetica;
-  list-style-position: inside;
-  padding-right: 3%;
-}
+/* For submenu navigation */
 
 .submenubtn {
   background-color: transparent;
@@ -184,7 +194,77 @@ li {
   color: #D43576;
 }
 
-.coolheading {
+/* For "list" divs */
+.list {
+  width: 700px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  padding: 0% 10% 0% 10%;
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 100px;
+  border: 5px dotted AntiqueWhite;
+  background:
+    linear-gradient(AntiqueWhite 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+  padding: 0% 0% 0% 0%;
+  text-align: left;
+}
+
+.list-square {
+  border-radius: 0px;
+}
+
+.list-centered {
+  text-align: center;
+}
+
+.list-wide-square {
+  padding: 0% 20% 0% 20%;
+  border-style: dotted;
+  border-width: 5px;
+  border: 5px dotted AntiqueWhite;
+  background:
+    linear-gradient(AntiqueWhite 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+@media only screen and (max-width: 1100px) {
+
+.list {
+  width: 500px;
+  border-radius: 90px;
+}
+
+.list-square {
+  border-radius: 0px;
+}
+
+.list-wide-square {
+  padding: 0% 0% 0% 0%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+.list {
+  width: 100%;
+  border-radius: 75px;
+}
+
+.list-square {
+  border-radius: 0px;
+}
+
+.list-wide-square {
+  padding: 0% 0% 0% 0%;
+}
+}
+
+/* For the "top" button */
+
+.top {
   width: 120px;
   height: 40px;
   display: block;
@@ -200,134 +280,246 @@ li {
     linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
 }
 
-.list {
+/* centered div with text aligning left */
+
+
+.body-text-align-left {
   text-align: left;
-  padding: 0% 10% 0% 10%;
-  border-style: dotted;
-  border-width: 5px;
-  border-radius: 100px;
-  border: 5px dotted AntiqueWhite;
-  background:
-    linear-gradient(AntiqueWhite 0 0) padding-box,
-    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+  padding: 0% 20% 0% 20%;
 }
 
-.list-container {
-  padding: 0% 25% 0% 25%;
+@media only screen and (max-width: 1100px) {
+  .body-text-align-left  {
+    text-align: left;
+    padding: 0% 15% 0% 15%;
+  }
 }
 
-/* Grubby page IDs */
-#namelabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
+@media only screen and (max-width: 700px) {
+  .body-text-align-left  {
+    text-align: left;
+    padding: 0% 5% 0% 5%;
+  }
 }
 
-#pronounlabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
+@media only screen and (max-width: 500px) {
+  .body-text-align-left  {
+    text-align: left;
+    padding: 0% 0% 0% 0%;
+  }
 }
 
-#foodlabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
-
-#personalitylabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
-
-#congrats {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
-
-/* For /events pages */
+/* For event flexbox */
 #events-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
 }
 
 .eventstablecontainer table, .eventstablecontainer th, .eventstablecontainer td {
-  border-style: dotted;
-  border-width: 5px;
-  border: 5px dotted #e4e1ff;
-  border-collapse: collapse;
-  background:
-    linear-gradient(#e4e1ff 0 0) padding-box,
-    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+border-style: dotted;
+border-width: 5px;
+border: 5px dotted #e4e1ff;
+border-collapse: collapse;
+background:
+  linear-gradient(#e4e1ff 0 0) padding-box,
+  linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+.eventstablecontainer table {
+font-family: "Rubik", sans-serif;
+font-size: 18px;
+background: #e4e1ff;
+width: 200px;
+}
+
+.eventstablecontainer a {
+color: #ff2f81;
+font-family: "Rubik", sans-serif;
+}
+
+.eventstablecontainer a:hover {
+color: #2f81ff;
+font-family: "Rubik", sans-serif;
+}
+
+.events {
+width: 80%;
+}
+
+#hksceventstableheader {
+font-family: "Rubik", sans-serif;
+font-size: 25px;
+font-weight: bold;
+}
+
+#events-container-container {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+.events {
+  width: 100%;
+}
+
+#events-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#events-list {
+  order: 2;
 }
 
 .eventstablecontainer table {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   background: #e4e1ff;
-  width: 200px;
-}
-
-.eventstablecontainer a {
-  color: #ff2f81;
-  font-family: "Rubik", sans-serif;
-}
-
-.eventstablecontainer a:hover {
-  color: #2f81ff;
-  font-family: "Rubik", sans-serif;
-}
-
-.events {
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
-#hksceventstableheader {
-  font-family: "Rubik", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+/* for event schedules */
+
+.schedule-list {
+text-align: left;
+padding: 0% 10% 0% 10%;
+border-style: dotted;
+border-width: 5px;
+border-radius: 100px;
+border: 5px dotted AntiqueWhite;
+background:
+  linear-gradient(AntiqueWhite 0 0) padding-box,
+  linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
 }
 
-#events-container-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.schedule-list table {
+font-family: "Rubik", sans-serif;
+font-size: 15px;
 }
 
-@media only screen and (max-width: 800px) {
-  .events {
+#schedule-table-container {
+padding-bottom: 30px;
+}
+
+.schedule-list table,
+.schedule-list th,
+.schedule-list td {
+border-style: solid;
+border-color: #edb265;
+border-width: 2px;
+border-collapse: collapse;
+}
+
+.schedule-list th,
+.schedule-list td {
+padding: 15px;
+text-align: left;
+}
+
+#schedule-image {
+height: 950px;
+width: 625px;
+}
+
+.schedule-list td p {
+font-family: "Rubik", sans-serif;
+font-size: 15px;
+padding: 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+#schedule-image {
+  height: 791px;
+  width: 520px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+.schedule-list th,
+.schedule-list td {
+padding: 0px;
+text-align: left;
+}
+
+#schedule-image {
+height: 593px;
+width: 390px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+
+.schedule-list th,
+.schedule-list td {
+padding: 0px;
+text-align: left;
+}
+
+.schedule-list {
+padding: 0% 0% 0% 0%;
+border-style: none;
+}
+
+.schedule-list th,
+.schedule-list td {
+padding: 0px;
+text-align: left;
+}
+}
+
+
+/* for event/tourney pages */
+
+
+.menu-inline {
+font-size: 16px;
+font-family: Helvetica;
+font-weight: normal;
+}
+
+.winner-spoiler {
+font-size: 16px;
+font-weight: lighter;
+font-family: Helvetica;
+}
+
+/* For "important" boxes */
+
+
+.important {
+text-align: left;
+width: 800px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 20px 0px 20px 0px;
+border-style: dotted;
+border-radius: 10px;
+border-width: 5px;
+border: 5px dotted #ffe4e1;
+background:
+  linear-gradient(#ffe4e1 0 0) padding-box,
+  linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+.important p, .important a {
+font-family: "Rubik", sans-serif;
+font-size: 20px;
+}
+
+.important-smaller {
+width: 80%;
+}
+
+@media only screen and (max-width: 700px) {
+.important {
     width: 100%;
-  }
-
-  #events-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  #events-list {
-    order: 2;
-  }
-
-  .eventstablecontainer table {
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    background: #e4e1ff;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
-
-@media only screen and (max-width: 800px) {
-  .mobilewidelist {
-    padding: 0% 0% 0% 0%;
-  }
-
-
-  .widelist {
-    padding: 0% 0% 0% 0%;
-  }
-
-  .important-container {
-    padding: 0% 5% 0% 5%;
-  }
 }
