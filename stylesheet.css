@@ -427,6 +427,12 @@ height: 950px;
 width: 625px;
 }
 
+#schedule-image-hk7y {
+  height: 888px;
+  width: 500px;
+  padding-bottom:15px;
+}
+
 .schedule-list td p {
 font-family: "Rubik", sans-serif;
 font-size: 15px;
@@ -437,6 +443,11 @@ padding: 0px;
 #schedule-image {
   height: 791px;
   width: 520px;
+}
+
+#schedule-image-hk7y {
+height: 720px;
+width: 405px;
 }
 }
 
@@ -452,6 +463,11 @@ text-align: left;
 height: 593px;
 width: 390px;
 }
+
+#schedule-image-hk7y {
+  height: 680px;
+  width: 382px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
