@@ -531,7 +531,19 @@ font-size: 20px;
 }
 
 .important-smaller {
-width: 80%;
+width: 50em;
+}
+
+@media only screen and (max-width:1000px) {
+  .important-smaller {
+    width:40em;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .important-smaller {
+    width:80%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
