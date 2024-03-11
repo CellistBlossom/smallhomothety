@@ -134,6 +134,7 @@ function generateSplits() {
     genSplitsButton.innerHTML = "Regenerate Splits!"
     downloadButton.style.visibility = "visible"
     listDiv.style.visibility = "visible"
+    grubSplitGenerator.classList.remove('center-button');
 
     console.log(xml)
 
