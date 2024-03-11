@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Elegy% Random Grub Order</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playpen+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <meta name="description" content="Adopt-a-Grub is a cute random generator that lets you adopt a grub from Hollow Knight as your very own.">
+  <!-- for discord embeds-->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elegy% Random Grub Order" />
+<meta property="og:description" content="Adopt-a-Grub" />
+<meta property="og:url" content="https://www.smallhomothetyorganization.org/random_grub_order" />
+  <style media="screen">
+    .certificate h2 {
+      font-size: 22px;
+      font-family: "Playpen Sans", sans-serif;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-family: "Playpen Sans", sans-serif;
+    }
+
+    .list-button {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 30px;
+      color: #ff92bf;
+      background-color: #ddd;
+      padding: 10px;
+      border-radius: 30px;
+    }
+
+    .upside-down {
+        transform: scaleY(-1);
+    }
+
+    .rightside-up {
+      transform: scaleY(1);
+    }
+
+    #namelabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#pronounlabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#foodlabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#personalitylabel {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+#congrats {
+  font-size: 18px;
+  font-family: "Playpen Sans", sans-serif;
+}
+  </style>
+</head>
+
+<body>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("nav.html");
+      });
+    </script>
+    <h2>Elegy% Random Grub Order</h2>
+    <p>Elegy% is a category where you free all of the grubs in Hollow Knight in order to receive Grubberfly's Elegy from the Grubfather.  Elegy% Random Grub Order puts a twist on the category by making you save all of the grubs in a random order!  This is a fun way to play the category both by yourself and as a race with friends!</p>
+    <button class="list-button" id="grubSplitGenerator" onclick="generateSplits()">Generate Splits!</button>
+    <button class="list-button" id="downloadButton" onclick="downloadFile()" style="visibility: hidden;">Donwload</button>
+    <div id="listDiv" style="visibility: hidden;">
+        <h3>Here is the order that you got!</h3>
+        <div style="border: 2px solid black; width: 375px; height: 375px; overflow-y: scroll; margin: auto;">
+            <ul id="grubList"></ul>
+        </div>
+    </div>
+    <script src="scripts/randomgruborder.js"></script>
+</body>
