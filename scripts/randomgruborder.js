@@ -136,13 +136,10 @@ function generateSplits() {
     listDiv.style.visibility = "visible"
     grubSplitGenerator.classList.remove('center-button');
 
-    console.log(xml)
-
 
 }
 
 function downloadFile() {
-    console.log(xml)
     const filename = "Elegy% Random Grub Order.lss";
     const pom = document.createElement('a');
     const bb = new Blob([xml], {type: 'text/plain'});
