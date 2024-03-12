@@ -58,7 +58,7 @@
     <button class="submenubtn" onclick="location.href='resources'"><a href="resources">Resources</a> </button>
     <button class="submenubtn" onclick="location.href='wobblebramble'"><a href="wobblebramble">Wobblebramble</a> </button>
   </div>
-  <div class="main">
+  <div id="main-container">
     <script type="text/javascript" language="Javascript">
       function toggleMenu(currMenu) {
         if (document.getElementById) {
@@ -75,6 +75,7 @@
       }
     </script>
     <h1 id="header">Where do I Start?</h1>
+    <div id="body">
     <p class="p-bigger"><a class="menulink" onclick="return toggleMenu('menu1')">Click to Navigate this Guide! ▶</a></p>
     <span class="menu" id="menu1">
       <div class="list list-square list-centered">
@@ -172,8 +173,14 @@
       <p><a href="#long-categories">Long Categories</a></p>
     </div>
   </span>
-    <h2 class="top"><a href="#header">Top</a> </h2>
     <img class="yippee" src="/images/yippee.gif" alt="A cartoon character with long white hair jumping up and down happily">
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+  </script>
+  <div id="footer"> </div>
   </div>
 </body>
 

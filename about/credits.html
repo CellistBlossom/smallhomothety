@@ -65,7 +65,9 @@
       <button class="submenubtn" onclick="location.href='/about/faq'"><a href="/about/faq">FAQ</a> </button>
       <button class="submenubtn" onclick="location.href='/about/credits'"><a href="/about/credits">Credits</a> </button>
     </div>
-    <h1>Credits</h1>
+    <div id="main-container">
+    <h1 id="header">Credits</h1>
+    <div id="body">
     <p>Hi, I'm Blossom! I registered this domain and put a lot of work into this site. I hope it's been helpful, funny, or informative for you!</p>
     <p>Of course, I didn't do it alone. Here's a list of absolute cuties who have contributed to this project, with code or otherwise:
     </p>
@@ -84,5 +86,13 @@
     <a href="https://www.youtube.com/@Blossomthecellist"><img src="/images/youtube.png" alt="youtube logo" height="100px" width="100px"></a>
     <a href="https://www.twitch.tv/blossomthecellist"><img src="/images/twitch.png" alt="twitch logo" height="100px" width="100px"></a>
     <a href="https://www.speedrun.com/user/BlossomtheCellist"><img src="/images/src.png" alt="speedrun.com logo" height="100px" width="100px"></a>
+  </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+  </div>
   </body>
 </html>

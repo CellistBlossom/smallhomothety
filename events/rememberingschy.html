@@ -44,6 +44,7 @@
   </script>
   <div id="navbar">
   </div>
+  <div id="main-container">
   <div id="events-container-container">
     <div id="events-container">
       <script>
@@ -55,6 +56,7 @@
       </div>
       <div class="events">
         <h1 id="header">Remembering Schy's Achievements</h1>
+        <div id="body">
         <img src="/images/shyschy.png" alt="A shyguy playing on a Nintendo Switch." height="150px" width="150px">
         <p>Schy was a treasured member of the community and friend to many. They tragically passed away in June of 2022. The speedrunning community held this event to honor the joy they brought to our lives, and to remember all that they contributed.</p>
         <p>The schedule for the event consisted of every non-IL category Schy had run. Many of the runners in this event were members of the community who were close to Schy. The final part of the event was a path of pain IL relay race, followed by a showing of Schy's personal best, which was world record for a while and second place at the time of their passing.</p>
@@ -137,8 +139,15 @@
         </div>
       </div>
     </div>
-    <h2 class="top"><a href="#header">Top</a> </h2>
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

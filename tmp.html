@@ -34,6 +34,10 @@
       h1 {
         padding-top: 300px;
       }
+
+      #body {
+        height:100px;
+      }
     </style>
   </head>
   <body>
@@ -55,6 +59,15 @@
     </script>
     <div id="navbar">
     </div>
-<h1>it kills you</h1>
+    <div id="main-container">
+<h1 id="header">it kills you</h1>
+<div id="body"></div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
   </body>
 </html>

@@ -52,6 +52,7 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <div class="formats" id="generalformats">
     <h1 id="header">Common Formats for Racing Rando</h1>
     <script type="text/javascript" language="Javascript">
@@ -69,6 +70,7 @@
         }
       }
     </script>
+    <div id="header">
     <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
     <span class="menu" id="menu100">
         <div class="list list-square list-centered">
@@ -167,9 +169,16 @@
           <p><a href="#multiworldformats">Multiworld Formats</a></p>
         </div>
     </span>
-    <h2 class="top"><a href="#header">Top</a> </h2>
     <img src="/images/hollowD.gif" alt="A pixel art gif of the Knight dancing.">
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

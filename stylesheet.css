@@ -1,7 +1,10 @@
 body {
   background-color: AntiqueWhite;
   text-align: center;
+  min-height:100%;
+  margin:0;
 }
+
 
 p {
   font-size: 16px;
@@ -47,6 +50,158 @@ hr {
   background:
     linear-gradient(AntiqueWhite 0 0) padding-box,
     linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+/* Page Layout */
+
+#main-container { 
+  min-height: 100vh; 
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+}
+
+#footer-navigation {
+  background-color:#B07EFF;
+  min-height:40px; 
+  display:grid;
+  grid-template-columns: 40% 20% 40%;
+  border:2px solid white;
+}
+
+#footer-btn-container {
+  min-height:40px; 
+  justify-self: right;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  max-width:800px;
+}
+
+#footer-reminder {
+  color:white;
+  justify-self:left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#footer-reminder  p {
+  color:white;
+}
+
+.footer-btn {
+  background-color: #B07EFF;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  min-height:50px;
+}
+
+.footer-btn a {
+  color: white;
+}
+
+.footer-btn:hover {
+  background-color:#C49FFF;
+}
+
+.footer-btn a:hover {
+  color:#13FF6E;
+}
+
+#footer {
+  margin-top:5px;
+}
+
+/* For the "top" button */
+
+.top-container {
+  color:transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.top {
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  justify-self:center;
+  width: 120px;
+  text-align:center;
+  font-family: "Josefin Sans", sans-serif;
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 100px;
+  border: 5px dotted white;
+  background:
+    linear-gradient(white 0 0) padding-box,
+    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+.top a {
+  color:#E583AB;
+}
+
+.top a:hover {
+  color:#83abe5;
+}
+
+@media only screen and (max-width: 700px) {
+  #footer-navigation {
+    min-height:30px;
+  }
+
+  #footer-btn-container {
+    min-height:30px;
+  }
+
+  .footer-btn {
+    padding: 5px;
+    font-size: 17px;
+  }
+
+  .top {
+    width: 80px;
+    font-size:30px;
+    border-width: 5px;
+    border-radius: 30px;
+  }
+
+}
+
+@media only screen and (max-width:450px) {
+  #footer-btn-container {
+    display:flex;
+    flex-direction:column;
+  }
+
+  .footer-btn {
+    text-align:right;
+    margin-right:5px;
+  }
+}
+
+@media only screen and (max-width:390px) {
+  #footer-navigation {
+    display:flex;
+    flex-direction:column;
+  }
+
+  #footer-reminder {
+    order:2;
+  }
+
+  .footer-btn {
+    text-align:center;
+    padding: 0px;
+    min-height:30px;
+  }
 }
 
 /* Misc Classes */
@@ -260,24 +415,6 @@ font-family: Helvetica;
 .list-wide-square {
   padding: 0% 0% 0% 0%;
 }
-}
-
-/* For the "top" button */
-
-.top {
-  width: 120px;
-  height: 40px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Josefin Sans", sans-serif;
-  border-style: dotted;
-  border-width: 5px;
-  border-radius: 100px;
-  border: 5px dotted AntiqueWhite;
-  background:
-    linear-gradient(AntiqueWhite 0 0) padding-box,
-    linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
 }
 
 /* centered div with text aligning left */

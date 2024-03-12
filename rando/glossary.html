@@ -52,6 +52,7 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <h1 id="header">Glossary of Rando Terms</h1>
   <script type="text/javascript" language="Javascript">
     function toggleMenu(currMenu) {
@@ -68,6 +69,7 @@
       }
     }
   </script>
+  <div id="body">
   <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu100">
       <div class="list list-square list-centered">
@@ -173,8 +175,15 @@
       </div>
   </span>
 
-  <h2 class="top"><a href="#header">Top</a> </h2>
   <img class="spin" src="../images/spin.gif" alt="knightspin">
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

@@ -139,7 +139,9 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <h1 id="header">Rando Rando!</h1>
+  <div id="body">
     <div class="important">
       <p><em>Looking for the Skips page? It lives <a href="/rando/skips">here</a> now.</em></p>
     </div>
@@ -182,9 +184,13 @@
     </div>
     </div>
   </div>
-  </div>
-  <h2 class="top"><a href="#header">Top</a> </h2>
   <img src="images/GrubLove.png" alt="grublove" height="100px" width="100px">
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+ </script>
+<div id="footer"> </div></div>
 </body>
 
 </html>

@@ -49,12 +49,14 @@
       $("#events-list").load("/eventsnav.html");
     });
   </script>
+  <div id="main-container">
   <div id="events-container-container">
     <div id="events-container">
       <div id="events-list">
       </div>
       <div class="events">
         <h1 id="header">Hollow Knight 5th Anniversary Celebration: Meme Day</h1>
+        <div id="body">
         <div class="subnavmenu">
           <button class="submenubtn" onclick="location.href='/events/hk5y'"><a href="/events/hk5y">Main Event</a> </button>
           <button class="submenubtn" onclick="location.href='/events/hk5y/memeday'"><a href="/events/hk5y/memeday">Meme Day</a> </button>
@@ -107,8 +109,15 @@
         </div>
       </div>
     </div>
-    <h2 class="top"><a href="#header">Top</a> </h2>
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

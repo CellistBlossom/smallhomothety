@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>My Star</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/schy/apple-touch-icon.png">
@@ -150,6 +150,26 @@
     .submenubtn a:hover {
       color: #9c72c5;
     }
+
+    #footer-navigation {
+      background-color:#6aaff5;
+    }
+
+    .footer-btn {
+      background-color:#6aaff5;
+    }
+
+    .footer-btn a {
+      color: #b4fafa;
+    }
+
+    .footer-btn a:hover {
+      color: #aaf45f;
+    }
+
+    .footer-btn:hover {
+      background-color: #377cc2;
+    }
   </style>
   <script type="text/javascript">
     var password;
@@ -162,6 +182,7 @@
       window.location = "index";
     }
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -228,7 +249,9 @@
     </div>
   </nav>
   </div>
-  <h1>A Memorial to Schy</h1>
+  <div id="main-container">
+  <h1 id="header">A Memorial to Schy</h1>
+  <div id="body">
   <p>You were the best thing to ever happen to me.</p>
   <p>I'll never forget you.</p>
   <p>Rest well, my friend.</p>
@@ -367,6 +390,13 @@
   <div class="subnavmenu">
     <button class="submenubtn" onclick="location.href='/index'"><a href="/index">Go Back</a> </button>
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script></div>
+<div id="footer"> </div>
 </body>
 
 </html>

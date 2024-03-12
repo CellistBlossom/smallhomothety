@@ -52,7 +52,9 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <h1 id="header">Rules for HKSC Races</h1>
+  <div  id="body">
   <p><a class="menulink" onclick="return toggleMenu('menu1')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu1">
     <div class="list list-square list-centered">
@@ -176,7 +178,6 @@
       <p><a href="#cheating">Cheating</a> </p>
     </div>
   </span>
-  <h2 class="top"><a href="#header">Top</a></h2>
   <img src="/images/grubnote.png" alt="A grub taking notes" height="100px" width="100px">
   <script type="text/javascript" language="Javascript">
     function toggleMenu(currMenu) {
@@ -193,6 +194,14 @@
       }
     }
   </script>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+  </script>
+  <div id="footer"> </div>
+  </div>
 </body>
 
 </html>

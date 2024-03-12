@@ -103,7 +103,9 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <h1 id="header">Rando 4 Itemsync & RandoSettingsManager Guide</h1>
+  <div id="body">
   <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu100">
       <div class="list list-square list-centered">
@@ -291,8 +293,15 @@
         <p><a href="#HKMP">Hollow Knight Multiplayer Mod</a></p>
       </div>
   </span>
-  <h2 class="top"><a href="#header">Top</a> </h2>
   <img id="yippee" src="../images/yippee.gif" alt="yippee">
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

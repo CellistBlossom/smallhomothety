@@ -86,9 +86,11 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <div id="header">
     <h1 id="Intro">HKSC Tourneys</h1>
   </div>
+  <div id="body">
   <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Page! ▶</a></p>
   <span class="menu" id="menu100">
       <div class="list list-square list-centered">
@@ -232,8 +234,15 @@
       </div>
   </span>
   <br>
-  <h2 class="top"><a href="#header">Top</a> </h2>
   <img src="../images/GrubLove.png" alt="A grub holding a heart" height="100px" width="100px">
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

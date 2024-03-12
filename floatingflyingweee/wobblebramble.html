@@ -106,7 +106,9 @@
     <button class="submenubtn" onclick="location.href='resources'"><a href="resources">Resources</a> </button>
     <button class="submenubtn" onclick="location.href='wobblebramble'"><a href="wobblebramble">Wobblebramble</a> </button>
   </div>
-  <h1>Wobblebramble</h1>
+  <div id="main-container">
+  <h1 id="header">Wobblebramble</h1>
+  <div id="body">
   <img src="../images/wobblebramble.gif" alt="A mosscreep">
   <br>
   <br>
@@ -188,6 +190,14 @@
       audio.volume = value / 100;
     });
   </script>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+  </script>
+  <div id="footer"> </div>
+  </div>
 </body>
 
 </html>

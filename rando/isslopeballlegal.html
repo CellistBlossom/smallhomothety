@@ -37,7 +37,7 @@
       padding-top: 100px;
     }
 
-    p {
+    #body p {
       font-size: 100px;
     }
   </style>
@@ -59,7 +59,9 @@
   <div id="randonavbar">
 
   </div>
-  <h1>Is Slopeball Legal?</h1>
+  <div id="main-container">
+  <h1 id="header">Is Slopeball Legal?</h1>
+  <div id="body">
   <p id="slopeball"></p>
   <script type="text/javascript">
     function slopeball() {
@@ -73,6 +75,14 @@
     }
     document.getElementById("slopeball").innerHTML = slopeball();
   </script>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+  </script>
+  <div id="footer"> </div>
+  </div>
 </body>
 
 </html>
