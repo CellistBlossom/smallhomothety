@@ -61,7 +61,7 @@ hr {
 }
 
 #footer-navigation {
-  background-color:#B07EFF;
+  background-color:#dec9ff;
   min-height:40px; 
   display:grid;
   grid-template-columns: 40% 20% 40%;
@@ -78,7 +78,6 @@ hr {
 }
 
 #footer-reminder {
-  color:white;
   justify-self:left;
   display: flex;
   justify-content: center;
@@ -87,11 +86,11 @@ hr {
 }
 
 #footer-reminder  p {
-  color:white;
+  color: #4988e4;
 }
 
 .footer-btn {
-  background-color: #B07EFF;
+  background-color: #dec9ff;
   color: white;
   padding: 16px;
   font-size: 20px;
@@ -99,18 +98,20 @@ hr {
   font-family: "Josefin Sans", sans-serif;
   cursor: pointer;
   min-height:50px;
+  padding-top:0;
+  padding-bottom:0;
 }
 
 .footer-btn a {
-  color: white;
+  color: #4988e4;
 }
 
 .footer-btn:hover {
-  background-color:#C49FFF;
+  background-color:#ceb0ff;
 }
 
 .footer-btn a:hover {
-  color:#13FF6E;
+  color:#E44988;
 }
 
 #footer {
