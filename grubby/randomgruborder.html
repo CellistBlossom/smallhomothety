@@ -85,7 +85,7 @@
   font-family: "Playpen Sans", sans-serif;
 }
 
-.center-button {
+.center-div {
   display:block;
   margin-left:auto;
   margin-right:auto;
@@ -103,13 +103,19 @@
     </div>
     <h1 id="header">Elegy% Random Grub Order</h1>
     <p>Elegy% is a category where you free all of the grubs in Hollow Knight in order to receive Grubberfly's Elegy from the Grubfather.  Elegy% Random Grub Order puts a twist on the category by making you save all of the grubs in a random order!  This is a fun way to play the category both by yourself and as a race with friends!</p>
-      <button class="list-button center-button" id="grubSplitGenerator" onclick="generateSplits()">Generate Splits!</button>
-      <button class="list-button" id="downloadButton" onclick="downloadFile()" style="visibility: hidden;">Download</button>
+      <div class="center-div">
+        <button class="list-button" id="grubSplitGenerator" onclick="generateSplits()">Generate Splits!</button>
+        <button class="list-button" id="downloadButton" onclick="downloadFile()" style="visibility: hidden;">Download</button>
+      </div>
+      <div class="center-div">
+        <input type="checkbox" id="numberedSplits" name="numbered">
+      <label for="numbered"> Numbered Splits</label><br>
+      </div>
     <div id="listDiv" style="visibility: hidden;">
         <h3>Here is the order that you got!</h3>
         <div style="border: 2px solid black; width: 375px; height: 375px; overflow-y: scroll; margin: auto;">
             <ul id="grubList"></ul>
         </div>
     </div>
-    <script src="/scripts/randomgruborder.js"></script>
+    <script src="../scripts/randomgruborder.js"></script>
 </body>
