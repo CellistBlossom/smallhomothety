@@ -166,6 +166,8 @@ function generateSplits() {
     downloadButton.style.visibility = "visible"
     listDiv.style.visibility = "visible"
     grubSplitGenerator.classList.remove('center-button');
+
+
 }
 
 function downloadFile() {
