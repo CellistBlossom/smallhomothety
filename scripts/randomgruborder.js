@@ -65,7 +65,7 @@ checkbox.addEventListener('change', (event) => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(xml.data, "application/xml");
     const data = doc.documentElement.children[8].children;
-    position = 0
+    let position = 0
     for (const segment of data) {
       const p = document.createElement('p')
       position++
