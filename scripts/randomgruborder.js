@@ -163,9 +163,9 @@ function generateSplits() {
   </AutoSplitterSettings>
 </Run>`
     genSplitsButton.innerHTML = "Regenerate Splits!"
-    downloadButton.style.visibility = "visible"
     listDiv.style.visibility = "visible"
-    grubSplitGenerator.classList.remove('center-button');
+    downloadButton.classList.remove('byebye-button');
+
 
 
 }
