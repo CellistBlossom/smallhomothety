@@ -33,10 +33,22 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/tourney" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <style media="screen">
+    #twitch-embed {
+      width:60%;
+      display:inline-block;
+      margin-right:auto;
+      margin-left:auto;
+    }
 
     h3 {
       text-align: center;
     }
+
+    @media only screen and (max-width: 700px) {
+  #twitch-embed  {
+    width:90%;
+  }
+}
   </style>
 </head>
 
@@ -95,7 +107,8 @@
   <span class="menu" id="menu100">
       <div class="list list-square list-centered">
         <p><a href="#Intro">Introduction</a></p>
-        <p><a href="#allmajors2023">All Major Items 2023 (Current Tournament!)</a></p>
+        <p><a href="#blackout2024">Blackout 2024 (Current Tournament!)</a></p>
+        <p><a href="#allmajors2023">All Major Items 2023</a></p>
         <p><a href="#blackout2023">Blackout TE 2023</a></p>
         <p><a href="#allmajors2022">All Major Items 2022</a></p>
         <p><a href="#blackout2022">Blackout TE 2022</a></p>
@@ -105,12 +118,37 @@
   </span>
   <p>Because many people invest time in randomizer racing, the Hollow Knight Speedrunning Community occasionally hosts tournaments for racers to prove their prowess! These tournaments are usually organized in the discord server and restreamed on our
     <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch channel</a> (though this hasn't always been the case).</p>
-  <p>Tournament races are generally held to be more competitive than non-tournament races. They generally consist of only one format and may have tournament-specific rules. Tournaments, if restreamed, are almost always streamed live.</p>
+  <p>Tournament races are considered to be more competitive than non-tournament races. They generally consist of only one format and may have tournament-specific rules. Tournaments, if restreamed, are almost always streamed live.</p>
   <p>For an explanation of individual formats that may be used in tournaments, see the <a href="formats">formats</a> page.</p>
+  <h2 id="blackout2024">2024 Blackout TE Tournament</h2>
+  <div id="twitch-embed"></div>
+          <!-- Load the Twitch embed JavaScript file -->
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+          <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+              width: "100%",
+              height: 480,
+              channel: "hollowknightcommunity",
+              parent: ["smallhomothetyorganization.org"]
+            });
+          </script>
+  <p>A new randomizer tournament is on the horizon! Signups for the 2024 Blackout True Ending are open until June 10th at 3:00PM GMT (11:00AM EST). The tournament is being organized in the <a href="https://discord.gg/3JtHPsBjHD">Hollow Knight Speedrunning Community Discord</a>, so join it if you want to sign up! If you just want to watch the tourney, you can keep tabs on the scheduling website below and the <a href="https://www.twitch.tv/hollowknightcommunity">HKC Twitch</a> when the tourney begins.</p>
+  <p>Blackout True Ending is a tournament played with a 5x5 bingo board. The tournament will be played 2v2; players choose their teammate before the tournament and will advance through the bracket as a team. The first team to mark all 25 goals on the bingo board and have both players beat the Radiance wins the match! For more information on randomizer formats, see the <a href="/rando/formats">formats</a> page.</p>
+  <p>Like the previous 2023 All Majors Tournament, this tournament is allowing gimmicks! Gimmicks are items that will be added to the randomized pool beyond the default settings to help spice up each match. Both teams will offer the other team a list of three potential gimmicks, and one will be picked from each list. Gimmicks are optional for the first round, but every round in the rest of the tournament will have a minimum of two gimmicks.</p>
+  <p>The list of gimmicks allowed for the 2024 Blackout TE tournament are:</p>
+  <div class="list">
+    <p>Gimmicks that randomize additional checks: Grimmkin Flames, Whispering Roots, Lore Tablets, Randomized Focus</p>
+    <p>Settings that alter logic with skips: Precise Movement, Background and Enemy Pogos, Infection Skips, No Swim/No Tear</p>
+    <p>Settings that alter how rando functions: Ghost Essence, Lemm/Junk Shops, Colo3 (the Glory of Being a Fool mod)</p>
+    <p>Gimmicks voted upon by rando community: Replace the middle goal of the board with "obtain 46 grubs"; Map-Area randomizer; Access Randomizer (chains + unique keys + respect), Split Claw, Randomized Levers, More Doors (all doors, no keys), the Real Journal Rando (no notes, no bonus entries), Cursed Nail.</p>
+  </div>
+  <p class="p-bigger"><a href="https://www.twitch.tv/hollowknightcommunity">HKC Twitch</a></p>
+  <p class="p-bigger"><a href="https://docs.google.com/spreadsheets/d/1wWdi5JfEPFUvdJ0wkZWgKCUOLgPwc5Qr3mT84Q44iRk/edit?pli=1#gid=0">Rules</a></p>
+  <p class="p-bigger"><a href="https://hk-tournaments.web.app/">Schedule</a></p>
+  <p class="p-bigger" style="color:#656565;"><em>Bracket coming soon...</em></p>
   <h2 id="allmajors2023">2023 All Majors Tournament</h2>
-    <div class="important">
-      <p><strong>The 2023 All Majors rando tournament is over!</strong> If you missed Grand Finals, you can watch it on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch Channel</a>. Alternatively, you can watch the full tournament at the playlist link below.</p>
-    </div>
   <br>
       <p>The tournament was a 2v2 All Major Items TE double-elimination tournament. All matches were best of 1s until the end of the tournament. Winner's and Loser's finals were best of 3s, and Grand Finals was a best of 5 with a one-game advantage to the team in the upper bracket.</p>
       <p>All Majors is a semi-spoiler format. For more information, see the <a href="/rando/formats">formats</a> page. For this tournament, the items that were required to be obtained are:</p>
@@ -167,7 +205,7 @@
   <p class="p-bigger"><a href="https://www.twitch.tv/collections/KhNx3ID09xYq2A">Watch</a></p>
   <p class="p-bigger"><a href="https://challonge.com/5zmj5fy9">Bracket</a></p>
   <hr>
-  <h2 id="blackout2022">2022 Blackout Tournament</h2>
+  <h2 id="blackout2022">2022 Blackout TE Tournament</h2>
   <p>This was a single-elimination 2v2 blackout TE tournament tournament that took place on May 8, 2022, over the course of a single day. The tournament was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity
       Twitch channel</a>. Unfortunately this tournament was not highlighted or hosted anywhere else. </p>
   <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu3')">Click to show/hide spoiler about winners ▶</a></em></p>
@@ -210,7 +248,8 @@
   <span class="menu" id="menu101">
       <div class="list list-square list-centered">
         <p><a href="#Intro">Introduction</a></p>
-        <p><a href="#allmajors2023">All Major Items 2023 (Current Tournament!)</a></p>
+        <p><a href="#blackout2024">Blackout 2024 (Current Tournament!)</a></p>
+        <p><a href="#allmajors2023">All Major Items 2023</a></p>
         <p><a href="#blackout2023">Blackout TE 2023</a></p>
         <p><a href="#allmajors2022">All Major Items 2022</a></p>
         <p><a href="#blackout2022">Blackout TE 2022</a></p>
