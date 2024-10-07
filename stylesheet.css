@@ -12,12 +12,17 @@ p {
   padding: 0% 10% 0% 10%;
 }
 
-/* extra specific rule added so that <a class="submenubtn">
-   gets the right font */
-a, a.submenubtn {
+a {
   color: #E44988;
   font-family: Helvetica;
   text-decoration: none;
+}
+
+a.submenubtn {
+  color: black;
+  font-family: Helvetica;
+  text-decoration: none;
+  display: inline-block; /* makes it lay out like a button */
 }
 
 a:hover {
@@ -383,7 +388,7 @@ font-family: Helvetica;
   color: black;
 }
 
-.submenubtn a:hover {
+.submenubtn a:hover, a.submenubtn:hover {
   color: #D43576;
 }
 
