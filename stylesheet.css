@@ -12,7 +12,9 @@ p {
   padding: 0% 10% 0% 10%;
 }
 
-  a {
+/* extra specific rule added so that <a class="submenubtn">
+   gets the right font */
+a, a.submenubtn {
   color: #E44988;
   font-family: Helvetica;
   text-decoration: none;
@@ -223,7 +225,37 @@ hr {
   font-size: 20px;
 }
 
+.filepaths {
+  background-color:#ffe4e1;
+  display:block;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  font-style: italic;
+  border-style: dotted;
+  border-radius: 10px;
+  border-width: 3px;
+  border: 3px dotted #ffe4e1;
+  background:
+      linear-gradient(#ffe4e1 0 0) padding-box,
+      linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+}
+
+#yippee {
+  height: 100px;
+  width: 100px;
+}
+
 /* For page navigation menu */
+
+summary {
+  list-style: none;
+}
+
+/* because Safari is mean */
+summary::-webkit-details-marker {
+  display: none;
+}
 
 .menu {
   display: none;
@@ -300,6 +332,11 @@ font-family: Helvetica;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .dropdown-content a {

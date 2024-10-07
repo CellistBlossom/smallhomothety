@@ -33,21 +33,6 @@
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <title>Plando Guide</title>
   <style media="screen">
-    #filepaths {
-        background-color:#ffe4e1;
-        display:block;
-        width:80%;
-        margin-left:auto;
-        margin-right:auto;
-        font-style: italic;
-        border-style: dotted;
-        border-radius: 10px;
-        border-width: 3px;
-        border: 3px dotted #ffe4e1;
-        background:
-            linear-gradient(#ffe4e1 0 0) padding-box,
-            linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
-    }
     img {
       width: 600px;
       height: 350px;
@@ -188,7 +173,7 @@
         </span>
         <p>Open Hollow Knight and close the game again. This will create a subfolder called "ICDL" in your save files folder. <a class="menulink winner-spoiler" onclick="return toggleMenu('menu200')"><em>Filepaths ▶</em></a></p>
         <span class="menu" id="menu200">
-            <div id="filepaths">
+            <div class="filepaths">
                 <p><strong>Windows:</strong></p>
                 <p>%APPDATA%\..\LocalLow\Team Cherry\Hollow Knight\</p>
                 <p>You can easily access the Appdata folder on Windows by pressing the Windows + R hotkey, typing %appdata% in the box, and pressing "OK". <a class="menulink" onclick="return toggleMenu('menu9')">▶</a></p>
@@ -237,7 +222,7 @@
     </span>
     <p>Navigate to your Hollow Knight game install folder. <a class="menulink winner-spoiler" onclick="return toggleMenu('menu201')"><em>Filepaths ▶</em></a></p>
     <span class="menu" id="menu201">
-        <div id="filepaths">
+        <div class="filepaths">
             <p>These assume default Steam installation patch. Adjust accordingly for DRM Free or Non-Standard Steam Path.</p>
             <p>If you used the downpatching guide to make multiple installs, your 1.4.3.2 install folder will be wherever you copied the files to.</p>
             <p><strong>Windows:</strong></p>

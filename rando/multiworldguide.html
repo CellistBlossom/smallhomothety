@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <meta name="description"
+    content="Want to play Hollow Knight Randomizer with your friends? Read these instructions for installing and using the Hollow Knight Multiworld mod.">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Multiworld Guide" />
+  <meta property="og:description" content="A guide for playing HK Randomizer with your friends!." />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/multiworldguide" />
+  <meta property="og:image" itemprop="image primaryImageOfPage"
+    content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <style media="screen">
+    img {
+      width: 600px;
+      height: 350px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (max-width: 1200px) {
+      img {
+        width: 450px;
+        height: 262px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      img {
+        width: 300px;
+        height: 175px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      img {
+        width: 240px;
+        height: 157px;
+      }
+    }
+
+    .guide-image {
+      display: inline;
+    }
+  </style>
+  <title>Guide for Multiworld</title>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <div id="randonavbar"></div>
+  <div id="main-container">
+    <h1 id="header">Rando 4 Multiworld Guide</h1>
+    <div id="body">
+      <details>
+        <summary><a class="menulink">Click to Navigate this Guide! ▶</a></summary>
+        <div class="list list-square list-centered">
+          <p><a href="#Intro">Introduction</a></p>
+          <p><a href="#setup">Getting Started</a></p>
+          <p><a href="#eject">Forfeiting</a></p>
+          <p><a href="#spoilers">Getting Spoiler Logs</a></p>
+          <p><a href="#other-games">Other Compatible Games</a></p>
+        </div>
+      </details>
+      <h2 id="Intro">Introduction</h2>
+      <p>Multiworld is one of the two mods for playing randomizer with your friends, alongside Itemsync. Wheareas in an
+        itemsync all players play the same seed, in a multiworld each player brings their own seed, and these seeds are
+        all shuffled together in one big pool. Thus, you might find someone else's item in your world, and vice-versa.
+      </p>
+      <p>Because each player has their own seed, it is not necessary for everyone to use the same settings or
+        connections; you can even use connections that the other players do not have installed at all.</p>
+      <p>To play a multiworld, you will need the following mods (see <a href="mods">Mods</a> for a guide on how to
+        install them):</p>
+      <div class="list">
+        <p>Randomizer 4 (+ its dependencies)</p>
+        <p>MultiWorld</p>
+        <p>MultiWorldLib (the same one you need for Itemsync)</p>
+      </div>
+
+      <h2 id="setup">Getting Started</h2>
+      <div class="list">
+        <p>Create new save file, select Randomizer.</p>
+        <p>Configure your settings as desired. Remember that they will apply only to your world! </p>
+        <p>Once you are happy with your settings, press Begin Randomization. <a class="menulink"
+            onclick="toggle('screenshot1')">▶</a></p>
+        <img src="/images/itemsyncguide/img2.png" class="menu" id="screenshot1"
+          alt="A screenshot of the Randomizer 4 mod menu with begin randomization highlighted on the bottom center of the screen">
+        <p>Select 'Proceed', then 'MultiWorld'. <a class="menulink" onclick="toggle('screenshot2')">▶</a></p>
+        <img src="/images/multiworldguide/img1.png" class="menu" id="screenshot2"
+          alt="A screenshot of the Randomizer 4 menu after clicking Proceed. There are five options starting from the top left of the screen; from the top left, Start Rando Normally, Open Log Folder, ItemSync, MultiWorld, and Start Selection. MultiWorld is highlighted.">
+        <p>Enter '18.189.16.129' in the URL field, and click Connect. <a class="menulink"
+            onclick="toggle('screenshot3')">▶</a></p>
+        <img src="/images/multiworldguide/img2.png" class="menu" id="screenshot3"
+          alt="A screenshot of the Randomizer 4 multiworld menu. In the center of the screen there is a URL field with the value 18.189.16.129 entered, and a Connect button directly below it, which is highlighted.">
+        <p>Enter your nickname and a room name. The room name should be the same for every player participating in the
+          same multiworld. Then, press 'Ready'. <a class="menulink" onclick="toggle('screenshot4')">▶</a></p>
+        <img src="/images/multiworldguide/img3.png" class="menu" id="screenshot4"
+          alt="A screenshot of the Randomizer 4 multiworld menu after connecting. In the center of the screen there is a nickname field and a room field. They are filled with 'Garpede' and 'eggu' respectively. There is a Ready button directly below these fields, which is highlighted.">
+        <p>A list of players in the room will appear at the top right corner of the screen. Once everyone you expect is
+          there, press 'Start MultiWorld'. <a class="menulink" onclick="toggle('screenshot5')">▶</a></p>
+        <img src="/images/multiworldguide/img4.png" class="menu" id="screenshot5"
+          alt="A screenshot of the Randomizer 4 multiworld menu after pressing Ready. In the top right corner of the screen, there is a message indicating that there are 2 players ready, who are Garpede and Clampy Clinger. Just below the nickname and room fields, which are read-only, there is an Unready button, and a Start MultiWorld button below that, which is highlighted.">
+        <p>The server will now shuffle everyone's seeds together. If there's a lot of people in the room, this may take
+          a while. When it's done, you will see a hash code in the middle of the screen. This should be the same for
+          every player in that room. If it is, then press 'Join Game'. If it isn't, someone may have disconnected, or be
+          in the wrong room; press 'Unready', go back and remake the room, making sure everyone's on it. <a
+            class="menulink" onclick="toggle('screenshot6')">▶</a></p>
+        <img src="/images/multiworldguide/img5.png" class="menu" id="screenshot6"
+          alt="A screenshot of the Randomizer 4 multiworld menu after pressing Start MultiWorld. In the middle of the screen, there is a button labeled Join Game, which is highlighted. Just below it, there is a field labeled Generated Hash, containing the code 6A2B1FAC, and below that, there is a Copy Hash button.">
+        <p>You are now in the multiworld. When you find other players' items, these items will be sent over to them;
+          conversely, when they find one of yours, you will receive it.</p>
+      </div>
+      <h2 id="eject">Forfeiting</h2>
+      <p><i>This is alternatively known as "ejecting".</i></p>
+      <p>If you need to leave a multiworld early, there might be items your friends need left in your game! To make sure
+        they get those, before leaving, pause the game, select 'Options', then 'Mods', then 'MultiWorldMod Options'.</p>
+      <p>In this menu, click 'Forfeit from MultiWorld', then click it again when it asks you to confirm. <a
+          class="menulink" onclick="toggle('screenshot7')">▶</a></p>
+      <img src="/images/multiworldguide/eject.png" class="menu" id="screenshot7"
+        alt="A screenshot of the Randomizer 4 multiworld in-game options menu. There are options for Corner Pop-up Info, Recent Sent Items Info, Recent Received Items Info, and Separate Single Worlds' Spoilers. Below these are two buttons: Forfeit from MultiWorld and Obtain Remotely Placed Items, the first of which is highlighted.">
+      <p>This will cause any items that belong to other players in your game to be sent to them, as if you'd picked them
+        up all at once.</p>
+      <h3>What if someone leaves without forfeiting first?</h3>
+      <p>In that case, go to the MultiWorld Options menu as described above, but then choose the 'Obtain Remotely Placed
+        Items' option. Click 'Player to Obtain From' until it shows the name of the player who left, and then press
+        'Click to Obtain' twice to confirm. <a class="menulink" onclick="toggle('screenshot8')">▶</a></p>
+      <img src="/images/multiworldguide/gimmebackmyitems.png" class="menu" id="screenshot8"
+        alt="A screenshot of the Randomizer 4 multiworld in-game options menu. There is a selector for Player to Obtain From, which is highlighted and shows Clampy Clinger as the selected player. Just below it there is a button that reads 'Click to Obtain'.">
+      <p>You will now receive all of your items that were in that player's game.</p>
+      <h2 id="spoilers">Getting Spoiler Logs</h2>
+      <p>Since the different players' worlds get mixed together, the spoiler log works differently in a multiworld than
+        in a solo rando or itemsync.</p>
+      <p>To find the spoiler log for your multiworld, after joining it, open the MultiWorld folder inside your saves
+        folder (<a class="menulink winner-spoiler" onclick="toggle('spoiler-filepaths')"><em>Filepaths ▶</em></a>).</p>
+      <div class="menu filepaths" id="spoiler-filepaths">
+        <p><b>Windows:</b></p>
+        <p>%AppData%\..\LocalLow\Team Cherry\Hollow Knight\MultiWorld\</p>
+        <p><b>Mac:</b></p>
+        <p>~/Library/Application Support/unity.Team Cherry.Hollow Knight/MultiWorld/</p>
+        <p><b>Linux:</b></p>
+        <p>~/.config/unity3d/Team Cherry/Hollow Knight/MultiWorld/</p>
+      </div>
+      <p>There, you will find a file named <i>saveN-spoiler.txt</i>, as well as a folder named <i>saveN-worlds</i>,
+        where <i>N</i> is the number of the save slot you used for the multiworld. The <i>saveN-spoiler.txt</i> file contains the item
+        placements for all the players; the folder has one file for each player, containing just the items that ended up
+        in that player's world.</p>
+      <p>All of these files list placements in the format <i>item -> location</i>, one per line.</p>
+      <h2 id="other-games">Other Compatible Games</h2>
+      <p>In addition to Hollow Knight's randomizer, there are a few other randomizers that can work with our multiworld
+        system. They can even be mixed together in the same room, in a similar way to Archipelago but with support for
+        all Randomizer 4 features in HK, including almost all connections.</p>
+      <p>These are the currently supported games - follow the links for more information on how to set a multiworld up
+        with them:</p>
+      <div class="list">
+        <p><a href="https://github.com/Jarlyk/Haiku.Rando/blob/master/README.md#multiworld">Haiku, the Robot</a></p>
+        <p><a href="https://github.com/dpinela/DeathsDoor.Randomizer/blob/main/README.md#multiworld">Death's Door</a>
+        </p>
+      </div>
+    </div>
+    <details>
+      <summary><a class="menulink">Click to Navigate this Guide! ▶</a></summary>
+      <div class="list list-square list-centered">
+        <p><a href="#Intro">Introduction</a></p>
+        <p><a href="#setup">Getting Started</a></p>
+        <p><a href="#eject">Forfeiting</a></p>
+        <p><a href="#spoilers">Getting Spoiler Logs</a></p>
+        <p><a href="#other-games">Other Compatible Games</a></p>
+      </div>
+    </details>
+    <img id="yippee" src="/images/yippee.gif" alt="An animated character with long white hair jumping happily up and down.">
+  </div>
+  <div id="footer"></div>
+  <script>
+    $(document).ready(() => {
+      $("#navbar").load("/nav.html")
+      $("#randonavbar").load("/rando/randonav.html")
+      $("#footer").load("/footer.html")
+    })
+
+    function toggle(element) {
+      const style = document.getElementById(element).style
+      style.display = style.display !== "block" ? "block" : "none"
+    }
+  </script>
+</body>
+
+</html>
