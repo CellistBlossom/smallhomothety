@@ -165,9 +165,6 @@ function generateSplits() {
     genSplitsButton.innerHTML = "Regenerate Splits!"
     listDiv.style.visibility = "visible"
     downloadButton.classList.remove('byebye-button');
-
-
-
 }
 
 function downloadFile() {
