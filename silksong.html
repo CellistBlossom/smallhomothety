@@ -39,7 +39,15 @@
     </script>
     <div id="navbar">
     </div>
-    <h1>Silknever</h1>
-    <img src="images/silkbong.png" alt="silkbong">
+    <div id="main-container">
+    <h1 id="header">Silknever</h1>
+    <div id="body">
+    <img src="images/silkbong.png" alt="silkbong"></div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+   </script>
+  <div id="footer"> </div></div>
   </body>
 </html>

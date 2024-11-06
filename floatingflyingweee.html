@@ -50,8 +50,9 @@
     <button class="submenubtn" onclick="location.href='/floatingflyingweee/resources'"><a href="/floatingflyingweee/resources">Resources</a> </button>
     <button class="submenubtn" onclick="location.href='/floatingflyingweee/wobblebramble'"><a href="/floatingflyingweee/wobblebramble">Wobblebramble</a> </button>
   </div>
-  <h1>Glitches Glitches Glitches</h1>
-
+  <div id="main-container">
+  <h1 id="header">Glitches Glitches Glitches</h1>
+<div id=body>
   <div id="ytplayer"></div>
   <script>
     // Load the IFrame Player API code asynchronously.
@@ -77,6 +78,14 @@
   </script>
   <br>
   <a href="https://www.youtube.com/watch?v=NFBR3y3iWC0&list=PL7dXvvR7OhcqYGjpJteZhZn-smJ7PZxxE" class='bigger-link'>View the full playlist on YouTube</a>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

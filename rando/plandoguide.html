@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <meta name="description" content="Want to play a planned Hollow Knight randomizer seed? Read these instructions for installing and playing plandos.">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plando Guide" />
+  <meta property="og:description" content="A guide for playing Hollow Knight plandos!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/plandoguide" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <title>Plando Guide</title>
+  <style media="screen">
+    img {
+      width: 600px;
+      height: 350px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    #run-img {
+        width: 400px;
+        height: 233px;  
+    }
+
+    #grubnote {
+      height: 100px;
+      width: 100px;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      img {
+        width: 600px;
+        height: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #run-img {
+        width: 400px;
+        height: 233px;  
+    }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      img {
+        width: 450px;
+        height: 262px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #run-img {
+        width: 300px;
+        height: 175px;  
+    }
+    }
+
+    @media only screen and (max-width: 500px) {
+      img {
+        width: 300px;
+        height: 175px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media only screen and (max-width: 350px) {
+      img {
+        width: 240px;
+        height: 157px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#randonavbar").load("/rando/randonav.html");
+    });
+  </script>
+  <div id="randonavbar">
+
+  </div>
+  <div id="main-container">
+  <h1 id="header">Plando Setup Guide</h1>
+  <div id="body">
+  <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
+  <span class="menu" id="menu100">
+      <div class="list list-square list-centered">
+        <p><a href="#Intro">Introduction</a></p>
+        <p><a href="#choosing-plandos">Choosing a Plando to Play</a></p>
+        <p><a href="#ICDL-setup">Plando Setup with ICDL</a></p>
+        <p><a href="#1432-setup">Plando Setup on 1.4.3.2</a></p>
+        <p><a href="#plando-creation">Creating Plandos</a></p>
+      </div>
+  </span>
+  <h2 id="Intro">Introduction</h2>
+  <p>If you like Hollow Knight randomizer and are itching to play a seed that keeps you on your toes, you might enjoy plandos! "Plando" is short for "Planned Rando". There are many plandos created by the community, ranging in difficulty from easy to extremely hard.</p>
+  <h2 id="choosing-plandos">Choosing a Plando to Play</h2>
+  <p>The <a href="https://discord.gg/3JtHPsBjHD">Hollow Knight Speedrunning and Rando Discord</a> has a list of plandos in the #plando-gallery channel. You can pick a plando from any of these to play on the latest patch of Hollow Knight! Not all of them have public download links, but a few that are accessible outside of the Discord are listed below.</p>
+  <p>Be sure to read the READMEs for each of these plandos before playing, as they might have extra dependencies or setup instructions! Public READMEs will be linked below; otherwise, the README is usually included in the download along with the rest of the plando files.</p>
+  <div class="list">
+    <div class="list-centered">
+    <p><a href="https://www.dropbox.com/scl/fi/ioq3at1vjrnrjfnq047pq/leveradventure.zip?rlkey=ysd16lvj6tukcck6qleqqoykj&e=1&dl=0">Lever Adventure</a> <em>by Purenail</em>: A good introduction to plandos that is inclusive of all skill levels! There are five difficulty modes ranging from nearly skipless with many boss fights being optional, to requiring extremely hard skips and difficult boss fights. Requires randomizable levers and Rainbow eggs (and ItemSync, unrelatedly).</p>
+    <p><a href="https://github.com/homothetyhk/Plandos.ScatteredWorld/releases/latest/download/ScatteredWorld.zip">Scattered World</a> <em>by Homothety</em>: A bench-based plando with branching paths. BenchRando is a required dependency! Fairly accessible with only one required "skip". <a href="https://github.com/homothetyhk/Plandos.ScatteredWorld">Public README</a></p>
+    <p><a href="https://drive.google.com/file/d/1abiVRCLqABQUzDH7FkCQ2mlrBMyPU8ic/view">Peaks in Peril</a> <em>by Paum</em>: An extremely difficult Kaizo-esque plando in Crystal Peak and Resting Grounds. The objective is just to make it out of those two areas, but it won't be easy!</p>
+    <p><a href="https://www.dropbox.com/scl/fi/0w2diugfgyr7lipmkvfhw/ascension.zip?rlkey=q4lmlrtto3zhy1z6fk6s80d76&e=1&dl=0">Ascension</a> <em>by Purenail</em>: An odyssey through Hallownest. Room-rando lifetotems++ plando with 3 difficulty levels: Attuned (defeat the Hollow Knight), Ascended (Defeat the Radiance), and Radiant (Defeat the Radiance with both Gathering Swarm and Wayward Compass equipped). <a href="https://pastebin.com/ZiMTSpNt">Public README</a></p>
+    <p><a href="https://www.dropbox.com/scl/fi/hu1mexhlu1se9kzqr7mu9/Puzzle-Knight-final.zip?rlkey=t0x1oziuenoq631r0pgsttxe0&e=1&st=qq6r39jo&dl=0">Puzzle Knight</a> <em>by ValentinMK</em>: A custom map/room plando in which every featured room is its own puzzle. DecorationMaster is required. There are two difficulty levels: Knight (defeat the Hollow Knight) and Radiance (defeat the Radiance).</p>
+    <p><a href="https://www.dropbox.com/s/0201h2br6zrehta/Asriel.zip?dl=0">Asriel</a> <em>by ValentinMK</em>: A plando that you can complete without hitting any enemy. The goal is to make it to Hallownest's Crown. Has 2 difficulty levels: Apprentice and Master. (More details about these difficulty levels are in the README).</p>
+    <p><a href="https://www.dropbox.com/scl/fi/hqmas9ffyhslf81j5bg56/Help-I-fell-down-the-sewers.zip?rlkey=m2zq3bwo9bl3mmd9117bwafi4&e=1&dl=0">Help I fell down the sewers</a> <em>by ValentinMK</em>: Beat the game. Hard++ logic, and only really recommended for experienced players.</p>
+    <p><a href="https://www.dropbox.com/scl/fi/8z8ceggoqjjstn6u9ukdj/Nailn-t.zip?rlkey=18clgr4jiaut3xcd2tjt15uo4&e=1&dl=0">Nailn't</a> <em>by ValentinMK</em>: For advanced players, or intermediate players that are willing to subject themselves to pain. A plando in which you will survive Hallownest's greatest perils without the use of your nail. Has two difficulty modes: Normal (defeat the Hollow Knight) and Extra (defeat the Radiance). Lever randomizer and TheGloryofBeingAFool are required dependencies.</p>
+    <p><a href="https://drive.google.com/drive/folders/1OSvC0wV7mKUetIxvw4PyZJG5sPJhkxRv">HK7Y Area Blitz</a> <em>by Kamakiller and Purenail</em>: An area blitz plando made for the Hollow Knight 7th Anniversary event. Recommended for intermediate players as there are many skips required, but most of them are pretty tame. While it was intended for the plando to be by two players, the plando can be enjoyed by a solo player using Debug Mod to cycle the start location to travel back and forth between the two starts. There's a long list of required mods; make sure to read the README!</p>
+    <p><a href="https://drive.google.com/drive/folders/1qDvaanU3-PVNWY3jCFuRPebi5I4fQyRj?usp=drive_link">Save the Grubbies!!</a> <em>by Kamakiller and Purenail</em>: Help out Grubfather by saving more grubbies! This plando adds significantly more grubs to the game who are in need of saving. The intended end goal of the Plando is to defeat Collector and obtain the Collector's Map at the top of Tower of Love, however True Ending also is accessible. More important, 247 grubs in total are available to be saved within the Plando. This plando also has a long list of required mods.</p>
+    <p><a href="https://drive.google.com/drive/folders/1TZh92C9wUryF9TolBt4lnP1eNLUVPNRh">press g to die</a> <em>by Kamakiller</em>: A plando where you're allowed to die anywhere you want, which opens up some funny new shadeskip possibilities. There are two difficulty modes: a Normal mode and an Extreme mode. (More details about the difficulty levels and required mods are in the README).</p>
+    <p><a href="https://drive.google.com/drive/folders/1EEyMTsNBjg4koLncRzqKlW5DCcXg3pBH">Boomer Plando</a> <em>by Paum</em>: A plando where the only things randomized are Dreamers, White Fragments, Keys (Including Lantern, Love Key, etc) and Skills. The goal is to defeat the Radiance. There are three difficulty modes: Normal mode, Hard mode, and Shrogo mode.</p>
+    </div>
+  </div>
+  <p>There are also several plandos made prior to the release of 1.5 that can only be played on patch 1.4.3.2. You can find them on the <a href="https://drive.google.com/drive/folders/1AxWg-xGzAr3V8zbZQXNDEgQSymWuPFbR">1.4.3.2 Plando Google Drive</a>.</p>
+    <h2 id="ICDL-setup">Plando Setup with ICDL</h2>
+    <p>Once you've found a plando, you'll need to load it into your game using a separate mod from Randomizer 4. On 1.5 (the latest patch of Hollow Knight), you'll use the ItemChangerDataLoader mod for this.</p>
+    <p>Click the ▶ next to each step to show/hide screenshots if you need them! Note that the screenshots below were taken on a Windows 11 computer, but the steps work roughly the same on other operating systems.</p>
+    <!-- 1.5 Plando Setup Steps start here -->
+    <div class="list">
+        <p><a href="/rando/mods">Install the Randomizer 4 mod and dependencies</a>, if you haven't already!</p>
+        <p>Install ItemChangerDataLoader (ICDL) from your mod installer of choice. I'm using Lumafly! <a class="menulink" onclick="return toggleMenu('menu8')">▶</a></p>
+        <span class="menu" id="menu8">
+          <img src="/images/plandoguide/img8.png" alt="A screenshot of the Lumafly mod installer UI. The user has typed 'ItemChangerDataLoader' in the search bar. Below, the ICDL mod is listed, with a toggle showing that the mod is enabled.">
+        </span>
+        <p>Download whichever plando you want and unzip the file. <a class="menulink" onclick="return toggleMenu('menu7')">▶</a></p>
+        <span class="menu" id="menu7">
+          <img src="/images/plandoguide/img7.png" alt="A screenshot of file explorer on Windows 11. A file named leveradventure.zip is selected. In the top right corner, a button reading 'extract all' is circled in red with an arrow pointing to it.">
+        </span>
+        <p>Read through the plando's README carefully to see if you need to install any dependencies that the plando relies on. For example, Lever Adventure requires Rainbow Eggs, ItemSync, and Randomizable Levers. You can usually just install these using the same mod installer as you installed ICDL with. <a class="menulink" onclick="return toggleMenu('menu3')">▶</a></p>
+        <span class="menu" id="menu3">
+          <img src="/images/plandoguide/img3.png" alt="A screenshot of the Lever Adventure README. The section of the file listing the dependencies is magnified.">
+        </span>
+        <p>Open Hollow Knight and close the game again. This will create a subfolder called "ICDL" in your save files folder. <a class="menulink winner-spoiler" onclick="return toggleMenu('menu200')"><em>Filepaths ▶</em></a></p>
+        <span class="menu" id="menu200">
+            <div class="filepaths">
+                <p><strong>Windows:</strong></p>
+                <p>%APPDATA%\..\LocalLow\Team Cherry\Hollow Knight\</p>
+                <p>You can easily access the Appdata folder on Windows by pressing the Windows + R hotkey, typing %appdata% in the box, and pressing "OK". <a class="menulink" onclick="return toggleMenu('menu9')">▶</a></p>
+                <span class="menu" id="menu9">
+                  <img id="run-img" src="/images/plandoguide/img9.png" alt="A screenshot of the run command window on Windows 11. The text at the top reads 'type the name of a program, folder, document, or internet resource, and Windows will open it for you.' There is an input field below, where the user has filled in '%appdata%' At the bottom, the options are OK, Cancel, and Browse. The user has highlighted OK.">
+                </span>
+                <p><strong>Mac:</strong></p>
+                <p>~/Library/Application Support/unity.Team Cherry.Hollow Knight/</p>
+                <p><strong>Linux:</strong></p>
+                <p>~/.config/unity3d/Team Cherry/Hollow Knight/</p>
+            </div>
+        </span>
+        <p>Go to the corresponding folder above and open the ICDL subfolder. <a class="menulink" onclick="return toggleMenu('menu4')">▶</a></p>
+        <span class="menu" id="menu4">
+          <img src="/images/plandoguide/img4.png" alt="A screenshot of file explorer showing the Hollow Knight save file folder on Windows 11. There are a few subfolders visible, and the user has highlighted the one titled ICDL.">
+        </span>
+        <p>Create an empty folder called Plandos. <a class="menulink" onclick="return toggleMenu('menu5')">▶</a></p>
+        <span class="menu" id="menu5">
+          <img src="/images/plandoguide/img5.png" alt="A screenshot of file explorer on Windows 11 showing the contents of the ICDL subfolder. There are three folders: Past Randos, Plandos, and Temp. The user is in the process of naming the Plandos folder after creating it.">
+        </span>
+        <p>Put the unzipped plando you want to play in there. <a class="menulink" onclick="return toggleMenu('menu6')">▶</a></p>
+        <span class="menu" id="menu6">
+          <img src="/images/plandoguide/img6.png" alt="A screenshot of file explorer on Windows 11 showing the contents of the Plandos subfolder. The only folder in it is named 'leveradventure', which is highlighted.">
+        </span>
+        <p>Start Hollow Knight again. Now when you create a save file it should say Plando Plando as one of the creation options. <a class="menulink" onclick="return toggleMenu('menu1')">▶</a></p>
+        <span class="menu" id="menu1">
+          <img src="/images/plandoguide/img1.png" alt="A screenshot of the Hollow Knight 1.5 gamemode select menu. The options are Classic, Steel Soul, Godseeker, Archipelago, Randomizer, and Plando Plando. Plando Plando is highlighted.">
+        </span>
+        <p>Click the Plando Plando option, and select the plando you want to play. <a class="menulink" onclick="return toggleMenu('menu2')">▶</a></p>
+        <span class="menu" id="menu2">
+          <img src="/images/plandoguide/img2.png" alt="A screenshot of the plando select menu. The only option is Purenail's Lever Adventure, which is highlighted.">
+        </span>
+        <p>Have fun!</p>
+  </div>
+  <h2 id="1432-setup">Plando Setup on 1.4.3.2</h2>
+  <p>Some plandos, such as Forgotten Corners, can only be played on patch 1.4.3.2. For these, you'll need to downpatch and install the 1.4.3.2 modding API and the PlandoPlando mod.</p>
+  <p><a href="https://github.com/homothetyhk/HollowKnight.plandoplando?tab=readme-ov-file">PlandoPlando README</a></p>
+  <!-- Plandoplando Setup steps start here -->
+  <div class="list">
+    <h3 class="list-centered">Installing Modding API</h3>
+    <p>First, you'll need to downpatch! If you're on Steam, you can easily do this by selecting 1.4.3.2 under Betas. The <a href="https://www.speedrun.com/hollowknight/guides/jlten">Downpatching Guide</a> on speedrun.com explains how to downpatch in more detail.</p>
+    <p>Download the 1.4.3.2 Modding API from the <a href="https://github.com/hk-modding/api/releases/tag/1.4.3.2-60">Github</a>.</p>
+    <p>Unzip the file. <a class="menulink" onclick="return toggleMenu('menu301')">▶</a></p>
+    <span class="menu" id="menu301">
+      <img src="/images/plandoguide/img101.png" alt="A screenshot of file explorer on Windows 11. A file named Windows.zip is selected. In the top right corner, a button reading 'extract all' is circled in red with an arrow pointing to it.">
+    </span>
+    <p>Navigate to your Hollow Knight game install folder. <a class="menulink winner-spoiler" onclick="return toggleMenu('menu201')"><em>Filepaths ▶</em></a></p>
+    <span class="menu" id="menu201">
+        <div class="filepaths">
+            <p>These assume default Steam installation patch. Adjust accordingly for DRM Free or Non-Standard Steam Path.</p>
+            <p>If you used the downpatching guide to make multiple installs, your 1.4.3.2 install folder will be wherever you copied the files to.</p>
+            <p><strong>Windows:</strong></p>
+            <p>C:\Program Files (x86)\Steam\steamapps\common\Hollow Knight\</p>
+            <p><strong>Mac:</strong></p>
+            <p>~/Library/Application Support/Steam/steamapps/common/Hollow Knight/hollow_knight.app/</p>
+            <p><strong>Linux:</strong></p>
+            <p>~/.local/share/Steam/steamapps/common/Hollow Knight/</p>
+        </div>
+    </span>
+    <p>Copy all of the modding API files there as detailed in the README. When prompted to overwrite files, say yes. <a class="menulink" onclick="return toggleMenu('menu302')">▶</a></p>
+    <span class="menu" id="menu302">
+      <img src="/images/plandoguide/img102.png" alt="A screenshot of the game install folder on Windows 11. A popup is in front of the window asking the user to confirm that they want to merge the folder they're pasting with the existing hollow_knight_Data folder. The option to 'do this for all current items' is checked. The user has highlighted the 'yes' option at the bottom.">
+    </span>
+    <h3 class="list-centered">Installing Mods</h3>
+    <p>The <a href="https://drive.google.com/drive/u/0/folders/1lnjtSYMfRe1LyA_qSq2CoXKI6NRm_I-e">Google Drive</a> for 1.4.3.2 contains mods that can be used with this version of the game. If you want to use mods with this version of modding API, make sure you download them here. Lumafly and Scarab are not compatible with 1.4.3.2!</p>
+    <p>To install PlandoPlando, you will need to install 3 mods: <a href="https://drive.google.com/drive/u/0/folders/1cenxnFLyWWtcrwrnF6OGHAEvWaNutYmR">SereCore</a>,  <a href="https://drive.google.com/drive/u/0/folders/1bnmwjMJvGpiMVUKbfHI9ziMMqrtZNXHc">ItemChanger</a>, and the <a href="https://drive.google.com/drive/u/0/folders/1KgmmeSwvo6lhySersdw1EaaP30gFEMmn">PlandoPlando</a> mod itself. Download and unzip all three zip files. <a class="menulink" onclick="return toggleMenu('menu311')">▶</a></p>
+    <span class="menu" id="menu311">
+      <img src="/images/plandoguide/img111.png" alt="A screenshot of file explorer on Windows 11. There are 3 zip files corresponding to SereCore, ItemChanger, and PlandoPlando. In the top right corner, a button reading 'extract all' is circled in red with an arrow pointing to it.">
+    </span>
+    <p>Navigate to your game install folder and locate your mods folder at /hollow_knight_Data/Managed/Mods.  <a class="menulink" onclick="return toggleMenu('menu310')">▶</a></p>
+    <span class="menu" id="menu310">
+      <img src="/images/plandoguide/img110.png" alt="A screenshot of the contents of the hollow_knight_Data/Managed folder. The Mods subfolder is selected. Below it is a long list of DLL files.">
+    </span>
+    <p>Unlike on 1.5, put the mod DLLs directly in your mods folder and not in a subfolder of the mods folder. <a class="menulink" onclick="return toggleMenu('menu303')">▶</a></p>
+    <span class="menu" id="menu303">
+      <img src="/images/plandoguide/img103.png" alt="A screenshot of the contents of the mods folder. There is a single subfolder named 'Disabled'. Below it, the user has pasted the 3 mod DLLs directly into the folder.">
+    </span>
+    <p>If you need to install any other mods to play on your downpatch, such as QOL or Benchwarp, follow the same steps above, and be sure to read their READMEs to find out if you need to install dependencies for them.</p>
+    <h3 class="list-centered">Installing Plandos</h3>
+    <p>Create a subfolder in the Mods folder named "Plando". <a class="menulink" onclick="return toggleMenu('menu304')">▶</a></p>
+    <span class="menu" id="menu304">
+      <img src="/images/plandoguide/img104.png" alt="A screenshot of the contents of the mods folder. Below the list of mod DLLs, the user is in the process of naming a new folder 'Plando'.">
+    </span></p>
+    <p>Download your desired plando from the <a href="https://drive.google.com/drive/folders/1AxWg-xGzAr3V8zbZQXNDEgQSymWuPFbR">1.4.3.2 plando Google Drive</a> and unzip it. <a class="menulink" onclick="return toggleMenu('menu305')">▶</a></p>
+    <span class="menu" id="menu305">
+      <img src="/images/plandoguide/img105.png" alt="A screenshot of file explorer. The user has selected a zip folder named Forgotten Corners - PimpasPimpinela. In the top right corner, a button reading 'extract all' is circled in red with an arrow pointing to it.">
+    </span></p>
+    <p>Make sure you read the README if there is one included in the folder. Most plandos have an intended goal or rules for the player that are stated in the README. <a class="menulink" onclick="return toggleMenu('menu307')">▶</a></p>
+    <span class="menu" id="menu307">
+      <img src="/images/plandoguide/img107.png" alt="A screenshot of the contents of the Forgotten Corners - PimpasPimpinela folder after extracting it. The Forgotten Corners README file is highlighted.">
+    </span></p>
+    <p>Copy the "plando.xml" file to the plando subfolder in your mods folder. Note that you can only have one plando in this folder at a time. <a class="menulink" onclick="return toggleMenu('menu306')">▶</a></p>
+    <span class="menu" id="menu306">
+      <img src="/images/plandoguide/img106.png" alt="A screenshot of the plando folder. The folder contains the plando.xml file, which is highlighted.">
+    </span></p>
+    <p>Open the game. If you've installed everything correctly, you should see "plandoplando: [plando name]" in the top left corner under the Modding API text. <a class="menulink" onclick="return toggleMenu('menu308')">▶</a></p>
+    <span class="menu" id="menu308">
+      <img src="/images/plandoguide/img108.png" alt="A screenshot of the Hollow Knight title screen on 1.4.3.2. In the top left corner, the Modding API version and list of mods are displayed. The text for plandoplando reads 'plandoplando: Forgotten Corners'.">
+    </span></p>
+    <p>Start a "Classic" save file, and have fun! <a class="menulink" onclick="return toggleMenu('menu309')">▶</a></p>
+    <span class="menu" id="menu309">
+      <img src="/images/plandoguide/img109.png" alt="A screenshot of the mode select menu in Hollow Knight with three options: Classic, Steel Soul, and Godseeker. The Classic option is highlighted.">
+    </span></p>
+  </div>
+  <h2 id="plando-creation">Creating Plandos</h2>
+  <p>Now that you've played a plando or two, you might want to make one of your own! You can do this using <a href="https://github.com/dplochcoder/hkspoilerviewer/releases">HKSpoilerViewer</a>.</p>
+  <p>Essentially, you will need to use ICDL to export an existing rando seed, and use HKSpoilerViewer to edit all of the item placements to be whatever you want. For more detailed instructions for using the program, read the <a href="https://github.com/dplochcoder/hkspoilerviewer/tree/v2.1?tab=readme-ov-file#icdl-edit-mode">ICDL Edit Mode section of the Readme</a>!</p>
+
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+  <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
+  <span class="menu" id="menu101">
+      <div class="list list-square list-centered">
+        <p><a href="#Intro">Introduction</a></p>
+        <p><a href="#choosing-plandos">Choosing a Plando to Play</a></p>
+        <p><a href="#ICDL-setup">Plando Setup with ICDL</a></p>
+        <p><a href="#1432-setup">Plando Setup on 1.4.3.2</a></p>
+        <p><a href="#plando-creation">Creating Plandos</a></p>
+      </div>
+  </span>
+  <img id="grubnote" src="../images/grubnote.png" alt="A grub taking notes with a quill.">
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>

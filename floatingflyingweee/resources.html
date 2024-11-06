@@ -51,13 +51,23 @@
     <button class="submenubtn" onclick="location.href='resources'"><a href="resources">Resources</a> </button>
     <button class="submenubtn" onclick="location.href='wobblebramble'"><a href="wobblebramble">Wobblebramble</a> </button>
   </div>
-  <h1>Resources uwu</h1>
+  <div id="main-container">
+  <h1 id="header">Resources uwu</h1>
+  <div id="body">
   <p class="p-biggerer"><a href="https://www.speedrun.com/hkmemes">Speedrun.com</a></p>
   <p class="p-biggerer"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHyJ2ZdtTPvoudRJ_VAW_an61MumAHdsQOm4Z9wvn_ou73rxX9w9ydb_lDuyOTCnXvmb68HlMrjPYa/pubhtml#">Quack Sheet</a></p>
   <p class="p-biggerer"><a href="https://hksplitmaker.com/">HK Split Maker</a></p>
   <p class="p-biggerer"><a href="https://github.com/fifty-six/Scarab">Scarab</a></p>
   <p class="p-biggerer"><a href="https://bingosync.com/">Bingosync</a></p>
   <a href="https://discord.gg/3JtHPsBjHD"> <img src="../images/discord.png" alt="Discord" class="discord_icon" height="50px" width="250px"></a>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

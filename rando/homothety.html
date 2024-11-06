@@ -66,6 +66,9 @@ Or you might learn something you DON'T like...
 Hee hee hee.
 
 -->
+<div id="main-container">
+  <div id="header"></div>
+<div id="body">
   <p id="homothety"></p>
   <script type="text/javascript">
     function Pasta() {
@@ -81,6 +84,14 @@ Hee hee hee.
     }
     document.getElementById("homothety").innerHTML = Pasta();
   </script>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+  </script>
+  <div id="footer"> </div>
+  </div>
 </body>
 
 </html>

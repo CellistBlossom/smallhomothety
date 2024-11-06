@@ -59,6 +59,7 @@
   </script>
   <div id="navbar">
   </div>
+  <div id="main-container">
   <div id="events-container-container">
     <div id="events-container">
       <script>
@@ -70,6 +71,7 @@
       </div>
       <div class="events">
         <h1 id="header">Blackout True Ending Randomizer Tournament 2023</h1>
+        <div id="body">
           <div class="important important-smaller">
             <p>For more information on randomizer tournaments like this one, see the <a href="/rando/tourney">randomizer tournaments</a> page.</p>
         </div>
@@ -89,8 +91,15 @@
         <p class="p-bigger"><a href="https://docs.google.com/spreadsheets/d/1BHqe48fBmC29WiNCGs3JEeValWzyC6hkhlqCsmolcYw/edit#gid=1811892567">Rules</a></p>
       </div>
     </div>
-    <h2 class="top"><a href="#header">Top</a> </h2>
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

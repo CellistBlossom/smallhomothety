@@ -61,7 +61,9 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
     <h1 id="header">Randomizer Skips!</h1>
+    <div id="body">
     <p>Skips, though not always required for logic, allow the player to reach items and areas with a wider range of abilities than they would be able to without performing skips. There are many different types of skips, and new ones are being labbed
       all of the time! Skips can be required for logic by toggling them on in the settings menu.</p>
     <p>A few resources for learning skips are listed below. If you want to learn more than is listed here, the #rando-resources channel in the Discord has many, many more!</p>
@@ -103,19 +105,28 @@
       };
     </script>
     <br>
+    <a href="https://docs.google.com/document/d/1k7HPl7ST6xzMNPSa0MhGWuDw_mSL9FQR-kwC2sgADbQ/edit?usp=sharing" class="bigger-link">Searchable Google Doc for the playlist!</a>
+    <br>
     <a href="https://www.youtube.com/playlist?list=PL7dXvvR7Ohco2Hs91_9K-yQ6Gusll6_62" class="bigger-link">View the full playlist on YouTube</a>
     <h2>May's Skip Playlist</h2>
     <a href="https://www.youtube.com/playlist?list=PL5iqVJiMaBBX1A277nbn_7OECyLgQlCls" class="bigger-link">View the full playlist on YouTube</a>
-  </div>
   <h2>Hollow Knight Randomizer Wiki</h2>
     <div class="important">
-      <p><strong>The Randomizer Wiki is moving!</strong> Shoutouts to Limchi for taking the time to set it up. Once it's ready to go, this link and all links on this site will be updated to direct to the new Wiki. In the meantime, you can use the
+      <p><strong>The Randomizer Wiki is moving!</strong> Shoutouts to Vichi for taking the time to set it up. Once it's ready to go, this link and all links on this site will be updated to direct to the new Wiki. In the meantime, you can use the
         deprecated <a href="https://hollow-knight-randomizer.fandom.com/wiki/Hollow_Knight_Randomizer_Wiki">Fandom wiki</a> for all your rando wiki needs. </p>
     </div>
   <p id="discordtext"><em>Want to learn more? Join the Speedrunning and Randomizer Community Discord!</em></p>
   <a href="https://discord.gg/3JtHPsBjHD"><img src="/images/discord.png" alt="Discord" class="discord_icon" height="50px" width="250px"></a>
-  <h2 class="top"><a href="#header">Top</a></h2>
+  <div>
   <img src="/images/yippee.gif" alt="A cartoon character with long white hair jumping up and down happily" height="100px" width="100px" id="yippee">
+  </div></div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

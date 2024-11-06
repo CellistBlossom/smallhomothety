@@ -52,6 +52,7 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <div class="formats" id="generalformats">
     <h1 id="header">Common Formats for Racing Rando</h1>
     <script type="text/javascript" language="Javascript">
@@ -69,6 +70,7 @@
         }
       }
     </script>
+    <div id="header">
     <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
     <span class="menu" id="menu100">
         <div class="list list-square list-centered">
@@ -98,7 +100,7 @@
       <p>Usually done in 2v..v2s. The first team to mark every goal on the board and have every member kill Radiance wins. Only one person in a team needs to complete a goal for the team to mark it.</p>
       <p><em>Time estimate: 90min-2hr</em></p>
       <h3>All Majors</h3>
-      <p>Semi-spoiler format. Essentially a 2v2 "All Skills" TE rando race, except the pool of skills also includes dupes and arbitrary charms (sometimes). Using the MajorItemsByAreaTracker mod, teams race to get the counter of items remaining down
+      <p>Semi-spoiler format. Essentially a 2v..v2 "All Skills" TE rando race, except the pool of skills also includes dupes and arbitrary charms (sometimes). Using the MajorItemsByAreaTracker mod, teams race to get the counter of items remaining down
         to 0 and finish the game with Radiance. </p>
       <p><em>Time estimate: 1-2 hours</em></p>
       <h3>3 Lines</h3>
@@ -111,22 +113,22 @@
       <p>1v1 lockout format. See this <a href="https://i.imgur.com/2WPnvHQ.jpg">visual guide</a></p>
       <p><em>Time estimate: 1-2 hours</em></p>
       <h3>Time Attack</h3>
-      <p>A 1v...v1 time-restricted format where players compete to see who can complete the most goals in a set period of time. Each goal is worth one point and each row/column is worth an additional two. </p>
+      <p>A 1v..v1 time-restricted format where players compete to see who can complete the most goals in a set period of time. Each goal is worth one point and each row/column is worth an additional two. </p>
       <p><em>Time Limit: 45 minutes to 1 hour.</em></p>
       <h3>Battleship</h3>
-      <p>1v1 format. Secretly place 3 different battleships on the card beforehand (Diagonals allowed), 2 goals in a row, 3 goals in a row and 4 goals in a row. Then whenever your opponent completes a goal, tell them if it hit or missed your
+      <p>1v..v1 format. Secretly place 3 different battleships on the card beforehand (Diagonals allowed), 2 goals in a row, 3 goals in a row and 4 goals in a row. Then whenever your opponent completes a goal, tell them if it hit or missed your
         battleships.
         Winner has to sink their opponent's battleships. </p>
       <h3>Exploration</h3>
-      <p>The board begins mostly hidden, with only a few goals visible to the players. When a player marks a goal, the adjacent goals become visible. Commonly played to 2, 3, or 4 corners, starting from the center. Can be played either solo or
-        2v...v2.
+      <p>The board begins mostly hidden, with only a few goals visible to the players. When a player marks a goal, the adjacent goals become visible. Commonly played to 2, 3, or 4 corners, starting from the center. Can be played either 1v..v1 or
+        2v..v2.
       </p>
       <h3>"Get to the other side"</h3>
-      <p>Uses a variation on the exploration board generator. Players start with all of the goals on the left visible, and must mark a goal in the farthest right column.</p>
+      <p>Uses a variation on the exploration board generator. Players start with all of the goals on the left visible, and must mark a goal in the farthest right column. Usually played 1v..v1.</p>
       <p><em>Time Estimate: 1-2 hours</em> </p>
       <h3>Roguelike</h3>
       <p>Uses the roguelike option on the exploration board generator. Players must make it from one side of the board to the other. Marking a goal will reveal the closest goals in the next column, but be careful! You can only mark 1 goal per column,
-        which means you're stuck with whatever you revealed, so choose wisely. Usually played as a 1v...v1 format.</p>
+        which means you're stuck with whatever you revealed, so choose wisely. Usually played as a 1v..v1 format.</p>
     </div>
     <h2 id="spoilerformats">Spoiler Formats</h2>
     <div class="list-wide-square">
@@ -144,7 +146,7 @@
       <p><em>Prep time: 15 minutes</em></p>
       <p><em>Time estimate: 50m-1:15 hours</em></p>
       <h3>Hand/Brain</h3>
-      <p>2v...v2 format. One player has the spoiler log, and the other the game. May be played to 3 lines, TE, or whatever other goal is agreed upon beforehand.</p>
+      <p>2v..v2 format. One player has the spoiler log, and the other the game. May be played to 3 lines, TE, or whatever other goal is agreed upon beforehand.</p>
       <p><em>Prep time: N/A</em></p>
       <p><em>Time estimate: Depends on goal, 30min-1:30hr</em></p>
     </div>
@@ -167,9 +169,16 @@
           <p><a href="#multiworldformats">Multiworld Formats</a></p>
         </div>
     </span>
-    <h2 class="top"><a href="#header">Top</a> </h2>
     <img src="/images/hollowD.gif" alt="A pixel art gif of the Knight dancing.">
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

@@ -47,7 +47,9 @@
       <button class="submenubtn" onclick="location.href='/about/faq'"><a href="/about/faq">FAQ</a> </button>
       <button class="submenubtn" onclick="location.href='/about/credits'"><a href="/about/credits">Credits</a> </button>
     </div>
-    <h1>FAQ</h1>
+    <div id="main-container">
+    <h1 id="header">FAQ</h1>
+    <div id="body">
     <div class="body-text-align-left">
       <p><strong>Q:</strong> Is this website real?</p>
       <p><strong>A:</strong> You tell me.</p>
@@ -64,7 +66,14 @@
       <p><strong>Q:</strong> Yippee</p>
       <p><strong>A:</strong> Yippee</p>
     </div>
-
     <img src="/images/sip.png" alt="Broken Vessel sipping a drink with a straw.">
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+  </script>
+  <div id="footer"> </div>
+  </div>
   </body>
 </html>

@@ -98,6 +98,7 @@
 
     .newsdate {
       font-family: "Rubik", sans-serif;
+      font-weight: bold;
     }
 
     @media only screen and (max-width: 1200px) {
@@ -139,7 +140,9 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <h1 id="header">Rando Rando!</h1>
+  <div id="body">
     <div class="important">
       <p><em>Looking for the Skips page? It lives <a href="/rando/skips">here</a> now.</em></p>
     </div>
@@ -154,9 +157,13 @@
       <div class="randowhatsnew">
           <h2 class="h2-smaller">What's new?</h3>
           <div class="newstext">
-            <p class="newsdate"><strong>January 2024</strong></p>
+            <p class="newsdate">September 2024</p>
+            <p>Added a <a href="/rando/multiworldguide">Multiworld setup guide</a>!</p>
+            <p class="newsdate">July 2024</p>
+            <p>Added a <a href="/rando/plandoguide">Plando setup guide</a>!</p>
+            <p class="newsdate">January 2024</p>
             <p>Added a "<a href="/rando/gettingstarted">getting started</a>" page as a jumping off point for new rando enjoyers.</p>
-            <p class="newsdate"><strong>November 2023</strong></p>
+            <p class="newsdate">November 2023</p>
             <p>Added separate <a href="/rando/skips">skips</a> page, yippee!</p>
             <p>Added a <a href="/rando/glossary">glossary</a> of rando terms.</p>
             <img src="images/wobblebramble.gif" alt="a mosscreep" id="wobblebramble" height="100px" width="100px">
@@ -166,25 +173,25 @@
         <div class="randonewsinside">
           <h2 class="h2-smaller">Rando News</h2>
           <div class="newstext">
-            <p class="newsdate"><strong>February 2024</strong></p>
-            <p>The Hollow Knight 7th Anniversary event is over! Thank you so much to everyone involved for making HK7Y possible! It is now highlighted on our <a href="https://www.twitch.tv/collections/DivtEF92txdTow">community Twitch channel</a>. Remember, this is an annual event, so we'll have another marathon next year too. As long as we're not too busy playing Silksong randomizer...</p>
-            <p class="newsdate"><strong>January 2024</strong></p>
-            <p>Unfortunately, all good things must come to an end, and Grand Finals of the 2023 All Majors tournament is over. On the plus side, though, the <a href="https://github.com/BadMagic100/MajorItemByAreaTracker/">MajorItemByAreaTracker mod</a> got an update! Grub lovers rejoice, for we can now require saving all 46 of our squirmy little buddies in our races. Or, if you just want to play your solo seeds to Elegy%, now you can do that.</p>
-            <p class="newsdate"><strong>December 2023</strong></p>
-            <p>The schedule for HK7Y is live! This year, the event is broken into three parts: <a href="/events/hk7y/randoday">Rando Day</a> on Thursday Feb 22nd at 8:00pm UTC, <a href="/events/hk7y/memeday">Meme Day</a> on Friday Feb 23rd at 8:00pm UTC, and the <a href="/events/hk7y">Main Event</a> on
-              Saturday Feb 24th at 2:00pm UTC. Go give the <a href="/events/hk7y">HK7Y</a> event page a read, and/or keep watch on the #event-announcements channel in the Discord. </p>
-            <p class="newsdate"><strong>November 2023</strong></p>
-            <p>HK7Y, the community-led anniversary event for Hollow Knight, is coming up, and there will be a day all about rando! Stay tuned for updates and keep an eye on our <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch
-                channel</a> when the time comes.</p>
+            <p class="newsdate"><strong>October 2024</strong></p>
+            <p>The 2024 Blackout True Ending randomizer tournament is over! Thank you so much to everyone who participated; it was a ton of fun...even if we're all completely burnt out of BOTE now. If you missed any of matches or want to rewatch any of your faves, the entire tournament is now highlighted on our community Twitch channel and you can find the matches in this <a href="https://www.twitch.tv/collections/JJmhxgm02hcVxw">collection</a>.</p>
+            <p class="newsdate"><strong>September 2024</strong></p>
+            <p>A new rando mod, UnRando, has been released! UnRando fixes the order of items that the player receives. This means that no matter which order you pick up checks in, you'll always get the first item first, the second item second, the third item third...This makes it really nice for racers that want their races to be a test of speed instead of luck. Yippee!</p>
+            <p class="newsdate"><strong>August 2024</strong></p>
+            <p>We're now in the bracket stage of the 2024 Blackout TE tournament! Only the top 8 teams get to play in this stage, so it's sure to be good. Go read the <a href="/events/blackout2024">event page</a> for the tournament to learn more!</p>
           </div>
         </div>
       </div>
     </div>
     </div>
-  </div>
-  </div>
-  <h2 class="top"><a href="#header">Top</a> </h2>
   <img src="images/GrubLove.png" alt="grublove" height="100px" width="100px">
+</div>
+  <script>
+    $(document).ready(function(){
+        $("#footer").load("/footer.html");
+    });
+ </script>
+<div id="footer"> </div></div>
 </body>
 
 </html>

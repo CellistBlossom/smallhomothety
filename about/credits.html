@@ -65,17 +65,20 @@
       <button class="submenubtn" onclick="location.href='/about/faq'"><a href="/about/faq">FAQ</a> </button>
       <button class="submenubtn" onclick="location.href='/about/credits'"><a href="/about/credits">Credits</a> </button>
     </div>
-    <h1>Credits</h1>
+    <div id="main-container">
+    <h1 id="header">Credits</h1>
+    <div id="body">
     <p>Hi, I'm Blossom! I registered this domain and put a lot of work into this site. I hope it's been helpful, funny, or informative for you!</p>
     <p>Of course, I didn't do it alone. Here's a list of absolute cuties who have contributed to this project, with code or otherwise:
     </p>
     <div class="list">
       <p>paum_is_me</p>
-      <p>limch1</p>
+      <p>vichi</p>
       <p>peekadutch</p>
       <p>kamakiller</p>
       <p>manicjamie</p>
       <p>nerfirelia73</p>
+      <p>pimpaspimpinela</p>
   </div>
     <p class="dark-gray">(If you don't see yourself on this list and believe you should be, DM me on Discord and I'll fix it! Or you can fix it yourself :3)</p>
     <p>Also, here's a list of my socials so you can follow me </p> <img class="yippee" src="../images/yippee.gif" alt="A cartoon character with long white hair jumping up and down happily.">
@@ -84,5 +87,13 @@
     <a href="https://www.youtube.com/@Blossomthecellist"><img src="/images/youtube.png" alt="youtube logo" height="100px" width="100px"></a>
     <a href="https://www.twitch.tv/blossomthecellist"><img src="/images/twitch.png" alt="twitch logo" height="100px" width="100px"></a>
     <a href="https://www.speedrun.com/user/BlossomtheCellist"><img src="/images/src.png" alt="speedrun.com logo" height="100px" width="100px"></a>
+  </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+  </div>
   </body>
 </html>

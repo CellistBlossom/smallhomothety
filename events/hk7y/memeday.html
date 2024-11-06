@@ -49,12 +49,14 @@
       $("#events-list").load("/eventsnav.html");
     });
   </script>
+  <div id="main-container">
   <div id="events-container-container">
   <div id="events-container">
     <div id="events-list">
     </div>
     <div class="events">
       <h1 id="header">Hollow Knight 7th Anniversary Celebration: Meme Day</h1>
+      <div id="body">
       <div class="subnavmenu">
         <button class="submenubtn" onclick="location.href='/events/hk7y'"><a href="/events/hk7y">Main Event</a> </button>
         <button class="submenubtn" onclick="location.href='/events/hk7y/memeday'"><a href="/events/hk7y/memeday">Meme Day</a> </button>
@@ -123,14 +125,14 @@
               <td>9:30pm EST</td>
               <td>Vanilla Lockout</td>
               <td>Runners: ins0mnia, Vysuals, MrSir71, and python_wizard</td>
-              <td>Comms: Paum, Limchi</td>
+              <td>Comms: Paum, vichisuki</td>
             </tr>
             <tr>
               <td>3:40am UTC</td>
               <td>10:40pm EST</td>
               <td>AGAG Race</td>
               <td>Runners: BlossomtheCellist, python_wizard</td>
-              <td>Comms: theMasochistGamer, Limchi</td>
+              <td>Comms: theMasochistGamer, vichisuki</td>
             </tr>
             <tr>
               <td>4:20am UTC</td>
@@ -158,8 +160,15 @@
       </div>
     </div>
   </div>
-  <h2 class="top"><a href="#header">Top</a> </h2>
   </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>

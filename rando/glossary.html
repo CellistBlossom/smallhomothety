@@ -52,6 +52,7 @@
   <div id="randonavbar">
 
   </div>
+  <div id="main-container">
   <h1 id="header">Glossary of Rando Terms</h1>
   <script type="text/javascript" language="Javascript">
     function toggleMenu(currMenu) {
@@ -68,6 +69,7 @@
       }
     }
   </script>
+  <div id="body">
   <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
   <span class="menu" id="menu100">
       <div class="list list-square list-centered">
@@ -107,9 +109,10 @@
         it; these formats are referred to as “spoiler formats”. </p>
       <p><strong>Tracker Log</strong>: Located in your save files folder after generating a rando seed. Shows what items have been picked up in the order that they were obtained. </p>
     </div>
-  <h2 id="mods">Mods</h2>
+  <h2 id="mods">Mods & Applications</h2>
     <div class="list">
       <p><strong>Area Blitz</strong>: A setting that is part of the RandoPlus connection mod. Area blitz randomly picks several map areas of the game (Greenpath, Deepnest, etc) to place items in and leaves the rest empty. Areas that are excluded by the seed contain no items at checks, while areas that are included usually contain two or more items per check to compensate.</p>
+      <p><a href="https://github.com/blu-sta/HK-Rando-4-Log-Display/tree/main"><strong>Blu's Helper</strong></a>: AKA "HK Rando Log Display". An alternative helper log reader with features that make searching it easier.</p>
       <p><strong>Full Flexible Count</strong>: A setting that is part of the RandoPlus connection mod. Usually, if the number of items placed exceeds the number of check locations (for example, if any duplicate item settings are on) the randomizer will move junk items such as relics into shops. Full flexible allows any check outside of shops to also act the same way by containing more than one item, which helps declutter shops.</p>
       <p><strong>Itemsync</strong>: A mod that sends items obtained by one player to all other players in their “room”, as well as removing them from those players’ games. </p>
       <p><strong>Lumafly</strong>: A mod installer that provides easy access to most published mods, including all required mods for rando and add-ons; formerly known as "Scarab+". </p>
@@ -173,8 +176,15 @@
       </div>
   </span>
 
-  <h2 class="top"><a href="#header">Top</a> </h2>
   <img class="spin" src="../images/spin.gif" alt="knightspin">
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
 </body>
 
 </html>
