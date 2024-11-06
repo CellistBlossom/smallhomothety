@@ -1,9 +1,9 @@
 const grubDances = [
-	["/images/grubDance.gif", "a dancing grub"],
-	["/images/blomgrubDance.gif", "a dancing blomgrub"],
-	["/images/purpgrubDance.gif", "a dancing purple grub"],
-	["/images/sourgrubdance.gif", "a dancing sourgrub"],
-	["/images/grubchuDance.gif", "a dancing grubchu"],
+	["../images/grubDance.gif", "a dancing grub"],
+	["../images/blomgrubDance.gif", "a dancing blomgrub"],
+	["../images/purpgrubDance.gif", "a dancing purple grub"],
+	["../images/sourgrubdance.gif", "a dancing sourgrub"],
+	["../images/grubchuDance.gif", "a dancing grubchu"],
 ]
 
 function generateSquare() {
