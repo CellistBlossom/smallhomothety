@@ -97,38 +97,38 @@
       $("#navbar").load("/nav.html");
     });
   </script>
-	<div id="navbar">
-	</div>
-	<div class="subnavmenu">
-		<button class="submenubtn" onclick="location.href='/grubby'"><a href="/grubby">Adopt-a-Grub</a></button>
-		<button class="submenubtn" onclick="location.href='/grubby/randomgruborder'"><a href="/grubby/randomgruborder">Elegy% Random Grub Order</a> </button>
-		<button class="submenubtn" onclick="location.href='/grubby/randomgrubDancesquare'"><a href="/grubby/randomgrubDancesquare">Random grubDance Square</a> </button>
-	</div>
-	<div id="main-container">
+  <div id="navbar">
+  </div>
+  <div class="subnavmenu">
+    <button class="submenubtn" onclick="location.href='/grubby'"><a href="/grubby">Adopt-a-Grub</a></button>
+    <button class="submenubtn" onclick="location.href='/grubby/randomgruborder'"><a href="/grubby/randomgruborder">Elegy% Random Grub Order</a> </button>
+    <button class="submenubtn" onclick="location.href='/grubby/randomgrubDancesquare'"><a href="/grubby/randomgrubDancesquare">Random grubDance Square</a> </button>
+  </div>
+  <div id="main-container">
     <h1 id="header">Elegy% Random Grub Order</h1>
     <div id="body">
-			<p>Elegy% is a category where you free all of the grubs in Hollow Knight in order to receive Grubberfly's Elegy from the Grubfather.  Elegy% Random Grub Order puts a twist on the category by making you save all of the grubs in a random order!  This is a fun way to play the category both by yourself and as a race with friends!</p>
-				<div>
-					<button class="list-button" id="grubSplitGenerator" onclick="generateSplits()">Generate Splits!</button>
-					<button class="list-button byebye-button" id="downloadButton" onclick="downloadFile()">Download</button>
-				</div>
-				<div>
-					<input type="checkbox" id="numberedSplits" name="numbered">
-				<label for="numbered"> Numbered Splits</label><br>
-				</div>
-			<div id="listDiv" style="visibility: hidden;">
-					<h3>Here is the order that you got!</h3>
-					<div style="border: 2px solid black; width: 375px; height: 375px; overflow-y: scroll; margin: auto;">
-							<ul id="grubList"></ul>
-					</div>
-			</div>
-			<script src="/scripts/randomgruborder.js"></script>
-		</div>
-		<script>
-			$(document).ready(function(){
-					$("#footer").load("/footer.html");
-			});
-		</script>
-		<div id="footer"> </div>
+      <p>Elegy% is a category where you free all of the grubs in Hollow Knight in order to receive Grubberfly's Elegy from the Grubfather.  Elegy% Random Grub Order puts a twist on the category by making you save all of the grubs in a random order!  This is a fun way to play the category both by yourself and as a race with friends!</p>
+      <div>
+        <button class="list-button" id="grubSplitGenerator" onclick="generateSplits()">Generate Splits!</button>
+        <button class="list-button byebye-button" id="downloadButton" onclick="downloadFile()">Download</button>
+      </div>
+      <div>
+        <input type="checkbox" id="numberedSplits" name="numbered">
+        <label for="numbered"> Numbered Splits</label><br>
+      </div>
+      <div id="listDiv" style="visibility: hidden;">
+        <h3>Here is the order that you got!</h3>
+        <div style="border: 2px solid black; width: 375px; height: 375px; overflow-y: scroll; margin: auto;">
+          <ul id="grubList"></ul>
+        </div>
+      </div>
+      <script src="/scripts/randomgruborder.js"></script>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
   </div>
 </body>
