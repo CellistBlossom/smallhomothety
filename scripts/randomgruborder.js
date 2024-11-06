@@ -34,7 +34,7 @@ const grubSplits = [
     ["Greenpath Moss Knight", "GrubGreenpathMossKnight"],
     ["Greenpath Vessel Fragment", "GrubGreenpathVesselFragment"],
     ["Hive External", "GrubHiveExternal"],
-    ["Internal", "GrubHiveInternal"],
+    ["Hive Internal", "GrubHiveInternal"],
     ["Kingdom's Edge Center", "GrubKingdomsEdgeCenter"],
     ["Kingdom's Edge Oro", "GrubKingdomsEdgeOro"],
     ["Queen's Gardens Below Stag", "GrubQueensGardensBelowStag"],
