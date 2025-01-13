@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK8Y Rando Day</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="HK8Y is the community-led speedrunning marathon to celebrate the Hollow Knight 8th anniversary. HK8Y will include main board, category extension, and randomizer showcases!">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 8th Anniversary Rando Day" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 8th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk8y/randoday" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-list").load("/eventsnav.html");
+    });
+  </script>
+  <div id="main-container">
+  <div id="events-container-container">
+    <div id="events-container">
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Hollow Knight 8th Anniversary Celebration</h1>
+        <div id="body">
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/events/hk8y'"><a href="/events/hk8y">Main Event</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk8y/memeday'"><a href="/events/hk8y/memeday">Meme Day</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk8y/randoday'"><a href="/events/hk8y/randoday">Rando Day</a> </button>
+        </div>
+        <p>HK8Y is the Hollow Knight 8th anniversary event! The event will be spread out over the course of three days: main day, meme day, and rando day. Rando day will take place on Thursday, February 20th, 2025 starting at 5pm UTC (12pm EST).</p>
+        <div id="twitch-embed"></div>
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: "100%",
+            height: 480,
+            channel: "hollowknightcommunity",
+            parent: ["smallhomothetyorganization.org"]
+          });
+        </script>
+        <p>The schedule for meme day is below. Please keep in mind that the schedule is subject to change.</p>
+        <br>
+        </script>
+        <div class="schedule-list">
+          <h2>Rando Day Schedule</h2>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>5:00pm UTC</td>
+                <td>12:00pm EST</td>
+                <td>Intro/Setup%</td>
+              </tr>
+              <tr>
+                <td>5:10pm UTC</td>
+                <td>12:10pm EST</td>
+                <td>Spoiler Hand/Brain (46 Grubs)</td>
+                <td>jRunners: jony, connoramon, Phia, purenail</td>
+                <td>Comms: ValeMK</td>
+              </tr>
+              <tr>
+                <td>6:30pm UTC</td>
+                <td>1:30pm EST</td>
+                <td>Lockout</td>
+                <td>Runners: Tim vs connoramon</td>
+                <td>Comms: OhkoXar, purenail</td>
+              </tr>
+              <tr>
+                <td>8:00pm UTC</td>
+                <td>3:00pm EST</td>
+                <td>Plando (Created by Kamakiller and Purenail)</td>
+                <td>Runners: aPress, ValeMK, May, Quatopine</td>
+                <td>Sylvie, Phia</td>
+              </tr>
+              <tr>
+                <td>10:45pm UTC</td>
+                <td>5:45pm EST</td>
+                <td>Mystery Event</td>
+                <td>Runner: Mystery Runner</td>
+                <td>Comms: Mystery Comms</td>
+              </tr>
+              <tr>
+                <td>11:30pm UTC</td>
+                <td>6:30pm EST</td>
+                <td>Lever Get to the Other Side</td>
+                <td>Runners: phloofyshark, Nerthul11, OhkoXar</td>
+                <td>Comms: Maso, Azerod</td>
+              </tr>
+              <tr>
+                <td>1:45am UTC</td>
+                <td>8:45pm EST</td>
+                <td>Blackout True Ending</td>
+                <td>Runners: Sylvie, princesscelery, Frunobulaxian, Henryst</td>
+                <td>Comms: Birdie, May</td>
+              </tr>
+              <tr>
+                <td>3:45am UTC</td>
+                <td>10:45pm EST</td>
+                <td>Glitched No-logic 3-Lines</td>
+                <td>Runners: BlossomtheCellist, Aggy, randomscorp</td>
+                <td>Comms: aPress, Badmagic</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>
