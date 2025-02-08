@@ -63,6 +63,7 @@
           <button class="submenubtn" onclick="location.href='/events/hk8y/randoday'"><a href="/events/hk8y/randoday">Rando Day</a> </button>
         </div>
         <p>HK8Y is the Hollow Knight 8th anniversary event! The event will be spread out over the course of three days: main day, meme day, and rando day. Rando day will take place on Thursday, February 20th, 2025 starting at 5pm UTC (12pm EST).</p>
+        
         <div id="twitch-embed"></div>
         <!-- Load the Twitch embed JavaScript file -->
         <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -70,8 +71,8 @@
         <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
         <script type="text/javascript">
           new Twitch.Embed("twitch-embed", {
-            width: "100%",
-            height: 480,
+            width: 600,
+            height: 600,
             channel: "hollowknightcommunity",
             parent: ["smallhomothetyorganization.org"]
           });
