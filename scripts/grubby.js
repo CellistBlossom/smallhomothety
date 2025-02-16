@@ -1463,14 +1463,6 @@ const MIMIC_PERSONALITIES = [
 ];
 
 button.addEventListener("click", function() {
-  var grubbynumber = Math.floor(Math.random() * 100);
-  if (grubbynumber > 7) {
-    document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
-  }
-  else {
-    document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
-    }
-
   var pronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
   document.getElementById("pronouns").innerHTML = pronouns;
 
@@ -1529,12 +1521,15 @@ button.addEventListener("click", function() {
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
 
+  var grubbynumber = Math.floor(Math.random() * 100);
+
   if (grubbynumber > 7) {
+    document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
     var name = GRUB_NAMES[Math.floor((Math.random() * GRUB_NAMES.length))]
     document.getElementById("grubname").innerHTML = name;
     document.getElementById("food").innerHTML = GRUB_FOODSTUFFS[Math.floor((Math.random() * GRUB_FOODSTUFFS.length))];
     document.getElementById("personality").innerHTML = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))];
-    grubbyImage.innerHTML = '<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">';
+    grubbyImage.innerHTML = `<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">`;
 
     // Special case: flip if upside-down grub
     if (name == "Upside-Down Grub") {
@@ -1543,9 +1538,10 @@ button.addEventListener("click", function() {
     }
   }
   else {
-      document.getElementById("grubname").innerHTML = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
-      document.getElementById("food").innerHTML = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
-      document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
-      grubbyImage.innerHTML = '<img src="images/mimic.png" alt="A mimic!" height="100px" width="100px">';
-    }
+    document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
+    document.getElementById("grubname").innerHTML = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
+    document.getElementById("food").innerHTML = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
+    document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
+    grubbyImage.innerHTML = '<img src="images/mimic.png" alt="A mimic!" height="100px" width="100px">';
+  }
 });
