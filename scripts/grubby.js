@@ -5,6 +5,15 @@ var certificate = document.getElementById("certificate");
 certificate.appendChild(button);
 button.id = "idk_your_id_here";
 
+const GRUB_IMAGES = [
+	["images/grubby.png", "a grub"],
+	["images/blomgrub.png", "a blomgrub"],
+	["images/purpgrub.png", "a purple grub"],
+	["images/grubchu.png", "a grubchu"],
+	["images/arg.png", "an alternate reality grub"],
+	["images/aggrub.png", "an aagrub"],
+]
+
 const GRUB_NAMES = [
   "Gumbo",
   "Cholli",
@@ -1529,7 +1538,8 @@ button.addEventListener("click", function() {
     document.getElementById("grubname").innerHTML = name;
     document.getElementById("food").innerHTML = GRUB_FOODSTUFFS[Math.floor((Math.random() * GRUB_FOODSTUFFS.length))];
     document.getElementById("personality").innerHTML = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))];
-    grubbyImage.innerHTML = `<img src="images/grubby.png" alt="A grub!" height="100px" width="100px">`;
+    var grubbyImageData = GRUB_IMAGES[Math.floor((Math.random() * GRUB_IMAGES.length))];
+    grubbyImage.innerHTML = `<img src=${grubbyImageData[0]} alt=${grubbyImageData[1]} height="100px" width="100px">`;
 
     // Special case: flip if upside-down grub
     if (name == "Upside-Down Grub") {
