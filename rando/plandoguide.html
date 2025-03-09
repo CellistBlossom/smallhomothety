@@ -115,6 +115,21 @@
       $("#randonavbar").load("/rando/randonav.html");
     });
   </script>
+    <script type="text/javascript" language="Javascript">
+      function toggleMenu2(currMenu) {
+        if (document.getElementById) {
+          thisMenu = document.getElementById(currMenu).style
+          if (thisMenu.display == "inline") {
+            thisMenu.display = "none"
+          } else {
+            thisMenu.display = "inline"
+          }
+          return false
+        } else {
+          return true
+        }
+      }
+    </script>
   <div id="randonavbar">
 
   </div>
@@ -150,6 +165,7 @@
     <p><a href="https://drive.google.com/drive/folders/1qDvaanU3-PVNWY3jCFuRPebi5I4fQyRj?usp=drive_link">Save the Grubbies!!</a> <em>by Kamakiller and Purenail</em>: Help out Grubfather by saving more grubbies! This plando adds significantly more grubs to the game who are in need of saving. The intended end goal of the Plando is to defeat Collector and obtain the Collector's Map at the top of Tower of Love, however True Ending also is accessible. More important, 247 grubs in total are available to be saved within the Plando. This plando also has a long list of required mods.</p>
     <p><a href="https://drive.google.com/drive/folders/1TZh92C9wUryF9TolBt4lnP1eNLUVPNRh">press g to die</a> <em>by Kamakiller</em>: A plando where you're allowed to die anywhere you want, which opens up some funny new shadeskip possibilities. There are two difficulty modes: a Normal mode and an Extreme mode. (More details about the difficulty levels and required mods are in the README).</p>
     <p><a href="https://drive.google.com/drive/folders/1EEyMTsNBjg4koLncRzqKlW5DCcXg3pBH">Boomer Plando</a> <em>by Paum</em>: A plando where the only things randomized are Dreamers, White Fragments, Keys (Including Lantern, Love Key, etc) and Skills. The goal is to defeat the Radiance. There are three difficulty modes: Normal mode, Hard mode, and Shrogo mode.</p>
+    <p><a href="https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/blob/main/ScatteredAndLost/Plando/HK8Y%20Scattered%20and%20Lost.zip">Scattered and Lost</a> <em>by Kama and Purenail</em>: The HK8Y showcase plando, featuring split claw, lots of shade skips, and <span><a class="menulink menu-inline" onclick="return toggleMenu2('menu300')">plando spoilers (click to show)</a><span class="menu" id="menu300"> Celeste Content</span></span>. This is a difficult ItemSync plando designed for HK's best rando runners with many challenging skips required. Requires two players to experience, it cannot be played solo, so grab a buddy! This plando features significant custom modded content in the final stretch and various smaller modifications throughout the world, be ready to adapt. The goal of the plando is to check Bretta's Mask Shard. <a href="https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/blob/main/README.md">Public README</a></p>
     </div>
   </div>
   <p>There are also several plandos made prior to the release of 1.5 that can only be played on patch 1.4.3.2. You can find them on the <a href="https://drive.google.com/drive/folders/1AxWg-xGzAr3V8zbZQXNDEgQSymWuPFbR">1.4.3.2 Plando Google Drive</a>.</p>
