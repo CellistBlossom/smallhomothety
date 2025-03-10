@@ -31,6 +31,79 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/settings" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+      #grubnote {
+        width: 100px;
+        height:100px;
+      }
+
+      img {
+        width: 600px;
+        height: 350px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+  
+      #run-img {
+          width: 400px;
+          height: 233px;  
+      }
+  
+      #grubnote {
+        height: 100px;
+        width: 100px;
+      }
+  
+      @media only screen and (max-width: 1400px) {
+        img {
+          width: 600px;
+          height: 350px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        #run-img {
+          width: 400px;
+          height: 233px;  
+      }
+      }
+  
+      @media only screen and (max-width: 1200px) {
+        img {
+          width: 450px;
+          height: 262px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        #run-img {
+          width: 300px;
+          height: 175px;  
+      }
+      }
+  
+      @media only screen and (max-width: 500px) {
+        img {
+          width: 300px;
+          height: 175px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      @media only screen and (max-width: 350px) {
+        img {
+          width: 240px;
+          height: 157px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <script>
@@ -48,8 +121,33 @@
     <div id="randonavbar">
   
     </div>
+  </script>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
     <div id="main-container">
-    <h1 id="header">Common Settings for HKSC Races</h1>
+    <h1 id="header">Randomizer Settings</h1>
+    <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
+    <span class="menu" id="menu100">
+        <div class="list list-square list-centered">
+          <p><a href="#common-settings">Common Settings for HKSC Races</a></p>
+          <p><a href="#lever-gttos">Lever GTTOS</a></p>
+          <p><a href="#downloading-profiles">Downloading Settings Profiles</a></p>
+        </div>
+    </span>
+    <h2 id="common-settings">Common Settings for HKSC Races</h2>
     <div id="body">
     <p>If you're starting out with randomizer, you're encouraged to experiment with settings and play with what you like best. However, if you're interested in racing in the speedrunning community discord server, it's useful to know what settings are standard for races. It's important to note that the settings  vary from format to format, and change over time as new things are added to the randomizer.</p>
     <p>Lifetotems preset is a given for all HKSC races. Solo formats also turn on maps, junk pit chests, and static journal entries, and team formats such as 2v2 Blackout also turn on boss essence in addition to those. Lore tablets are turned on sometimes for both solo and team formats. Grubs will be synced in the case of team formats (ie in their own pool, sometimes with mimics) but the sync vanilla items setting in Itemsync is banned, and we don't sync simple key usages. Skip settings are almost always none. Two shards per mask is usually turned on, especially if other connections are on. Random start location. Dupe settings are usually the default for races in the interest of fairness. Sometimes, we may turn off dupe claw for solo formats.</p>
@@ -77,7 +175,71 @@
       <p>And of course, Lever Rando should be on!</p>
     </div>
     <p>If you want to give these settings a try, download this <a href="/files/lever gttos.zip">custom Lever GTTOS profile</a>.</p>
-    <img src="/images/grubnote.png" alt="grubnote" height="100px" width="100px">
+    <h2 id="downloading-profiles">Downloading Settings Profiles</h2>
+    <div class="list">
+      <p>If you recieved the profile as a zip file, download it and unzip it. <a class="menulink" onclick="return toggleMenu('menu1')">▶</a></p>
+      <span class="menu" id="menu1">
+        <img src="/images/settingsprofilesguide/downloading/img1.png" alt="A screenshot of file explorer on Windows 11. A file named lever gttos.zip is selected. In the top right corner, a button reading 'extract all' is circled in red with an arrow pointing to it.">
+      </span>
+      <p>Navigate to your save files folder. <a class="menulink winner-spoiler" onclick="return toggleMenu('menu200')"><em>Filepaths ▶</em></a></p>
+      <span class="menu" id="menu200">
+          <div class="filepaths">
+              <p><strong>Windows:</strong></p>
+              <p>%APPDATA%\..\LocalLow\Team Cherry\Hollow Knight\</p>
+              <p>You can easily access the Appdata folder on Windows by pressing the Windows + R hotkey, typing %appdata% in the box, and pressing "OK". <a class="menulink" onclick="return toggleMenu('menu9')">▶</a></p>
+              <span class="menu" id="menu9">
+                <img id="run-img" src="/images/settingsprofilesguide/downloading/img9.png" alt="A screenshot of the run command window on Windows 11. The text at the top reads 'type the name of a program, folder, document, or internet resource, and Windows will open it for you.' There is an input field below, where the user has filled in '%appdata%' At the bottom, the options are OK, Cancel, and Browse. The user has highlighted OK.">
+              </span>
+              <p><strong>Mac:</strong></p>
+              <p>~/Library/Application Support/unity.Team Cherry.Hollow Knight/</p>
+              <p><strong>Linux:</strong></p>
+              <p>~/.config/unity3d/Team Cherry/Hollow Knight/</p>
+          </div>
+      </span>
+      <p>Navigate to the "Randomizer 4" subfolder. <a class="menulink" onclick="return toggleMenu('menu3')">▶</a></p>
+      <span class="menu" id="menu3">
+        <img src="/images/settingsprofilesguide/downloading/img2.png" alt="A screenshot of file explorer showing the Hollow Knight save file folder on Windows 11. There are a few subfolders visible, and the user has highlighted the one titled Randomizer 4.">
+      </span>
+      <p>Navigate to the "Profiles" subfolder. <a class="menulink" onclick="return toggleMenu('menu4')">▶</a></p>
+      <span class="menu" id="menu4">
+        <img src="/images/settingsprofilesguide/downloading/img3.png" alt="A screenshot of file explorer on Windows 11 showing the contents of the Randomizer 4 subfolder. There are a few subfolders visible, and the user has highlighted the one titled Profiles.">
+      </span>
+      <p>In the "Profiles" subfolder, paste the unzipped profile in. <a class="menulink" onclick="return toggleMenu('menu5')">▶</a></p>
+      <span class="menu" id="menu5">
+        <img src="/images/settingsprofilesguide/downloading/img4.png" alt="A screenshot of file explorer on Windows 11 showing the contents of the Profiles subfolder. A folder named 'lever gttos' is in that folder, which the user has highlighted.">
+      </span>
+      <p>Open the game and navigate to the "More Randomizer Settings" menu. <a class="menulink" onclick="return toggleMenu('menu6')">▶</a></p>
+      <span class="menu" id="menu6">
+        <img src="/images/settingsprofilesguide/downloading/img5.png" alt="A screenshot of the randomizer settings menu in Hollow Knight. The user has More Randomizer Settings highlighted.">
+      </span>
+      <p>Select "Manage Settings Profiles". <a class="menulink" onclick="return toggleMenu('menu7')">▶</a></p>
+      <span class="menu" id="menu7">
+        <img src="/images/settingsprofilesguide/downloading/img6.png" alt="A screenshot of the more randomizer settings menu in Hollow Knight. The user has Manage Settings Profiles highlighted.">
+      </span>
+      <p>Select "Manage Profiles". <a class="menulink" onclick="return toggleMenu('menu8')">▶</a></p>
+      <span class="menu" id="menu8">
+        <img src="/images/settingsprofilesguide/downloading/img7.png" alt="A screenshot of the manage settings profiles menu in Hollow Knight. The user has Manage Profiles highlighted.">
+      </span>
+      <p>Select the settings profile you want to load. <a class="menulink" onclick="return toggleMenu('menu10')">▶</a></p>
+      <span class="menu" id="menu10">
+        <img src="/images/settingsprofilesguide/downloading/img8.png" alt="A screenshot of the manage profiles menu in Hollow Knight. The user has their Lever GTTOS profile highlighted.">
+      </span>
+      <p>From here, you can just select "load profile". GLHF! <a class="menulink" onclick="return toggleMenu('menu11')">▶</a></p>
+      <span class="menu" id="menu11">
+        <img src="/images/settingsprofilesguide/downloading/img10.png" alt="A screenshot of the lever gttos profile menu. The user has 'load profile' highlighted.">
+      </span>
+    </div>
+  </div>
+  <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
+  <span class="menu" id="menu101">
+      <div class="list list-square list-centered">
+        <p><a href="#common-settings">Common Settings for HKSC Races</a></p>
+        <p><a href="#lever-gttos">Lever GTTOS</a></p>
+        <p><a href="#downloading-profiles">Downloading Settings Profiles</a></p>
+      </div>
+  </span>
+  </div>
+    <img src="/images/grubnote.png" id="grubnote" alt="grubnote" height="100px" width="100px">
   </div>
   <script>
     $(document).ready(function(){
