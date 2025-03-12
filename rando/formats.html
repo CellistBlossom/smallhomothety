@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Formats</title>
-  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="stylesheet" href="../stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -34,6 +34,54 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/rando/formats" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style>
+        #invasion-img {
+      width: 1000px;
+      height: 1371px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      #invasion-img {
+        width: 740px;
+        height: 1015px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      #invasion-img {
+        width: 588px;
+        height: 806px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      #invasion-img {
+        width: 500px;
+        height: 685px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      #invasion-img {
+        width: 333px;
+        height: 457px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -110,8 +158,14 @@
       <p>1v..v1 format. Lockout except you are only locked out once (total number of players / 2) have marked a goal (rounded up). First to 13 wins.</p>
       <p><em>Time estimate: 1-2 hours</em></p>
       <h3>Invasion</h3>
-      <p>1v1 lockout format. See this <a href="https://i.imgur.com/2WPnvHQ.jpg">visual guide</a></p>
+      <p>1v1 lockout format. To start, players may only mark a goal on one of the sides of the board. Once the first player marks a goal, they have claimed a side, and the other player is assigned the other side. Once a player has marked a goal, they are allowed to mark a goal in the next line; however, they can never have more goals in a later line than in the previous one. Visual guide: <a class="menulink" onclick="return toggleMenu('menu1')">▶</a></p>
+      <span class="menu" id="menu1">
+        <img src="../images/invasion.jpg" id="invasion-img" alt="A visual guide for invasion with images to illustrate which goals the players are allowed to mark.">
+      </span>
       <p><em>Time estimate: 1-2 hours</em></p>
+      <h3>"Bigvasion"</h3>
+      <p>Invasion, but played on a 13x13 board.</p>
+      <p><em>Time estimate for 2v2: 1-2 hours</em></p>
       <h3>Time Attack</h3>
       <p>A 1v..v1 time-restricted format where players compete to see who can complete the most goals in a set period of time. Each goal is worth one point and each row/column is worth an additional two. </p>
       <p><em>Time Limit: 45 minutes to 1 hour.</em></p>
