@@ -70,9 +70,22 @@
         <div class="events">
           <h1 id="header">Any% Tournament 2025</h1>
           <div id="body">
+            <div id="twitch-embed"></div>
+            <!-- Load the Twitch embed JavaScript file -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+            <script type="text/javascript">
+              new Twitch.Embed("twitch-embed", {
+                width: 600,
+                height: 600,
+                channel: "hollowknightcommunity",
+                parent: ["smallhomothetyorganization.org"]
+              });
+            </script>
           <p>This tournament is a double-elimination speedrunning tournament for the Any% No Major Glitches category. There's a $600 prize pool for the top four players, so the stakes are high! It began on March 11th and is currently ongoing. </p>
           <p>There are no patch restrictions for this tournament, but you are most likely to see players playing on 1.2.2.1, as it is currently the fastest patch for any% NMG.</p>
-            <p class="p-bigger"><a href="hhttps://www.twitch.tv/hollowknightcommunity/">Watch</a></p>
+            <p class="p-bigger"><a href="https://www.twitch.tv/hollowknightcommunity/">Watch</a></p>
             <p class="p-bigger"><a href="https://www.start.gg/tournament/hollow-knight-any-2025-siksong-is-still-not-out-tournament/event/awesome-sauce/brackets/1901560/2795702">Bracket</a></p>
             <p class="p-bigger"><a href="https://github.com/hk-speedrunning/HK-Rules/blob/main/nmg-rules.md">No Major Glitches Rules</a></p>
           </div>
