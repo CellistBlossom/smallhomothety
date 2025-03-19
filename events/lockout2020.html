@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Randomizer Lockout 2020</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="The Hollow Knight Lockout 2020 tournament was a randomizer tournament hosted by the speedrunning and randomizer community. The tournament ran from June 2020 to February 2021.">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Randomizer Lockout Tournament 2020" />
+  <meta property="og:description" content="Learn all about the 2020 randomizer lockout tournament for Hollow Knight!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/lockout2020" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+    </script>
+    <script type="text/javascript" language="Javascript">
+      function toggleMenu2(currMenu) {
+        if (document.getElementById) {
+          thisMenu = document.getElementById(currMenu).style
+          if (thisMenu.display == "inline") {
+            thisMenu.display = "none"
+          } else {
+            thisMenu.display = "inline"
+          }
+          return false
+        } else {
+          return true
+        }
+      }
+    </script>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <div id="main-container">
+  <div id="events-container-container">
+    <div id="events-container">
+      <script>
+        $(document).ready(function() {
+          $("#events-list").load("/eventsnav.html");
+        });
+      </script>
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Randomizer Lockout Tournament 2020</h1>
+        <div id="body">
+          <div class="important important-smaller">
+            <p>For more information on randomizer tournaments like this one, see the <a href="/rando/tourney">randomizer tournaments</a> page.</p>
+        </div>
+        <br>
+        <p>This was a 1v1 lockout randomizer bingo tournament for the Randomizer 3 mod for Hollow Knight, running from June 2020 to February 2021. The first round of the tournament consisted of 5 rounds of Swiss, and in the following round racers advanced
+          to an upper or lower double-elimination bracket based on their performance.</p>
+        <p>The tournament was hosted on <a href="https://www.twitch.tv/speedgaming">Speedgaming</a>.</p>
+          <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu5')">Click to show/hide spoiler about winners ▶</a></em></p>
+          <span class="menu" id="menu5">
+            <div>
+              <p>The winners of this tournament were <span><a class="menulink menu-inline" onclick="return toggleMenu2('menu6')">Banned Member (click to show)</a><span class="menu" id="menu6"> Kanra</span></span> in the upper bracket, and Adyn99 in the lower bracket.</p>
+            </div>
+          </span>
+        <p class="p-bigger"><a href="https://www.youtube.com/playlist?list=PLdoWICJMgPKUoBuRW7CmxsvRGg5VBzugH">Watch</a></p>
+        <p class="p-bigger"><a href="https://challonge.com/HKRandomizer2020">Swiss Bracket</a></p>
+        <p class="p-bigger"><a href="https://challonge.com/HKRandomizer2020Upper">Upper Bracket</a></p>
+        <p class="p-bigger"><a href="https://challonge.com/HKRandomizer2020Lower">Lower Bracket</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>
