@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>SBRCO Showcase Races</title>
-    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -39,7 +39,7 @@
             display: block;
               margin-right: auto;
               margin-left: auto;
-              width:400px;
+              width:500px;
         }
   
         #standings-table-container table {
@@ -53,6 +53,23 @@
               border-collapse: collapse;
               padding:10px;
               text-align: left;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #standings-table-container {
+            font-family: "Rubik", sans-serif;
+            font-size:14px;
+            background: antiquewhite;
+            display: block;
+              margin-right: auto;
+              margin-left: auto;
+              width:300px;
+        }
+
+        #standings-table-container table, #standings-table-container th, #standings-table-container td {
+              padding:5px;
+        }
+
         }
       </style>
   </head>
@@ -74,7 +91,7 @@
       </script>
     <script>
       $(document).ready(function() {
-        $("#navbar").load("../nav.html");
+        $("#navbar").load("/nav.html");
       });
     </script>
     <div id="navbar">
@@ -84,7 +101,7 @@
       <div id="events-container">
         <script>
           $(document).ready(function() {
-            $("#events-list").load("../eventsnav.html");
+            $("#events-list").load("/eventsnav.html");
           });
         </script>
         <div id="events-list">
@@ -93,7 +110,7 @@
           <h1 id="header">Salubra's Blessing Random Charm Order Races</h1>
           <div id="body">
             <p>This collection of races was held in February and March of 2022 to showcase a new race format. The showcases also served as a way to test out new restreaming setups, as the community transitioned away from using Speedgaming to host events.</p>
-          <p>"Salubra's Blessing Random Charm Order" is a vanilla racing format where players must obtain all 40 charms in a randomized order. To keep the race fair, all racers share the same randomized order, but everyone has to route it on the fly! All of the races in this showcase were 4-way; the first player of the four to obtain Salubra's Blessing after obtaining the charms in the correct order was declared the winner. Unfortunately, only 4 out of the 6 races were highlighted, but you can still watch most of them back.</p>
+          <p>"Salubra's Blessing Random Charm Order" is a vanilla racing format where players must obtain all 40 charms in a randomized order. To keep the race fair, all racers share the same randomized order, but everyone has to route it on the fly! All of the races in this showcase were 4-way; the first player of the four to obtain Salubra's Blessing after obtaining the charms in the correct order was declared the winner. Unfortunately, only four of the races were highlighted, and one team still hasn't scheduled their match three years later, but you can still watch most of them back!</p>
             <p>The charm randomization has logic working behind the scenes to keep the requirements reasonable (for example, Dream Wielder needs to come before Kingsoul, because you can't obtain Awoken Dream Nail before Dream Wielder). "Comfort options", such as forcing charms with more requirements to be later in the list, were also part of the logic. The logic was made by Aprillomat and Schy.</p>
             <h2>Team List</h2>
             <div id="standings-table-container">
@@ -126,7 +143,7 @@
                   <tr>
                     <td>Team 6</td>
                     <td>ThatQwertyPi, Lernaea, Phloofyshark, GalaxyWings</td>
-                    <td>Winner: ???</td>
+                    <td>Winner: N/A</td>
                   </tr>
                 </table>
                 </div>
@@ -137,7 +154,7 @@
     </div>
     <script>
       $(document).ready(function(){
-          $("#footer").load("../footer.html");
+          $("#footer").load("/footer.html");
       });
     </script>
     <div id="footer"> </div>
