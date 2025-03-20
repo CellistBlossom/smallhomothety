@@ -32,6 +32,27 @@
     <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style media="screen">
+      #standings-table-container {
+          font-family: "Rubik", sans-serif;
+          background: antiquewhite;
+          display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width:250px;
+      }
+
+      #standings-table-container table {
+        width:100%;
+      }
+
+      #standings-table-container table, #standings-table-container th, #standings-table-container td {
+            border-style: solid;
+            border-color: #edb265;
+            border-width: 2px;
+            border-collapse: collapse;
+            padding:10px;
+            text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -70,13 +91,32 @@
         <div class="events">
           <h1 id="header">All Whispering Roots Tournament 2022</h1>
           <div id="body">
-          <p>This tournament was a 4-way knockout speedrunning tournament for the All Whispering Roots No Major Glitches category. The tournament began with a qualifier phase where runners were given a week to get the fastest time that they could. The top 4 players advanced to the knockout phase, held on March 20, 2022. These players were NerfIrelia73, Gwonkee, Cerpintext, and JBHyperion. The tournament was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch channel</a> but was unfortunately not highlighted.</p>
-            <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
-            <span class="menu" id="menu1">
-              <div>
-                <p>The winner of this tournament was Gwonkee.</p>
-              </div>
-            </span>
+          <p>This tournament was a 4-way knockout speedrunning tournament for the All Whispering Roots No Major Glitches category. The tournament began with a qualifier phase where runners were given a week to get the fastest time that they could. The top 4 players advanced to the knockout phase, held on March 20, 2022.</p>
+          <p>The tournament consisted of three matches. Each round, the player with the slowest time would be knocked out, until only one player was left. It was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">community Twitch channel</a> but was unfortunately not highlighted.</p>
+          <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu3')">Click to show/hide spoiler about winners ▶</a></em></p>
+          <span class="menu" id="menu3">
+          <h2>Standings</h2>
+          <div id="standings-table-container">
+          <table id="standings-table">
+            <tr>
+              <td>1st</td>
+              <td>Gwonkee</td>
+            </tr>
+            <tr>
+              <td>2nd</td>
+              <td>NerfIrelia73</td>
+            </tr>
+            <tr>
+              <td>3rd</td>
+              <td>Cerpintext</td>
+            </tr>
+            <tr>
+              <td>4th</td>
+              <td>JBHyperion</td>
+            </tr>
+          </table>
+          </div>
+        </span>
             <p class="p-bigger"><a href="https://github.com/hk-speedrunning/HK-Rules/blob/main/nmg-rules.md">No Major Glitches Rules</a></p>
           </div>
         </div>
