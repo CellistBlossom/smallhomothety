@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SBRCO Showcase Races</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="The Hollow Knight Salubra's Blessing Random Charm Order showcases were held in early 2022 to showcase the new racing format. SBRCO racers are required to obtain all 40 charms in a randomized order. To keep the race fair, the randomized order is shared among all players.">
+    <!-- for discord embeds-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Salubra's Blessing Random Charm Order Showcases" />
+    <meta property="og:description" content="Learn all about the Salubra's Blessing Random Charm Order showcases in 2022!" />
+    <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/sbrco2022" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+        #standings-table-container {
+            font-family: "Rubik", sans-serif;
+            font-size:16px;
+            background: antiquewhite;
+            display: block;
+              margin-right: auto;
+              margin-left: auto;
+              width:400px;
+        }
+  
+        #standings-table-container table {
+          width:100%;
+        }
+  
+        #standings-table-container table, #standings-table-container th, #standings-table-container td {
+              border-style: solid;
+              border-color: #edb265;
+              border-width: 2px;
+              border-collapse: collapse;
+              padding:10px;
+              text-align: left;
+        }
+      </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="Javascript">
+        function toggleMenu(currMenu) {
+          if (document.getElementById) {
+            thisMenu = document.getElementById(currMenu).style
+            if (thisMenu.display == "inline") {
+              thisMenu.display = "none"
+            } else {
+              thisMenu.display = "inline"
+            }
+            return false
+          } else {
+            return true
+          }
+        }
+      </script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("../nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div id="main-container">
+    <div id="events-container-container">
+      <div id="events-container">
+        <script>
+          $(document).ready(function() {
+            $("#events-list").load("../eventsnav.html");
+          });
+        </script>
+        <div id="events-list">
+        </div>
+        <div class="events">
+          <h1 id="header">Salubra's Blessing Random Charm Order Races</h1>
+          <div id="body">
+            <p>This collection of races was held in February and March of 2022 to showcase a new race format. The showcases also served as a way to test out new restreaming setups, as the community transitioned away from using Speedgaming to host events.</p>
+          <p>"Salubra's Blessing Random Charm Order" is a vanilla racing format where players must obtain all 40 charms in a randomized order. To keep the race fair, all racers share the same randomized order, but everyone has to route it on the fly! All of the races in this showcase were 4-way; the first player of the four to obtain Salubra's Blessing after obtaining the charms in the correct order was declared the winner. Unfortunately, only 4 out of the 6 races were highlighted, but you can still watch most of them back.</p>
+            <p>The charm randomization has logic working behind the scenes to keep the requirements reasonable (for example, Dream Wielder needs to come before Kingsoul, because you can't obtain Awoken Dream Nail before Dream Wielder). "Comfort options", such as forcing charms with more requirements to be later in the list, were also part of the logic. The logic was made by Aprillomat and Schy.</p>
+            <h2>Team List</h2>
+            <div id="standings-table-container">
+                <table id="standings-table">
+                  <tr>
+                    <td>Team 1</td>
+                    <td>Snow, Solthas, Wooftydog, theMasochistGamer</td>
+                    <td><span><a class="menulink menu-inline" onclick="return toggleMenu('menu1')">Click to show winner</a><span class="menu" id="menu1"> theMasochistGamer</span></span></td>
+                  </tr>
+                  <tr>
+                    <td>Team 2</td>
+                    <td>Elowen, Schy, Aprillomat, Kuroshi</td>
+                    <td><span><a class="menulink menu-inline" onclick="return toggleMenu('menu2')">Click to show winner</a><span class="menu" id="menu2"> Schy</span></span></td>
+                  </tr>
+                  <tr>
+                    <td>Team 3</td>
+                    <td>Ins0mnia, Marcyaugust, Birdie, Rekcah</td>
+                    <td><span><a class="menulink menu-inline" onclick="return toggleMenu('menu3')">Click to show winner</a><span class="menu" id="menu3"> Ins0mnia</span></span></td>
+                  </tr>
+                  <tr>
+                    <td>Team 4</td>
+                    <td>Staxis, Sawayoshi, Vexance, Mathulu</td>
+                    <td><span><a class="menulink menu-inline" onclick="return toggleMenu('menu4')">Click to show winner</a><span class="menu" id="menu4"> Mathulu</span></span></td>
+                  </tr>
+                  <tr>
+                    <td>Team 5</td>
+                    <td>Icefire, aPress, violetblight, Tim</td>
+                    <td>Winner: Icefire</td>
+                  </tr>
+                  <tr>
+                    <td>Team 6</td>
+                    <td>ThatQwertyPi, Lernaea, Phloofyshark, GalaxyWings</td>
+                    <td>Winner: ???</td>
+                  </tr>
+                </table>
+                </div>
+          <p class="p-bigger"><a href="https://www.youtube.com/playlist?list=PLeTBCIrSWrE8-qI3nwy9JC3X9J0aPB1hB">Watch</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("../footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+    </div>
+  </body>
+</html>
