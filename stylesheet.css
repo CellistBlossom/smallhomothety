@@ -493,7 +493,7 @@ font-family: Helvetica;
 #events-container {
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 }
 
 .eventstablecontainer table, .eventstablecontainer th, .eventstablecontainer td {
@@ -510,7 +510,7 @@ background:
 font-family: "Rubik", sans-serif;
 font-size: 18px;
 background: #e4e1ff;
-width: 200px;
+width: 300px;
 }
 
 .eventstablecontainer a {
