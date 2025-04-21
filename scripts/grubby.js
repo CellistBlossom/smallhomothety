@@ -10,6 +10,7 @@ const GRUB_IMAGES = [
 	["images/blomgrub.png", "a blomgrub"],
 	["images/purpgrub.png", "a purple grub"],
 	["images/grubchu.png", "a grubchu"],
+	["images/grumbchu.png", "a grumbchu"],
 	["images/arg.png", "an alternate reality grub"],
 	["images/aggrub.png", "an aagrub"],
 ]
@@ -1539,7 +1540,7 @@ button.addEventListener("click", function() {
     document.getElementById("food").innerHTML = GRUB_FOODSTUFFS[Math.floor((Math.random() * GRUB_FOODSTUFFS.length))];
     document.getElementById("personality").innerHTML = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))];
     var grubbyImageData = GRUB_IMAGES[Math.floor((Math.random() * GRUB_IMAGES.length))];
-    grubbyImage.innerHTML = `<img src=${grubbyImageData[0]} alt=${grubbyImageData[1]} height="100px" width="100px">`;
+    grubbyImage.innerHTML = `<img src=${grubbyImageData[0]} alt="${grubbyImageData[1]}" height="100px" width="100px">`;
 
     // Special case: flip if upside-down grub
     if (name == "Upside-Down Grub") {
