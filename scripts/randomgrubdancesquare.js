@@ -4,6 +4,7 @@ const grubDances = [
 	["../images/purpgrubDance.gif", "a dancing purple grub"],
 	["../images/sourgrubdance.gif", "a dancing sourgrub"],
 	["../images/grubchuDance.gif", "a dancing grubchu"],
+	["../images/grumbchuDance.gif", "a dancing grumbchu"],
 ]
 
 function generateSquare() {
