@@ -533,6 +533,12 @@ font-size: 25px;
 font-weight: bold;
 }
 
+#hksceventstableheader-2 {
+font-family: "Rubik", sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+
 #events-container-container {
 display: flex;
 flex-direction: column;
