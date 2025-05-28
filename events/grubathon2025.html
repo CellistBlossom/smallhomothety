@@ -24,11 +24,11 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Grub-a-Thon is a Hollow Knight community-led speedrunning marathon all about saving grubs!">
+  <meta name="description" content="Grub-a-Thon is a Hollow Knight speedrunning community-led charity marathon all about saving grubs, benefiting the ACLU!">
   <!-- for discord embeds-->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Grub-a-Thon 2025" />
-  <meta property="og:description" content="Learn all about the 2025 Hollow Knight grub-a-thon event led by the speedrunning and randomizer community, raising money for charity!" />
+  <meta property="og:description" content="Learn all about the 2025 Hollow Knight grub-a-thon event led by the speedrunning and randomizer community, raising money for the ACLU!" />
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/grubathon2025" />
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -39,6 +39,53 @@
       margin-right:auto;
       padding-bottom:5px;
     }
+
+    .donation-block {
+      margin-top:20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+      width: 400px;
+      background-color: #e4e1ff;
+      border-style: dotted;
+      border-radius: 10px;
+      border-width: 5px;
+      border: 5px dotted #e4e1ff;
+      background:
+        linear-gradient(#e4e1ff 0 0) padding-box,
+        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    }
+
+    #incentive-list {
+      text-align:left;
+    }
+
+    .schedule-image-grubathon {
+      height:540px;
+      width:960px;
+    }
+
+    @media only screen and (max-width: 1300px) {
+    .schedule-image-grubathon {
+      height:378px;
+      width:672px;
+    }
+    }
+
+   @media only screen and (max-width: 950px) {
+    .schedule-image-grubathon {
+      height:270px;
+      width:480px;
+    }
+    }
+
+    @media only screen and (max-width: 500px) {
+    .schedule-image-grubathon {
+      height:216px;
+      width:384px;
+    }
+    }   
   </style>
 </head>
 
@@ -63,10 +110,11 @@
       <div class="events">
         <h1 id="header">Grub-a-Thon 2025</h1>
         <div id="body">
-        <p>We're bringing back Grub-a-Thon for 2025! The event will take place on June 7th, 2025. As part of our annual "Happy Couple" fundraiser, we'll be raising money for an LGBTQ+ charity as well (exact details TBA).</p>
-        <p>Grub-a-Thon is all about saving grubs! We'll be running a bunch of grub-themed speedrinning categories and randomizer formats. Yippee grubbies!!!!!</p>
+        <p>We're bringing back Grub-a-Thon for 2025! The event will take place on June 7th, 2025. As part of the speedrunning community's annual Happy Couple fundraiser, we'll be raising money for the <a href="https://www.aclu.org/">ACLU</a>, a charity dedicated to protecting the rights of minorities, including those of the LGBTQ+ community.</p>
+        <p>As for the runs included, Grub-a-Thon is all about saving grubs! We'll be running a bunch of grub-themed speedrunning categories and randomizer formats. Yippee grubbies!!!!!</p>
         <p class="p-biggerer"><a href="https://www.twitch.tv/hollowknightcommunity">HKC Twitch</a></p>
         <p>The schedule for the event is below. Please keep in mind that the schedule is subject to change.</p>
+        <img class="schedule-image-grubathon" src="/images/events/Grub_Day_Schedule.png" alt="An image with the grub-a-thon schedule. Schedule transcript is in the table below.">
         <img src="/images/GrubLove.png" alt="grublove" height="80px" width="80px" id="grublove">
         <br>
         <div class="schedule-list">
@@ -83,21 +131,21 @@
                 <td>10:00am EDT</td>
                 <td>Grubsong% NMG Race</td>
                 <td>Runners: Aksel, chiki, Jasmine, Jony</td>
-                <td>Comms: Ax2u</td>
+                <td>Comms: Ax, Vexsance</td>
               </tr>
               <tr>
                 <td>2:30pm UTC</td>
                 <td>10:30am EDT</td>
                 <td>2v2 Grub Hunt Rando</td>
                 <td>Runners: kamakiller, Tim, Phia, aggy</td>
-                <td>Comms: TBA</td>
+                <td>Comms: Azerod</td>
               </tr>
               <tr>
                 <td>5:00pm UTC</td>
                 <td>1:00pm EDT</td>
                 <td>Who% Glitch Set Relay Race</td>
                 <td>Runners: Timberfy, Jasmine, ff300, meemee, Blossom, chiki</td>
-                <td>Comms: Jony</td>
+                <td>Comms: Jony, aPress</td>
               </tr>
               <tr>
                 <td>6:00pm UTC</td>
@@ -107,11 +155,19 @@
                 <td>Comms: Birdie, aggy</td>
               </tr>
               <tr>
+              <td>7:45pm UTC</td>
+              <td>3:45pm EDT</td>
+              <td><strong>**INCENTIVE**</strong> Grub Story Time!</td>
+              <td>Read by The Grub Gamer</td>
+              <td>Written by Herm</td>
+            </tr>
+
+              <tr>
                 <td>8:00pm UTC</td>
                 <td>4:00pm EDT</td>
                 <td>All Grubs All Glitches</td>
                 <td>Runners: Eisog, aggy, meemee, scorp</td>
-                <td>Comms: aPress</td>
+                <td>Comms: aPress, ff</td>
               </tr>
               <tr>
                 <td>8:45pm UTC</td>
@@ -121,14 +177,53 @@
                 <td>Comms: herm, overclock</td>
               </tr>
               <tr>
+                <td>11:15pm UTC</td>
+                <td>7:15 EDT</td>
+                <td><strong>**INCENTIVE**</strong> Scattered and Lost IL Showcase Race</td>
+                <td>Runners: Blossom, aPress</td>
+                <td>Comms: kamakiller, purenail</td>
+              </tr>
+              <tr>
                 <td>11:30pm UTC</td>
                 <td>7:30pm EDT</td>
                 <td>Happy Couple NMG</td>
                 <td>Runners: Fruno, cerpin</td>
+                <td>Comms: oatmille, krysanthemoof</td>
+              </tr>
+              <tr>
+                <td>1:15am UTC</td>
+                <td>9:15pm EDT</td>
+                <td><strong>**INCENTIVE**</strong> All Grubs Hitless Showcase</td>
+                <td>Runner: Dethlss</td>
+                <td>Comms: Quatopine</td>
+              </tr>
+              <tr>
+                <td>3:30am UTC</td>
+                <td>10:30pm EDT</td>
+                <td><strong>**INCENTIVE**</strong> Salubra’s Blessing Random Charm Order Showcase</td>
+                <td>Runners: Birdie, Vexsance</td>
+                <td>Comms: TheMasochistGamer</td>
+              </tr>
+              <tr>
+                <td>6:30am UTC</td>
+                <td>2:30am EDT</td>
+                <td><strong>**INCENTIVE**</strong> iBaldur Grubsong Race</td>
+                <td>Runners: TBA</td>
                 <td>Comms: TBA</td>
               </tr>
             </table>
           </div>
+        </div>
+       <h2>Donation Incentives!!!!!!!!</h2>
+       <p>These will only happen if we meet the donation threshold before the time they're scheduled for!</p>
+       <img class="schedule-image-grubathon" src="/images/events/Grub_Day_incentives.png" alt="An image with the list of grub-a-thon incentives. Transcript is in the table below.">
+        <div class="donation-block">
+          <div id="incentive-list">
+          <p>$200 - Storytime with The Grub Gamer</p>
+          <p>$400 - Scattered and Lost Individual Level showcase by Blossom and aPress</p>
+          <p>$600 - All Grubs Hitless Showcase by Dethlss</p>
+          <p>$800 - Salubra’s Blessing Random Charm Order by BirdiestBlue</p>
+          <p>$1,000 - iBaldur Grubsong Race</p></div>
         </div>
       </div>
     </div>
