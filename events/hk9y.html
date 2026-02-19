@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK9Y</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="HK9Y is the community-led speedrunning marathon to celebrate the Hollow Knight 9th anniversary. HK9Y will include main board, category extension, randomizer, and vanilla bingo showcases!">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 9th Anniversary" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 9th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk9y" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-list").load("/eventsnav.html");
+    });
+  </script>
+  <div id="main-container">
+  <div id="events-container-container">
+    <div id="events-container">
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Hollow Knight 9th Anniversary Celebration</h1>
+        <div id="body">
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/events/hk9y'"><a href="/events/hk9y">Main Event</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk9y/memeday'"><a href="/events/hk9y/memeday">Meme Day</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk9y/randoday'"><a href="/events/hk9y/randoday">Rando Day</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk9y/bingyday'"><a href="/events/hk9y/bingyday">Bingy Day</a> </button>
+        </div>
+        <p>HK9Y is the Hollow Knight 9th anniversary event! The event will be spread out over the course of four days: main day, meme day, rando day, and bingy day. The main event will take place on February 21st, 2026 starting at 2:00pm UTC (9:00am EST).</p>
+        <div id="twitch-embed"></div>
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: "80%",
+            height: 600,
+            channel: "hollowknightcommunity",
+            parent: ["smallhomothetyorganization.org"]
+          });
+        </script>
+        <p>The schedule for the main event is below. Credit to dragon_nyx for the cool png version!</p>
+        <img id="schedule-image-hk7y" src="/images/events/hk9y/HK9Y_Main_Day.png" alt="An image with the HK9Y main day schedule. Schedule transcript is in the table below.">
+        <br>
+        </script>
+        <div class="schedule-list">
+          <h2>Main Event Schedule</h2>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>2:00pm UTC</td>
+                <td>9:00am EST</td>
+                <td>Setup/Intro</td>
+              </tr>
+              <tr>
+                <td>2:05pm UTC</td>
+                <td>9:05am EST</td>
+                <td>True Ending All Glitches Showcase</td>
+                <td>Runners: Blossom, Eisog, Lern</td>
+                <td>Comms: Ff300, Priidik</td>
+              </tr>
+              <tr>
+                <td>2:50pm UTC</td>
+                <td>9:50am EST</td>
+                <td>LP All Skills Race</td>
+                <td>Runners: Vexsance, Klapudo</td>
+                <td>Comms: Priidik, Jony</td>
+              </tr>
+              <tr>
+                <td>4:05pm UTC</td>
+                <td>11:05am EST</td>
+                <td>1028 Any% NMMS Race</td>
+                <td>Runners: SavyNov, Ekkoet, Krythom, Lern</td>
+                <td>Comms: May, Meemee</td>
+              </tr>
+              <tr>
+                <td>4:50pm UTC</td>
+                <td>11:50am EST</td>
+                <td>True Ending NMMS Showcase</td>
+                <td>Runner: Ff300</td>
+                <td>Comms: meemee, chikituti</td>
+              </tr>
+              <tr>
+                <td>5:30pm UTC</td>
+                <td>12:30pm EST</td>
+                <td>Any% NMG VS Route Race</td>
+                <td>Runners: zVypurr, JackmanMarcus, Stratus, Glafish</td>
+                <td>Comms: Taiga, Shadow</td>
+              </tr>
+              <tr>
+                <td>6:15pm UTC</td>
+                <td>1:15pm EST</td>
+                <td>Hitless True Ending Showcase</td>
+                <td>Runner: Dethlss</td>
+                <td>Comms: castlemind, overclock</td>
+              </tr>
+              <tr>
+                <td>8:15pm UTC</td>
+                <td>3:15pm EST</td>
+                <td>Silksong Any% (Mist vs Bells)</td>
+                <td>Runners: Popless, CYV, Taiga, Golem</td>
+                <td>Comms: Ivy, Scotty</td>
+              </tr>
+              <tr>
+                <td>9:20pm UTC</td>
+                <td>4:20pm EST</td>
+                <td>112% APB Boomer vs Zoomer</td>
+                <td>
+                  <p>Team Boomer: Maso, Priidik, Quatopine, jo1215, Gusten, Kuroshi, May, cerpin, Aksel, Noodles, cronster, Skitter</p>
+                  <p>Team Zoomer: Taiga, Olvior, Jony, Ff300, Scotty, Disney, DUUScarlet, Green_Yogurt, Cara, Pilky, Wand, Jasmine</p>
+                </td>
+                <td>Comms: A lot of people</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>

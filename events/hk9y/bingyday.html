@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HK9Y Bingy Day</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="HK9Y is the community-led speedrunning marathon to celebrate the Hollow Knight 9th anniversary. HK9Y will include main board, category extension, randomizer, and vanilla bingo showcases!">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hollow Knight 9th Anniversary Bingy Day" />
+  <meta property="og:description" content="Learn all about the Hollow Knight 9th anniversary event led by the speedrunning and randomizer community!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/hk9y/bingyday" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#events-list").load("/eventsnav.html");
+    });
+  </script>
+  <div id="main-container">
+  <div id="events-container-container">
+    <div id="events-container">
+      <div id="events-list">
+      </div>
+      <div class="events">
+        <h1 id="header">Hollow Knight 9th Anniversary Celebration</h1>
+        <div id="body">
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/events/hk9y'"><a href="/events/hk9y">Main Event</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk9y/memeday'"><a href="/events/hk9y/memeday">Meme Day</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk9y/randoday'"><a href="/events/hk9y/randoday">Rando Day</a> </button>
+          <button class="submenubtn" onclick="location.href='/events/hk9y/bingyday'"><a href="/events/hk9y/bingyday">Bingy Day</a> </button>
+        </div>
+        <p>HK9Y is the Hollow Knight 9th anniversary event! The event will be spread out over the course of four days: main day, meme day, rando day, and bingy day. Bingy day will take place on February 18st, 2026 starting at 2:00pm UTC (9:00am EST).</p>
+        <div id="twitch-embed"></div>
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: "80%",
+            height: 600,
+            channel: "hollowknightcommunity",
+            parent: ["smallhomothetyorganization.org"]
+          });
+        </script>
+        <p>The schedule for the main event is below. Credit to dragon_nyx for the cool png version!</p>
+        <img id="schedule-image-hk7y" src="/images/events/hk9y/HK9Y_Bingy_Day.png" alt="An image with the HK9Y bingy day schedule. Schedule transcript is in the table below.">
+        <br>
+        </script>
+        <div class="schedule-list">
+          <h2>Bingy Day Schedule</h2>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>2:00pm UTC</td>
+                <td>9:00am EST</td>
+                <td>Setup/Intro</td>
+              </tr>
+              <tr>
+                <td>2:15pm UTC</td>
+                <td>9:15am EST</td>
+                <td>3-Line</td>
+                <td>Runners: Cadezek, Gori, Wand</td>
+                <td>Comms: SpilledOJ, Ellelio</td>
+              </tr>
+              <tr>
+                <td>3:30pm UTC</td>
+                <td>10:30am EST</td>
+                <td>1v1 Lockout</td>
+                <td>Runners: Cara, Cron</td>
+                <td>Comms: SpilledOJ, Maso</td>
+              </tr>
+              <tr>
+                <td>4:30pm UTC</td>
+                <td>11:30am EST</td>
+                <td>Puzzle</td>
+                <td>Participants: Alph4, Cron, Ellelio</td>
+              </tr>
+              <tr>
+                <td>5:00pm UTC</td>
+                <td>12:00pm EST</td>
+                <td>Blomgy</td>
+                <td>Runners: ValeMK, Throwout123, Shadow</td>
+                <td>Comms: Wand, Jalepino Joe</td>
+              </tr>
+              <tr>
+                <td>6:00pm UTC</td>
+                <td>1:00pm EST</td>
+                <td>Hand-Brain Lockout</td>
+                <td>Runners: Cara and Shadow vs Cron and Ellelio</td>
+                <td>Comms: SpilledOJ, ilyssa</td>
+              </tr>
+              <tr>
+                <td>7:00pm UTC</td>
+                <td>2:00pm EST</td>
+                <td>Line Block Bingy</td>
+                <td>Runners: ValeMK, Gori, Jalepino Joe</td>
+                <td>Comms: Shadow, Overclock</td>
+              </tr>
+              <tr>
+                <td>7:40pm UTC</td>
+                <td>2:40pm EST</td>
+                <td>Blackout</td>
+                <td>Runners: Cadezek, Throwout123</td>
+                <td>Comms: Ellelio, jony</td>
+              </tr>
+              <tr>
+                <td>8:40pm UTC</td>
+                <td>3:40pm EST</td>
+                <td>Puzzle</td>
+                <td>Participants: TheMathGeek_314, Noodles</td>
+              </tr>
+              <tr>
+                <td>9:00pm UTC</td>
+                <td>4:00pm EST</td>
+                <td>Itemsync Blackout</td>
+                <td>Runners: Cron, Wand</td>
+                <td>Comms: ValeMK, jony</td>
+              </tr>
+              <tr>
+                <td>10:00pm UTC</td>
+                <td>5:00pm EST</td>
+                <td>Casual Galaxy</td>
+                <td>Runners: Throwout123, Cadezek, choombert, jony</td>
+                <td>Comms: herm, Jalepino Joe</td>
+              </tr>
+              <tr>
+                <td>11:00pm UTC</td>
+                <td>6:00pm EST</td>
+                <td>Puzzle Galaxy</td>
+                <td>Runners: Quatopine, Jalepino Joe, Cadezek, Cron</td>
+                <td>Comms: spleen, Shadow</td>
+              </tr>
+              <tr>
+                <td>12:00am UTC</td>
+                <td>7:00pm EST</td>
+                <td>Wingy</td>
+                <td>Runners: Blossom, aPress, aggy, nerthul</td>
+                <td>Comms: TheMathGeek_314, Nopre</td>
+              </tr>
+              <tr>
+                <td>1:30am UTC</td>
+                <td>8:30pm EST</td>
+                <td>Hand-Brain Lockout</td>
+                <td>Runners: Aksel and Cron vs Gaubbe and Cara</td>
+                <td>Comms: Ellelio, Throwout123, Shadow</td>
+              </tr>
+              <tr>
+                <td>2:30am UTC</td>
+                <td>9:30pm EST</td>
+                <td>Fraction</td>
+                <td>Runners: Throwout123, choombert, Gaubbe</td>
+                <td>Comms: Gori, herm</td>
+              </tr>
+              <tr>
+                <td>3:30am UTC</td>
+                <td>10:30pm EST</td>
+                <td>Pictionary</td>
+                <td>Runners: Shadow, Aksel, Gaubbe</td>
+                <td>Comms: SpilledOJ, overclock</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>
