@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vanilla Hand/Brain Lockout Tournament 2026</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="The 2026 Hollow Knight Vanilla Bingy Hand/Brain Lockout tournament was a bingo tournament hosted by the speedrunning community.">
+    <!-- for discord embeds-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vanilla Bingy Hand/Brain Lockout Tournament 2026" />
+    <meta property="og:description" content="Learn all about the 2026 vanilla lockout bingo tournament for Hollow Knight!" />
+    <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/vanillalockout2026" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="Javascript">
+      function toggleMenu(currMenu) {
+        if (document.getElementById) {
+          thisMenu = document.getElementById(currMenu).style
+          if (thisMenu.display == "block") {
+            thisMenu.display = "none"
+          } else {
+            thisMenu.display = "block"
+          }
+          return false
+        } else {
+          return true
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div id="main-container">
+    <div id="events-container-container">
+      <div id="events-container">
+        <script>
+          $(document).ready(function() {
+            $("#events-list").load("/eventsnav.html");
+          });
+        </script>
+        <div id="events-list">
+        </div>
+        <div class="events">
+          <h1 id="header">Vanilla Hand/Brain Lockout Tournament 2026</h1>
+          <div id="body">
+            <p>The 2026 vanilla hand/brain tournament will begin in mid-March! The tournament will start off with a Swiss stage, and the top 8 teams from that stage will progress to a double-elimination bracket. Matches will be restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity Twitch channel</a> when the time comes.</p> 
+            <p>Lockout is a bingo format where only one player or team can mark each goal, with the other one being "locked out" of it after it's been marked. The first team to get 13 goals wins! Unlike in randomizer, vanilla bingo lockout can alternatively be won by obtaining five goals in a row, column, or diagonal.</p> 
+            <p>Hand/brain is a way of playing bingo that adds a twist to this: one player on a team is playing the game and is not allowed to look at the bingo board, while the other player can see the bingo board and does all of the routing for the hand. Goals are marked for the "hand" by either an automarking mod or the "brain", so they won't necessarily know what they've marked until the end. Teammates are allowed to swap roles between matches, i.e. no one is required to play as hand or brain for the entire tournament.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+    </div>
+  </body>
+</html>

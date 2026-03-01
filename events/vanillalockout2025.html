@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vanilla Lockout Tournament 2025</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="The 2025 Hollow Knight Vanilla Bingy tournament was a bingo tournament hosted by the vanilla bingo and speedrunning communities. The tournament ran from June 24th to September 29th, 2025.">
+    <!-- for discord embeds-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vanilla Bingy Lockout Tournament 2025" />
+    <meta property="og:description" content="Learn all about the 2025 vanilla lockout bingo tournament for Hollow Knight!" />
+    <meta property="og:url" content="https://www.smallhomothetyorganization.org/events/vanillalockout2025" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="Javascript">
+      function toggleMenu(currMenu) {
+        if (document.getElementById) {
+          thisMenu = document.getElementById(currMenu).style
+          if (thisMenu.display == "block") {
+            thisMenu.display = "none"
+          } else {
+            thisMenu.display = "block"
+          }
+          return false
+        } else {
+          return true
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div id="main-container">
+    <div id="events-container-container">
+      <div id="events-container">
+        <script>
+          $(document).ready(function() {
+            $("#events-list").load("/eventsnav.html");
+          });
+        </script>
+        <div id="events-list">
+        </div>
+        <div class="events">
+          <h1 id="header">Vanilla Hand/Brain Lockout Tournament 2025</h1>
+          <div id="body">
+            <p>This tournament, sometimes known as "vanilla bingy tournament 3", was a double-elimination lockout tournament that ran from June 24th to September 29th, 2025.</p>
+            <p>Lockout is a bingo format played on a 5x5 bingo board. When one person marks a goal, the other player is "locked out" of it and can no longer mark it. For vanilla bingo, the first player to reach 13 goals or obtain 5 goals on the same row, column, or diagonal wins!</p>
+            <p>The tournament began with a two-week period of matches that were used to determine seeding. It was followed by a double-elimination bracket phase, which was restreamed on the <a href="https://www.twitch.tv/hollowknightcommunity">HollowKnightCommunity Twitch channel</a> and is now archived on Youtube.</p>
+            <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
+            <span class="menu" id="menu1">
+              <div>
+                <p>The winners of this tournament were Staxis in first place, Cron in second place, and Lecipotte in third place.</p>
+              </div>
+            </span>
+            <p class="p-bigger"><a href="https://www.youtube.com/playlist?list=PLeTBCIrSWrE-8hURQ3ZNDElopzKbUvfrz">Watch</a></p>
+            <p class="p-bigger"><a href="https://hk-tournaments.web.app/">Bracket</a></p>
+            <p class="p-bigger"><a href="https://docs.google.com/document/d/1nnGK39oN6RqKxE2Kh_y1nW81r-FC8e_37XP5TDExevs/edit?tab=t.0#heading=h.m9a1a5vu2u88">Rules</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+    </div>
+  </body>
+</html>
