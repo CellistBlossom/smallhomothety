@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Silksong Events</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/silksong-stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/flea/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/flea/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/flea/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/flea/site.webmanifest">
+    <!-- for discord embeds-->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Silksong Events" />
+<meta property="og:description" content="Learn all about the community-led speedrunning and randomizer events for Hollow Knight: Silksong!" />
+<meta property="og:url" content="https://www.smallhomothetyorganization.org/silksong/events" />
+<meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/flea.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+          $("#navbar").load("/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div id="main-container">
+    <div id="events-container-container">
+      <div id="events-container">
+        <script>
+          $(document).ready(function() {
+            $("#events-list").load("/silksong/events/eventsnav.html");
+          });
+        </script>
+        <div id="events-list">
+        </div>
+        <div class="events">
+          <h1 id="header">Under Construction</h1>
+          <div id="body">
+            <img src="/images/KnightBuild.png" alt="Knightbuild">
+            <p>Wow, Silksong is finally here! As funny as it sounds, I didn't plan for that when making this website, so it'll be a bit before I have a section dedicated to it ready to go.</p>
+            <p>Feel free to check back later! And in the meantime, you can check out the Silksong <a href="/silksong/events/any2025">any% tourney!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+   </script>
+  <div id="footer"> </div></div>
+  </body>
+</html>

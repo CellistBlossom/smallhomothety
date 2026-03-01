@@ -1,0 +1,147 @@
+a {
+    color:#e4105a;
+}
+
+a:hover {
+    color:#E42F10;
+}
+
+/* For top navigation menu: Silksong edition */
+
+.dropbtn {
+  background-color: #9e432e;
+  color: white;
+}
+
+.dropbtn a {
+  color: #F9F6EE;
+}
+
+.dropbtn a:hover {
+  color: #e88c67;
+}
+
+.dropdown-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.dropdown-content a {
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #E4E4E4;
+  color: #E583AB;
+}
+
+.dropbtn:hover {
+  background-color: #522218;
+}
+
+.navigationmenu {
+  background-color: #f2beaa;
+  border: 2px solid #ffeede;
+}
+
+/* footer */
+
+
+#footer-navigation {
+  background-color:#f2beaa;
+}
+
+#footer-reminder  p {
+  color: #e4105a;
+}
+
+.footer-btn {
+  background-color: #f2beaa;
+  color: white;
+}
+
+.footer-btn a {
+  color: #e4105a;
+}
+
+.footer-btn:hover {
+  background-color:#522218;
+}
+
+.footer-btn a:hover {
+  color:white;
+}
+
+#footer {
+  margin-top:5px;
+}
+
+/* For the "top" button */
+
+.top-container {
+  color:transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.top {
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  justify-self:center;
+  width: 120px;
+  text-align:center;
+  font-family: "Josefin Sans", sans-serif;
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 100px;
+  border: 5px dotted white;
+  background:
+    linear-gradient(white 0 0) padding-box,
+    linear-gradient(to right, #e4105a, #E42F10, #e4105a, #E42F10) border-box;
+}
+
+.top a {
+  color:#e4105a;
+}
+
+.top a:hover {
+  color:#E42F10;
+}
+
+/* For event flexbox */
+.eventstablecontainer {
+    min-height: 100vh; 
+}
+
+.eventstablecontainer table {
+background: #FCE7EE;
+}
+
+.eventstablecontainer table .blank {
+    height:50vh;
+}
+
+.eventstablecontainer table, .eventstablecontainer th, .eventstablecontainer td {
+border: 5px dotted #FCE7EE;
+background:
+  linear-gradient(#FCE7EE 0 0) padding-box,
+  linear-gradient(to right, #e4105a, #E42F10, #e4105a, #E42F10) border-box;
+}
+
+.eventstablecontainer table {
+background: #e4e1ff;
+}
+
+.eventstablecontainer a {
+color: #E42F10;
+}
+
+.eventstablecontainer a:hover {
+color: #e4105a;
+}
