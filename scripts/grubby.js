@@ -13,6 +13,8 @@ const GRUB_IMAGES = [
 	["images/grumbchu.png", "a grumbchu"],
 	["images/arg.png", "an alternate reality grub"],
 	["images/aggrub.png", "an aagrub"],
+  ["images/mothgrub.png", "A moth grub"],
+  ["images/pengrub.png", "A penguin grub"]
 ]
 
 const GRUB_NAMES = [
@@ -1391,7 +1393,7 @@ const MIMIC_FOODSTUFFS = [
   'Flukefin Soup',
   'Violet Confit',
   'Grubhoney',
-  'Grub Cake',
+  'Grub-style Cake',
   'Mosskin Egg',
   'Glowing Egg',
   'Great Slashshroom',
@@ -1446,7 +1448,8 @@ const MIMIC_FOODSTUFFS = [
   'Hiveborn Soup',
   'Deepnest Delights',
   'Sharp Shadows',
-  'Fungal Wastes Mushrooms'
+  'Fungal Wastes Mushrooms',
+  'Soup'
 ];
 const MIMIC_PERSONALITIES = [
   'Cunning',
