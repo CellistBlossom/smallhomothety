@@ -6,7 +6,19 @@ const grubbyImage = document.getElementById("grubby-image");
 var petCounter = 0;
 document.getElementById("pet-counter").innerHTML = "Pets given: " + petCounter;
 
-grubbyImage.addEventListener("click", petTheGrub);
+var lasttimestamp = 0;
+grubbyImage.addEventListener("mousemove", function(event) {
+	const diff = event.timeStamp -	lasttimestamp;
+	if (lasttimestamp == 0) {
+		lasttimestamp = event.timeStamp;
+	}
+	else if (diff >= 2000) {
+		if (diff < 2500) {
+			petTheGrub();
+		}
+		lasttimestamp = event.timeStamp;
+	}
+})
 
 function petTheGrub() {
     meemawmaw.play();
