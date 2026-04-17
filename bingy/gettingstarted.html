@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bingy | Getting Started</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Bingy is an umbrella term for a collection of gamemodes played within Hollow Knight with a bingo board. These tutorials and resources can help a new bingy player to jump right in!">
+  <!-- for discord embeds-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Getting Started" />
+  <meta property="og:description" content="Getting started with Hollow Knight bingy!" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/bingy/gettingstarted" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#bingynavbar").load("/bingy/bingynav.html");
+    });
+  </script>
+  <div id="bingynavbar">
+
+  </div>
+  <div id="main-container">
+  <h1 id="header">Getting Started with Bingy!</h1>
+  <div id="body">
+    <div class="body-text-align-left">
+      <p>BINGY</p>
+      <p>Hollow Knight Bingy (Vanilla Bingo) is a way of playing Hollow Knight where you generate a 5-by-5 board of bingo goals, and try to complete some amount of goals on that board as fast as possible. 
+        The specific goal of the bingy depends on the format, which can be solo, competitive, or collaborative. To read more about these, visit the <a href="/bingy/formats">formats</a> page!
+    </p>
+      <p>
+        If this is your first time playing Bingy, I would recommend starting with the <a href="/bingy/mods">mods</a> page to get set up. Once you've installed the correct mods, you'll need to create a
+        room in <a href="https://bingosync.com/">Bingosync</a>. It doesn't actually matter what game you select, since you can just generate a new board from inside Hollow Knight once it's open, though there is a Hollow Knight option.
+        Once you've launched the game, make sure to familiarise yourself with your BingoSync hotkeys - you can change them if you want, just make sure you remember what they are! The mods page will have more detail on how to use BingoSync,
+        but the basic gist is to paste the link to the room you created, add a nickname, enter the password (it's always "fast"), and (optionally) generate a board. Now you can enter a new vanilla save file, reveal the board, and start playing!
+      </p>
+      <p>
+        If you plan to race other people in 3-line, or play a lockout format, you should probably read over the <a href="/bingy/rules">rules</a>. You might want to play a format with Itemsync, and 
+        the <a href="/rando/itemsyncguide">itemsync guide</a> has a good explanation on how to do that (though you'll want to randomise nothing and select "Sync Vanilla Items"). If you're looking for people to play with or against,
+        make sure to join the <a href="https://discord.gg/qwd4EtY3Kj">Official Bingy Discord</a>!
+      </p>
+      <p>
+        There are lots of things you can do to optimize your speed in a bingy, the biggest factors being routing, movement, and skips. References for the latter two can be found on the <a href="/bingy/skips">skips</a> page,
+        and the <a href="/bingy/resources">resources</a> page includes links to a few different guides.
+      </p>
+      <p></p>
+    </div>
+  <img src="../images/BINGY.png" alt="A mosscreep" height="100px" width="100px" />
+</div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>

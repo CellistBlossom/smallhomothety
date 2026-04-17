@@ -31,6 +31,89 @@
 <meta property="og:url" content="https://www.smallhomothetyorganization.org/bingy" />
 <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+    img {
+      padding-top: 25px;
+    }
+    
+    .important {
+      text-align: center;
+    }
+
+    .rando-container {
+      width: 75%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .rando-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .randowhatsnew {
+      padding-top: 10px;
+      width: 400px;
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
+      background-color: #e1ffe4;
+      border-style: dotted;
+      border-radius: 10px;
+      border-width: 5px;
+      border: 5px dotted #e1ffe4;
+      background:
+        linear-gradient(#e1ffe4 0 0) padding-box,
+        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    }
+
+    .randowhatsnew p {
+      font-size: 16px;
+    }
+
+    .randonews {
+      padding-top: 10px;
+      width: 400px;
+      background-color: #e4e1ff;
+      border-style: dotted;
+      border-radius: 10px;
+      border-width: 5px;
+      border: 5px dotted #e4e1ff;
+      background:
+        linear-gradient(#e4e1ff 0 0) padding-box,
+        linear-gradient(to right, #E583AB, #83abe5, #E583AB, #83abe5) border-box;
+    }
+
+    .h2-smaller {
+      font-family: "Rubik", sans-serif;
+    }
+
+    .newstext {
+      text-align: left;
+    }
+
+    .newsdate {
+      font-family: "Rubik", sans-serif;
+      font-weight: bold;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .rando-container {
+        width: 90%;
+      }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+      .rando-container {
+        width:  100%;
+      }
+    }
+  </style>
+</head>
   </head>
   <body>
     <script>
@@ -47,10 +130,28 @@
   </script>
   <div id="bingynavbar"></div>
     <div id="main-container">
-    <h1 id="header">Under Construction</h1>
+    <h1 id="header">BINGY!</h1>
     <div id="body">
-    <img src="images/sip.png" alt="Sip">
-    <p>Bingy! Coming soon to a webbed site near you.</p>
+    <img src="images/BINGY.png" alt="BINGY">
+    <p><strong><em>What is Bingy?</em></strong> Bingy is the commonly-used term to refer to Vanilla Hollow Knight Bingo (Vanilla meaning non-randomized, not unmodded). Bingo is played on a 5-by-5 board of squares each containing a goal, which is to be completed within the Hollow Knight game. Typically, the goal of bingy is to complete an objective as fast as possible. The specific objective depends on the format - read more about formats <a href="/bingy/formats">here</a>. Those new to bingy should check out the <a href="/bingy/gettingstarted">Getting Started</a> page!</p>
+    <h2><a href="https://discord.gg/qwd4EtY3Kj" class="p-bigger">Join the Official Bingy Discord</a></h2>
+    <div class="rando-flex">
+      <div class="randowhatsnew">
+          <h2 class="h2-smaller">What's new?</h3>
+            <img src="/images/wobblebramble.gif" alt="wobblebramble">
+        <div class="newstext">
+        </div>
+      </div>
+      <div class="randonews">
+        <div class="randonewsinside">
+          <h2 class="h2-smaller">Bingy News</h2>
+          <div class="newstext">
+            <p class="newsdate">February 2026</p>
+            <p>A bingy tournament has been announced! <a href="/events/vanillalockout2026">Tournament 4</a> is the fourth lockout tournament, and the second hand/brain tournament.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <script>
       $(document).ready(function(){

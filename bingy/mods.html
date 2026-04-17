@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bingy | Mods</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="How to install Hollow Knight bingy mods with Scarab, Lumafly, or manually.">
+  <!-- for discord embeds-->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mods" />
+<meta property="og:description" content="How to install Hollow Knight bingy mods." />
+<meta property="og:url" content="https://www.smallhomothetyorganization.org/bingy/mods" />
+<meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style media="screen">
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function(){
+        $("#navbar").load("/nav.html");
+    });
+  </script>
+  <div id="navbar">
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#bingynavbar").load("/bingy/bingynav.html");
+    });
+  </script>
+  <div id="bingynavbar">
+
+  </div>
+  <div id="main-container">
+  <h1 id="header">Mods for Bingy!</h1>
+  <script type="text/javascript" language="Javascript">
+    function toggleMenu(currMenu) {
+      if (document.getElementById) {
+        thisMenu = document.getElementById(currMenu).style
+        if (thisMenu.display == "block") {
+          thisMenu.display = "none"
+        } else {
+          thisMenu.display = "block"
+        }
+        return false
+      } else {
+        return true
+      }
+    }
+  </script>
+  <div id="body">
+  <p><a class="menulink" onclick="return toggleMenu('menu100')">Click to Navigate this Guide! ▶</a></p>
+  <span class="menu" id="menu100">
+    <div class="list list-square list-centered">
+      <p><a href="#header">Introduction</a></p>
+      <p><a href="#required">Required Mods</a></p>
+      <p><a href="#additional">Additional Mods</a></p>
+      <p><a href="#fun">Cosmetic Mods!</a> </p>
+    </div>
+  </span>
+  <p>Required/Highly Recommended mods for Bingy!</p>
+  <p>(note: some required mods are not on this list but will be downloaded as dependencies for other mods that are on the list):</p>
+  <h2>How do I mod Hollow Knight?</h2>
+  <p>Modding Hollow Knight is really easy! Firstly, if you'd like to install debug mod, or downpatch for a speedrun,
+    please refer to the <a href="https://speedrun.com/hollowknight/guides/">Hollow Knight Speedrun.com Page.</a></p>
+  <p>First, install the <a href="https://github.com/hk-modding/api">Hollow Knight Modding API</a>. Download the zip file in the releases page, and
+    drag the contents into your Hollow Knight's /hollow_knight_Data/Managed/ folder. This information can also be found in the zip file's Readme.md.</p>
+  <p>Finally, you can either manually install mods by downloading the individual mods and placing them in the /Managed/Mods folder, or by installing Lumafly (formerly known as "Scarab+") or Scarab!
+    <br>Scarab or Lumafly are Hollow Knight's dedicated Mod Installers. They include a large database of Hollow Knight mods that you can download,
+    and it will directly place it into your mods folder. They can be found at the links below.</p>
+  <div class="row">
+    <div class="column">
+      <h2><a href="https://themulhima.github.io/Lumafly/index.html">Lumafly</a></h2>
+    </div>
+    <div class="column">
+      <h2><a href="https://github.com/fifty-six/Scarab">Scarab</a></h2>
+    </div>
+  </div>
+  <h2 class="h2-bigger">List of Recommended Mods</h2>
+    <div class="important">
+        <p><em>For a comprehensive list of mods, including 200+ that aren't needed or recommended for bingy, see this page on the <a href="https://hk-modding.org/mods">HK Modding Website</a>.</em> </p>
+    </div>
+  <h2 id="required">Required Mods for Bingy</h2>
+  <p><i>Note: If you install mods via Scarab or Lumafly, all dependencies will be automatically installed. <br>If you are not using Lumafly or Scarab, it is very important to read what each mods' dependencies are. Remember to download them along with the mod if installing them manually.</i></p>
+  <div class="list">
+    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.BenchwarpMod">Benchwarp</a></strong> A mod that allows you to warp to and from any bench that you've previously rested at. Bingy uses the warp-only feature of this mod.</p>
+    <p><strong><a href="https://github.com/TheRealAlph4/HollowKnight.BingoAdvancedCustomGeneration">BingoAdvancedCustomGeneration</a></strong> A mod that adds the Tournament 3 goalpack to BingoSync generation options, and line exclusions which are not natively supported by the BingoSync mod.</p>
+    <p><strong><a href="https://github.com/TheMathGeek314/BingoGoalPack1/">BingoGoalPack1</a></strong> A mod that allows automarking for extended goals and more, some of which are used in the Tournament 3 goalpack.</p>
+    <p><strong><a href="https://github.com/pedroteosousa/HollowKnight.BingoSync">BingoSync</a></strong> Allows for board generation from within the game, as well as automarking for goals in the base vanilla Hollow Knight goalpack.</p>
+    <p><strong><a href="https://github.com/flibber-hk/HollowKnight.BingoUI/">BingoUI</a></strong> Adds an overlay that keeps track of progress towards certain goals.</p>
+    <p><strong><a href="https://github.com/fifty-six/HollowKnight.QoL/">QoL</a></strong> A Quality of Life mod that includes many different modifications to the game that make it more fun for speedrunning. This includes bringing back inventory drops, lever skips and various other glitches, as well as instant text and menuing to make bingy faster.</p>
+  </div>
+
+  <h3 class="h3-bigger" id="additional">Additional Mods</h3>
+  <p>These are mods that aren't required for most bingy games, but may be desired or required in certain situations.</p>
+  <div class="list">
+    <p><strong><a href="https://github.com/TheMathGeek314/BaldurRngConfig/">BaldurRngConfig</a></strong> A mod to standardize baldur spits. Not tournament-legal, and currently nonstandard, so ask opponents before using it in competitve matches.</p>
+    <p><strong><a href="https://github.com/TheRealAlph4/HollowKnight.BingoBoardReplay">BingoBoardReplay</a></strong> Echoes marks from a board in one room to a board in another room, used in tournaments to allow for commentator delay.</p>
+    <p><strong><a href="https://github.com/TheMathGeek314/BingoGoalPack2/">BingoGoalPack2</a></strong> A mod that adds automarking for some additional goals, not used in any of the most common bingy goalpacks but used for some others.</p>
+    <p><strong><a href="https://github.com/TheMulhima/HollowKnight.DebugMod/">DebugMod</a></strong> Various utilities. Useful for practice or testing, but not legal for use in most bingy games unless format-specific rules allow it. If DebugMod is installed when starting a bingy, make sure to lock keybinds first.</p>
+    <p><strong><a href="https://github.com/homothetyhk/HollowKnight.LoadNormalizer/">LoadNormalizer</a></strong> A mod used for competitive matches, usually lockout and commonly in tournaments, that allows players to ensure load times are roughly equivalent.</p>
+    <p><strong><a href="https://github.com/TheMathGeek314/Wingy/">Wingy</a></strong> Replaces Claw with Wings when you pick it up. Used for the Wingy format. If you have this installed and are playing non-wingy formats, remember to disable the mod before starting!</p>
+    <p><strong><a href="https://github.com/notahumanhand/BingoGoalPackSpleengy">BingoGoalPackSpleengy</a></strong> An alternate goalpack for bingy, with automarking for a handful of additional goals.</p>  
+</div>
+
+  <h3 class="h3-bigger" id="fun">Cosmetic Mods!</h3>
+  <p>Finally, some cosmetic mods that are allowed, but not required, for bingy.</p>
+  <div class="list">
+    <p><strong><a href="https://github.com/Zickles/HollowKnight.CustomKnight/">CustomKnight</a></strong> Allows you to have custom textures for the knight, as well as options for other sprites. And if you're looking for skins, <a href="https://docs.google.com/document/d/1qKfOtOXpYormusD05I700P8d79E74R1bTb3MP4vum-E/edit">Colette's skin list</a> and <a href="https://hkskins.art/">HKSkins</a> have a huge selection of over 200 skins that you can use with Custom Knight!</p>
+    <p><strong><a href="https://github.com/PrashantMohta/GrubTrain/">GrubTrain</a></strong> Grubs will follow you around once you have collected them! Be sure to turn off "grub tricks" in settings, as that is not bingy legal.</p>
+    <p><strong><a href="https://github.com/ygsbzr/DeathCounter/">DeathCounter</a></strong> A death and hit counter to see how many times you failed. (We're still proud of you though.)</p>
+    <p><strong><a href="https://github.com/hk-modding/transtrans">TransTrans</a></strong> Changes the colours of Tiktiks to be the trans flag.</p>
+    <p><strong><a href="https://github.com/Link459/PressGToDab/">press g to dab</a></strong> press g to dab</p>
+  </div>
+  <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
+  <span class="menu" id="menu101">
+    <div class="list list-square list-centered">
+      <p><a href="#header">Introduction</a></p>
+      <p><a href="#required">Required Mods</a></p>
+      <p><a href="#additional">Additional Mods</a></p>
+      <p><a href="#fun">Cosmetic Mods!</a> </p>
+    </div>
+  </span>
+  <img class="spin" src="/images/spin.gif" alt="The Knight spinning">
+  </div>
+<script>
+  $(document).ready(function(){
+      $("#footer").load("/footer.html");
+  });
+</script>
+<div id="footer"> </div>
+</div>
+</body>
+
+</html>
