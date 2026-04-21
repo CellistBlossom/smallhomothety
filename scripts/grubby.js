@@ -1455,6 +1455,7 @@ const GRUB_TITLES = [
   "Queen ",
   "Saint ",
   "Ser ",
+  "Silly ",
   "Sir ",
   "Syr ",
   "The ",
@@ -1865,20 +1866,25 @@ button.addEventListener("click", function () {
       image = ["images/adoptable_grubs/blomgrub.png", "a blomgrub"];
     }
 
+    if (Math.random() >= 0.90) {
+      var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+      while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
+        title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+      }
+      if (name == "Blossom") {
+        while(title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
+          title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+        }
+      }
+      name = title + name;
+    }
+
     if (Math.random() >= 0.75 && !name.includes(" ")) {
       var surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       while (name.trim().toLowerCase() == surname.trim().toLowerCase()) {
         surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       }
       name = name + surname;
-    }
-
-    if (Math.random() >= 0.90) {
-      var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
-      while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
-        surname = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
-      }
-      name = title + name;
     }
 
     document.getElementById("grubname").innerHTML = name;
