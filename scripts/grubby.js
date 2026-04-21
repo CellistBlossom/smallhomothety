@@ -331,6 +331,7 @@ const GRUB_NAMES = [
   "Glimmerfly Grove",
   "Glimworm",
   "Glintmoth-Grub",
+  "Glitch",
   "Glitchy",
   "Glitter Grub",
   "Glitter",
@@ -1408,7 +1409,8 @@ const GRUB_SURNAMES = [
   ", Esq.",
   ", Jr.",
   ", PhD.",
-  ", Sr."
+  ", Sr.",
+  "y"
 ];
 const GRUB_TITLES = [
   "Admiral",
@@ -1459,6 +1461,7 @@ const GRUB_TITLES = [
   "The Generous ",
   "The Grand ",
   "The Great ",
+  "The Grubbiest ",
   "The Honourable ",
   "The Magnificent ",
   "The Mighty ",
