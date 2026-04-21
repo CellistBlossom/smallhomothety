@@ -82,6 +82,7 @@ const GRUB_NAMES = [
   "Bumblebee",
   "Bumbles",
   "Bumbleshell",
+  "Bumbleshout",
   "Bumblesnout",
   "Bumbly",
   "Bun Bun Grub",
@@ -210,6 +211,7 @@ const GRUB_NAMES = [
   "Cutie Pie Grub",
   "Cutie Wiggler",
   "Cuttlebitty",
+  "Cuttleboo",
   "Cuttlebu",
   "Cuttlebug",
   "Cuttletrunk",
@@ -415,6 +417,7 @@ const GRUB_NAMES = [
   "Grub's Grotto",
   "Grub's Knees",
   "Grub-a-Boo",
+  "Grub-a-Bub",
   "Grub-a-Bye",
   "Grub-a-Bye-Baby",
   "Grub-a-Dab-Do",
@@ -466,6 +469,7 @@ const GRUB_NAMES = [
   "Grubard",
   "Grubaroo",
   "Grubb",
+  "Grubbb",
   "Grubba-Do",
   "Grubbar",
   "Grubbarina the Fearless",
@@ -604,7 +608,10 @@ const GRUB_NAMES = [
   "Grubox",
   "Grubrick the Brave",
   "Grubrick",
+  "Grubrose",
+  "Grubs-a-Little",
   "Grubs-a-Lot",
+  "Grubs-a-Moderate-Amount",
   "Grubsby",
   "Grubsey",
   "Grubsley",
@@ -617,6 +624,8 @@ const GRUB_NAMES = [
   "Grubster the Great",
   "Grubster",
   "Grubsterino",
+  "Grubswaddle",
+  "Grubswiggle",
   "Grubsworth",
   "Grubsy",
   "Grubtastic",
@@ -643,7 +652,6 @@ const GRUB_NAMES = [
   "Grumblewort",
   "Grumm",
   "Grumps",
-  "Grumpshrimp",
   "Grumpshrimp",
   "Grumpty",
   "Grumptysnout",
@@ -706,6 +714,7 @@ const GRUB_NAMES = [
   "Jellie",
   "Jelly Grub",
   "Jen Jen",
+  "Jeremothy",
   "Jeweldrop",
   "Jiggles",
   "Jiggly Joe",
@@ -747,6 +756,7 @@ const GRUB_NAMES = [
   "Lurker",
   "Maggotcloud the Voracious",
   "Maggotry",
+  "Maggretta",
   "Magmagrub",
   "Mantis Lord",
   "Mantisclaw",
@@ -780,6 +790,10 @@ const GRUB_NAMES = [
   "Moth Skitterling",
   "Moth Tribe Shaman",
   "Moth",
+  "Mothexander",
+  "Mothgracious",
+  "Mothnathan",
+  "Mothy",
   "Mothfly",
   "Mothwing",
   "Mr. Chomps",
@@ -958,6 +972,7 @@ const GRUB_NAMES = [
   "Skipley",
   "Skipper Skittles",
   "Skipper",
+  "Skipperhopper",
   "Skippety",
   "Sleepy Slugger",
   "Slick Grubster",
@@ -1304,7 +1319,6 @@ const GRUB_SURNAMES = [
   " Mossbinder",
   " Mosstail",
   " Moth",
-  " Moth",
   " Needlemane",
   " Needler",
   " Needleworm",
@@ -1472,11 +1486,11 @@ const PRONOUNS = [
   'it/its',
   'ze/zir',
   'ey/em',
-  've/ver'
+  've/ver',
+  'grub/grubs'
 ];
 const GRUB_FOODSTUFFS = [
   'Anise',
-  'Apple tree leaves',
   'Apple tree leaves',
   'Aster',
   'Azalea',
@@ -1804,7 +1818,6 @@ const MIMIC_PERSONALITIES = [
   'Imaginative',
   'Inquisitive',
   'Intelligent',
-  'Intelligent',
   'Mystical',
   'Observant',
   'Opportunistic',
@@ -1864,6 +1877,10 @@ button.addEventListener("click", function() {
     case "ve/ver":
       possessive_pronoun = "Vis";
       referential_pronoun = "ver";
+      break;
+    case "grub/grubs":
+      possessive_pronoun = "Grub";
+      referential_pronoun = "grubs";
       break;
     default:
       possessive_pronoun = "Grub";
