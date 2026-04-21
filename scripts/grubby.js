@@ -59,7 +59,9 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/sketch_grubby.png", "A sketch of a grub"],
   ["images/adoptable_grubs/sunset_grubby.png", "A sunset grub"],
   ["images/adoptable_grubs/super_grubby.png", "A grub superhero"],
-  ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"]
+  ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"],
+  ["images/adoptable_grubs/missing_texture_grubby.png", "Error 404: Grub Not Found"],
+  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"]
 
 ]
 
