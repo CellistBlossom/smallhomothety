@@ -1489,6 +1489,7 @@ const GRUB_FOODSTUFFS = [
   'Cherry tree leaves',
   'Chervil',
   'Cilantro',
+  'Culantro',
   'Clover',
   'Common Hoptree',
   'Coriander',
