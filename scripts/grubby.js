@@ -41,6 +41,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/pride_grubby.png", "A rainbow-colored grub"],
   ["images/adoptable_grubs/radioactive_shrimp_grubby.png", "A radioactive shrimp grub (from Walmart)"],
   ["images/adoptable_grubs/shade_grubby.png", "A shade grub"],
+  ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"],
   ["images/adoptable_grubs/soul_totem_grubby.png", "A soul totem grub"],
   ["images/adoptable_grubs/strawberry_grubby.png", "A strawberry grub"],
   ["images/adoptable_grubs/trans_grubby.png", "A trans grub"],
