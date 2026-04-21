@@ -44,7 +44,22 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/soul_totem_grubby.png", "A soul totem grub"],
   ["images/adoptable_grubs/strawberry_grubby.png", "A strawberry grub"],
   ["images/adoptable_grubs/trans_grubby.png", "A trans grub"],
-  ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"]
+  ["images/adoptable_grubs/bee_grubby.png", "A bee grub"],
+  ["images/adoptable_grubs/cloud_grubby.png", "A grub whose head is in the clouds"],
+  ["images/adoptable_grubs/cogwork_grubby.png", "A cogwork grub"],
+  ["images/adoptable_grubs/collector_grubby.png", "A grub holding a jar with the collector inside"],
+  ["images/adoptable_grubs/grub_husk_sentry_grubby.png", "A grub hust sentry"],
+  ["images/adoptable_grubs/monarch_grubby.png", "A regal grub"],
+  ["images/adoptable_grubs/mummy_grubby.png", "A grub wrapped in old cloth"],
+  ["images/adoptable_grubs/paper_crane_grubby.png", "A grub whose head is covered in paper cranes"],
+  ["images/adoptable_grubs/pumpkin_grubby.png", "A grub with a penguin for a head"],
+  ["images/adoptable_grubs/sableye_grubby.png", "A grub with a jewel for an eye"],
+  ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"],
+  ["images/adoptable_grubs/sketch_grubby.png", "A sketch of a grub"],
+  ["images/adoptable_grubs/sunset_grubby.png", "A sunset grub"],
+  ["images/adoptable_grubs/super_grubby.png", "A grub superhero"],
+  ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"]
+
 ]
 
 const GRUB_NAMES = [
