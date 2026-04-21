@@ -53,7 +53,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/monarch_grubby.png", "A regal grub"],
   ["images/adoptable_grubs/mummy_grubby.png", "A grub wrapped in old cloth"],
   ["images/adoptable_grubs/paper_crane_grubby.png", "A grub whose head is covered in paper cranes"],
-  ["images/adoptable_grubs/pumpkin_grubby.png", "A grub with a penguin for a head"],
+  ["images/adoptable_grubs/pumpkin_grubby.png", "A grub with a pumpkin for a head"],
   ["images/adoptable_grubs/sableye_grubby.png", "A grub with a jewel for an eye"],
   ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"],
   ["images/adoptable_grubs/sketch_grubby.png", "A sketch of a grub"],
