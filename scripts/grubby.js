@@ -1428,6 +1428,7 @@ const GRUB_TITLES = [
   "General ",
   "Grand Vizier ",
   "Grub ",
+  "Grubby ",
   "Judge ",
   "King ",
   "Knight ",
