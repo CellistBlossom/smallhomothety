@@ -62,6 +62,7 @@ const GRUB_NAMES = [
   "Blaze Salamander",
   "Blitznab",
   "Bloomguard",
+  "Blossom",
   "Blueclaw Spitter",
   "Bobble Grub",
   "Bobbley",
@@ -1335,6 +1336,7 @@ const GRUB_SURNAMES = [
   " Saltsquirm",
   " Scabblefly",
   " Scuttlesnout",
+  " Shade",
   " Shadeclaw",
   " Shadefly",
   " Shadowdancer",
@@ -1492,7 +1494,7 @@ const PRONOUNS = [
   'ze/zir',
   'ey/em',
   've/ver',
-  'grub/grubs'
+  'grubs/grub'
 ];
 const GRUB_FOODSTUFFS = [
   'Anise',
@@ -1840,64 +1842,7 @@ const MIMIC_PERSONALITIES = [
   'Whimsical',
 ];
 
-button.addEventListener("click", function() {
-  var pronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
-  document.getElementById("pronouns").innerHTML = pronouns;
-
-  var possessive_pronoun = "";
-  var referential_pronoun = "";
-  switch (pronouns) {
-    case "he/him":
-      possessive_pronoun = "His";
-      referential_pronoun = "him";
-      break;
-    case "she/her":
-      possessive_pronoun = "Her";
-      referential_pronoun = "her";
-      break;
-    case "they/them":
-      possessive_pronoun = "Their";
-      referential_pronoun = "them";
-      break;
-    case "fae/faer":
-      possessive_pronoun = "Faer";
-      referential_pronoun = "faer";
-      break;
-    case "xe/xem":
-      possessive_pronoun = "Xir";
-      referential_pronoun = "xem";
-      break;
-    case "it/its":
-      possessive_pronoun = "Its";
-      referential_pronoun = "it";
-      break;
-    case "ze/zir":
-      possessive_pronoun = "Zir";
-      referential_pronoun = "zir";
-      break;
-    case "ey/em":
-      possessive_pronoun = "Eir";
-      referential_pronoun = "em";
-      break;
-    case "ve/ver":
-      possessive_pronoun = "Vis";
-      referential_pronoun = "ver";
-      break;
-    case "grub/grubs":
-      possessive_pronoun = "Grub";
-      referential_pronoun = "grubs";
-      break;
-    default:
-      possessive_pronoun = "Grub";
-      referential_pronoun = "grub";
-      break;
-  }
-
-  document.getElementById("pronounlabel").innerHTML = possessive_pronoun + ' pronouns are...';
-  document.getElementById("foodlabel").innerHTML = possessive_pronoun + ' favorite food is...';
-  document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
-  document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
-  button.innerHTML = "Make another friend!";
+button.addEventListener("click", function () {
 
   var grubbyImage = document.getElementById("grubbyimage")
   grubbyImage.classList.add('rightside-up');
@@ -1908,16 +1853,27 @@ button.addEventListener("click", function() {
   if (grubbynumber > 7) {
     document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
     var name = GRUB_NAMES[Math.floor((Math.random() * GRUB_NAMES.length))]
+    var pronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
+    var food = GRUB_FOODSTUFFS[Math.floor((Math.random() * GRUB_FOODSTUFFS.length))]
+    var personality = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))]
+    var image = GRUB_IMAGES[Math.floor((Math.random() * GRUB_IMAGES.length))]
 
-    if(Math.random() >= 0.75 && !name.includes(" ")) {
+    if (name == "Blossom") {
+      food = "Parsley";
+      personality = "Grubby";
+      pronouns = "they/them";
+      image = ["images/adoptable_grubs/blomgrub.png", "a blomgrub"];
+    }
+
+    if (Math.random() >= 0.75 && !name.includes(" ")) {
       var surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
-      while (name.trim().toLowerCase() === surname.trim().toLowerCase()) {
+      while (name.trim().toLowerCase() == surname.trim().toLowerCase()) {
         surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       }
       name = name + surname;
     }
 
-    if(Math.random() >= 0.90) {
+    if (Math.random() >= 0.90) {
       var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
       while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
         surname = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
@@ -1926,10 +1882,67 @@ button.addEventListener("click", function() {
     }
 
     document.getElementById("grubname").innerHTML = name;
-    document.getElementById("food").innerHTML = GRUB_FOODSTUFFS[Math.floor((Math.random() * GRUB_FOODSTUFFS.length))];
-    document.getElementById("personality").innerHTML = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))];
-    var grubbyImageData = GRUB_IMAGES[Math.floor((Math.random() * GRUB_IMAGES.length))];
+    document.getElementById("food").innerHTML = food;
+    document.getElementById("personality").innerHTML = personality;
+    var grubbyImageData = image;
     grubbyImage.innerHTML = `<img src=${grubbyImageData[0]} alt="${grubbyImageData[1]}" height="100px" width="100px">`;
+
+    document.getElementById("pronouns").innerHTML = pronouns;
+
+    var possessive_pronoun = "";
+    var referential_pronoun = "";
+    switch (pronouns) {
+      case "he/him":
+        possessive_pronoun = "His";
+        referential_pronoun = "him";
+        break;
+      case "she/her":
+        possessive_pronoun = "Her";
+        referential_pronoun = "her";
+        break;
+      case "they/them":
+        possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        break;
+      case "fae/faer":
+        possessive_pronoun = "Faer";
+        referential_pronoun = "faer";
+        break;
+      case "xe/xem":
+        possessive_pronoun = "Xir";
+        referential_pronoun = "xem";
+        break;
+      case "it/its":
+        possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "ze/zir":
+        possessive_pronoun = "Zir";
+        referential_pronoun = "zir";
+        break;
+      case "ey/em":
+        possessive_pronoun = "Eir";
+        referential_pronoun = "em";
+        break;
+      case "ve/ver":
+        possessive_pronoun = "Vis";
+        referential_pronoun = "ver";
+        break;
+      case "grubs/grub":
+        possessive_pronoun = "Grubs";
+        referential_pronoun = "grub";
+        break;
+      default:
+        possessive_pronoun = "Grub";
+        referential_pronoun = "grub";
+        break;
+    }
+
+    document.getElementById("pronounlabel").innerHTML = possessive_pronoun + ' pronouns are...';
+    document.getElementById("foodlabel").innerHTML = possessive_pronoun + ' favorite food is...';
+    document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
+    document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
+    button.innerHTML = "Make another friend!";
 
     // Special case: flip if upside-down grub
     if (name == "Upside-Down Grub") {
