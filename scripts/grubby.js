@@ -6,13 +6,13 @@ certificate.appendChild(button);
 button.id = "idk_your_id_here";
 
 const GRUB_IMAGES = [
-  ["images/grubby.png", "a grub"],
-  ["images/adoptable_grubs/blomgrub.png", "a blomgrub"],
-  ["images/adoptable_grubs/purpgrub.png", "a purple grub"],
-  ["images/adoptable_grubs/grubchu.png", "a grubchu"],
-  ["images/adoptable_grubs/grumbchu.png", "a grumbchu"],
-  ["images/adoptable_grubs/arg.png", "an alternate reality grub"],
-  ["images/adoptable_grubs/aggrub.png", "an aagrub"],
+  ["images/grubby.png", "A grub!"],
+  ["images/adoptable_grubs/blomgrub.png", "A blomgrub"],
+  ["images/adoptable_grubs/purpgrub.png", "A purple grub"],
+  ["images/adoptable_grubs/grubchu.png", "A grubchu"],
+  ["images/adoptable_grubs/grumbchu.png", "A grumbchu"],
+  ["images/adoptable_grubs/arg.png", "An alternate reality grub"],
+  ["images/adoptable_grubs/aggrub.png", "An aggrub"],
   ["images/adoptable_grubs/mothgrub.png", "A moth grub"],
   ["images/adoptable_grubs/pengrub.png", "A penguin grub"],
   ["images/adoptable_grubs/adventure_grubby.png", "An adventuring grub"],
@@ -862,6 +862,7 @@ const GRUB_NAMES = [
   "Peekaboo",
   "Peekagrub",
   "Peepers",
+  "Pengrub",
   "Perky Pillbug",
   "Perky",
   "Perplexed Grub",
@@ -1329,6 +1330,7 @@ const GRUB_SURNAMES = [
   " Nibblesnout",
   " Nimble",
   " Nimbletrot",
+  " of the Endless MeeMawMaw",
   " Pandemite",
   " Pranceworm",
   " Redcap",
@@ -1379,7 +1381,6 @@ const GRUB_SURNAMES = [
   " the Magnificent",
   " the Mighty",
   " the Mischievous",
-  " the Monarch of Grubland",
   " the Playful",
   " the Quick",
   " the Ruler",
@@ -1408,14 +1409,19 @@ const GRUB_SURNAMES = [
   " Wolfshell",
   " Wrigglepuff",
   " Wrigglermoth",
+  ", Beloved by All",
+  ", Bringer of Joy",
+  ", Destroyer of Worlds",
   ", Esq.",
+  ", Grub of Grubs",
   ", Jr.",
   ", PhD.",
   ", Sr.",
+  ", the Monarch of Grubland",
   "y"
 ];
 const GRUB_TITLES = [
-  "Admiral",
+  "Admiral ",
   "Archduchess ",
   "Archduke ",
   "Baron ",
@@ -1455,6 +1461,7 @@ const GRUB_TITLES = [
   "Queen ",
   "Saint ",
   "Ser ",
+  "Silly ",
   "Sir ",
   "Syr ",
   "The ",
@@ -1864,6 +1871,29 @@ button.addEventListener("click", function () {
       pronouns = "they/them";
       image = ["images/adoptable_grubs/blomgrub.png", "a blomgrub"];
     }
+    if (name == "Pengrub") {
+      image = ["images/adoptable_grubs/pengrub.png", "A penguin grub"];
+    }
+    if (name == "Peekagrub") {
+      image = ["images/adoptable_grubs/grumbchu.png", "A grumbchu"];
+    }
+    if (name == "Moth") {
+      image = ["images/adoptable_grubs/mothgrub.png", "A moth grub"];
+    }
+    
+
+    if (Math.random() >= 0.90) {
+      var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+      while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
+        title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+      }
+      if (name == "Blossom") {
+        while(title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
+          title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+        }
+      }
+      name = title + name;
+    }
 
     if (Math.random() >= 0.75 && !name.includes(" ")) {
       var surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
@@ -1871,14 +1901,6 @@ button.addEventListener("click", function () {
         surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       }
       name = name + surname;
-    }
-
-    if (Math.random() >= 0.90) {
-      var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
-      while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
-        surname = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
-      }
-      name = title + name;
     }
 
     document.getElementById("grubname").innerHTML = name;
