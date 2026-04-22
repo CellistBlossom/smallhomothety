@@ -1504,6 +1504,12 @@ const PRONOUNS = [
   'she/her',
   'she/her',
   'she/her',
+  'she/her',
+  'she/her',
+  'she/her',
+  'he/him',
+  'he/him',
+  'he/him',
   'he/him',
   'he/him',
   'he/him',
@@ -1514,13 +1520,23 @@ const PRONOUNS = [
   'they/them',
   'they/them',
   'they/them',
+  'they/them',
+  'they/them',
+  'they/them',
+  'she/they',
+  'he/they',
+  'she/he',
+  'he/it',
+  'she/it',
+  'they/it',
+  'any/all',
   'fae/faer',
   'xe/xem',
   'it/its',
   'ze/zir',
   'ey/em',
   've/ver',
-  'grubs/grub'
+  'grub/grubs'
 ];
 const GRUB_FOODSTUFFS = [
   'Anise',
@@ -1899,7 +1915,6 @@ button.addEventListener("click", function () {
     if (name == "Moth") {
       image = ["images/adoptable_grubs/mothgrub.png", "A moth grub"];
     }
-    
 
     if (Math.random() >= 0.90) {
       var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
@@ -1931,45 +1946,90 @@ button.addEventListener("click", function () {
     document.getElementById("pronouns").innerHTML = pronouns;
 
     var possessive_pronoun = "";
+    var alt_possessive_pronoun = "";
     var referential_pronoun = "";
     switch (pronouns) {
       case "he/him":
         possessive_pronoun = "His";
+        alt_possessive_pronoun = "His";
         referential_pronoun = "him";
         break;
       case "she/her":
         possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Her";
         referential_pronoun = "her";
         break;
       case "they/them":
         possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Their";
         referential_pronoun = "them";
         break;
       case "fae/faer":
         possessive_pronoun = "Faer";
+        alt_possessive_pronoun = "Faer";
         referential_pronoun = "faer";
         break;
       case "xe/xem":
         possessive_pronoun = "Xir";
+        alt_possessive_pronoun = "Xir";
         referential_pronoun = "xem";
         break;
       case "it/its":
         possessive_pronoun = "Its";
+        alt_possessive_pronoun = "Its";
         referential_pronoun = "it";
         break;
       case "ze/zir":
         possessive_pronoun = "Zir";
+        alt_possessive_pronoun = "Zir";
         referential_pronoun = "zir";
         break;
       case "ey/em":
         possessive_pronoun = "Eir";
+        alt_possessive_pronoun = "Eir";
         referential_pronoun = "em";
         break;
       case "ve/ver":
         possessive_pronoun = "Vis";
+        alt_possessive_pronoun = "Vis";
         referential_pronoun = "ver";
         break;
-      case "grubs/grub":
+      case "she/they":
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        break;
+      case "he/they":
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        break;
+      case "she/he":
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "His";
+        referential_pronoun = "him";
+        break;
+      case "he/it":
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "she/it":
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "they/it":
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "any/all":
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Her";
+        referential_pronoun = "him";
+        break;
+      case "grub/grubs":
         possessive_pronoun = "Grubs";
         referential_pronoun = "grub";
         break;
@@ -1980,7 +2040,7 @@ button.addEventListener("click", function () {
     }
 
     document.getElementById("pronounlabel").innerHTML = possessive_pronoun + ' pronouns are...';
-    document.getElementById("foodlabel").innerHTML = possessive_pronoun + ' favorite food is...';
+    document.getElementById("foodlabel").innerHTML = alt_possessive_pronoun + ' favorite food is...';
     document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
     document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
     button.innerHTML = "Make another friend!";
