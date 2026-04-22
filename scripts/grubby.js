@@ -1900,6 +1900,7 @@ button.addEventListener("click", function () {
     var personality = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))]
     var image = GRUB_IMAGES[Math.floor((Math.random() * GRUB_IMAGES.length))]
 
+    //Special Name Cases
     if (name == "Blossom") {
       food = "Parsley";
       personality = "Grubby";
@@ -1914,6 +1915,10 @@ button.addEventListener("click", function () {
     }
     if (name == "Moth") {
       image = ["images/adoptable_grubs/mothgrub.png", "A moth grub"];
+    }
+    if (name == "Upside-Down Grub") {
+      grubbyImage.classList.add('upside-down');
+      grubbyImage.classList.remove('rightside-up');
     }
 
     if (Math.random() >= 0.90) {
@@ -2044,12 +2049,6 @@ button.addEventListener("click", function () {
     document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
     document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
     button.innerHTML = "Make another friend!";
-
-    // Special case: flip if upside-down grub
-    if (name == "Upside-Down Grub") {
-      grubbyImage.classList.add('upside-down');
-      grubbyImage.classList.remove('rightside-up');
-    }
   }
   else {
     document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
