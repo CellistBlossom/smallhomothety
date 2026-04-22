@@ -1436,6 +1436,7 @@ const GRUB_SURNAMES = [
   ", PhD.",
   ", Sr.",
   ", the Monarch of Grubland",
+  "grub",
   "y"
 ];
 const GRUB_TITLES = [
