@@ -795,6 +795,8 @@ const GRUB_NAMES = [
   "Mite-Mite",
   "Mitey",
   "Mittens",
+  "Moff",
+  "Moffmittens",
   "Moldmarshal",
   "Molemite",
   "Moon Hopper",
@@ -1376,7 +1378,9 @@ const GRUB_SURNAMES = [
   " Softmaker",
   " Sparklewiggler",
   " Spindlydoodle",
+  " Spins-A-Little",
   " Spins-A-Lot",
+  " Spins-A-Moderate-Amount",
   " Squish-Munch",
   " Stagmane",
   " Stardustbug",
@@ -1490,6 +1494,7 @@ const GRUB_TITLES = [
   "The Generous ",
   "The Grand ",
   "The Great ",
+  "The Great Wizard ",
   "The Grubbiest ",
   "The Honourable ",
   "The Magnificent ",
@@ -1774,7 +1779,82 @@ const MIMIC_NAMES = [
   'Venomous Vor',
   'Web Wriggler',
   'Wiggleglom',
-  'Wild swarm',
+  'Wild swarm'
+];
+const MIMIC_SURNAMES = [
+  " III",
+  " IV",
+  " IX",
+  " Spins-A-Little",
+  " Spins-A-Lot",
+  " Spins-A-Moderate-Amount",
+  " V",
+  " VI",
+  " VII",
+  " VIII",
+  ", Destroyer of Worlds",
+  ", Esq.",
+  ", Foolish One",
+  ", Grand Wizard",
+  ", Jr.",
+  ", Lord of the Dark",
+  ", PhD.",
+  ", Shepherd of Despair",
+  ", Slayer of Beasts",
+  ", Sr.",
+  ", That Which Threatens To Consume All",
+  ", the Inescapable Darkness",
+  ", the Un-Order",
+  ", World-Eater"
+];
+const MIMIC_TITLES = [
+  "Admiral ",
+  "Archduchess ",
+  "Archduke ",
+  "Baron ",
+  "Baroness ",
+  "Captain ",
+  "Count ",
+  "Countess ",
+  "Dr. ",
+  "Duchess ",
+  "Duke ",
+  "Earl ",
+  "Emperor ",
+  "Empress ",
+  "General ",
+  "Grand Mimic ",
+  "Grand Vizier ",
+  "Judge ",
+  "King ",
+  "Knight ",
+  "Lady ",
+  "Lil\' ",
+  "Lord ",
+  "Madam ",
+  "Marquioness ",
+  "Marquis ",
+  "Miss ",
+  "Monarch ",
+  "Mr. ",
+  "Mrs. ",
+  "Mx. ",
+  "President ",
+  "Prime Minister ",
+  "Prince ",
+  "Princess ",
+  "Professor ",
+  "Queen ",
+  "Saint ",
+  "Ser ",
+  "Silly ",
+  "Sir ",
+  "Syr ",
+  "The ",
+  "Tsar ",
+  "Viscount ",
+  "Viscountess ",
+  "Vizier "
 ];
 const MIMIC_FOODSTUFFS = [
   'Blistermoss',
@@ -1890,7 +1970,9 @@ button.addEventListener("click", function () {
   var grubbyImage = document.getElementById("grubbyimage")
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
+  grubbyImage.classList.remove('spinner-slow');
   grubbyImage.classList.remove('spinner');
+  grubbyImage.classList.remove('spinner-fast');
 
   var grubbynumber = Math.floor(Math.random() * 100);
 
@@ -1929,7 +2011,7 @@ button.addEventListener("click", function () {
         title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
       }
       if (name == "Blossom") {
-        while(title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
+        while (title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
           title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
         }
       }
@@ -1941,7 +2023,13 @@ button.addEventListener("click", function () {
       while (name.trim().toLowerCase() == surname.trim().toLowerCase()) {
         surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       }
+      if (surname == " Spins-A-Little") {
+        grubbyImage.classList.add('spinner-slow');
+      }
       if (surname == " Spins-A-Lot") {
+        grubbyImage.classList.add('spinner-fast');
+      }
+      if (surname == " Spins-A-Moderate-Amount") {
         grubbyImage.classList.add('spinner');
       }
       name = name + surname;
@@ -2041,10 +2129,12 @@ button.addEventListener("click", function () {
         break;
       case "grub/grubs":
         possessive_pronoun = "Grubs";
+        alt_possessive_pronoun = "Grubs";
         referential_pronoun = "grub";
         break;
       default:
         possessive_pronoun = "Grub";
+        alt_possessive_pronoun = "Grub";
         referential_pronoun = "grub";
         break;
     }
@@ -2056,8 +2146,28 @@ button.addEventListener("click", function () {
     button.innerHTML = "Make another friend!";
   }
   else {
+    var mimicname = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
+    
+    if (Math.random() >= 0.65) {
+      var mimictitle = MIMIC_TITLES[Math.floor((Math.random() * MIMIC_TITLES.length))]
+      mimicname = mimictitle + mimicname;
+    }
+
+    if (Math.random() >= 0.65) {
+      var mimicsurname = MIMIC_SURNAMES[Math.floor((Math.random() * MIMIC_SURNAMES.length))]
+      if (mimicsurname == " Spins-A-Little") {
+        grubbyImage.classList.add('spinner-slow');
+      }
+      if (mimicsurname == " Spins-A-Lot") {
+        grubbyImage.classList.add('spinner-fast');
+      }
+      if (mimicsurname == " Spins-A-Moderate-Amount") {
+        grubbyImage.classList.add('spinner');
+      }
+      mimicname = mimicname + mimicsurname;
+    }
     document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
-    document.getElementById("grubname").innerHTML = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
+    document.getElementById("grubname").innerHTML = mimicname;
     document.getElementById("food").innerHTML = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
     document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
     grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
