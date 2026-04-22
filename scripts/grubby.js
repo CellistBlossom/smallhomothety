@@ -67,8 +67,24 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/shaman_grubby.png", "A shaman grub"],
   ["images/adoptable_grubs/pearl_grubby.png", "A grub made of pearl"],
   ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"]
+];
 
-]
+const MIMIC_IMAGES = [
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/red_mimic.png", "A red mimic"],
+  ["images/adoptable_grubs/orange_mimic.png", "A orange mimic"],
+  ["images/adoptable_grubs/blue_mimic.png", "A blue mimic"],
+  ["images/adoptable_grubs/purple_mimic.png", "A purple mimic"]
+];
 
 const GRUB_NAMES = [
   "Acid Crawler",
@@ -1972,12 +1988,22 @@ const MIMIC_PERSONALITIES = [
 
 button.addEventListener("click", function () {
 
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = mm + '/' + dd + '/' + yyyy;
+
   var grubbyImage = document.getElementById("grubbyimage")
+  var adoptionImage = document.getElementById("grubimage")
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
   grubbyImage.classList.remove('spinner-slow');
   grubbyImage.classList.remove('spinner');
   grubbyImage.classList.remove('spinner-fast');
+  adoptionImage.classList.add('rightside-up');
+  adoptionImage.classList.remove('upside-down');
 
   var grubbynumber = Math.floor(Math.random() * 100);
 
@@ -2008,6 +2034,8 @@ button.addEventListener("click", function () {
     if (name == "Upside-Down Grub") {
       grubbyImage.classList.add('upside-down');
       grubbyImage.classList.remove('rightside-up');
+      adoptionImage.classList.add('upside-down');
+      adoptionImage.classList.remove('rightside-up');
     }
 
     if (Math.random() >= 0.90) {
@@ -2048,96 +2076,120 @@ button.addEventListener("click", function () {
 
     document.getElementById("pronouns").innerHTML = pronouns;
 
+    var personal_pronoun = "";
     var possessive_pronoun = "";
     var alt_possessive_pronoun = "";
     var referential_pronoun = "";
+    var verb = "is";
     switch (pronouns) {
       case "he/him":
+        personal_pronoun = "He";
         possessive_pronoun = "His";
         alt_possessive_pronoun = "His";
         referential_pronoun = "him";
         break;
       case "she/her":
+        personal_pronoun = "She";
         possessive_pronoun = "Her";
         alt_possessive_pronoun = "Her";
         referential_pronoun = "her";
         break;
       case "they/them":
+        personal_pronoun = "They";
         possessive_pronoun = "Their";
         alt_possessive_pronoun = "Their";
         referential_pronoun = "them";
+        verb = "are";
         break;
       case "fae/faer":
+        personal_pronoun = "Fae";
         possessive_pronoun = "Faer";
         alt_possessive_pronoun = "Faer";
         referential_pronoun = "faer";
         break;
       case "xe/xem":
+        personal_pronoun = "Xe";
         possessive_pronoun = "Xir";
         alt_possessive_pronoun = "Xir";
         referential_pronoun = "xem";
         break;
       case "it/its":
+        personal_pronoun = "It";
         possessive_pronoun = "Its";
         alt_possessive_pronoun = "Its";
         referential_pronoun = "it";
         break;
       case "ze/zir":
+        personal_pronoun = "Ze";
         possessive_pronoun = "Zir";
         alt_possessive_pronoun = "Zir";
         referential_pronoun = "zir";
         break;
       case "ey/em":
+        personal_pronoun = "Ey";
         possessive_pronoun = "Eir";
         alt_possessive_pronoun = "Eir";
         referential_pronoun = "em";
+        verb = "are";
         break;
       case "ve/ver":
+        personal_pronoun = "Ve";
         possessive_pronoun = "Vis";
         alt_possessive_pronoun = "Vis";
         referential_pronoun = "ver";
         break;
       case "she/they":
+        personal_pronoun = "They";
         possessive_pronoun = "Her";
         alt_possessive_pronoun = "Their";
         referential_pronoun = "them";
+        verb = "are";
         break;
       case "he/they":
+        personal_pronoun = "They";
         possessive_pronoun = "His";
         alt_possessive_pronoun = "Their";
         referential_pronoun = "them";
+        verb = "are";
         break;
       case "she/he":
+        personal_pronoun = "He";
         possessive_pronoun = "Her";
         alt_possessive_pronoun = "His";
         referential_pronoun = "him";
         break;
       case "he/it":
+        personal_pronoun = "It";
         possessive_pronoun = "His";
         alt_possessive_pronoun = "Its";
         referential_pronoun = "it";
         break;
       case "she/it":
+        personal_pronoun = "It";
         possessive_pronoun = "Her";
         alt_possessive_pronoun = "Its";
         referential_pronoun = "it";
         break;
       case "they/it":
+        personal_pronoun = "It";
         possessive_pronoun = "Their";
         alt_possessive_pronoun = "Its";
         referential_pronoun = "it";
         break;
       case "any/all":
+        personal_pronoun = "She";
         possessive_pronoun = "Their";
         alt_possessive_pronoun = "Her";
         referential_pronoun = "him";
         break;
       case "grub/grubs":
+        personal_pronoun = "Grub";
         possessive_pronoun = "Grubs";
         alt_possessive_pronoun = "Grubs";
         referential_pronoun = "grub";
         break;
       default:
+        personal_pronoun = "Grub"
         possessive_pronoun = "Grub";
         alt_possessive_pronoun = "Grub";
         referential_pronoun = "grub";
@@ -2148,10 +2200,17 @@ button.addEventListener("click", function () {
     document.getElementById("foodlabel").innerHTML = alt_possessive_pronoun + ' favorite food is...';
     document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
     document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
+    
+    var grubImageData = image;
+    adoptionImage.innerHTML = `<img src=${grubImageData[0]} alt="${grubImageData[1]}" height="100px" width="100px">`;
+    document.getElementById("grubcertificatename").innerHTML = name + " has hereby been adopted.";
+    document.getElementById("grubfact").innerHTML = personal_pronoun + ' ' + verb + ' very ' + personality.toLowerCase() + '. ' + possessive_pronoun + ' favourite food is ' + food.toLowerCase() + '! Make sure to take good care of ' + referential_pronoun + ".";
+    document.getElementById("currentdate").innerHTML = 'On this day, ' + today;
     button.innerHTML = "Make another friend!";
   }
   else {
     var mimicname = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
+    var mimicpronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
     
     if (Math.random() >= 0.65) {
       var mimictitle = MIMIC_TITLES[Math.floor((Math.random() * MIMIC_TITLES.length))]
@@ -2171,21 +2230,149 @@ button.addEventListener("click", function () {
       }
       mimicname = mimicname + mimicsurname;
     }
+
+    var mimicfood = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
+    var mimicpersonality = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
+
+    document.getElementById("pronouns").innerHTML = mimicpronouns;
+    var personal_pronoun = "";
+    var possessive_pronoun = "";
+    var alt_possessive_pronoun = "";
+    var referential_pronoun = "";
+    var verb = "is";
+
+    switch (mimicpronouns) {
+      case "he/him":
+        personal_pronoun = "He";
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "His";
+        referential_pronoun = "him";
+        break;
+      case "she/her":
+        personal_pronoun = "She";
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Her";
+        referential_pronoun = "her";
+        break;
+      case "they/them":
+        personal_pronoun = "They";
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        verb = "are";
+        break;
+      case "fae/faer":
+        personal_pronoun = "Fae";
+        possessive_pronoun = "Faer";
+        alt_possessive_pronoun = "Faer";
+        referential_pronoun = "faer";
+        break;
+      case "xe/xem":
+        personal_pronoun = "Xe";
+        possessive_pronoun = "Xir";
+        alt_possessive_pronoun = "Xir";
+        referential_pronoun = "xem";
+        break;
+      case "it/its":
+        personal_pronoun = "It";
+        possessive_pronoun = "Its";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "ze/zir":
+        personal_pronoun = "Ze";
+        possessive_pronoun = "Zir";
+        alt_possessive_pronoun = "Zir";
+        referential_pronoun = "zir";
+        break;
+      case "ey/em":
+        personal_pronoun = "Ey";
+        possessive_pronoun = "Eir";
+        alt_possessive_pronoun = "Eir";
+        referential_pronoun = "em";
+        verb = "are";
+        break;
+      case "ve/ver":
+        personal_pronoun = "Ve";
+        possessive_pronoun = "Vis";
+        alt_possessive_pronoun = "Vis";
+        referential_pronoun = "ver";
+        break;
+      case "she/they":
+        personal_pronoun = "They";
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        verb = "are";
+        break;
+      case "he/they":
+        personal_pronoun = "They";
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        verb = "are";
+        break;
+      case "she/he":
+        personal_pronoun = "He";
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "His";
+        referential_pronoun = "him";
+        break;
+      case "he/it":
+        personal_pronoun = "It";
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "she/it":
+        personal_pronoun = "It";
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "they/it":
+        personal_pronoun = "It";
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "any/all":
+        personal_pronoun = "She";
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Her";
+        referential_pronoun = "him";
+        break;
+      case "grub/grubs":
+        personal_pronoun = "Grub";
+        possessive_pronoun = "Grubs";
+        alt_possessive_pronoun = "Grubs";
+        referential_pronoun = "grub";
+        break;
+      default:
+        personal_pronoun = "Grub"
+        possessive_pronoun = "Grub";
+        alt_possessive_pronoun = "Grub";
+        referential_pronoun = "grub";
+        break;
+    }
+
+    document.getElementById("pronounlabel").innerHTML = possessive_pronoun + ' pronouns are...';
+    document.getElementById("foodlabel").innerHTML = alt_possessive_pronoun + ' favorite food is...';
+    document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
+    document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
+
     document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
     document.getElementById("grubname").innerHTML = mimicname;
-    document.getElementById("food").innerHTML = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
-    document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
-    var mimic_variant = Math.floor((Math.random() * 100));
-    if (mimic_variant <= 5) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/red_mimic.png" alt="A red mimic!" height="100px" width="100px">';
-    } else if (mimic_variant <= 10) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/orange_mimic.png" alt="An orange mimic!" height="100px" width="100px">';
-    } else if (mimic_variant <= 15) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/blue_mimic.png" alt="A blue mimic!" height="100px" width="100px">';
-    } else if (mimic_variant <= 20) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/purple_mimic.png" alt="A purple mimic!" height="100px" width="100px">';
-    } else {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
-    }
+    document.getElementById("food").innerHTML = mimicfood;
+    document.getElementById("personality").innerHTML = mimicpersonality;
+    
+    var mimic_variant = MIMIC_IMAGES[Math.floor((Math.random() * MIMIC_IMAGES.length))]
+    var mimicImageData = mimic_variant;
+    grubbyImage.innerHTML = `<img src=${mimicImageData[0]} alt="${mimicImageData[1]}" height="100px" width="100px">`;
+    adoptionImage.innerHTML = `<img src=${mimicImageData[0]} alt="${mimicImageData[1]}" height="100px" width="100px">`;
+    document.getElementById("grubcertificatename").innerHTML = mimicname + " has hereby been adopted.";
+    document.getElementById("grubfact").innerHTML = personal_pronoun + ' ' + verb + ' very ' + mimicpersonality.toLowerCase() + '. ' + possessive_pronoun + ' favourite food is ' + mimicfood.toLowerCase() + '! Make sure to take good care of ' + referential_pronoun + ".";
+    document.getElementById("currentdate").innerHTML = 'On this day, ' + today;
+
   }
 });
