@@ -2370,7 +2370,7 @@ button.addEventListener("click", function () {
     var mimicImageData = mimic_variant;
     grubbyImage.innerHTML = `<img src=${mimicImageData[0]} alt="${mimicImageData[1]}" height="100px" width="100px">`;
     adoptionImage.innerHTML = `<img src=${mimicImageData[0]} alt="${mimicImageData[1]}" height="100px" width="100px">`;
-    document.getElementById("grubcertificatename").innerHTML = 'The \"grub\" named ' + mimicname + " has hereby been adopted.";
+    document.getElementById("grubcertificatename").innerHTML = mimicname + " has hereby been adopted.";
     document.getElementById("grubfact").innerHTML = personal_pronoun + ' ' + verb + ' very ' + mimicpersonality.toLowerCase() + '. ' + possessive_pronoun + ' favourite food is ' + mimicfood.toLowerCase() + '! Make sure to take good care of ' + referential_pronoun + ".";
     document.getElementById("currentdate").innerHTML = 'On this day, ' + today;
 
