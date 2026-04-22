@@ -61,7 +61,12 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/super_grubby.png", "A grub superhero"],
   ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"],
   ["images/adoptable_grubs/missing_texture_grubby.png", "Error 404: Grub Not Found"],
-  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"]
+  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"],
+  ["images/adoptable_grubs/golden_grubby.png", "A grub made of gold"],
+  ["images/adoptable_grubs/silver_grubby.png", "A grub made of silver"],
+  ["images/adoptable_grubs/shaman_grubby.png", "A shaman grub"],
+  ["images/adoptable_grubs/pearl_grubby.png", "A grub made of pearl"],
+  ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"]
 
 ]
 
@@ -795,6 +800,8 @@ const GRUB_NAMES = [
   "Mite-Mite",
   "Mitey",
   "Mittens",
+  "Moff",
+  "Moffmittens",
   "Moldmarshal",
   "Molemite",
   "Moon Hopper",
@@ -1376,6 +1383,9 @@ const GRUB_SURNAMES = [
   " Softmaker",
   " Sparklewiggler",
   " Spindlydoodle",
+  " Spins-A-Little",
+  " Spins-A-Lot",
+  " Spins-A-Moderate-Amount",
   " Squish-Munch",
   " Stagmane",
   " Stardustbug",
@@ -1489,6 +1499,7 @@ const GRUB_TITLES = [
   "The Generous ",
   "The Grand ",
   "The Great ",
+  "The Great Wizard ",
   "The Grubbiest ",
   "The Honourable ",
   "The Magnificent ",
@@ -1504,6 +1515,12 @@ const PRONOUNS = [
   'she/her',
   'she/her',
   'she/her',
+  'she/her',
+  'she/her',
+  'she/her',
+  'he/him',
+  'he/him',
+  'he/him',
   'he/him',
   'he/him',
   'he/him',
@@ -1514,13 +1531,23 @@ const PRONOUNS = [
   'they/them',
   'they/them',
   'they/them',
+  'they/them',
+  'they/them',
+  'they/them',
+  'she/they',
+  'he/they',
+  'she/he',
+  'he/it',
+  'she/it',
+  'they/it',
+  'any/all',
   'fae/faer',
   'xe/xem',
   'it/its',
   'ze/zir',
   'ey/em',
   've/ver',
-  'grubs/grub'
+  'grub/grubs'
 ];
 const GRUB_FOODSTUFFS = [
   'Anise',
@@ -1757,7 +1784,82 @@ const MIMIC_NAMES = [
   'Venomous Vor',
   'Web Wriggler',
   'Wiggleglom',
-  'Wild swarm',
+  'Wild swarm'
+];
+const MIMIC_SURNAMES = [
+  " III",
+  " IV",
+  " IX",
+  " Spins-A-Little",
+  " Spins-A-Lot",
+  " Spins-A-Moderate-Amount",
+  " V",
+  " VI",
+  " VII",
+  " VIII",
+  ", Destroyer of Worlds",
+  ", Esq.",
+  ", Foolish One",
+  ", Grand Wizard",
+  ", Jr.",
+  ", Lord of the Dark",
+  ", PhD.",
+  ", Shepherd of Despair",
+  ", Slayer of Beasts",
+  ", Sr.",
+  ", That Which Threatens To Consume All",
+  ", the Inescapable Darkness",
+  ", the Un-Order",
+  ", World-Eater"
+];
+const MIMIC_TITLES = [
+  "Admiral ",
+  "Archduchess ",
+  "Archduke ",
+  "Baron ",
+  "Baroness ",
+  "Captain ",
+  "Count ",
+  "Countess ",
+  "Dr. ",
+  "Duchess ",
+  "Duke ",
+  "Earl ",
+  "Emperor ",
+  "Empress ",
+  "General ",
+  "Grand Mimic ",
+  "Grand Vizier ",
+  "Judge ",
+  "King ",
+  "Knight ",
+  "Lady ",
+  "Lil\' ",
+  "Lord ",
+  "Madam ",
+  "Marquioness ",
+  "Marquis ",
+  "Miss ",
+  "Monarch ",
+  "Mr. ",
+  "Mrs. ",
+  "Mx. ",
+  "President ",
+  "Prime Minister ",
+  "Prince ",
+  "Princess ",
+  "Professor ",
+  "Queen ",
+  "Saint ",
+  "Ser ",
+  "Silly ",
+  "Sir ",
+  "Syr ",
+  "The ",
+  "Tsar ",
+  "Viscount ",
+  "Viscountess ",
+  "Vizier "
 ];
 const MIMIC_FOODSTUFFS = [
   'Blistermoss',
@@ -1873,6 +1975,9 @@ button.addEventListener("click", function () {
   var grubbyImage = document.getElementById("grubbyimage")
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
+  grubbyImage.classList.remove('spinner-slow');
+  grubbyImage.classList.remove('spinner');
+  grubbyImage.classList.remove('spinner-fast');
 
   var grubbynumber = Math.floor(Math.random() * 100);
 
@@ -1884,6 +1989,7 @@ button.addEventListener("click", function () {
     var personality = GRUB_PERSONALITIES[Math.floor((Math.random() * GRUB_PERSONALITIES.length))]
     var image = GRUB_IMAGES[Math.floor((Math.random() * GRUB_IMAGES.length))]
 
+    //Special Name Cases
     if (name == "Blossom") {
       food = "Parsley";
       personality = "Grubby";
@@ -1899,7 +2005,10 @@ button.addEventListener("click", function () {
     if (name == "Moth") {
       image = ["images/adoptable_grubs/mothgrub.png", "A moth grub"];
     }
-    
+    if (name == "Upside-Down Grub") {
+      grubbyImage.classList.add('upside-down');
+      grubbyImage.classList.remove('rightside-up');
+    }
 
     if (Math.random() >= 0.90) {
       var title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
@@ -1907,7 +2016,7 @@ button.addEventListener("click", function () {
         title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
       }
       if (name == "Blossom") {
-        while(title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
+        while (title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
           title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
         }
       }
@@ -1918,6 +2027,15 @@ button.addEventListener("click", function () {
       var surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       while (name.trim().toLowerCase() == surname.trim().toLowerCase()) {
         surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
+      }
+      if (surname == " Spins-A-Little") {
+        grubbyImage.classList.add('spinner-slow');
+      }
+      if (surname == " Spins-A-Lot") {
+        grubbyImage.classList.add('spinner-fast');
+      }
+      if (surname == " Spins-A-Moderate-Amount") {
+        grubbyImage.classList.add('spinner');
       }
       name = name + surname;
     }
@@ -1931,71 +2049,143 @@ button.addEventListener("click", function () {
     document.getElementById("pronouns").innerHTML = pronouns;
 
     var possessive_pronoun = "";
+    var alt_possessive_pronoun = "";
     var referential_pronoun = "";
     switch (pronouns) {
       case "he/him":
         possessive_pronoun = "His";
+        alt_possessive_pronoun = "His";
         referential_pronoun = "him";
         break;
       case "she/her":
         possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Her";
         referential_pronoun = "her";
         break;
       case "they/them":
         possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Their";
         referential_pronoun = "them";
         break;
       case "fae/faer":
         possessive_pronoun = "Faer";
+        alt_possessive_pronoun = "Faer";
         referential_pronoun = "faer";
         break;
       case "xe/xem":
         possessive_pronoun = "Xir";
+        alt_possessive_pronoun = "Xir";
         referential_pronoun = "xem";
         break;
       case "it/its":
         possessive_pronoun = "Its";
+        alt_possessive_pronoun = "Its";
         referential_pronoun = "it";
         break;
       case "ze/zir":
         possessive_pronoun = "Zir";
+        alt_possessive_pronoun = "Zir";
         referential_pronoun = "zir";
         break;
       case "ey/em":
         possessive_pronoun = "Eir";
+        alt_possessive_pronoun = "Eir";
         referential_pronoun = "em";
         break;
       case "ve/ver":
         possessive_pronoun = "Vis";
+        alt_possessive_pronoun = "Vis";
         referential_pronoun = "ver";
         break;
-      case "grubs/grub":
+      case "she/they":
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        break;
+      case "he/they":
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "Their";
+        referential_pronoun = "them";
+        break;
+      case "she/he":
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "His";
+        referential_pronoun = "him";
+        break;
+      case "he/it":
+        possessive_pronoun = "His";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "she/it":
+        possessive_pronoun = "Her";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "they/it":
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Its";
+        referential_pronoun = "it";
+        break;
+      case "any/all":
+        possessive_pronoun = "Their";
+        alt_possessive_pronoun = "Her";
+        referential_pronoun = "him";
+        break;
+      case "grub/grubs":
         possessive_pronoun = "Grubs";
+        alt_possessive_pronoun = "Grubs";
         referential_pronoun = "grub";
         break;
       default:
         possessive_pronoun = "Grub";
+        alt_possessive_pronoun = "Grub";
         referential_pronoun = "grub";
         break;
     }
 
     document.getElementById("pronounlabel").innerHTML = possessive_pronoun + ' pronouns are...';
-    document.getElementById("foodlabel").innerHTML = possessive_pronoun + ' favorite food is...';
+    document.getElementById("foodlabel").innerHTML = alt_possessive_pronoun + ' favorite food is...';
     document.getElementById("personalitylabel").innerHTML = possessive_pronoun + ' personality type is...';
     document.getElementById("congrats").innerHTML = 'Congratulations on making a new friend! Please make sure to take good care of ' + referential_pronoun + ".";
     button.innerHTML = "Make another friend!";
-
-    // Special case: flip if upside-down grub
-    if (name == "Upside-Down Grub") {
-      grubbyImage.classList.add('upside-down');
-      grubbyImage.classList.remove('rightside-up');
-    }
   }
   else {
+    var mimicname = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
+    
+    if (Math.random() >= 0.65) {
+      var mimictitle = MIMIC_TITLES[Math.floor((Math.random() * MIMIC_TITLES.length))]
+      mimicname = mimictitle + mimicname;
+    }
+
+    if (Math.random() >= 0.65) {
+      var mimicsurname = MIMIC_SURNAMES[Math.floor((Math.random() * MIMIC_SURNAMES.length))]
+      if (mimicsurname == " Spins-A-Little") {
+        grubbyImage.classList.add('spinner-slow');
+      }
+      if (mimicsurname == " Spins-A-Lot") {
+        grubbyImage.classList.add('spinner-fast');
+      }
+      if (mimicsurname == " Spins-A-Moderate-Amount") {
+        grubbyImage.classList.add('spinner');
+      }
+      mimicname = mimicname + mimicsurname;
+    }
     document.getElementById("namelabel").innerHTML = 'Your \"grub\'s\" name is...';
-    document.getElementById("grubname").innerHTML = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
+    document.getElementById("grubname").innerHTML = mimicname;
     document.getElementById("food").innerHTML = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
     document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
-    grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
+    var mimic_variant = Math.floor((Math.random() * 100));
+    if (mimic_variant <= 5) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/red_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else if (mimic_variant <= 10) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/orange_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else if (mimic_variant <= 15) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/blue_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else if (mimic_variant <= 20) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/purple_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
+    }
   }
 });
