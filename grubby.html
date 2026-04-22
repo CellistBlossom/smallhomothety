@@ -34,6 +34,8 @@
   <meta property="og:url" content="https://www.smallhomothetyorganization.org/grubby" />
   <meta property="og:image" itemprop="image primaryImageOfPage"
     content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style media="screen">
     .certificate h2 {
       font-size: 22px;
@@ -155,6 +157,61 @@
         </div>
         <script src="scripts/grubby.js"></script>
       </div>
+      <br>
+      <br>
+      <div id="html-content-holder"
+          style="background-color: AntiqueWhite;
+          color: black; 
+          width: 500px;
+          padding-left: 25px;
+          padding-top: 10px;
+          margin: auto;">
+        <strong style="font-family: 'Papyrus'">CERTIFICATE OF ADOPTION</strong>
+        <p id="currentdate"></p>
+        <p id="grubcertificatename"></p>
+        <p id="grubimage"></p>
+        <p id="grubfact"></p>
+        <br>
+      </div>
+      <br>
+      <input id="btn-Preview-Image" type="button" value="Preview" />
+      <a id="btn-Convert-Html2Image" href="#">Download</a>
+      <br>
+      <h3>Preview :</h3>
+      <div id="previewImage"></div>
+      <script>
+        $(document).ready(function () {
+
+          let element = document.getElementById("html-content-holder");
+          let getCanvas;
+
+          $("#btn-Preview-Image").on('click', function () {
+            html2canvas(element).then(function (canvas) {
+              $("#previewImage").html(canvas); // replace instead of append
+              getCanvas = canvas;
+            });
+          });
+
+          $("#btn-Convert-Html2Image").on('click', function () {
+            if (!getCanvas) {
+              alert("Please preview the image first.");
+              return;
+            }
+
+            let imageData = getCanvas.toDataURL("image/png");
+
+            let newData = imageData.replace(
+              /^data:image\/png/,
+              "data:application/octet-stream"
+            );
+
+            $(this)
+              .attr("download", "certificate.png")
+              .attr("href", newData);
+          });
+
+        });
+      </script>
     </div>
     <script>
       $(document).ready(function () {
