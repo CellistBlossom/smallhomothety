@@ -2177,13 +2177,13 @@ button.addEventListener("click", function () {
     document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
     var mimic_variant = Math.floor((Math.random() * 100));
     if (mimic_variant <= 5) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/red_mimic.png" alt="A mimic!" height="100px" width="100px">';
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/red_mimic.png" alt="A red mimic!" height="100px" width="100px">';
     } else if (mimic_variant <= 10) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/orange_mimic.png" alt="A mimic!" height="100px" width="100px">';
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/orange_mimic.png" alt="An orange mimic!" height="100px" width="100px">';
     } else if (mimic_variant <= 15) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/blue_mimic.png" alt="A mimic!" height="100px" width="100px">';
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/blue_mimic.png" alt="A blue mimic!" height="100px" width="100px">';
     } else if (mimic_variant <= 20) {
-      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/purple_mimic.png" alt="A mimic!" height="100px" width="100px">';
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/purple_mimic.png" alt="A purple mimic!" height="100px" width="100px">';
     } else {
       grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
     }
