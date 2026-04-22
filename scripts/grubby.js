@@ -2203,7 +2203,7 @@ button.addEventListener("click", function () {
     
     var grubImageData = image;
     adoptionImage.innerHTML = `<img src=${grubImageData[0]} alt="${grubImageData[1]}" height="100px" width="100px">`;
-    document.getElementById("grubcertificatename").innerHTML = 'The grub named ' + name + " has hereby been adopted.";
+    document.getElementById("grubcertificatename").innerHTML = name + " has hereby been adopted.";
     document.getElementById("grubfact").innerHTML = personal_pronoun + ' ' + verb + ' very ' + personality.toLowerCase() + '. ' + possessive_pronoun + ' favourite food is ' + food.toLowerCase() + '! Make sure to take good care of ' + referential_pronoun + ".";
     document.getElementById("currentdate").innerHTML = 'On this day, ' + today;
     button.innerHTML = "Make another friend!";
