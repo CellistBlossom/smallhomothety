@@ -25,13 +25,15 @@
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <meta name="description" content="Adopt-a-Grub is a cute random generator that lets you adopt a grub from Hollow Knight as your very own.">
+  <meta name="description"
+    content="Adopt-a-Grub is a cute random generator that lets you adopt a grub from Hollow Knight as your very own.">
   <!-- for discord embeds-->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Grubby" />
-<meta property="og:description" content="Adopt-a-Grub" />
-<meta property="og:url" content="https://www.smallhomothetyorganization.org/grubby" />
-<meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grubby" />
+  <meta property="og:description" content="Adopt-a-Grub" />
+  <meta property="og:url" content="https://www.smallhomothetyorganization.org/grubby" />
+  <meta property="og:image" itemprop="image primaryImageOfPage"
+    content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <style media="screen">
     .certificate h2 {
       font-size: 22px;
@@ -53,43 +55,57 @@
     }
 
     .upside-down {
-        transform: scaleY(-1);
+      transform: scaleY(-1);
     }
 
     .rightside-up {
       transform: scaleY(1);
     }
 
+    .spinner {
+      animation: spin .3s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
     #namelabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
+      font-size: 18px;
+      font-family: "Playpen Sans", sans-serif;
+    }
 
-#pronounlabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
+    #pronounlabel {
+      font-size: 18px;
+      font-family: "Playpen Sans", sans-serif;
+    }
 
-#foodlabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
+    #foodlabel {
+      font-size: 18px;
+      font-family: "Playpen Sans", sans-serif;
+    }
 
-#personalitylabel {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
+    #personalitylabel {
+      font-size: 18px;
+      font-family: "Playpen Sans", sans-serif;
+    }
 
-#congrats {
-  font-size: 18px;
-  font-family: "Playpen Sans", sans-serif;
-}
+    #congrats {
+      font-size: 18px;
+      font-family: "Playpen Sans", sans-serif;
+    }
   </style>
 </head>
 
 <body>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $("#navbar").load("nav.html");
     });
   </script>
@@ -97,12 +113,17 @@
   </div>
   <div class="subnavmenu">
     <button class="submenubtn" onclick="location.href='/grubby'"><a href="/grubby">Adopt-a-Grub</a></button>
-    <button class="submenubtn" onclick="location.href='/grubby/randomgruborder'"><a href="/grubby/randomgruborder">Elegy% Random Grub Order</a> </button>
-    <button class="submenubtn" onclick="location.href='/grubby/randomgrubDancesquare'"><a href="/grubby/randomgrubDancesquare">Random grubDance Square</a> </button>
-    <button class="submenubtn" onclick="location.href='/grubby/gonzo-the-grub'"><a href="/grubby/gonzo-the-grub">The Glorious Quest of Gonzo the Grub</a> </button>
-    <button class="submenubtn" onclick="location.href='/grubby/petthegrub'"><a href="/grubby/petthegrub">Pet the Grub</a> </button>
-    <button class="submenubtn" onclick="location.href='https://picrew.me/en/image_maker/2595849'"><a href="https://picrew.me/image_maker/2595849">Build-a-Grub (Picrew)</a></button>
-	</div>
+    <button class="submenubtn" onclick="location.href='/grubby/randomgruborder'"><a
+        href="/grubby/randomgruborder">Elegy% Random Grub Order</a> </button>
+    <button class="submenubtn" onclick="location.href='/grubby/randomgrubDancesquare'"><a
+        href="/grubby/randomgrubDancesquare">Random grubDance Square</a> </button>
+    <button class="submenubtn" onclick="location.href='/grubby/gonzo-the-grub'"><a href="/grubby/gonzo-the-grub">The
+        Glorious Quest of Gonzo the Grub</a> </button>
+    <button class="submenubtn" onclick="location.href='/grubby/petthegrub'"><a href="/grubby/petthegrub">Pet the
+        Grub</a> </button>
+    <button class="submenubtn" onclick="location.href='https://picrew.me/en/image_maker/2595849'"><a
+        href="https://picrew.me/image_maker/2595849">Build-a-Grub (Picrew)</a></button>
+  </div>
   <div id="main-container">
     <h1 id="header">Adopt-a-Grub</h1>
     <div id="body">
@@ -128,7 +149,7 @@
       </div>
     </div>
     <script>
-      $(document).ready(function(){
+      $(document).ready(function () {
         $("#footer").load("/footer.html");
       });
     </script>

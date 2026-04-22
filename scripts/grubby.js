@@ -1376,6 +1376,7 @@ const GRUB_SURNAMES = [
   " Softmaker",
   " Sparklewiggler",
   " Spindlydoodle",
+  " Spins-A-Lot",
   " Squish-Munch",
   " Stagmane",
   " Stardustbug",
@@ -1889,6 +1890,7 @@ button.addEventListener("click", function () {
   var grubbyImage = document.getElementById("grubbyimage")
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
+  grubbyImage.classList.remove('spinner');
 
   var grubbynumber = Math.floor(Math.random() * 100);
 
@@ -1938,6 +1940,9 @@ button.addEventListener("click", function () {
       var surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
       while (name.trim().toLowerCase() == surname.trim().toLowerCase()) {
         surname = GRUB_SURNAMES[Math.floor((Math.random() * GRUB_SURNAMES.length))]
+      }
+      if (surname == " Spins-A-Lot") {
+        grubbyImage.classList.add('spinner');
       }
       name = name + surname;
     }
