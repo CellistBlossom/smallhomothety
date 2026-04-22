@@ -2004,9 +2004,6 @@ button.addEventListener("click", function () {
   grubbyImage.classList.remove('spinner-fast');
   adoptionImage.classList.add('rightside-up');
   adoptionImage.classList.remove('upside-down');
-  adoptionImage.classList.remove('spinner-slow');
-  adoptionImage.classList.remove('spinner');
-  adoptionImage.classList.remove('spinner-fast');
 
   var grubbynumber = Math.floor(Math.random() * 100);
 
@@ -2037,6 +2034,8 @@ button.addEventListener("click", function () {
     if (name == "Upside-Down Grub") {
       grubbyImage.classList.add('upside-down');
       grubbyImage.classList.remove('rightside-up');
+      adoptionImage.classList.add('upside-down');
+      adoptionImage.classList.remove('rightside-up');
     }
 
     if (Math.random() >= 0.90) {
@@ -2241,7 +2240,7 @@ button.addEventListener("click", function () {
     var alt_possessive_pronoun = "";
     var referential_pronoun = "";
     var verb = "is";
-    
+
     switch (mimicpronouns) {
       case "he/him":
         personal_pronoun = "He";

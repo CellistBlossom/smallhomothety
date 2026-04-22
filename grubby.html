@@ -174,29 +174,20 @@
         <br>
       </div>
       <br>
-      <input id="btn-Preview-Image" type="button" value="Preview" />
       <a id="btn-Convert-Html2Image" href="#">Download</a>
       <br>
-      <h3>Preview :</h3>
-      <div id="previewImage"></div>
+      <br>
+      <br>
       <script>
         $(document).ready(function () {
 
           let element = document.getElementById("html-content-holder");
           let getCanvas;
 
-          $("#btn-Preview-Image").on('click', function () {
+          $("#btn-Convert-Html2Image").on('click', function () {
             html2canvas(element).then(function (canvas) {
-              $("#previewImage").html(canvas); // replace instead of append
               getCanvas = canvas;
             });
-          });
-
-          $("#btn-Convert-Html2Image").on('click', function () {
-            if (!getCanvas) {
-              alert("Please preview the image first.");
-              return;
-            }
 
             let imageData = getCanvas.toDataURL("image/png");
 
