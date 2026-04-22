@@ -61,7 +61,12 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/super_grubby.png", "A grub superhero"],
   ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"],
   ["images/adoptable_grubs/missing_texture_grubby.png", "Error 404: Grub Not Found"],
-  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"]
+  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"],
+  ["images/adoptable_grubs/golden_grubby.png", "A grub made of gold"],
+  ["images/adoptable_grubs/silver_grubby.png", "A grub made of silver"],
+  ["images/adoptable_grubs/shaman_grubby.png", "A shaman grub"],
+  ["images/adoptable_grubs/pearl_grubby.png", "A grub made of pearl"],
+  ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"]
 
 ]
 
@@ -2170,6 +2175,17 @@ button.addEventListener("click", function () {
     document.getElementById("grubname").innerHTML = mimicname;
     document.getElementById("food").innerHTML = MIMIC_FOODSTUFFS[Math.floor((Math.random() * MIMIC_FOODSTUFFS.length))];
     document.getElementById("personality").innerHTML = MIMIC_PERSONALITIES[Math.floor((Math.random() * MIMIC_PERSONALITIES.length))];
-    grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
+    var mimic_variant = Math.floor((Math.random() * 100));
+    if (mimic_variant <= 5) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/red_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else if (mimic_variant <= 10) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/orange_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else if (mimic_variant <= 15) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/blue_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else if (mimic_variant <= 20) {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/purple_mimic.png" alt="A mimic!" height="100px" width="100px">';
+    } else {
+      grubbyImage.innerHTML = '<img src="images/adoptable_grubs/mimic.png" alt="A mimic!" height="100px" width="100px">';
+    }
   }
 });
