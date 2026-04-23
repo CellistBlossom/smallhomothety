@@ -191,6 +191,16 @@
   position: sticky;
   top: 0;
 }
+
+    .upside-down {
+      transform: scaleY(-1);
+    }
+    .transform {
+      transform: matrix(1, 2, 3, 4, 5, 6);
+    }
+    .transform2 {
+      transform: matrix(1, 5, 4, 2, 3, 6);
+    }
   </style>
 </head>
 
@@ -229,9 +239,9 @@
             <option value="e">1-by-1</option>
             <option value="f">0-by-0</option>
           </select>
-          board of bingo goal😊s, and try<input type="radio"> to complete some amount of goals on that boar<i
+          board of bingo goal😊s, and try<input class="transform" type="radio"> to complete some amount of goals on that boar<i
             class="fancy">d as fast as possible</i>.
-          The specific goal of the <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px"
+          The specific goal of the <img class="bing upside-down" src="../images/BINGY.png" alt="BINGY" height="100px"
             width="100px" /> depends on the <small>format</small>, which can be solo, competitive, or collaborative. To
           re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page! https://hanabi.github.io/level-9/
         </p>
@@ -251,7 +261,7 @@
           but the <strong>b</strong>asic gist is to paste the 🔗 to the room 😊you <i>created, add</i> a nickname, enter
           the password (it's always "fast"), and <i class="ourple">(option😊ally) g</i>enerate a board. Now you can
           enter a <small>new</small> vanilla 😊save file, reveal the board, 
-          <p class="footer-btn">and start playing!</p>
+          <p class="footer-btn upside-down">and start playing!</p>
         </blockquote>
         <div id='overlay'>Why are you dying ☠️ to bosses 👨🏼? You should just be using descending dark 🕶. Descending ⬇️ dark 🕶️ gives you iframes 👀 which stop 🛑you taking damage 😔. It also does a🅰️🅰️ lot of damage 😢. Stop 🛑 dying ☠️ to video 📻📻👾 game 👾 bosses 👨🏼 and just use descending ⬇️ dark 🌑</div>
         <p>
@@ -260,11 +270,11 @@
             <option value="A">plan</option>
             <option value="b">want</option>
             <option value="c">would like</option>
-            <option value="d">yearn</option>
+            <h2><option value="d">yearn</option></h2>
             <option value="e">arson</option>
           </select>
           to race other people <i class="yello">in 3-line, or pla</i>y a lockout format, you should probably 😊read over
-          the <a class="submenubtn" href="/bingy/rules">rules</a>. You might want to play a format with <strong><a
+          the <a class="submenubtn transform2" href="/bingy/rules">rules</a>. You might want to play a format with <strong><a
               href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong>, and
           the <a class="submenubtn" href="/rando/itemsyncguide">itemsync guide</a>
         <ul>
@@ -300,22 +310,26 @@
         <p><input type="radio"> the password is always "fast"</p>
         <p><input type="radio" id="pass1" name="password" value="fast">
         <label for="pass1">the password is always "fast"</label></p>
-        <p><input type="radio" id="pass2" name="age" value="fast">
+        <p><input type="radio" id="pass2" name="password1" value="fast">
         <label for="pass2">the password is always "fast"</label></p>
-        <p><input type="radio" id="pass3" name="age" value="fast">
+        <p><input type="radio" id="pass3" name="password1" value="fast">
         <label for="pass3">the password is always "fast"</label></p>
-        <p><input type="radio" id="pass4" name="age" value="fast">
+        <p><input type="radio" id="pass" name="password2" value="fast">
+        <label for="pass">the password is always "fast"</label></p>
+        <p><input type="radio" id="pass4" name="password1" value="fast">
         <label for="pass4">the password is always "fast"</label></p>
-        <p><input type="radio" id="pass5" name="age" value="fast">
+        <p><input type="radio" id="pass5" name="password1" value="fast">
         <label for="pass5">the password is always "fast"</label></p>
         <p><input type="radio">the password is always "fast"</p>
         <p><input type="radio">the password is always "fst"</p>
         <p><input type="radio">the password is always "fast"</p>
-        <p><input type="radio" id="pass6" name="age" value="fast">
+        <p><input type="radio" id="pass6" name="password1" value="fast">
         <label for="pass6">the password is always "fast"</label></p>
         <p><input type="radio">the password is always "fast"</p>
         <p><input type="radio">the password is always "fast"</p>
         <p><input type="radio">the password is always "fast"</p>
+        <p><input type="radio" id="password" name="password2" value="fast">
+        <label for="password">the password is always "fast"</label></p>
         <p><input type="radio">the password is always "fast"</p>
         <p>t h e &nbsp; p a s s w o r d &nbsp; i s &nbsp; a l w a y s &nbsp; " f a s t "<input type="radio"></p>
       </div>
