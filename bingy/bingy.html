@@ -177,6 +177,16 @@
     top:100vh;
     z-index:100;
 }
+.bounce {
+  animation: bounce 0.5s infinite;
+            
+}
+@keyframes bounce {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
   </style>
 </head>
 
@@ -203,7 +213,7 @@
         <img class="y" src="../images/BINGY.png" alt="BINGY" />
       </div>
       <div class="body-text-align-left">
-        <p><a class="submenubtn" href="/bingy"><img src="../images/BINGY.png" alt="BINGY" height="100px"
+        <p><a class="submenubtn" href="/bingy"><img class="bounce" src="../images/BINGY.png" alt="BINGY" height="100px"
               width="100px" /></a></p>
         <p>Hollow 😊Knight <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />
           (Vanilla<input type="checkbox"> BinGo) is a way of playing <small>Hollow Knight</small> where you generate a
@@ -219,7 +229,7 @@
             class="fancy">d as fast as possible</i>.
           The specific goal of the <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px"
             width="100px" /> depends on the <small>format</small>, which can be solo, competitive, or collaborative. To
-          re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page!
+          re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page! https://hanabi.github.io/level-9/
         </p>
         <p>to return to the other page (the <a class="hidden cursor-text" href="/bingy">one</a> you were on <i class="cursor-pointer">before this one</i>) <u>clikc</u> <i class="fakelink">here</i> </p>
         <blockquote>
