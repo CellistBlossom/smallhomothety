@@ -56,6 +56,33 @@
       font-family: "Garamond";
       font-style: normal;
     }
+
+    #idk_your_id_here {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 30px;
+      color: #ff92bf;
+      background-color: #ddd;
+      padding: 10px;
+      border-radius: 30px;
+    }
+    .bing {
+      height: 15px;
+    }
+
+    .spinner {
+      width: 20%;
+      animation: spin 5s linear 2s infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 
@@ -79,14 +106,23 @@
   <h1 id="header">Getting Started with Bingy!</h1>
   <div id="body">
     <div class="body-text-align-left">
-      <p><img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" /></p>
-      <p>Hollow 😊Knight <img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" /> (Vanilla BinGo) is a way of playing <small>Hollow Knight</small> where you generate a 5-by-5 board of bingo goal😊s, and try to complete some amount of goals on that boar<i class="fancy">d as fast as possible</i>. 
-        The specific goal of the <img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" /> depends on the <small>format</small>, which can be solo, competitive, or collaborative. To re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page!
+      <p><a class="submenubtn" href="/bingy"><img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" /></a></p>
+      <p>Hollow 😊Knight <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" /> (Vanilla BinGo) is a way of playing <small>Hollow Knight</small> where you generate a 
+        <select>
+          <option value="A">5-by-5</option>
+          <option value="b">4-by-4</option>
+          <option value="c">3-by-3</option>
+          <option value="d">2-by-2</option>
+          <option value="e">1-by-1</option>
+          <option value="f">0-by-0</option>
+        </select>
+        board of bingo goal😊s, and try to complete some amount of goals on that boar<i class="fancy">d as fast as possible</i>. 
+        The specific goal of the <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" /> depends on the <small>format</small>, which can be solo, competitive, or collaborative. To re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page!
     </p>
       <p>
         If <i class="ourple">this</i> is your first time playing <img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />, I would recommend starting with the <a class="submenubtn" href="/bingy/mods">mods</a> page to get set up. Once y😊ou've <i class="papyrus">installed the correct mo</i>ds, you'll need to create a
-        room in <a href="https://bingosync.com/" class="p-bigger">Bingosync</a>. It doesn't actually matter what game🎮 you select, since you can just generate a new board from inside Hollow Knight once it's open, though there <h4>is</h4> a Hollow Knight option.
-        Once you've launched the <small>game</small>, make sure to familiarise yourself with your BingoSync hot🔑s - you can 😊change them if you want, just make sure you remember what 😊they are! The mods page will have more detail on how to use BingoSync,
+        room in <a href="https://bingosync.com/" class="p-bigger">Bingosync</a>. It doesn't actually matter what game🎮 you selct, since you can just <p class="spinner">generate a new b</p>oard from inside Hollow Knight once it's open, though there <h4>is</h4> a Hollow Knight option.
+        O<small>nc</small>e you've <p id="idk_your_id_here">launched</p> the <small>game</small>, make sure to fa<i>miliari</i>se yourself with your BingoSync hot🔑s - you can 😊change them if you want, just make sure you remember what 😊they are! The mods page will have more detail on how to use BingoSync,
         but the <strong>b</strong>asic gist is to paste the 🔗 to the room 😊you <i>created, add</i> a nickname, enter the password (it's always "fast"), and <i class="ourple">(option😊ally) g</i>enerate a board. Now you can enter a <small>new</small> vanilla 😊save file, reveal the board, and start playing!
       </p>
       <p>
@@ -94,14 +130,16 @@
         <select>
           <option value="A">plan</option>
           <option value="b">want</option>
-          <option value="c">yearn</option>
+          <option value="c">would like</option>
+          <option value="d">yearn</option>
+          <option value="e">arson</option>
         </select>
         to race other people in 3-line, or play a lockout format, you should probably 😊read over the <a class="submenubtn" href="/bingy/rules">rules</a>. You might want to play a format with <strong><a href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong>, and 
         the <a class="submenubtn" href="/rando/itemsyncguide">itemsync guide</a> has a good explanation on how to do that (though you'll want to <small>rando</small>mise nothing and select "Sync Vanilla😊 Items"). If you're looking for people to play with or against,
-        make sure to join the <a href="https://discord.gg/qwd4EtY3Kj" class="p-bigger">Official B<small>i</small>ngy Discord</a>!
+        make <i class="bing">sure</i> to join the <a href="https://discord.gg/qwd4EtY3Kj" class="p-bigger">Official B<small>i</small>ngy Discord</a>!
       </p>
       <p>
-        There are lots of 😊thingS you can do to optimize your <a href="">speed</a> in a <img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />, 
+        There are lots of 😊thingS you <label>can</label> do to optimize your <a href="">speed</a> in a <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />, 
         the biggest factors being routing, <small>movement</small>, and skip😊s. References 😊for the latter two can be found on the <a class="submenubtn" href="/bingy/skips">skips</a> page,
         and the <a class="submenubtn" href="/bingy/resources">resou rces</a> page include😊s lin<i class="fancy">k</i>s to a few different guides.
       </p>
