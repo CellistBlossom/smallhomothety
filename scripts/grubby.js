@@ -2376,3 +2376,14 @@ button.addEventListener("click", function () {
 
   }
 });
+
+function downloadCertificate() {
+    const element = document.getElementById("html-content-holder");
+
+    html2canvas(element).then((canvas) => {
+        const link = document.createElement("a");
+        link.download = "certificate.png";
+        link.href = canvas.toDataURL();
+        link.click();
+    })
+}
