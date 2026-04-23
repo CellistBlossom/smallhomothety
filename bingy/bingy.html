@@ -174,7 +174,7 @@
     .cursor-pointer {cursor: pointer;font-style: normal;}
     #overlay {
     position: absolute;
-    top:100vh;
+    top:67vh;
     z-index:100;
 }
 .bounce {
@@ -186,6 +186,10 @@
   25% { transform: scale(0.9, 1.1); }
   50% { transform: scale(1.1, 0.9); }
   75% { transform: scale(0.95, 1.05); }
+}
+.sticky {
+  position: sticky;
+  top: 0;
 }
   </style>
 </head>
@@ -215,7 +219,7 @@
       <div class="body-text-align-left">
         <p><a class="submenubtn" href="/bingy"><img class="bounce" src="../images/BINGY.png" alt="BINGY" height="100px"
               width="100px" /></a></p>
-        <p>Hollow 😊Knight <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />
+        <p class="sticky">Hollow 😊Knight <img class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />
           (Vanilla<input type="checkbox"> BinGo) is a way of playing <small>Hollow Knight</small> where you generate a
           <select>
             <option value="A">5-by-5</option>
@@ -231,14 +235,14 @@
             width="100px" /> depends on the <small>format</small>, which can be solo, competitive, or collaborative. To
           re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page! https://hanabi.github.io/level-9/
         </p>
-        <p>to return to the other page (the <a class="hidden cursor-text" href="/bingy">one</a> you were on <i class="cursor-pointer">before this one</i>) <u>clikc</u> <i class="fakelink">here</i> </p>
+        <p class="sticky">to return to the other page (the <a class="hidden cursor-text" href="/bingy">one</a> you were on <i class="cursor-pointer">before this one</i>) <u>clikc</u> <i class="fakelink">here</i> </p>
         <blockquote>
           If <i class="ourple">this</i> is your first time playing <img src="../images/BINGY.png" alt="BINGY"
             height="100px" width="100px" />, I would recommend<input type="radio"> starting with the <a
             class="submenubtn" href="/bingy/mods">mods</a> page to get set up. Once y😊ou've <i
             class="papyrus rainbow-text-loop">installed the correct mo</i>ds, you'll need <i class="papyrus">to create a
           room </i>in <a href="https://bingosync.com/" class="p-bigger">Bin<i class="papyrus">g</i>osync</a>. It <h1>d<i class="fancy">o</i>es<small>n't</small></h1> actually matter what
-          game🎮 you selct, since you can just <p class="spinner">generate a new b</p>oard from inside Hollow Knight
+          game🎮 you selct, since you can just <p class="spinner sticky">generate a new b</p>oard from inside Hollow Knight
           once it's open, though there <h4>is</h4> a Hollow Knight option.
           O<small>nc</small>e you've <p id="idk_your_id_here">launched</p> the <small>game</small>, make sure to
           fa<i>miliari</i>se yourself with your BingoSync hot🔑s - you can 😊change them if you want, just make sure you
@@ -264,7 +268,7 @@
               href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong>, and
           the <a class="submenubtn" href="/rando/itemsyncguide">itemsync guide</a>
         <ul>
-          <li>has</li>
+          <li class="sticky">has</li>
           <li>a</li>
           <li>good</li>
           <li>expla</li>
@@ -291,16 +295,28 @@
         to a few different guides<input type="checkbox">.
         </p>
         <br>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fst"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
-        <p>the password is always "fast"<input type="radio"></p>
+        <p><input type="radio" id="pass0" name="password" value="fast">
+        <label for="pass0">the password is always "fast"</label></p>
+        <p><input type="radio"> the password is always "fast"</p>
+        <p><input type="radio" id="pass1" name="password" value="fast">
+        <label for="pass1">the password is always "fast"</label></p>
+        <p><input type="radio" id="pass2" name="age" value="fast">
+        <label for="pass2">the password is always "fast"</label></p>
+        <p><input type="radio" id="pass3" name="age" value="fast">
+        <label for="pass3">the password is always "fast"</label></p>
+        <p><input type="radio" id="pass4" name="age" value="fast">
+        <label for="pass4">the password is always "fast"</label></p>
+        <p><input type="radio" id="pass5" name="age" value="fast">
+        <label for="pass5">the password is always "fast"</label></p>
+        <p><input type="radio">the password is always "fast"</p>
+        <p><input type="radio">the password is always "fst"</p>
+        <p><input type="radio">the password is always "fast"</p>
+        <p><input type="radio" id="pass6" name="age" value="fast">
+        <label for="pass6">the password is always "fast"</label></p>
+        <p><input type="radio">the password is always "fast"</p>
+        <p><input type="radio">the password is always "fast"</p>
+        <p><input type="radio">the password is always "fast"</p>
+        <p><input type="radio">the password is always "fast"</p>
         <p>t h e &nbsp; p a s s w o r d &nbsp; i s &nbsp; a l w a y s &nbsp; " f a s t "<input type="radio"></p>
       </div>
       <img src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />
