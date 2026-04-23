@@ -187,18 +187,18 @@
           $("#btn-Convert-Html2Image").on('click', function () {
             html2canvas(element).then(function (canvas) {
               getCanvas = canvas;
+              let imageData = getCanvas.toDataURL("image/png");
+
+              let newData = imageData.replace(
+                /^data:image\/png/,
+                "data:application/octet-stream"
+              );
+
+              $(this)
+                .attr("download", "certificate.png")
+                .attr("href", newData);
             });
 
-            let imageData = getCanvas.toDataURL("image/png");
-
-            let newData = imageData.replace(
-              /^data:image\/png/,
-              "data:application/octet-stream"
-            );
-
-            $(this)
-              .attr("download", "certificate.png")
-              .attr("href", newData);
           });
 
         });
