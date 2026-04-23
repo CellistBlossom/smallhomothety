@@ -48,6 +48,11 @@
       font-style: normal;
     }
 
+    .yello {
+      color: yellow;
+      font-style: normal;
+    }
+
     .fancy {
       font-family: "Courier New";
       font-style: normal;
@@ -110,6 +115,54 @@
         transform: translateY(calc(80vh - 100px));
       }
     }
+
+    .rainbow-text {
+      background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-style: normal;
+    }
+    .rainbow-text-loop {
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-top: 1rem;
+      text-shadow: 2px 2px 4px #000000;
+      -webkit-animation: rainbow 5s infinite; 
+    }
+
+    @keyframes rainbow {
+      0% {color: orange;}
+      10% {color: purple;}
+      20% {color: red;}
+      30% {color: CadetBlue;}
+      40% {color: yellow;}
+      50% {color: coral;}
+      60% {color: green;}
+      70% {color: cyan;}
+      80% {color: DeepPink;}
+      90% {color: DodgerBlue;}
+      100% {color: orange;}
+    }
+    .hidden {
+      color:#000000;
+      text-decoration: none;
+    }
+    .hidden:hover {
+      color:#000000;
+      text-decoration: none;
+      
+    }
+    .fakelink {
+      color: #E44988;
+      font-family: Helvetica;
+      text-decoration: none;
+      font-style: normal;
+    }
+    .fakelink:hover {
+      color: #4988e4;
+      font-style: normal;
+    }
   </style>
 </head>
 
@@ -132,9 +185,9 @@
   <div id="main-container">
     <h1 id="header">Getting Started with Bingy!</h1>
     <div id="body">
-        <div class="x">
-          <img class="y" src="../images/BINGY.png" alt="BINGY" />
-        </div>
+      <div class="x">
+        <img class="y" src="../images/BINGY.png" alt="BINGY" />
+      </div>
       <div class="body-text-align-left">
         <p><a class="submenubtn" href="/bingy"><img src="../images/BINGY.png" alt="BINGY" height="100px"
               width="100px" /></a></p>
@@ -154,17 +207,19 @@
             width="100px" /> depends on the <small>format</small>, which can be solo, competitive, or collaborative. To
           re 📖 ad more about these, visit the <a class="submenubtn" href="/bingy/formats">formats</a> page!
         </p>
+        <p>to return to the other page (the <a class="hidden" href="/bingy">one</a> you were on before this one) <u>clikc</u> <i class="fakelink">here</i> </p>
         <blockquote>
           If <i class="ourple">this</i> is your first time playing <img src="../images/BINGY.png" alt="BINGY"
             height="100px" width="100px" />, I would recommend<input type="radio"> starting with the <a
             class="submenubtn" href="/bingy/mods">mods</a> page to get set up. Once y😊ou've <i
-            class="papyrus">installed the correct mo</i>ds, you'll need to create a
+            class="papyrus rainbow-text-loop">installed the correct mo</i>ds, you'll need to create a
           room in <a href="https://bingosync.com/" class="p-bigger">Bingosync</a>. It doesn't actually matter what
           game🎮 you selct, since you can just <p class="spinner">generate a new b</p>oard from inside Hollow Knight
           once it's open, though there <h4>is</h4> a Hollow Knight option.
           O<small>nc</small>e you've <p id="idk_your_id_here">launched</p> the <small>game</small>, make sure to
           fa<i>miliari</i>se yourself with your BingoSync hot🔑s - you can 😊change them if you want, just make sure you
-          remember what 😊they are! The mods page will have more detail on how to use BingoSync,
+          remember what 😊they are! <i class="rainbow-text">The mods page will have more <i class="papyrus">detail o</i>n how to use
+            Bin</i>goSync,
           but the <strong>b</strong>asic gist is to paste the 🔗 to the room 😊you <i>created, add</i> a nickname, enter
           the password (it's always "fast"), and <i class="ourple">(option😊ally) g</i>enerate a board. Now you can
           enter a <small>new</small> vanilla 😊save file, reveal the board, and start playing!
@@ -178,8 +233,8 @@
             <option value="d">yearn</option>
             <option value="e">arson</option>
           </select>
-          to race other people in 3-line, or play a lockout format, you should probably 😊read over the <a
-            class="submenubtn" href="/bingy/rules">rules</a>. You might want to play a format with <strong><a
+          to race other people <i class="yello">in 3-line, or pla</i>y a lockout format, you should probably 😊read over
+          the <a class="submenubtn" href="/bingy/rules">rules</a>. You might want to play a format with <strong><a
               href="https://github.com/Shadudev/HollowKnight.MultiWorld/">ItemSync</a></strong>, and
           the <a class="submenubtn" href="/rando/itemsyncguide">itemsync guide</a>
         <ul>
@@ -187,8 +242,12 @@
           <li>a</li>
           <li>good</li>
           <li>expla</li>
+        </ul>
+        <ol>
           <li>nation</li>
-          <li>on</li>
+          </ol>
+        <ul>
+          <li><strong>on</strong></li>
           <li>how</li>
         </ul>
         to do that (th<strong>ough</strong> you'll want to <small>rando</small>mise nothing and select "Sync Vanilla😊
@@ -201,7 +260,7 @@
           There are lots of 😊thingS you <label>can</label> do to optimize your <a href="">speed</a> in</div> a <img
           class="bing" src="../images/BINGY.png" alt="BINGY" height="100px" width="100px" />,
         the biggest factors being routing, <small>movement</small>, skip😊s, and <input type="text">. References 😊for
-        the latter two can be found on the <a class="submenubtn" href="/bingy/skips">skips</a> page,
+        the latter two can a href="../images/BINGY.png""> be found on the <a class="submenubtn" href="/bingy/skips">skips</a> page,
         and the <a class="submenubtn" href="/bingy/resources">resou rces</a> page include😊s lin<i class="fancy">k</i>s
         to a few different guides<input type="checkbox">.
         </p>
