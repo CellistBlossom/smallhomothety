@@ -164,8 +164,6 @@
         <script src="scripts/grubby.js"></script>
       </div>
       <br>
-      <p>Note: You may need to click download twice to download the correct grub's certificate</p>
-      <br>
       <div id="html-content-holder"
           style="background-color: AntiqueWhite;
           color: black; 
@@ -182,34 +180,16 @@
       </div>
       <br>
       <a id="btn-Convert-Html2Image" href="#">Download</a>
-      <br>
-      <br>
-      <br>
       <script>
-        $(document).ready(function () {
-
-          let element = document.getElementById("html-content-holder");
-          let getCanvas;
-
-          $("#btn-Convert-Html2Image").on('click', function () {
-            html2canvas(element).then(function (canvas) {
-              getCanvas = canvas;
-            });
-
-            let imageData = getCanvas.toDataURL("image/png");
-
-            let newData = imageData.replace(
-              /^data:image\/png/,
-              "data:application/octet-stream"
-            );
-
-            $(this)
-              .attr("download", "certificate.png")
-              .attr("href", newData);
-          });
-
-        });
+        $(document).ready(() => {
+          $("#btn-Convert-Html2Image").on("click", function() {
+            downloadCertificate();
+          })
+        })
       </script>
+      <br>
+      <br>
+      <br>
     </div>
     <script>
       $(document).ready(function () {
