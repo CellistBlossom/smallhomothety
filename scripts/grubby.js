@@ -2080,6 +2080,12 @@ button.addEventListener("click", function () {
       name = name + surname;
     }
 
+    if (Math.random() >= .999) {
+      personality = "Pyromaniac";
+    } else if (Math.random() >= .999) {
+      personality = "Kleptomaniac";
+    }
+
     document.getElementById("grubname").innerHTML = name;
     document.getElementById("food").innerHTML = food;
     document.getElementById("personality").innerHTML = personality;
