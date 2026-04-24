@@ -32,12 +32,15 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/ghost_grubby.png", "A ghost grub"],
   ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"],
   ["images/adoptable_grubs/golden_grubby.png", "A grub made of gold"],
+  ["images/adoptable_grubs/graduation_grubby.png", "A graduating grub"],
   ["images/adoptable_grubs/grub_husk_sentry_grubby.png", "A grub hust sentry"],
   ["images/adoptable_grubs/grubchu.png", "A grubchu"],
+  ["images/adoptable_grubs/grubhat.png", "A grub with a hat"],
   ["images/adoptable_grubs/grumbchu.png", "A grumbchu"],
   ["images/adoptable_grubs/infection_grubby.png", "The infection, given grub form"],
   ["images/adoptable_grubs/lifeblood_grubby.png", "A lifeblood grub with lifeblood wings"],
   ["images/adoptable_grubs/math_grubby.png", "TheMathGrub_314"],
+  ["images/adoptable_grubs/mimic_grubby.png", "A grub in a mimic costume"],
   ["images/adoptable_grubs/missing_texture_grubby.png", "Error 404: Grub Not Found"],
   ["images/adoptable_grubs/monarch_grubby.png", "A monarch butterfly grub"],
   ["images/adoptable_grubs/mossy_grubby.png", "A mosskin-shaped grub"],
@@ -59,6 +62,8 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/shaman_grubby.png", "A shaman grub"],
   ["images/adoptable_grubs/silver_grubby.png", "A grub made of silver"],
   ["images/adoptable_grubs/sketch_grubby.png", "A sketch of a grub"],
+  ["images/adoptable_grubs/sleepy_grubby.png", "A sleeping grub"],
+  ["images/adoptable_grubs/snow_grubby.png", "A grub made of snow"],
   ["images/adoptable_grubs/soul_totem_grubby.png", "A soul totem grub"],
   ["images/adoptable_grubs/strawberry_grubby.png", "A strawberry grub"],
   ["images/adoptable_grubs/sunset_grubby.png", "A sunset grub"],
@@ -629,6 +634,7 @@ const GRUB_NAMES = [
   "Grubette",
   "Grubglider",
   "Grubguard the Thirsty",
+  "Grubhat",
   "Grubikov",
   "Grubina",
   "Grubington",
@@ -2032,6 +2038,9 @@ button.addEventListener("click", function () {
     }
     if (name == "Moth") {
       image = ["images/adoptable_grubs/mothgrub.png", "A moth grub"];
+    }
+    if (name == "Grubhat") {
+      image = ["images/adoptable_grubs/grubhat.png", "A grub with a hat"];
     }
     if (name == "Upside-Down Grub") {
       grubbyImage.classList.add('upside-down');
