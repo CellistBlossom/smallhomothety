@@ -6,67 +6,75 @@ certificate.appendChild(button);
 button.id = "idk_your_id_here";
 
 const GRUB_IMAGES = [
-  ["images/grubby.png", "A grub!"],
-  ["images/adoptable_grubs/blomgrub.png", "A blomgrub"],
-  ["images/adoptable_grubs/purpgrub.png", "A purple grub"],
-  ["images/adoptable_grubs/grubchu.png", "A grubchu"],
-  ["images/adoptable_grubs/grumbchu.png", "A grumbchu"],
-  ["images/adoptable_grubs/arg.png", "An alternate reality grub"],
-  ["images/adoptable_grubs/aggrub.png", "An aggrub"],
-  ["images/adoptable_grubs/mothgrub.png", "A moth grub"],
-  ["images/adoptable_grubs/pengrub.png", "A penguin grub"],
   ["images/adoptable_grubs/adventure_grubby.png", "An adventuring grub"],
+  ["images/adoptable_grubs/aggrub.png", "An aggrub"],
   ["images/adoptable_grubs/angel_grubby.png", "An angel grub"],
+  ["images/adoptable_grubs/arg.png", "An alternate reality grub"],
   ["images/adoptable_grubs/astronaut_grubby.png", "An astronaut grub"],
   ["images/adoptable_grubs/beach_grubby.png", "A beach grub"],
   ["images/adoptable_grubs/beastling_grubby.png", "A grub with a beastling on its head"],
+  ["images/adoptable_grubs/bee_grubby.png", "A bee grub"],
+  ["images/adoptable_grubs/blomgrub.png", "A blomgrub"],
   ["images/adoptable_grubs/cactus_grubby.png", "A cactus grub"],
   ["images/adoptable_grubs/carrot_grubby.png", "A carrot grub"],
+  ["images/adoptable_grubs/cloud_grubby.png", "A grub whose head is in the clouds"],
+  ["images/adoptable_grubs/cogwork_grubby.png", "A cogwork grub"],
+  ["images/adoptable_grubs/collector_grubby.png", "A grub holding a jar with the collector inside"],
   ["images/adoptable_grubs/crystal_grubby.png", "A crystal grub"],
   ["images/adoptable_grubs/devil_grubby.png", "A devil grub"],
+  ["images/adoptable_grubs/disco_grubby.png", "A disco grub"],
   ["images/adoptable_grubs/ditto_grubby.png", "A ditto grub"],
   ["images/adoptable_grubs/fancy_grubby.png", "A fancy grub with a monocle and hat"],
   ["images/adoptable_grubs/flea_grubby.png", "A fluffy flea grub"],
   ["images/adoptable_grubs/flower_grubby.png", "A flower grub"],
+  ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"],
   ["images/adoptable_grubs/fox_grubby.png", "A fox grub"],
   ["images/adoptable_grubs/galaxy_grubby.png", "A galaxy grub"],
   ["images/adoptable_grubs/ghost_grubby.png", "A ghost grub"],
-  ["images/adoptable_grubs/grubby.png", "An alien grub in a little UFO"],
+  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"],
+  ["images/adoptable_grubs/golden_grubby.png", "A grub made of gold"],
+  ["images/adoptable_grubs/graduation_grubby.png", "A graduating grub"],
+  ["images/adoptable_grubs/grub_husk_sentry_grubby.png", "A grub hust sentry"],
+  ["images/adoptable_grubs/grubchu.png", "A grubchu"],
+  ["images/adoptable_grubs/grubhat.png", "A grub with a hat"],
+  ["images/adoptable_grubs/grumbchu.png", "A grumbchu"],
   ["images/adoptable_grubs/infection_grubby.png", "The infection, given grub form"],
   ["images/adoptable_grubs/lifeblood_grubby.png", "A lifeblood grub with lifeblood wings"],
   ["images/adoptable_grubs/math_grubby.png", "TheMathGrub_314"],
+  ["images/adoptable_grubs/mimic_grubby.png", "A grub in a mimic costume"],
+  ["images/adoptable_grubs/missing_texture_grubby.png", "Error 404: Grub Not Found"],
+  ["images/adoptable_grubs/monarch_grubby.png", "A monarch butterfly grub"],
   ["images/adoptable_grubs/mossy_grubby.png", "A mosskin-shaped grub"],
+  ["images/adoptable_grubs/mothgrub.png", "A moth grub"],
+  ["images/adoptable_grubs/mummy_grubby.png", "A grub wrapped in old cloth"],
   ["images/adoptable_grubs/mushroom_grubby.png", "A fungal grub"],
+  ["images/adoptable_grubs/paper_crane_grubby.png", "A grub whose head is covered in paper cranes"],
+  ["images/adoptable_grubs/pearl_grubby.png", "A grub made of pearl"],
+  ["images/adoptable_grubs/pengrub.png", "A penguin grub"],
   ["images/adoptable_grubs/portal_grubby.png", "A grub peeking through a portal"],
   ["images/adoptable_grubs/pride_grubby.png", "A rainbow-colored grub"],
+  ["images/adoptable_grubs/pumpkin_grubby.png", "A grub with a pumpkin for a head"],
+  ["images/adoptable_grubs/purpgrub.png", "A purple grub"],
   ["images/adoptable_grubs/radioactive_shrimp_grubby.png", "A radioactive shrimp grub (from Walmart)"],
+  ["images/adoptable_grubs/regal_grubby.png", "A regal grub"],
+  ["images/adoptable_grubs/sableye_grubby.png", "A grub with a jewel for an eye"],
   ["images/adoptable_grubs/shade_grubby.png", "A shade grub"],
-  ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"],
+  ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"],
+  ["images/adoptable_grubs/shaman_grubby.png", "A shaman grub"],
+  ["images/adoptable_grubs/silver_grubby.png", "A grub made of silver"],
+  ["images/adoptable_grubs/sketch_grubby.png", "A sketch of a grub"],
+  ["images/adoptable_grubs/sleepy_grubby.png", "A sleeping grub"],
+  ["images/adoptable_grubs/snow_grubby.png", "A grub made of snow"],
   ["images/adoptable_grubs/soul_totem_grubby.png", "A soul totem grub"],
   ["images/adoptable_grubs/strawberry_grubby.png", "A strawberry grub"],
-  ["images/adoptable_grubs/trans_grubby.png", "A trans grub"],
-  ["images/adoptable_grubs/bee_grubby.png", "A bee grub"],
-  ["images/adoptable_grubs/cloud_grubby.png", "A grub whose head is in the clouds"],
-  ["images/adoptable_grubs/cogwork_grubby.png", "A cogwork grub"],
-  ["images/adoptable_grubs/collector_grubby.png", "A grub holding a jar with the collector inside"],
-  ["images/adoptable_grubs/grub_husk_sentry_grubby.png", "A grub hust sentry"],
-  ["images/adoptable_grubs/monarch_grubby.png", "A regal grub"],
-  ["images/adoptable_grubs/mummy_grubby.png", "A grub wrapped in old cloth"],
-  ["images/adoptable_grubs/paper_crane_grubby.png", "A grub whose head is covered in paper cranes"],
-  ["images/adoptable_grubs/pumpkin_grubby.png", "A grub with a pumpkin for a head"],
-  ["images/adoptable_grubs/sableye_grubby.png", "A grub with a jewel for an eye"],
-  ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"],
-  ["images/adoptable_grubs/sketch_grubby.png", "A sketch of a grub"],
   ["images/adoptable_grubs/sunset_grubby.png", "A sunset grub"],
   ["images/adoptable_grubs/super_grubby.png", "A grub superhero"],
+  ["images/adoptable_grubs/swallowtail_grubby.png", "A swallowtail butterfly grub"],
   ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"],
-  ["images/adoptable_grubs/missing_texture_grubby.png", "Error 404: Grub Not Found"],
-  ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"],
-  ["images/adoptable_grubs/golden_grubby.png", "A grub made of gold"],
-  ["images/adoptable_grubs/silver_grubby.png", "A grub made of silver"],
-  ["images/adoptable_grubs/shaman_grubby.png", "A shaman grub"],
-  ["images/adoptable_grubs/pearl_grubby.png", "A grub made of pearl"],
-  ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"]
+  ["images/adoptable_grubs/trans_grubby.png", "A trans grub"],
+  ["images/adoptable_grubs/ufo_grubby.png", "An alien grub in a little UFO"],
+  ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"],
+  ["images/grubby.png", "A grub!"]
 ];
 
 const MIMIC_IMAGES = [
@@ -627,6 +635,7 @@ const GRUB_NAMES = [
   "Grubette",
   "Grubglider",
   "Grubguard the Thirsty",
+  "Grubhat",
   "Grubikov",
   "Grubina",
   "Grubington",
@@ -2031,6 +2040,9 @@ button.addEventListener("click", function () {
     if (name == "Moth") {
       image = ["images/adoptable_grubs/mothgrub.png", "A moth grub"];
     }
+    if (name == "Grubhat") {
+      image = ["images/adoptable_grubs/grubhat.png", "A grub with a hat"];
+    }
     if (name == "Upside-Down Grub") {
       grubbyImage.classList.add('upside-down');
       grubbyImage.classList.remove('rightside-up');
@@ -2066,6 +2078,12 @@ button.addEventListener("click", function () {
         grubbyImage.classList.add('spinner');
       }
       name = name + surname;
+    }
+
+    if (Math.random() >= .999) {
+      personality = "Pyromaniac";
+    } else if (Math.random() >= .999) {
+      personality = "Kleptomaniac";
     }
 
     document.getElementById("grubname").innerHTML = name;
