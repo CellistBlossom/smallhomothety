@@ -29,6 +29,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/flower_grubby.png", "A flower grub"],
   ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"],
   ["images/adoptable_grubs/fox_grubby.png", "A fox grub"],
+  ["images/adoptable_grubs/frederick_grubby.png", "Frederick grub of spinning grub fame"],
   ["images/adoptable_grubs/galaxy_grubby.png", "A galaxy grub"],
   ["images/adoptable_grubs/ghost_grubby.png", "A ghost grub"],
   ["images/adoptable_grubs/glass_grubby.png", "A glass grub full of lumaflies"],
@@ -73,6 +74,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/team_cherry_grubby.png", "A grub member of Team Cherry"],
   ["images/adoptable_grubs/trans_grubby.png", "A trans grub"],
   ["images/adoptable_grubs/ufo_grubby.png", "An alien grub in a little UFO"],
+  ["images/adoptable_grubs/uumuu_grubby.png", "An uumuu grub"],
   ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"],
   ["images/grubby.png", "A grub!"]
 ];
