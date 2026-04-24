@@ -22,6 +22,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/collector_grubby.png", "A grub holding a jar with the collector inside"],
   ["images/adoptable_grubs/crystal_grubby.png", "A crystal grub"],
   ["images/adoptable_grubs/devil_grubby.png", "A devil grub"],
+  ["images/adoptable_grubs/disco_grubby.png", "A disco grub"],
   ["images/adoptable_grubs/ditto_grubby.png", "A ditto grub"],
   ["images/adoptable_grubs/fancy_grubby.png", "A fancy grub with a monocle and hat"],
   ["images/adoptable_grubs/flea_grubby.png", "A fluffy flea grub"],
