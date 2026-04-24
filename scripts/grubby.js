@@ -2032,7 +2032,7 @@ button.addEventListener("click", function () {
 
   var grubbynumber = Math.floor(Math.random() * 100);
 
-  if (grubbynumber > 7) {
+  if (grubbynumber > 5) {
     document.getElementById("namelabel").innerHTML = 'Your grub\'s name is...';
     var name = GRUB_NAMES[Math.floor((Math.random() * GRUB_NAMES.length))]
     var pronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
@@ -2246,12 +2246,12 @@ button.addEventListener("click", function () {
     var mimicname = MIMIC_NAMES[Math.floor((Math.random() * MIMIC_NAMES.length))];
     var mimicpronouns = PRONOUNS[Math.floor((Math.random() * PRONOUNS.length))]
     
-    if (Math.random() >= 0.65) {
+    if (Math.random() >= 0.75) {
       var mimictitle = MIMIC_TITLES[Math.floor((Math.random() * MIMIC_TITLES.length))]
       mimicname = mimictitle + mimicname;
     }
 
-    if (Math.random() >= 0.65) {
+    if (Math.random() >= 0.75) {
       var mimicsurname = MIMIC_SURNAMES[Math.floor((Math.random() * MIMIC_SURNAMES.length))]
       if (mimicsurname == " Spins-A-Little") {
         grubbyImage.classList.add('spinner-slow');
