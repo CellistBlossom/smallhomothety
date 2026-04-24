@@ -29,6 +29,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/flower_grubby.png", "A flower grub"],
   ["images/adoptable_grubs/fluke_grubby.png", "A fluke grub"],
   ["images/adoptable_grubs/fox_grubby.png", "A fox grub"],
+  ["images/adoptable_grubs/fox_moth_grubby.png", "A fox moth grub"],
   ["images/adoptable_grubs/frederick_grubby.png", "Frederick grub of spinning grub fame"],
   ["images/adoptable_grubs/galaxy_grubby.png", "A galaxy grub"],
   ["images/adoptable_grubs/ghost_grubby.png", "A ghost grub"],
@@ -57,6 +58,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/pumpkin_grubby.png", "A grub with a pumpkin for a head"],
   ["images/adoptable_grubs/purpgrub.png", "A purple grub"],
   ["images/adoptable_grubs/radioactive_shrimp_grubby.png", "A radioactive shrimp grub (from Walmart)"],
+  ["images/adoptable_grubs/rainbow_shade_grubby.png", "A rainbow shade grub"],
   ["images/adoptable_grubs/regal_grubby.png", "A regal grub"],
   ["images/adoptable_grubs/sableye_grubby.png", "A grub with a jewel for an eye"],
   ["images/adoptable_grubs/shade_grubby.png", "A shade grub"],
@@ -76,6 +78,7 @@ const GRUB_IMAGES = [
   ["images/adoptable_grubs/ufo_grubby.png", "An alien grub in a little UFO"],
   ["images/adoptable_grubs/uumuu_grubby.png", "An uumuu grub"],
   ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"],
+  ["images/adoptable_grubs/wingy_grubby.png", "A floating flying wingy grub"],
   ["images/grubby.png", "A grub!"]
 ];
 
@@ -90,6 +93,10 @@ const MIMIC_IMAGES = [
   ["images/adoptable_grubs/mimic.png", "A mimic"],
   ["images/adoptable_grubs/mimic.png", "A mimic"],
   ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/mimic.png", "A mimic"],
+  ["images/adoptable_grubs/rainbow_mimic.png", "A rainbow mimic"],
   ["images/adoptable_grubs/red_mimic.png", "A red mimic"],
   ["images/adoptable_grubs/orange_mimic.png", "A orange mimic"],
   ["images/adoptable_grubs/blue_mimic.png", "A blue mimic"],
