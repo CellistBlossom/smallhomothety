@@ -2072,6 +2072,18 @@ button.addEventListener("click", function () {
   adoptionImage.classList.add('rightside-up');
   adoptionImage.classList.remove('upside-down');
 
+  if (Math.random() > .5) {
+    adoptionImage.classList.add('face-right');
+    grubbyImage.classList.add('face-right');
+    adoptionImage.classList.remove('face-left');
+    grubbyImage.classList.remove('face-left');
+  } else {
+    adoptionImage.classList.add('face-left');
+    grubbyImage.classList.add('face-left');
+    adoptionImage.classList.remove('face-right');
+    grubbyImage.classList.remove('face-right');
+  }
+
   var grubbynumber = Math.floor(Math.random() * 100);
 
   if (grubbynumber > 5) {
