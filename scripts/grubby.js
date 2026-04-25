@@ -2140,8 +2140,13 @@ button.addEventListener("click", function () {
       while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
         title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
       }
-      if (name == "Blossom") {
-        while (title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
+      if (name == "Blossom" || name == "Paum" || name == "TheMathGrub314") {
+        while (title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess ") {
+          title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+        }
+      }
+      if (name == "Shadow") {
+        while (title == "Archduke " || title == "Baron " || title == "Count " || title == "Duke " || title == "Emperor " || title == "Lord " || title == "Sir " || title == "Marquis " || title == "Mr. " || title == "Prince " || title == "King " || title == "Viscount ") {
           title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
         }
       }
