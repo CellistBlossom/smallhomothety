@@ -35,56 +35,17 @@
   <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/grubby.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style>
-        #invasion-img {
-      width: 1000px;
-      height: 1371px;
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    @media only screen and (max-width: 1400px) {
-      #invasion-img {
-        width: 740px;
-        height: 1015px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    @media only screen and (max-width: 800px) {
-      #invasion-img {
-        width: 588px;
-        height: 806px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    @media only screen and (max-width: 600px) {
-      #invasion-img {
-        width: 500px;
-        height: 685px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    @media only screen and (max-width: 500px) {
-      #invasion-img {
-        width: 333px;
-        height: 457px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    #idk_your_id_here {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      background-color: #ddd;
+      padding: 10px;
+      border-radius: 30px;
     }
   </style>
 </head>
 
-<body>
+<body onload="showtwists()">
   <script>
     $(document).ready(function() {
       $("#navbar").load("/nav.html");
@@ -231,26 +192,131 @@
     
     <h2 id="twists">Twists</h2>
     <div class="list-wide-square">
-      <p>Create a custom profile tailored for your preferred experience. This might be a dive-focused board, only bosses, all skills, dream nail focused, etc.</p>
-      <p>Generate a godhome board but start in King's Pass</p>
-      <p>Spend 0 geo</p>
-      <p>Don't enter city</p>
-      <p>Don't obtain dive</p>
-      <p>Get the lowest % completion possible</p>
-      <p>Don't obtain dash</p>
-      <p>Don't obtain claw</p>
-      <p>Use the colosseum to complete goals</p>
-      <p>Use NMMS glitches</p>
-      <p>Enable HKMP pvp</p>
-      <p>Run different boards but agree on the same line</p>
-      <p>Choose lines before revealing the board</p>
-      <p>Finish one line entirely before starting another</p>
-      <p>Include extended diagonals (wrap around from r1c4->r2c5->r3c1)</p>
-      <p>Use a seeded board where the seed represents something (today's date, your birthday, etc)</p>
-      <p>Run a vanilla board on a rando save or vice versa</p>
-      <p>Use a 13x13 GTTOS board</p>
-      <p>Play in Steel Soul mode</p>
+        <p id="list"></p>
     </div>
+    <h2>Random Format</h2>
+    <div id="generator">
+      <p id="format"></p>
+    </div>
+    <script>
+      var button = document.createElement("button");
+      button.innerHTML = "Give me a random format!";
+      
+      var generator = document.getElementById("generator");
+      generator.appendChild(button);
+      button.id = "idk_your_id_here";
+
+      const WINCONS = [
+        "Lockout",
+        "Lockout",
+        "Lockout",
+        "4 Line",
+        "3 Line",
+        "3 Line",
+        "2 Line",
+        "Blackout",
+        "Blackout",
+        "Blackout",
+        "Blockout",
+        "Blockout",
+        "RGO",
+        "Non-Lockout Pattern",
+        "Fraction",
+        "Wingy",
+        "Inverted 3 Line",
+        "12gy",
+        "Area Blitz"
+      ];
+      const ALT_WINCONS = [
+        "Board Art",
+        "Bingyguessr",
+        "Overworld-Godhome Co-Op",
+        "Gambling",
+        "Unbench"
+      ];
+      const VARIANTS = [
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "Hand/Brain",
+        "1 Brain 2 Hands",
+        "Intrusive Thoughts",
+        "2v2",
+        "3v3",
+        "ATC",
+        "Bing of the Hill",
+        "Pictionary",
+        "Yes/No",
+        "Up/Down/Left/Right",
+        "Bingy Bingy",
+        "Divorce",
+        "Singy",
+        "Lingy",
+        "Reverse Lingy",
+        "Blind",
+        "Crossover"
+      ];
+      const TWISTS = [
+        "Create a custom profile tailored for your preferred experience. This might be a dive-focused board, only bosses, all skills, dream nail focused, etc.",
+        "Generate a godhome board but start in King's Pass",
+        "Spend 0 geo",
+        "Don't enter city",
+        "Don't obtain dive",
+        "Get the lowest % completion possible",
+        "Get the highest % completion possible without marking any goals on the board",
+        "Don't obtain dash",
+        "Don't obtain claw",
+        "Use the colosseum to complete goals",
+        "Use NMMS glitches",
+        "Enable HKMP pvp",
+        "Run different boards",
+        "Choose/draft lines/goals before revealing the board",
+        "Finish one line entirely before starting another",
+        "Include extended diagonals (wrap around from r1c4->r2c5->r3c1)",
+        "Use a seeded board where the seed represents something (today's date, your birthday, etc)",
+        "Run a vanilla board on a rando save or vice versa",
+        "Use a 13x13 board",
+        "Play in Steel Soul mode",
+        "Play in Glass Soul mode (You are permanently at 1 mask)"
+      ];
+
+      button.addEventListener("click", function () {
+        var format = "";
+        var wincon = "";
+        var variant = "";
+        var twist = "";
+
+        if (Math.random() > .8) {
+          wincon = ALT_WINCONS[Math.floor((Math.random() * ALT_WINCONS.length))];
+        } else {
+          wincon = WINCONS[Math.floor((Math.random() * WINCONS.length))];
+          if (Math.random() > .5) {
+            variant = VARIANTS[Math.floor((Math.random() * VARIANTS.length))] + " ";
+          }
+          if (Math.random() > .95) {
+            twist = ", but... " + TWISTS[Math.floor((Math.random() * TWISTS.length))];
+          }
+        }
+        format = variant + wincon + twist;
+        document.getElementById("format").innerHTML = format;
+      });
+
+      function showtwists() {
+        var list = "";
+        for (let i = 0; i < TWISTS.length; i++) {
+          list = list + TWISTS[i] + "<br>"
+        }
+        document.getElementById("list").innerHTML = list;
+      }
+    </script>
     <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
     <span class="menu" id="menu101">
         <div class="list list-square list-centered">
