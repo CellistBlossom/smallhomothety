@@ -111,11 +111,3 @@ button.addEventListener("click", function () {
     format = variant + wincon + twist;
     document.getElementById("format").innerHTML = format;
 });
-
-function showtwists() {
-    var list = "";
-    for (let i = 0; i < TWISTS.length; i++) {
-        list = list + TWISTS[i] + "<br>"
-    }
-    document.getElementById("list").innerHTML = list;
-}
