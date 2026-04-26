@@ -2497,6 +2497,8 @@ button.addEventListener("click", function () {
   }
 });
 
+const meemawmaw = new Audio('/music/grub_idle_or_look_1.ogg');
+
 var lasttimestamp = 0;
 grubbyImage.addEventListener("mousemove", function(event) {
 	const diff = event.timeStamp -	lasttimestamp;
@@ -2505,7 +2507,7 @@ grubbyImage.addEventListener("mousemove", function(event) {
 	}
 	else if (diff >= 2000) {
 		if (diff < 2500) {
-			petTheGrub();
+			meemawmaw.play();
 		}
 		lasttimestamp = event.timeStamp;
 	}
