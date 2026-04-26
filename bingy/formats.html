@@ -340,7 +340,7 @@
             "Use NMMS glitches",
             "Enable HKMP pvp",
             "Run different boards",
-            "Choose/draft lines/goals before revealing the board",
+            "Choose lines before revealing the board",
             "Finish one line entirely before starting another",
             "Include extended diagonals (wrap around from r1c4->r2c5->r3c1)",
             "Use a seeded board where the seed represents something (today's date, your birthday, etc)",
@@ -363,7 +363,7 @@
               if (Math.random() > .5) {
                 variant = VARIANTS[Math.floor((Math.random() * VARIANTS.length))] + " ";
               }
-              if (Math.random() > .95) {
+              if (wincon.includes("Line") && Math.random() > .75) {
                 twist = ", but... " + TWISTS[Math.floor((Math.random() * TWISTS.length))];
               }
             }
