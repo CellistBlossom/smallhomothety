@@ -329,6 +329,7 @@ const GRUB_NAMES = [
   "DeepScale Grub",
   "Deepwing",
   "Deeree",
+  "Dergy",
   "Desolation Moth",
   "Diamondeye",
   "Dirt Muncher",
@@ -961,6 +962,7 @@ const GRUB_NAMES = [
   "Pancake Grub",
   "Pandemite",
   "Patter",
+  "Paum",
   "Pebbles",
   "Peekaboo",
   "Peekagrub",
@@ -1010,6 +1012,7 @@ const GRUB_NAMES = [
   "Queen Mantis Shade",
   "Quirkle",
   "Quirper",
+  "Radioactive Grub from Walmart",
   "Redcap",
   "Refurbished Grub",
   "Rickle",
@@ -1050,6 +1053,7 @@ const GRUB_NAMES = [
   "Shadechomp",
   "Shadeclaw",
   "Shadefly",
+  "Shadow",
   "Shadow Buzzer",
   "Shadow Flitter",
   "Shadow Grub",
@@ -1220,6 +1224,7 @@ const GRUB_NAMES = [
   "The Splinter Grub",
   "The Void Wing",
   "The Waking Shadow",
+  "TheMathGrub314",
   "Thin-Mud",
   "Thistle Guard",
   "Thragg",
@@ -2067,6 +2072,18 @@ button.addEventListener("click", function () {
   adoptionImage.classList.add('rightside-up');
   adoptionImage.classList.remove('upside-down');
 
+  if (Math.random() > .5) {
+    adoptionImage.classList.add('face-right');
+    grubbyImage.classList.add('face-right');
+    adoptionImage.classList.remove('face-left');
+    grubbyImage.classList.remove('face-left');
+  } else {
+    adoptionImage.classList.add('face-left');
+    grubbyImage.classList.add('face-left');
+    adoptionImage.classList.remove('face-right');
+    grubbyImage.classList.remove('face-right');
+  }
+
   var grubbynumber = Math.floor(Math.random() * 100);
 
   if (grubbynumber > 5) {
@@ -2084,6 +2101,24 @@ button.addEventListener("click", function () {
       pronouns = "they/them";
       image = ["images/adoptable_grubs/blomgrub.png", "a blomgrub"];
     }
+    if (name == "TheMathGrub314") {
+      food = "Taco Casserole";
+      personality = "Clever";
+      pronouns = "he/him";
+      image = ["images/adoptable_grubs/math_grubby.png", "TheMathGrub_314"];
+    }
+    if (name == "Shadow") {
+      food = "Chinese Food";
+      personality = "Creative";
+      pronouns = "she/they";
+      image = ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"];
+    }
+    if (name == "Paum") {
+      food = "Green Curry";
+      personality = "Fox";
+      pronouns = "he/him";
+      image = ["images/adoptable_grubs/fox_grubby.png", "A fox grub"];
+    }
     if (name == "Pengrub") {
       image = ["images/adoptable_grubs/pengrub.png", "A penguin grub"];
     }
@@ -2095,6 +2130,15 @@ button.addEventListener("click", function () {
     }
     if (name == "Grubhat") {
       image = ["images/adoptable_grubs/grubhat.png", "A grub with a hat"];
+    }
+    if (name == "Dergy") {
+      image = ["images/adoptable_grubs/dergy_grubby.png", "A dergy grub"];
+    }
+    if (name == "Radioactive Grub from Walmart") {
+      image = ["images/adoptable_grubs/radioactive_shrimp_grubby.png", "A radioactive shrimp grub (from Walmart)"];
+    }
+    if (name == "Zeronium") {
+      image = ["images/adoptable_grubs/zeronium_grubby.png", "A zeronium grub"];
     }
     if (name == "Upside-Down Grub") {
       grubbyImage.classList.add('upside-down');
@@ -2108,8 +2152,13 @@ button.addEventListener("click", function () {
       while (name.trim().toLowerCase().includes(title.trim().toLowerCase())) {
         title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
       }
-      if (name == "Blossom") {
-        while (title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess") {
+      if (name == "Blossom" || name == "Paum" || name == "TheMathGrub314") {
+        while (title == "Archduchess " || title == "Baroness " || title == "Countess " || title == "Duchess " || title == "Empress " || title == "Lady " || title == "Madam " || title == "Marquioness " || title == "Miss " || title == "Mrs. " || title == "Princess " || title == "Queen " || title == "Viscountess ") {
+          title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
+        }
+      }
+      if (name == "Shadow") {
+        while (title == "Archduke " || title == "Baron " || title == "Count " || title == "Duke " || title == "Emperor " || title == "Lord " || title == "Sir " || title == "Marquis " || title == "Mr. " || title == "Prince " || title == "King " || title == "Viscount ") {
           title = GRUB_TITLES[Math.floor((Math.random() * GRUB_TITLES.length))]
         }
       }
