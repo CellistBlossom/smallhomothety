@@ -74,20 +74,14 @@
 
     .spinner-slow {
       animation: spin 2s linear infinite;
-      width: 150px;
-      margin:auto;
     }
 
     .spinner {
       animation: spin .7s linear infinite;
-      width: 150px;
-      margin:auto;
     }
 
     .spinner-fast {
       animation: spin .3s linear infinite;
-      width: 150px;
-      margin:auto;
     }
 
     @keyframes spin {
@@ -123,6 +117,13 @@
     #congrats {
       font-size: 18px;
       font-family: "Playpen Sans", sans-serif;
+    }
+    #grubbyimage:hover {
+      cursor:grab;
+    }
+    #grubbyimage {
+      width: 150px;
+      margin: auto;
     }
   </style>
 </head>
@@ -170,10 +171,16 @@
 
         </div>
         <script src="scripts/grubby.js"></script>
+        <script>
+          const meemawmaw = new Audio('/music/grub_idle_or_look_1.ogg');
+          var grubbyImage = document.getElementById("grubbyimage");
+          grubbyImage.addEventListener("click", function (event) {
+            meemawmaw.play();
+          });
+        </script>
       </div>
       <br>
-      <div id="html-content-holder"
-          style="background-color: AntiqueWhite;
+      <div id="html-content-holder" style="background-color: AntiqueWhite;
           color: black; 
           width: 500px;
           padding-top: 10px;
@@ -189,7 +196,7 @@
       <a id="btn-Convert-Html2Image" href="#">Download</a>
       <script>
         $(document).ready(() => {
-          $("#btn-Convert-Html2Image").on("click", function() {
+          $("#btn-Convert-Html2Image").on("click", function () {
             downloadCertificate();
           })
         })

@@ -2064,6 +2064,7 @@ button.addEventListener("click", function () {
 
   var grubbyImage = document.getElementById("grubbyimage")
   var adoptionImage = document.getElementById("grubimage")
+
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
   grubbyImage.classList.remove('spinner-slow');
@@ -2496,22 +2497,6 @@ button.addEventListener("click", function () {
 
   }
 });
-
-const meemawmaw = new Audio('/music/grub_idle_or_look_1.ogg');
-
-var lasttimestamp = 0;
-grubbyImage.addEventListener("mousemove", function(event) {
-	const diff = event.timeStamp -	lasttimestamp;
-	if (lasttimestamp == 0) {
-		lasttimestamp = event.timeStamp;
-	}
-	else if (diff >= 2000) {
-		if (diff < 2500) {
-			meemawmaw.play();
-		}
-		lasttimestamp = event.timeStamp;
-	}
-})
 
 function downloadCertificate() {
     const element = document.getElementById("html-content-holder");
