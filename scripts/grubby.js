@@ -2102,13 +2102,13 @@ button.addEventListener("click", function () {
       image = ["images/adoptable_grubs/blomgrub.png", "a blomgrub"];
     }
     if (name == "TheMathGrub314") {
-      food = "Taco Casserole";
+      food = "Macaroni";
       personality = "Clever";
       pronouns = "he/him";
       image = ["images/adoptable_grubs/math_grubby.png", "TheMathGrub_314"];
     }
     if (name == "Shadow") {
-      food = "Chinese Food";
+      food = "Acorns";
       personality = "Creative";
       pronouns = "she/they";
       image = ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"];
@@ -2496,6 +2496,20 @@ button.addEventListener("click", function () {
 
   }
 });
+
+var lasttimestamp = 0;
+grubbyImage.addEventListener("mousemove", function(event) {
+	const diff = event.timeStamp -	lasttimestamp;
+	if (lasttimestamp == 0) {
+		lasttimestamp = event.timeStamp;
+	}
+	else if (diff >= 2000) {
+		if (diff < 2500) {
+			petTheGrub();
+		}
+		lasttimestamp = event.timeStamp;
+	}
+})
 
 function downloadCertificate() {
     const element = document.getElementById("html-content-holder");
