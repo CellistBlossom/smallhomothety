@@ -2064,6 +2064,7 @@ button.addEventListener("click", function () {
 
   var grubbyImage = document.getElementById("grubbyimage")
   var adoptionImage = document.getElementById("grubimage")
+
   grubbyImage.classList.add('rightside-up');
   grubbyImage.classList.remove('upside-down');
   grubbyImage.classList.remove('spinner-slow');
@@ -2102,13 +2103,13 @@ button.addEventListener("click", function () {
       image = ["images/adoptable_grubs/blomgrub.png", "a blomgrub"];
     }
     if (name == "TheMathGrub314") {
-      food = "Taco Casserole";
+      food = "Macaroni";
       personality = "Clever";
       pronouns = "he/him";
       image = ["images/adoptable_grubs/math_grubby.png", "TheMathGrub_314"];
     }
     if (name == "Shadow") {
-      food = "Chinese Food";
+      food = "Acorns";
       personality = "Creative";
       pronouns = "she/they";
       image = ["images/adoptable_grubs/shadow_grubby.png", "ShadowGrub7"];
