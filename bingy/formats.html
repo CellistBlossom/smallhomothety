@@ -46,7 +46,7 @@
   </style>
 </head>
 
-<body>
+<body onload="showtwists()">
   <script>
     $(document).ready(function () {
       $("#navbar").load("/nav.html");
@@ -117,7 +117,8 @@
           <h3>Itemsync Blackout</h3>
           <p>Multiple players work together so that at least one player has marked each goal on a board. Players use the
             <a href="/rando/itemsyncguide">Itemsync</a> mod, so that whatever upgrades and items one player gets are
-            given to the other player as well.</p>
+            given to the other player as well.
+          </p>
           <p><em>Time estimate: 50 minutes (2 players)</em></p>
           <h3>Blockout</h3>
           <p>One or more players/teams join a non-lockout board and mark any number of goals such that no line can be
@@ -249,28 +250,7 @@
 
         <h2 id="twists">Twists</h2>
         <div class="list-wide-square">
-          <p>Create a custom profile tailored for your preferred experience. This might be a dive-focused board, only
-            bosses, all skills, dream nail focused, etc.</p>
-          <p>Generate a godhome board but start in King's Pass</p>
-          <p>Spend 0 geo</p>
-          <p>Don't enter city</p>
-          <p>Don't obtain dive</p>
-          <p>Get the lowest % completion possible</p>
-          <p>Get the highest % completion possible without marking any goals on the board</p>
-          <p>Don't obtain dash</p>
-          <p>Don't obtain claw</p>
-          <p>Use the colosseum to complete goals</p>
-          <p>Use NMMS glitches</p>
-          <p>Enable HKMP pvp</p>
-          <p>Run different boards</p>
-          <p>Choose/draft lines/goals before revealing the board</p>
-          <p>Finish one line entirely before starting another</p>
-          <p>Include extended diagonals (wrap around from r1c4->r2c5->r3c1)</p>
-          <p>Use a seeded board where the seed represents something (today's date, your birthday, etc)</p>
-          <p>Run a vanilla board on a rando save or vice versa</p>
-          <p>Use a 13x13 board</p>
-          <p>Play in Steel Soul mode</p>
-          <p>Play in Glass Soul mode (You are permanently at 1 mask)</p>
+          <p id="list"></p>
         </div>
         <h2 id="randomgen">Random Format</h2>
         <div id="generator">
@@ -390,6 +370,14 @@
             format = variant + wincon + twist;
             document.getElementById("format").innerHTML = format;
           });
+
+          function showtwists() {
+            var list = "";
+            for (let i = 0; i < TWISTS.length; i++) {
+              list = list + TWISTS[i] + "<br>"
+            }
+            document.getElementById("list").innerHTML = list;
+          }
         </script>
         <p><a class="menulink" onclick="return toggleMenu('menu101')">Click to Navigate this Guide! ▶</a></p>
         <span class="menu" id="menu101">
