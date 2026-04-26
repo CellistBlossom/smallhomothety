@@ -283,7 +283,6 @@
             "Blockout",
             "Non-Lockout Pattern",
             "Fraction",
-            "Wingy",
             "Inverted 3 Line",
             "12gy"
           ];
@@ -310,12 +309,8 @@
             "Hand/Brain",
             "1 Brain 2 Hands",
             "Intrusive Thoughts",
-            "2v2",
-            "3v3",
             "ATC",
-            "RGO",
             "Bing of the Hill",
-            "Pictionary",
             "Yes/No",
             "Up/Down/Left/Right",
             "Bingy Bingy",
@@ -323,8 +318,15 @@
             "Singy",
             "Lingy",
             "Reverse Lingy",
-            "Blind",
-            "Crossover"
+            "Blind"
+          ];
+          const ALT_VARIANTS = [
+            "Wingy",
+            "Crossover",
+            "RGO",
+            "2v2",
+            "3v3",
+            "Pictionary"
           ];
           const TWISTS = [
             "Create a custom profile tailored for your preferred experience. This might be a dive-focused board, only bosses, all skills, dream nail focused, etc.",
@@ -340,7 +342,7 @@
             "Use NMMS glitches",
             "Enable HKMP pvp",
             "Run different boards",
-            "Choose/draft lines/goals before revealing the board",
+            "Choose lines before revealing the board",
             "Finish one line entirely before starting another",
             "Include extended diagonals (wrap around from r1c4->r2c5->r3c1)",
             "Use a seeded board where the seed represents something (today's date, your birthday, etc)",
@@ -361,9 +363,16 @@
             } else {
               wincon = WINCONS[Math.floor((Math.random() * WINCONS.length))];
               if (Math.random() > .5) {
-                variant = VARIANTS[Math.floor((Math.random() * VARIANTS.length))] + " ";
+                if (Math.random() > .45) {
+                  variant = VARIANTS[Math.floor((Math.random() * VARIANTS.length))] + " ";
+                } else {
+                  variant = ALT_VARIANTS[Math.floor((Math.random() * ALT_VARIANTS.length))] + " ";
+                }
               }
-              if (Math.random() > .95) {
+              if (Math.random() > .8) {
+                variant += " " + ALT_VARIANTS[Math.floor((Math.random() * ALT_VARIANTS.length))] + " ";
+              }
+              if (wincon.includes("Line") && Math.random() > .75) {
                 twist = ", but... " + TWISTS[Math.floor((Math.random() * TWISTS.length))];
               }
             }
