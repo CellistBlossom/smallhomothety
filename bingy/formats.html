@@ -365,12 +365,12 @@
               if (Math.random() > .5) {
                 if (Math.random() > .45) {
                   variant = VARIANTS[Math.floor((Math.random() * VARIANTS.length))] + " ";
+                  if (Math.random() > .8) {
+                    variant += " " + ALT_VARIANTS[Math.floor((Math.random() * ALT_VARIANTS.length))] + " ";
+                  }
                 } else {
                   variant = ALT_VARIANTS[Math.floor((Math.random() * ALT_VARIANTS.length))] + " ";
                 }
-              }
-              if (Math.random() > .8) {
-                variant += " " + ALT_VARIANTS[Math.floor((Math.random() * ALT_VARIANTS.length))] + " ";
               }
               if (wincon.includes("Line") && Math.random() > .75) {
                 twist = ", but... " + TWISTS[Math.floor((Math.random() * TWISTS.length))];
