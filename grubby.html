@@ -118,9 +118,11 @@
       font-size: 18px;
       font-family: "Playpen Sans", sans-serif;
     }
+
     #grubbyimage:hover {
-      cursor:grab;
+      cursor: grab;
     }
+
     #grubbyimage {
       width: 150px;
       margin: auto;
@@ -171,13 +173,6 @@
 
         </div>
         <script src="scripts/grubby.js"></script>
-        <script>
-          const meemawmaw = new Audio('/music/grub_idle_or_look_1.ogg');
-          var grubbyImage = document.getElementById("grubbyimage");
-          grubbyImage.addEventListener("click", function (event) {
-            meemawmaw.play();
-          });
-        </script>
       </div>
       <br>
       <div id="html-content-holder" style="background-color: AntiqueWhite;
@@ -192,6 +187,15 @@
         <p id="grubfact"></p>
         <br>
       </div>
+      <script>
+        const meemawmaw = new Audio('/music/grub_idle_or_look_1.ogg');
+        grubbyimage.addEventListener("click", function (event) {
+          meemawmaw.play();
+        });
+        grubimage.addEventListener("click", function (event) {
+          meemawmaw.play();
+        })
+      </script>
       <br>
       <a id="btn-Convert-Html2Image" href="#">Download</a>
       <script>
