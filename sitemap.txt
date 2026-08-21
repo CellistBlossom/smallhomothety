@@ -87,3 +87,5 @@ https://www.smallhomothetyorganization.org/bingy/resources
 https://www.smallhomothetyorganization.org/bingy/rules
 https://www.smallhomothetyorganization.org/bingy/skips
 https://www.smallhomothetyorganization.org/events/grubathon2026
+https://www.smallhomothetyorganization.org/events/any2026
+https://www.smallhomothetyorganization.org/grubby/gonzo-the-grub/phar-reaching-journey
