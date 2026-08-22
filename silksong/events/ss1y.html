@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SS1Y</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/silksong-stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/flea/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/flea/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/flea/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/flea/site.webmanifest">
+    <meta name="description" content="SS1Y is the community-led speedrunning marathon to celebrate the first anniversary of Silksong! SS1Y will include main board, category extension, and bingo showcases. The main event will take place on September 6th, 2026.">
+    <!-- for discord embeds-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Silksong 1st Anniversary" />
+    <meta property="og:description" content="Learn all about the Silksong 1st anniversary event led by the speedrunning and racing community!" />
+    <meta property="og:url" content="https://www.smallhomothetyorganization.org/silksong/events/ss1y" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/flea.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="Javascript">
+      function toggleMenu(currMenu) {
+        if (document.getElementById) {
+          thisMenu = document.getElementById(currMenu).style
+          if (thisMenu.display == "block") {
+            thisMenu.display = "none"
+          } else {
+            thisMenu.display = "block"
+          }
+          return false
+        } else {
+          return true
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("/silksong/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div id="main-container">
+    <div id="events-container-container">
+      <div id="events-container">
+        <script>
+          $(document).ready(function() {
+            $("#events-list").load("/silksong/events/eventsnav.html");
+          });
+        </script>
+        <div id="events-list">
+        </div>
+        <div class="events">
+          <h1 id="header">Silksong 1st Anniversary Celebration</h1>
+          <div id="body">
+        <div class="subnavmenu">
+          <button class="submenubtn" onclick="location.href='/silksong/events/ss1y'"><a href="/silksong/events/ss1y">Main Event</a> </button>
+          <button class="submenubtn" onclick="location.href='/silksong/events/ss1y/bingyday'"><a href="/silksong/events/ss1y/bingyday">Bingy Day</a> </button>
+        </div>
+            <p>SS1Y is the Silksong first anniversary event! SS1Y will include main board, category extension, and bingo showcases, and will be spread out over the course of one weekend. Bingy Day will take place on September 5th, 2026 and the main event will take place on September 6th, 2026.</p>
+            <p>The schedule for the main event is below. Credit to dragon_nyx for the cool png version!</p>
+            <img class="schedule-image-ss1y" src="/images/events/SS1Y_Schedule.png" alt="An image with the Silksong 1st Anniversary schedule. Schedule transcript is in the table below.">
+            <br>
+       <div class="schedule-list">
+          <h2>Main Event Schedule</h2>
+          <div id="schedule-table-container" style="overflow-x:auto;">
+            <table>
+              <tr>
+                <td>1:00pm UTC</td>
+                <td>9:00am EDT</td>
+                <td>Setup/Intro</td>
+              </tr>
+              <tr>
+                <td>1:10pm UTC</td>
+                <td>9:10am EDT</td>
+                <td>Key Route Any% Race</td>
+                <td>Runners: Lane, Cyv, Nebula, Ceen</td>
+                <td>Comms: TaigaSP, Poplessrebel</td>
+              </tr>
+              <tr>
+                <td>2:15pm UTC</td>
+                <td>10:15am EDT</td>
+                <td>All Any% NMG Bosses AG</td>
+                <td>Runners: meemee</td>
+                <td>Comms: Lernaea, Jollax</td>
+              </tr>
+              <tr>
+                <td>3:10pm UTC</td>
+                <td>11:10am EDT</td>
+                <td>Awoo% Race</td>
+                <td>Runners: 8Biggy, AtlasOfSouls, Bimmy, Zodiam</td>
+                <td>Comms: Abyss, Shadow</td>
+              </tr>
+              <tr>
+                <td>4:50pm UTC</td>
+                <td>12:50pm EDT</td>
+                <td>2p Any% Showcase</td>
+                <td>Runners: TaigaSP, Cryonis</td>
+                <td>Comms: Birdie, Nopre</td>
+              </tr>
+              <tr>
+                <td>5:55pm UTC</td>
+                <td>1:55pm EDT</td>
+                <td>AA2B Race</td>
+                <td>Runners: Cyv, Blob/by, Nebula, odanl</td>
+                <td>Comms: Wand, Lunia</td>
+              </tr>
+              <tr>
+                <td>8:35pm UTC</td>
+                <td>4:35pm EDT</td>
+                <td>True Ending Relay Race</td>
+                <td>Runners: Lunia, Enamoured, Ceen, Lane, Cron, TaigaSP, Mar, Mia, and_i, ConstructiveCynicism, Riley, Zoe, Zodiam, Darthchurros</td>
+                <td>Comms: Birdie, TaigaSP</td>
+              </tr>
+            </table>
+            </div>
+            </div>
+            <img src="/images/flea_awoo.gif" alt="grublove" height="100px" width="100px" id="flea awoo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+    </div>
+  </body>
+</html>

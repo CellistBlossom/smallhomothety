@@ -145,3 +145,42 @@ color: #E42F10;
 .eventstablecontainer a:hover {
 color: #e4105a;
 }
+
+      .schedule-image-ss1y {
+      height:540px;
+      width:960px;
+    }
+
+    @media only screen and (max-width: 1300px) {
+    .schedule-image-ss1y {
+      height:378px;
+      width:672px;
+    }
+    }
+
+   @media only screen and (max-width: 950px) {
+    .schedule-image-ss1y {
+      height:270px;
+      width:480px;
+    }
+    }
+
+    @media only screen and (max-width: 500px) {
+    .schedule-image-ss1y {
+      height:216px;
+      width:384px;
+    }
+    }   
+
+
+.schedule-list {
+text-align: left;
+padding: 0% 10% 0% 10%;
+border-style: dotted;
+border-width: 5px;
+border-radius: 100px;
+border: 5px dotted AntiqueWhite;
+background:
+  linear-gradient(AntiqueWhite 0 0) padding-box,
+  linear-gradient(to right, #e4105a, #E42F10, #e4105a, #E42F10) border-box;
+}
