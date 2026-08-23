@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PoplessRebel's Silksong Any% Gauntlet 2026</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/silksong-stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/flea/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/flea/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/flea/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/flea/site.webmanifest">
+    <meta name="description" content="The PoplessRebel's SilksongAny% Gauntlet 2026 is a speedrunning tournament hosted by the speedrunning and randomizer community!">
+    <!-- for discord embeds-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PoplessRebel's Silksong Any% Gauntlet 2026" />
+    <meta property="og:description" content="Learn all about the 2026 Any% Gauntlet for Hollow Knight: Silksong!" />
+    <meta property="og:url" content="https://www.smallhomothetyorganization.org/silksong/events/any2026" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.smallhomothetyorganization.org/images/flea.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style media="screen">
+      #standings-table-container {
+          font-family: "Rubik", sans-serif;
+          background: antiquewhite;
+          display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width:250px;
+      }
+
+      #standings-table-container table {
+        width:100%;
+      }
+
+      #standings-table-container table, #standings-table-container th, #standings-table-container td {
+            border-style: solid;
+            border-color: #edb265;
+            border-width: 2px;
+            border-collapse: collapse;
+            padding:10px;
+            text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="Javascript">
+      function toggleMenu(currMenu) {
+        if (document.getElementById) {
+          thisMenu = document.getElementById(currMenu).style
+          if (thisMenu.display == "block") {
+            thisMenu.display = "none"
+          } else {
+            thisMenu.display = "block"
+          }
+          return false
+        } else {
+          return true
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#navbar").load("/silksong/nav.html");
+      });
+    </script>
+    <div id="navbar">
+    </div>
+    <div id="main-container">
+    <div id="events-container-container">
+      <div id="events-container">
+        <script>
+          $(document).ready(function() {
+            $("#events-list").load("/silksong/events/eventsnav.html");
+          });
+        </script>
+        <div id="events-list">
+        </div>
+        <div class="events">
+          <h1 id="header">PoplessRebel's Silksong Any% Gauntlet 2026</h1>
+          <div id="body">
+            <p>The PoplessRebel's Silksong Any% Gauntlet 2026 is a knockout-style speedrunning tournament for the Silksong Any% NMG category. The tournament took place on August 15th and 16th, 2026.</p>
+            <p>Runs could be done on either route, but runs doing Key Route would be given a +1:40 time penalty due to it being inherently faster than Bell Route.</p>
+            <p>There was a limit of 10 entrants for the tournament, and over the course of four rounds the slowest runners would be knocked out until only one winner remained. There was a $100 prize pool for this tournament.</p>
+            <p><em><a class="menulink winner-spoiler" onclick="return toggleMenu('menu1')">Click to show/hide spoiler about winners ▶</a></em></p>
+            <span class="menu" id="menu1">
+              <div>
+          <h2>Standings</h2>
+          <div id="standings-table-container">
+          <table id="standings-table">
+            <tr>
+              <td>Winner</td>
+              <td>Nebula</td>
+            </tr>
+            <tr>
+                <td>Finalists</td>
+                <td>Cvy, Trunk</td>
+            </tr>
+            <tr>
+                <td>Round 3 elim</td>
+                <td> lane, jihanki</td>
+            </tr>
+            <tr>
+                <td>Round 2 elim</td>
+                <td>Mio, Zolt</td>
+            </tr>
+            <tr>
+                <td>Round 1 elim</td>
+                <td>Emma, Asits, Lex</td>
+            </tr>
+          </table>
+          </div>
+              </div>
+            </span>
+            <p class="p-bigger"><a href="https://www.speedrun.com/silksong?h=any-no-major-glitches-release-patch&rules=category&x=zd39j4nd-ylq4yvzn.qzne828q-rn1kmmvl.10vzvmol">No Major Glitches Rules</a></p>
+            <img src="/images/flea_awoo.gif" alt="grublove" height="100px" width="100px" id="flea awoo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+          $("#footer").load("/footer.html");
+      });
+    </script>
+    <div id="footer"> </div>
+    </div>
+  </body>
+</html>
