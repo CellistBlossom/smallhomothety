@@ -184,3 +184,21 @@ background:
   linear-gradient(AntiqueWhite 0 0) padding-box,
   linear-gradient(to right, #e4105a, #E42F10, #e4105a, #E42F10) border-box;
 }
+
+.list {
+  width: 700px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  padding: 0% 10% 0% 10%;
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 100px;
+  border: 5px dotted AntiqueWhite;
+  background:
+    linear-gradient(AntiqueWhite 0 0) padding-box,
+    linear-gradient(to right, #e4105a, #E42F10, #e4105a, #E42F10) border-box;
+  padding: 0% 0% 0% 0%;
+  text-align: left;
+}
