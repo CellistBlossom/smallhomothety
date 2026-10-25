@@ -677,6 +677,32 @@ font-size:12px;
 }
 }
 
+    .schedule-image-grubathon {
+      height:540px;
+      width:960px;
+    }
+
+    @media only screen and (max-width: 1300px) {
+    .schedule-image-grubathon {
+      height:378px;
+      width:672px;
+    }
+    }
+
+   @media only screen and (max-width: 950px) {
+    .schedule-image-grubathon {
+      height:270px;
+      width:480px;
+    }
+    }
+
+    @media only screen and (max-width: 500px) {
+    .schedule-image-grubathon {
+      height:216px;
+      width:384px;
+    }
+    } 
+
 
 /* for event/tourney pages */
 
